@@ -133,7 +133,8 @@ public class GameManager : MonoBehaviour
     }
     public void OnAssessmentSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Assessment"))
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Assessment")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Word Games"))
         {
             Button replayButton = GameObject.Find("Replay Button").GetComponent<Button>();
             Button exit = GameObject.Find("Exit Button").GetComponent<Button>();
@@ -143,7 +144,12 @@ public class GameManager : MonoBehaviour
             {
                 if (DataPersistenceManager.instance.playerData.dunongPoints >= 5)
                 {
-                    this.LoadScene("Assessment");
+                    if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Assessment"))
+                    {
+                        this.LoadScene("Assessment");
+                        return;
+                    }
+                    this.LoadScene("Word Games");
                 }
             });
 

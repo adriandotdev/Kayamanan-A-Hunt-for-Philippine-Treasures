@@ -90,22 +90,41 @@ public class AssessmentTrigger : MonoBehaviour, IDataPersistence
         // Set the name of the region.
         AssessmentManager.instance.regionName = EventSystem.current.currentSelectedGameObject.name.ToString();
 
-        if (show)
+        if (this.IsRegionOpen(AssessmentManager.instance.regionName) || AssessmentManager.instance.regionName == "Close")
         {
-            regionsCanvasGroup.GetComponent<CanvasGroup>().blocksRaycasts = false;
-            Camera.main.gameObject.GetComponent<PanZoom>().enabled = false;
-            ResetAllCategories();
-            ShowOnlyAvailableCategories();
-            RemoveEventsToCategoryButton();
-            AddEventsToCategoryButton();
-            categoriesPanel.gameObject.SetActive(show);
+            if (show)
+            {
+                regionsCanvasGroup.GetComponent<CanvasGroup>().blocksRaycasts = false;
+                Camera.main.gameObject.GetComponent<PanZoom>().enabled = false;
+                ResetAllCategories();
+                ShowOnlyAvailableCategories();
+                RemoveEventsToCategoryButton();
+                AddEventsToCategoryButton();
+                categoriesPanel.gameObject.SetActive(show);
+            }
+            else
+            {
+                regionsCanvasGroup.GetComponent<CanvasGroup>().blocksRaycasts = true;
+                Camera.main.gameObject.GetComponent<PanZoom>().enabled = true;
+                categoriesPanel.gameObject.SetActive(false);
+            }
         }
         else
         {
-            regionsCanvasGroup.GetComponent<CanvasGroup>().blocksRaycasts = true;
-            Camera.main.gameObject.GetComponent<PanZoom>().enabled = true;
-            categoriesPanel.gameObject.SetActive(false);
+            Debug.Log(AssessmentManager.instance.regionName + " is closed");
         }
+    }
+
+    public bool IsRegionOpen(string nameOfRegion)
+    {
+        foreach(RegionData region in this.playerData.regionsData)
+        {
+            if (region.regionName.ToUpper().Equals(nameOfRegion.ToUpper()))
+            {
+                if (region.isOpen) return true;
+            }
+        }
+        return false;
     }
 
     public void AddEventsToCategoryButton()

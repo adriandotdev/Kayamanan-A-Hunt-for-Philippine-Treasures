@@ -97,6 +97,7 @@ public class DataPersistenceManager : MonoBehaviour
             this.SaveGame();
         }
     }
+
     public void ConfirmCharacter()
     {
         string id = Guid.NewGuid().ToString(); // Generate a new ID.

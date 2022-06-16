@@ -39,6 +39,12 @@ public class PlayerData
             "REGION 2", 
             "",
             new Category[1] { new Category("National Festivals" )} ));
+
+        this.regionsData.Add(new RegionData(
+            false,
+            "REGION 3",
+            "",
+            new Category[1] { new Category("National Heroes ") }));
         //this.regionsData.Add(new RegionData(false, "REGION 3", ""));
         //this.regionsData.Add(new RegionData(false, "REGION 4", ""));
         //this.regionsData.Add(new RegionData(false, "REGION 5", ""));
