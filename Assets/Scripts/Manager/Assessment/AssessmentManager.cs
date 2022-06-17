@@ -219,6 +219,7 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
             }
         }
     }
+
     public void LoadScene ()
     {
         SceneManager.LoadScene("Assessment");
@@ -265,6 +266,29 @@ public class FisherYates
             randomNumber = Random.Range(0, endPointer);
 
             Assessment temp = assessments[randomNumber];
+            assessments[randomNumber] = assessments[endPointer];
+            assessments[endPointer] = temp;
+
+            endPointer--;
+
+            if (endPointer == 0) return newAssessments;
+        }
+
+        return newAssessments;
+    }
+
+    public static Word[] shuffle(Word[] assessments)
+    {
+        Word[] newAssessments = assessments;
+
+        int randomNumber = 0;
+        int endPointer = assessments.Length - 1;
+
+        for (int i = 0; i < newAssessments.Length; i++)
+        {
+            randomNumber = Random.Range(0, endPointer);
+
+            Word temp = assessments[randomNumber];
             assessments[randomNumber] = assessments[endPointer];
             assessments[endPointer] = temp;
 

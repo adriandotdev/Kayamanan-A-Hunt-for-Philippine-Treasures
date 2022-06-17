@@ -682,8 +682,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1135737968}
-        m_TargetAssemblyTypeName: AssessmentTrigger, Assembly-CSharp
+      - m_Target: {fileID: 1102086630}
+        m_TargetAssemblyTypeName: RegionHandler, Assembly-CSharp
         m_MethodName: ShowCategories
         m_Mode: 6
         m_Arguments:
@@ -3481,6 +3481,93 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1095637917}
   m_CullTransparentMesh: 1
+--- !u!1 &1102086629
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1102086631}
+  - component: {fileID: 1102086630}
+  m_Layer: 0
+  m_Name: Region Handler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1102086630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102086629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b6204248109ccd45bdf3281a9661b25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regionsCanvasGroup: {fileID: 1811160747}
+  categoriesPanel: {fileID: 1983515580}
+  playerData:
+    id: 
+    name: 
+    dunongPoints: 25
+    remainingTime: 18000
+    regionsData:
+    - isOpen: 1
+      regionName: REGION 1
+      information: It is more about Region 1
+      currentScore: 0
+      highestScore: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+      - categoryName: National Symbols
+        highestScore: 0
+        noOfStars: 0
+    - isOpen: 0
+      regionName: REGION 2
+      information: 
+      currentScore: 0
+      highestScore: 0
+      categories:
+      - categoryName: National Festivals
+        highestScore: 0
+        noOfStars: 0
+    - isOpen: 0
+      regionName: REGION 3
+      information: 
+      currentScore: 0
+      highestScore: 0
+      categories:
+      - categoryName: 'National Heroes '
+        highestScore: 0
+        noOfStars: 0
+  buttons:
+  - {fileID: 327945081}
+  - {fileID: 364631322}
+  - {fileID: 404793978}
+  - {fileID: 2087080303}
+  - {fileID: 1859635288}
+--- !u!4 &1102086631
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102086629}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1117893801
 GameObject:
   m_ObjectHideFlags: 0
@@ -3581,6 +3668,7 @@ GameObject:
   - component: {fileID: 1135737966}
   - component: {fileID: 1135737965}
   - component: {fileID: 1135737968}
+  - component: {fileID: 1135737969}
   m_Layer: 5
   m_Name: Region 1
   m_TagString: Untagged
@@ -3652,8 +3740,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1135737968}
-        m_TargetAssemblyTypeName: AssessmentTrigger, Assembly-CSharp
+      - m_Target: {fileID: 1102086630}
+        m_TargetAssemblyTypeName: RegionHandler, Assembly-CSharp
         m_MethodName: ShowCategories
         m_Mode: 6
         m_Arguments:
@@ -3711,154 +3799,111 @@ MonoBehaviour:
   m_GameObject: {fileID: 1135737963}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2ed94d02dda9b340b7689a57f1e84ac, type: 3}
+  m_Script: {fileID: 11500000, guid: b9afdacb68613d3478825d0cfeefc825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  regionsCanvasGroup: {fileID: 1811160745}
-  categoriesPanel: {fileID: 1983515580}
-  categoriesButtons:
-  - {fileID: 327945081}
-  - {fileID: 364631322}
-  - {fileID: 404793978}
-  - {fileID: 2087080303}
-  - {fileID: 1859635288}
-  heroes:
-  - question: Kailan namatay si Jose Rizal?
-    correctAnswer: December 30
-    choices:
-    - December 25
-    - December 30
-    - December 28
-    - December 26
-  - question: Saan ipinanganak si Jose Rizal?
-    correctAnswer: Calamba, Laguna
-    choices:
-    - Santa Rosa, Laguna
-    - Calamba, Laguna
-    - San Pedro, Laguna
-    - Cabuyao, Laguna
-  - question: Sino ang Ama ng Katipunan?
-    correctAnswer: Andres Bonifacio
-    choices:
-    - Antonio Luna
-    - Jose Rizal
-    - Andres Bonifacio
-    - Juan Luna
-  - question: Kailan ipinanganak si Jose Rizal?
+  sceneToLoad: Assessment
+  categoryName: 0
+  assessments:
+  - question: Kailan Ipinanganak si Jose Rizal?
     correctAnswer: June 19, 1861
     choices:
     - June 19, 1861
-    - June 18, 1861
     - June 19, 1862
-    - June 18, 1865
+    - June 18, 1995
+    - June 21, 1861
   - question: Taga saan si Andres Bonifacio?
     correctAnswer: Tondo, Manila
     choices:
-    - Santa Rosa, Laguna
-    - Caloocan
-    - Tondo, Manila
     - Calamba, Laguna
-  - question: Sino ang unang presidente ng Pilipinas?
-    correctAnswer: Emilio Aguinaldo
+    - Tondo, Manila
+    - Santa Rosa, Laguna
+    - Dumaguete
+  - question: Taga saan si Jose Rizal?
+    correctAnswer: Calamba, Laguna
     choices:
-    - Manuel Quezon
-    - Emilio Aguinaldo
-    - Elpidio Quirino
-    - Sergio Osmena
-  - question: Ano ang unang libro ang isinulat ni Jose Rizal?
+    - San Pablo, Laguna
+    - Calamba, Laguna
+    - Santa Rosa, Laguna
+    - San Pedro, Laguna
+  - question: Ano ang unang libro na isinulat ni Jose Rizal?
     correctAnswer: Noli Me Tangere
     choices:
-    - Las Islas Filipinas
-    - El Filibusterismo
     - Noli Me Tangere
+    - El Filibusterismo
+    - Las Islas Filipinas
     - La Solidaridad
   - question: Ano ang pangalawang libro ang isinulat ni Jose Rizal?
     correctAnswer: El Filibusterismo
     choices:
-    - Las Islas Filipinas
-    - El Filibusterismo
     - Noli Me Tangere
+    - El Filibusterismo
     - La Solidaridad
-  symbols:
-  - question: Ilan ang kulay sa watawat ng Pilipinas?
-    correctAnswer: Apat
+    - Las Islas Filipinas
+  - question: Sino ang unang presidente ng Pilipinas?
+    correctAnswer: Emilio Aguinaldo
     choices:
-    - Apat
-    - Tatlo
-    - Dalawa
-    - Lima
-  - question: Ano ang title ng National Anthem ng Pilipinas?
-    correctAnswer: Lupang Hinirang
+    - Sergio Osmena
+    - Manuel Quezon
+    - Emilio Aguinaldo
+    - Elpidio Quirino
+  - question: Kailan namatay si Jose Rizal?
+    correctAnswer: December 30
     choices:
-    - Lupang Hinirang
-    - Bayang Magiliw
-    - Mamatay Dahil Sayo
-    - God Gave Me You
-  - question: Ano ang pambansang bulaklak ng Pilipinas?
+    - December 25
+    - December 20
+    - December 30
+    - December 28
+  - question: Ano ang tawag dati sa Luneta?
+    correctAnswer: Bagumbayan
+    choices:
+    - Parke
+    - Bagumbayan
+    - Tambayan
+    - Taumbayan
+  - question: Anong bansa nag sumakop sa Pilipinas ng 333 taon?
+    correctAnswer: Espanya
+    choices:
+    - Cuba
+    - Amerika
+    - Espanya
+    - Japan
+  - question: Ano ang pambansang bulaklak ng Pilipinas
     correctAnswer: Sampaguita
     choices:
-    - Gumamela
+    - Orchid
     - Sampaguita
     - Rosas
-    - Rosal
-  - question: Ano ang pambansang ibon ng Pilipinas?
-    correctAnswer: Agila
-    choices:
-    - Maya
-    - Agila
-    - Kalapati
-    - Uwak
-  - question: Ano ang pambansang laro ng Pilipinas?
-    correctAnswer: Arnis
-    choices:
-    - Tumbang Preso
-    - Arnis
-    - Sepak Takraw
-    - Sipa
-  - question: Ano ang pambansang isda ng Pilipinas?
-    correctAnswer: Bangus
-    choices:
-    - Tilapia
-    - Bangus
-    - Dalagang Bukid
-    - Dolphin
-  - question: Sino ang pambansang bayani ng Pilipinas?
-    correctAnswer: Jose Rizal
-    choices:
-    - Jose Rizal
-    - Andres Bonifacio
-    - Antonio Luna
-    - Juan Luna
-  myths: []
-  festivals: []
-  games: []
-  playerData:
-    id: 
-    name: 
-    dunongPoints: 25
-    remainingTime: 18000
-    regionsData:
-    - isOpen: 1
-      regionName: REGION 1
-      information: It is more about Region 1
-      currentScore: 0
-      highestScore: 0
-      categories:
-      - categoryName: National Heroes
-        highestScore: 0
-        noOfStars: 0
-      - categoryName: National Symbols
-        highestScore: 0
-        noOfStars: 0
-    - isOpen: 0
-      regionName: REGION 2
-      information: 
-      currentScore: 0
-      highestScore: 0
-      categories:
-      - categoryName: National Festivals
-        highestScore: 0
-        noOfStars: 0
+    - Gumamela
+--- !u!114 &1135737969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135737963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b991cdf70e85934da25c4e8c0d82acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Word Games
+  categoryName: 1
+  words:
+  - question: Ano ang pambansang bulaklak?
+    word: Sampaguita
+  - question: Ano ang pambansang dahon?
+    word: Anahaw
+  - question: Ano ang pambasang isda?
+    word: Bangus
+  - question: Ano ang pambansang laro?
+    word: Arnis
+  - question: Ano ang pambansang puno?
+    word: Narra
+  - question: Sino ang pambansang bayani?
+    word: Jose Rizal
+  - question: Bilang ng kulay sa watawat ng Pilipinas
+    word: Apat
 --- !u!1 &1204480887
 GameObject:
   m_ObjectHideFlags: 0
@@ -5960,19 +6005,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2051229337}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2051229335}
-        m_TargetAssemblyTypeName: WordTrigger, Assembly-CSharp
-        m_MethodName: ShowCategories
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2051229337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6164,12 +6197,16 @@ MonoBehaviour:
   wordContainer: {fileID: 0}
   shuffledContainer: {fileID: 0}
   questionLabel: {fileID: 0}
-  submitButton: {fileID: 0}
+  confirmButton: {fileID: 0}
   letter: {fileID: 0}
   regionName: 
   categoryName: 
-  currentIndex: 0
   words: []
+  currentIndex: 0
+  correctAnswers: 
+  scorePanel: {fileID: 0}
+  scoreLabel: {fileID: 0}
+  stars: []
 --- !u!4 &2085472108
 Transform:
   m_ObjectHideFlags: 0
@@ -6306,8 +6343,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2106580444}
-        m_TargetAssemblyTypeName: AssessmentTrigger, Assembly-CSharp
+      - m_Target: {fileID: 1102086630}
+        m_TargetAssemblyTypeName: RegionHandler, Assembly-CSharp
         m_MethodName: ShowCategories
         m_Mode: 6
         m_Arguments:
