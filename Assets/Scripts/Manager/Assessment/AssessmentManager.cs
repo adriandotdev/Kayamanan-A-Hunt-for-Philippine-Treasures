@@ -114,9 +114,11 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
 
             scoreLabel.text = noOfCorrectAns + "/" + this.assessments.Length;
 
-            SetRegionScore(noOfCorrectAns);
+            this.SetRegionScore(noOfCorrectAns);
 
-            ShowStars(noOfCorrectAns);
+            this.ShowStars(noOfCorrectAns);
+
+            this.CheckIfNextRegionIsReadyToOpen();
 
             DataPersistenceManager.instance.SaveGame();
         }
@@ -178,26 +180,19 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
     public void ShowStars(int noOfCorrectAnswers)
     {
         int noOfStars = 0;
+        int passingScore = this.assessments.Length / 2 + 1;
 
         if (noOfCorrectAnswers == 0)
         {
             return;
         }
 
-        if (noOfCorrectAnswers == assessments.Length)
-        {
-            print("PERFECT");
+        if (noOfCorrectAnswers == this.assessments.Length)
             noOfStars = 3;
-        }
-        else if (noOfCorrectAnswers >= 6)
-        {
-            print("MEDIUM");
+        else if (noOfCorrectAnswers >= passingScore)
             noOfStars = 2;
-        }
-        else if (noOfCorrectAnswers < 6)
-        {
+        else if (noOfCorrectAnswers < passingScore)
             noOfStars = 1;
-        }
         
         for (int i = 0; i < noOfStars; i++)
         {
@@ -218,6 +213,30 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
                 }
             }
         }
+    }
+
+    public void CheckIfNextRegionIsReadyToOpen()
+    {
+        int regionNumber = 0;
+
+        foreach (RegionData regionData in this.playerData.regionsData)
+        {
+            if (regionData.regionName.ToUpper() == this.regionName.ToUpper())
+            {
+                regionNumber = regionData.regionNumber;
+
+                foreach (Category category in regionData.categories)
+                {
+                    if (category.noOfStars < 2)
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+        print("REGION IS OPEN: " + regionNumber);
+        this.playerData.regionsData[regionNumber].isOpen = true;
     }
 
     public void LoadScene ()

@@ -29,22 +29,25 @@ public class PlayerData
 
         this.regionsData.Add(
             new RegionData(
+                1,
                 true, 
                 "REGION 1", 
                 "It is more about Region 1", 
                 new Category[2] { new Category("National Heroes"), new Category("National Symbols")} ));
 
         this.regionsData.Add(new RegionData(
+            2,
             false, 
             "REGION 2", 
             "",
-            new Category[1] { new Category("National Festivals" )} ));
+            new Category[1] { new Category("National Games" )} ));
 
         this.regionsData.Add(new RegionData(
+            3,
             false,
             "REGION 3",
             "",
-            new Category[1] { new Category("National Heroes ") }));
+            new Category[1] { new Category("National Heroes") }));
         //this.regionsData.Add(new RegionData(false, "REGION 3", ""));
         //this.regionsData.Add(new RegionData(false, "REGION 4", ""));
         //this.regionsData.Add(new RegionData(false, "REGION 5", ""));
@@ -72,6 +75,7 @@ public class Notebook
 [System.Serializable]
 public class RegionData
 {
+    public int regionNumber;
     public bool isOpen;
     public string regionName;
     public string information;
@@ -80,8 +84,9 @@ public class RegionData
 
     public List<Category> categories;
 
-    public RegionData(bool isOpen, string regionName, string information, Category[] categories)
+    public RegionData(int regionNumber, bool isOpen, string regionName, string information, Category[] categories)
     {
+        this.regionNumber = regionNumber;
         this.isOpen = isOpen;
         this.regionName = regionName;
         this.information = information;

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour
+public class GameManager : MonoBehaviour, IDataPersistence
 {
     public static GameManager instance;
 
@@ -18,6 +18,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] public Button soundButton;
     [SerializeField] public Button quitButton;
     [SerializeField] public RectTransform volumePanel;
+
+    [Header("Player Data")]
+    public PlayerData playerData; 
 
     private void Awake()
     {
@@ -75,7 +78,11 @@ public class GameManager : MonoBehaviour
             playButton.onClick.AddListener(() => this.LoadScene("CharacterCreation") );
             optionsButton.onClick.AddListener(() => this.ShowOptionsPanel() );
             loadButton.onClick.AddListener(() => this.ShowSaveSlots(true) );
-            loadPlayerProfileBTN.onClick.AddListener(() => this.LoadScene("House"));
+            loadPlayerProfileBTN.onClick.AddListener(() => {
+                
+                if (DataPersistenceManager.instance.playerData != null && DataPersistenceManager.instance.playerData.id != null)
+                    this.LoadScene("House");
+             });
             closeSlotsPanelBTN.onClick.AddListener(() => this.ShowSaveSlots(false));
 
             // Hide the optionsPanel at first render
@@ -227,5 +234,20 @@ public class GameManager : MonoBehaviour
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void LoadPlayerData(PlayerData playerData)
+    {
+        this.playerData = playerData;
+    }
+
+    public void LoadSlotsData(Slots slots)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void SaveSlotsData(ref Slots slots)
+    {
+        throw new System.NotImplementedException();
     }
 }

@@ -206,6 +206,7 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
     {
         foreach (GameObject obj in this.buttons)
         {
+            obj.transform.GetChild(2).GetComponent<Button>().name = "Category Name BTN";
             obj.gameObject.SetActive(true);
         }
     }

@@ -1998,7 +1998,8 @@ MonoBehaviour:
     dunongPoints: 25
     remainingTime: 18000
     regionsData:
-    - isOpen: 1
+    - regionNumber: 0
+      isOpen: 1
       regionName: REGION 1
       information: It is more about Region 1
       currentScore: 0
@@ -2010,7 +2011,8 @@ MonoBehaviour:
       - categoryName: National Symbols
         highestScore: 0
         noOfStars: 0
-    - isOpen: 0
+    - regionNumber: 0
+      isOpen: 0
       regionName: REGION 2
       information: 
       currentScore: 0
@@ -3518,7 +3520,8 @@ MonoBehaviour:
     dunongPoints: 25
     remainingTime: 18000
     regionsData:
-    - isOpen: 1
+    - regionNumber: 1
+      isOpen: 1
       regionName: REGION 1
       information: It is more about Region 1
       currentScore: 0
@@ -3530,7 +3533,8 @@ MonoBehaviour:
       - categoryName: National Symbols
         highestScore: 0
         noOfStars: 0
-    - isOpen: 0
+    - regionNumber: 2
+      isOpen: 0
       regionName: REGION 2
       information: 
       currentScore: 0
@@ -3539,7 +3543,8 @@ MonoBehaviour:
       - categoryName: National Festivals
         highestScore: 0
         noOfStars: 0
-    - isOpen: 0
+    - regionNumber: 3
+      isOpen: 0
       regionName: REGION 3
       information: 
       currentScore: 0
@@ -5905,63 +5910,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 2051229333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8654a598a8a61fc4e92c0fd58daf10d0, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b991cdf70e85934da25c4e8c0d82acb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  regionsCanvasGroup: {fileID: 1811160745}
-  categoriesPanel: {fileID: 1983515580}
-  categoriesButtons:
-  - {fileID: 327945081}
-  - {fileID: 364631322}
-  - {fileID: 404793978}
-  - {fileID: 2087080303}
-  - {fileID: 1859635288}
-  heroes:
-  - question: Sino ang ating pambansang bayani?
-    word: Jose Rizal
-  - question: Sino ang Ama ng Katipunan?
-    word: Andres Bonifacio
-  - question: Ano ang dating tawag sa Luneta Park?
-    word: Bagumbayan
-  - question: Sino ang kapatid ni Juan Luna?
-    word: Antonio Luna
-  - question: 
-    word: 
-  - question: 
-    word: 
-  - question: 
-    word: 
-  symbols: []
-  myths: []
-  festivals: []
-  games: []
-  playerData:
-    id: 
-    name: 
-    dunongPoints: 25
-    remainingTime: 18000
-    regionsData:
-    - isOpen: 1
-      regionName: REGION 1
-      information: It is more about Region 1
-      currentScore: 0
-      highestScore: 0
-      categories:
-      - categoryName: National Heroes
-        highestScore: 0
-        noOfStars: 0
-      - categoryName: National Symbols
-        highestScore: 0
-        noOfStars: 0
-    - isOpen: 0
-      regionName: REGION 2
-      information: 
-      currentScore: 0
-      highestScore: 0
-      categories:
-      - categoryName: National Festivals
-        highestScore: 0
-        noOfStars: 0
+  sceneToLoad: Word Games
+  categoryName: 2
+  words:
+  - question: Nakakatakot na baby?
+    word: Tiyanak
+  - question: Nakakatakot na malaking tao?
+    word: Kapre
+  - question: Nakakatakot na putol ang katawan at may pakpak?
+    word: Manananggal
+  - question: Ikinakasal ito pag umuulan
+    word: Tikbalang
+  - question: Sinong iniwan?
+    word: Ako
 --- !u!114 &2051229336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6005,7 +5969,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2051229337}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1102086630}
+        m_TargetAssemblyTypeName: RegionHandler, Assembly-CSharp
+        m_MethodName: ShowCategories
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &2051229337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6207,6 +6183,45 @@ MonoBehaviour:
   scorePanel: {fileID: 0}
   scoreLabel: {fileID: 0}
   stars: []
+  playerData:
+    id: 
+    name: 
+    dunongPoints: 25
+    remainingTime: 18000
+    regionsData:
+    - regionNumber: 1
+      isOpen: 1
+      regionName: REGION 1
+      information: It is more about Region 1
+      currentScore: 0
+      highestScore: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+      - categoryName: National Symbols
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 2
+      isOpen: 0
+      regionName: REGION 2
+      information: 
+      currentScore: 0
+      highestScore: 0
+      categories:
+      - categoryName: National Festivals
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 3
+      isOpen: 0
+      regionName: REGION 3
+      information: 
+      currentScore: 0
+      highestScore: 0
+      categories:
+      - categoryName: 'National Heroes '
+        highestScore: 0
+        noOfStars: 0
 --- !u!4 &2085472108
 Transform:
   m_ObjectHideFlags: 0
@@ -6402,74 +6417,44 @@ MonoBehaviour:
   m_GameObject: {fileID: 2106580439}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2ed94d02dda9b340b7689a57f1e84ac, type: 3}
+  m_Script: {fileID: 11500000, guid: b9afdacb68613d3478825d0cfeefc825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  regionsCanvasGroup: {fileID: 1811160745}
-  categoriesPanel: {fileID: 1983515580}
-  categoriesButtons:
-  - {fileID: 327945081}
-  - {fileID: 364631322}
-  - {fileID: 404793978}
-  - {fileID: 2087080303}
-  - {fileID: 1859635288}
-  heroes: []
-  symbols: []
-  myths: []
-  festivals:
-  - question: Saan ginaganap ang Sinulog Festival?
-    correctAnswer: Cebu City
+  sceneToLoad: Assessment
+  categoryName: 4
+  assessments:
+  - question: Ano ang apelyido ni Eric?
+    correctAnswer: Sarmiento
     choices:
-    - Cebu City
-    - Bacolod City
-    - Manila City
-    - Bohol
-  - question: Ano ang festival na ginaganap sa Aklan?
-    correctAnswer: Ati-Atihan
+    - Opo
+    - Sarmiento
+    - Marcelo
+    - Suelo
+  - question: Ano ang apelyido ni Nads?
+    correctAnswer: Marcelo
     choices:
-    - Ati-Atihan
-    - Maskara
-    - Sinulog
-    - Panagbenga
-  - question: Anong festival ang ipinagdiriwang sa Baguio City?
-    correctAnswer: Panagbenga
+    - Marcelo
+    - Suelo
+    - Sarmiento
+    - Opo
+  - question: Ano ang apelyido ni RC?
+    correctAnswer: Suelo
     choices:
-    - Maskara
-    - Panagbenga
-    - Sinulog
-    - Kadayawan
-  - question: Saan iginaganap ang Pahiyas Festival?
-    correctAnswer: Lucban, Quezon
+    - Marcelo
+    - Suelo
+    - Sarmiento
+    - Opo
+  - question: Ano ang apelyido ni Lenard?
+    correctAnswer: Opo
     choices:
-    - Lucban, Quezon
-    - Bacolod
-    - Cebu
-    - Iloilo
-  games: []
-  playerData:
-    id: 
-    name: 
-    dunongPoints: 25
-    remainingTime: 18000
-    regionsData:
-    - isOpen: 1
-      regionName: REGION 1
-      information: It is more about Region 1
-      currentScore: 0
-      highestScore: 0
-      categories:
-      - categoryName: National Heroes
-        highestScore: 0
-        noOfStars: 0
-      - categoryName: National Symbols
-        highestScore: 0
-        noOfStars: 0
-    - isOpen: 0
-      regionName: REGION 2
-      information: 
-      currentScore: 0
-      highestScore: 0
-      categories:
-      - categoryName: National Festivals
-        highestScore: 0
-        noOfStars: 0
+    - Opo
+    - Suelo
+    - Marcelo
+    - Sarmiento
+  - question: Ano ang algorithm ang ginamit natin?
+    correctAnswer: Fisher-Yates
+    choices:
+    - Breadth-First Search
+    - Fisher-Yates
+    - Procedural Generation
+    - A* Algorithm

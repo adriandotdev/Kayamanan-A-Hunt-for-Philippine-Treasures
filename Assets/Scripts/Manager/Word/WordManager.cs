@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class WordManager : MonoBehaviour
+public class WordManager : MonoBehaviour, IDataPersistence
 {
     public static WordManager instance;
 
@@ -29,6 +29,9 @@ public class WordManager : MonoBehaviour
     public RectTransform scorePanel;
     public TMPro.TextMeshProUGUI scoreLabel;
     public GameObject[] stars;
+
+    [Header("Player Data")]
+    public PlayerData playerData;
 
     private void Awake()
     {
@@ -92,6 +95,97 @@ public class WordManager : MonoBehaviour
         this.words = words;
     }
 
+    public void SetRegionScore(int noOfCorrectAnswers)
+    {
+        // Get all the regions.
+        foreach (RegionData regionData in playerData.regionsData)
+        {
+            if (regionData.regionName == this.regionName.ToUpper())
+            {
+                foreach (Category category in regionData.categories)
+                {
+                    if (category.categoryName == this.categoryName)
+                    {
+                        if (noOfCorrectAnswers > category.highestScore)
+                        {
+                            category.highestScore = noOfCorrectAnswers;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    public void ShowStars(int noOfCorrectAnswers)
+    {
+        int noOfStars = 0;
+        int passingScore = this.words.Length / 2 + 1;
+
+        if (noOfCorrectAnswers == 0)
+        {
+            return;
+        }
+
+        if (noOfCorrectAnswers == this.words.Length)
+        {
+            print("PERFECT");
+            noOfStars = 3;
+        }
+        else if (noOfCorrectAnswers >= passingScore)
+        {
+            print("MEDIUM");
+            noOfStars = 2;
+        }
+        else if (noOfCorrectAnswers < passingScore)
+        {
+            noOfStars = 1;
+        }
+
+        for (int i = 0; i < noOfStars; i++)
+        {
+            this.stars[i].GetComponent<Image>().sprite = Resources.Load<Sprite>("UI and Fonts/UI Elements/UI ELEMENTS/Fill Star");
+        }
+
+        foreach (RegionData regionData in this.playerData.regionsData)
+        {
+            if (regionData.regionName.ToUpper() == this.regionName.ToUpper())
+            {
+                foreach (Category category in regionData.categories)
+                {
+                    if (category.categoryName.ToUpper() == this.categoryName.ToUpper())
+                    {
+                        if (category.noOfStars < noOfStars)
+                            category.noOfStars = noOfStars;
+                    }
+                }
+            }
+        }
+    }
+
+    public void CheckIfNextRegionIsReadyToOpen()
+    {
+        int regionNumber = 0;
+
+       foreach (RegionData regionData in this.playerData.regionsData)
+        {
+            if (regionData.regionName.ToUpper() == this.regionName.ToUpper())
+            {
+                regionNumber = regionData.regionNumber;
+
+                foreach (Category category in regionData.categories)
+                {
+                    if (category.noOfStars < 2)
+                    {
+                        return;
+                    }
+                }
+            }
+        }
+
+        print("REGION IS OPEN: " + regionNumber);
+        this.playerData.regionsData[regionNumber].isOpen = true;
+    }
+
     public void SetNextWord()
     {
         this.CheckAnswer();
@@ -99,7 +193,17 @@ public class WordManager : MonoBehaviour
 
         if (this.currentIndex >= this.words.Length)
         {
+            int noOfCorrectAnswers = this.CountCorrectAnswers();
+
             this.scorePanel.gameObject.SetActive(true);
+            this.scoreLabel.text = noOfCorrectAnswers + "/" + this.words.Length;
+
+            this.SetRegionScore(noOfCorrectAnswers);
+            this.ShowStars(noOfCorrectAnswers);
+            this.CheckIfNextRegionIsReadyToOpen();
+
+            DataPersistenceManager.instance.SaveGame();
+
             return;
         }
         else
@@ -118,18 +222,35 @@ public class WordManager : MonoBehaviour
         }
     }
 
+    public int CountCorrectAnswers()
+    {
+        int count = 0;
+
+        foreach (bool isCorrect in this.correctAnswers)
+        {
+            if (isCorrect) count++;
+        }
+
+        return count;
+    }
+
     public void CheckAnswer()
     {
+        // Get all the child buttons of the answered container.
         Transform buttons = this.wordContainer.transform;
-        string answer = "";
+        string answer = ""; // Variable for storing the content/text of each button.
 
+        // Traverse and concatenate the characters.
         foreach (Transform button in buttons)
         {
            answer += button.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text;
         }
 
+        /** Since some words have spaces, we need to replace all that spaces so that we can evaluate
+         if it is correct or not based on the 'answer' variable from all the concatenated characters from buttons. */
+        bool isCorrect = this.words[this.currentIndex].word.Replace(" ", "").ToUpper() == answer;
 
-        print(this.words[this.currentIndex].word + " : " + answer);
+        this.correctAnswers.Add(isCorrect);
     }
 
     public void SetWord()
@@ -137,31 +258,49 @@ public class WordManager : MonoBehaviour
         Word word = this.words[this.currentIndex];
         this.questionLabel.text = word.question;
 
+        /** <summary>
+         *  Converts the word to array of characters and shuffles it.
+         * </summary> */
         char[] shuffledWord = FisherYates.shuffle(word.word.ToCharArray());
 
         for (int i = 0; i < shuffledWord.Length; i++)
         {
-            Button btn = null;
+            Button btn = null; // A Button to instantiate in the shuffled container.
 
+            // We only tolerate the character that is not null.
             if (shuffledWord[i] != ' ')
             {
                 btn = Instantiate(letter, shuffledContainer, false);
-                Vector2 originalPos = btn.GetComponent<RectTransform>().anchoredPosition;
 
+                // Set the current character to the textmeshpro of the button.
                 btn.gameObject.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = shuffledWord[i].ToString().ToUpper();
 
+                // Add an event to the current button.
                 btn.onClick.AddListener(() =>
                 {
+                    /** 
+                     <summary>
+                        If the button is inside the word or answered container,
+                        it must go to the shuffled container again while if it is inside
+                        shuffled container, it must go to the answered / word container.
+                    </summary>
+                     */
                     if (btn.gameObject.transform.parent == wordContainer)
                     {
                         btn.gameObject.transform.SetParent(shuffledContainer);
-                        btn.GetComponent<RectTransform>().anchoredPosition = originalPos;
                     }
                     else
                     {
                         btn.gameObject.transform.SetParent(wordContainer);
                     }
 
+                    /** 
+                        <summary>
+                            Iif the child count of the shuffled container is 0, we
+                            need to show the confirm button to go to the next question
+                            or word.
+                        </summary>
+                     */
                     if (shuffledContainer.childCount == 0)
                     {
                         this.confirmButton.gameObject.SetActive(true);
@@ -173,6 +312,21 @@ public class WordManager : MonoBehaviour
                 });
             }
         }
+    }
+
+    public void LoadPlayerData(PlayerData playerData)
+    {
+        this.playerData = playerData;
+    }
+
+    public void LoadSlotsData(Slots slots)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void SaveSlotsData(ref Slots slots)
+    {
+        throw new System.NotImplementedException();
     }
 }
 
