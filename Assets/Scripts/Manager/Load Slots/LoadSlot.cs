@@ -30,16 +30,24 @@ public class LoadSlot : MonoBehaviour
             gameObject.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = playerData.name;
             gameObject.AddComponent<SlotScript>();
         }
+
+        //if (content.transform.childCount > 0)
+        //{
+        //    content.transform.GetChild(0).GetComponent<Button>().Select();
+
+        //    playerDataHandler = new PlayerDataHandler(slots.ids[0]);
+
+        //    PlayerData playerData = playerDataHandler.Load();
+
+        //    DataPersistenceManager.instance.playerData = playerData;
+        //}
+            
+         //gameObject.GetComponent<Button>().Select();
     }  
 }
 
-public class SlotScript : MonoBehaviour, IDeselectHandler
+public class SlotScript : MonoBehaviour
 {
-    public void OnDeselect(BaseEventData eventData)
-    {
-        
-    }
-
     private void OnDisable()
     {
         Destroy(gameObject);

@@ -80,7 +80,7 @@ public class WordManager : MonoBehaviour, IDataPersistence
 
             foreach (GameObject star in stars)
             {
-                star.GetComponent<Image>().sprite = Resources.Load<Sprite>("UI and Fonts/UI Elements/UI ELEMENTS/Empty Star");
+                star.GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Empty Star");
             }
 
             this.words = FisherYates.shuffle(this.words);
@@ -143,7 +143,7 @@ public class WordManager : MonoBehaviour, IDataPersistence
 
         for (int i = 0; i < noOfStars; i++)
         {
-            this.stars[i].GetComponent<Image>().sprite = Resources.Load<Sprite>("UI and Fonts/UI Elements/UI ELEMENTS/Fill Star");
+            this.stars[i].GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Fill Star");
         }
 
         foreach (RegionData regionData in this.playerData.regionsData)
@@ -166,7 +166,7 @@ public class WordManager : MonoBehaviour, IDataPersistence
     {
         int regionNumber = 0;
 
-       foreach (RegionData regionData in this.playerData.regionsData)
+        foreach (RegionData regionData in this.playerData.regionsData)
         {
             if (regionData.regionName.ToUpper() == this.regionName.ToUpper())
             {
@@ -182,8 +182,11 @@ public class WordManager : MonoBehaviour, IDataPersistence
             }
         }
 
-        print("REGION IS OPEN: " + regionNumber);
-        this.playerData.regionsData[regionNumber].isOpen = true;
+        if (regionNumber < this.playerData.regionsData.Count)
+        {
+            print("REGION IS OPEN: " + regionNumber);
+            this.playerData.regionsData[regionNumber].isOpen = true;
+        }
     }
 
     public void SetNextWord()

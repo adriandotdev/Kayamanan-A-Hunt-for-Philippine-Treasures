@@ -8,19 +8,34 @@ using UnityEngine.UI;
  */
 public class ConfirmButton : MonoBehaviour
 {
+    [Header("Confirm Panel")]
     [SerializeField] private RectTransform confirmPanel;
+
+    [Header("Character Creation Canvas Group")]
+    public CanvasGroup characterCreationGroup;
+
+    private void Start()
+    {
+        // Get the canvas group to disable the back button and confirm button.
+        this.characterCreationGroup = GameObject.Find("Character Creation Canvas Group").GetComponent<CanvasGroup>();
+    }
 
     public void ShowConfirmation(bool confirm)
     {
         if (confirm)
         {
-            confirmPanel.gameObject.SetActive(confirm);
+            this.confirmPanel.gameObject.SetActive(confirm);
+            this.characterCreationGroup.interactable = false;
             LeanTween.scale(confirmPanel.gameObject, new Vector2(0.80713f, 0.80713f), .3f);
         }
         else
         {
             LeanTween.scale(confirmPanel.gameObject, Vector2.zero, .3f)
-                .setOnComplete(() => confirmPanel.gameObject.SetActive(false));
+                .setOnComplete(() => {
+
+                    confirmPanel.gameObject.SetActive(false);
+                    this.characterCreationGroup.interactable = true;
+                });
         }
     }
 

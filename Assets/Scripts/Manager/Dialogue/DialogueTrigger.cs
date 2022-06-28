@@ -30,14 +30,14 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            actorName.gameObject.SetActive(false);
+            //actorName.gameObject.SetActive(false);
             talkButton.gameObject.SetActive(true);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        actorName.gameObject.SetActive(true);
+        //actorName.gameObject.SetActive(true);
         talkButton.gameObject.SetActive(false);
 
     }

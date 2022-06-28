@@ -14,10 +14,18 @@ public class GameManager : MonoBehaviour, IDataPersistence
     [Header("Settings UI")]
     [SerializeField] private RectTransform optionsPanel;
 
+    [Header("Profile Confirmation Panel")]
+    [SerializeField] private RectTransform profileConfirmationPanel;
+
     [Header("Volume UI")]
     [SerializeField] public Button soundButton;
     [SerializeField] public Button quitButton;
     [SerializeField] public RectTransform volumePanel;
+
+    [Header("Home Canvas Group")]
+    public CanvasGroup menuCanvasGroup;
+    public CanvasGroup homeCanvasGroup;
+    public CanvasGroup characterCreationGroup;
 
     [Header("Player Data")]
     public PlayerData playerData; 
@@ -53,11 +61,13 @@ public class GameManager : MonoBehaviour, IDataPersistence
         SceneManager.sceneLoaded -= OnAssessmentSceneLoaded;
     }
 
+    // For Menu Scene
     public void OnMenuSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Menu"))
         {
             // GET ALL THE NECESSARY COMPONENTS.
+            this.menuCanvasGroup = GameObject.Find("Menu Canvas Group").GetComponent<CanvasGroup>();
             this.saveSlotsPanel = GameObject.Find("Save Slots Panel").GetComponent<RectTransform>();
             this.optionsPanel = GameObject.Find("Options Panel").GetComponent<RectTransform>();
             this.soundButton = GameObject.Find("Sounds").GetComponent<Button>();
@@ -79,28 +89,48 @@ public class GameManager : MonoBehaviour, IDataPersistence
             optionsButton.onClick.AddListener(() => this.ShowOptionsPanel() );
             loadButton.onClick.AddListener(() => this.ShowSaveSlots(true) );
             loadPlayerProfileBTN.onClick.AddListener(() => {
-                
+
                 if (DataPersistenceManager.instance.playerData != null && DataPersistenceManager.instance.playerData.id != null)
-                    this.LoadScene("House");
-             });
+                    this.ShowConfirmProfilePanel(true);
+                //if (DataPersistenceManager.instance.playerData != null && DataPersistenceManager.instance.playerData.id != null)
+                //    this.LoadScene("House");
+            });
             closeSlotsPanelBTN.onClick.AddListener(() => this.ShowSaveSlots(false));
+
+            // Get the UI Elements for profile confirmation.
+            this.profileConfirmationPanel = GameObject.Find("Load Profile Confirmation").GetComponent<RectTransform>();
+            Button confirmProfile = GameObject.Find("Confirm Profile").GetComponent<Button>();
+            Button cancelProfile = GameObject.Find("Cancel Profile").GetComponent<Button>();
+            confirmProfile.onClick.AddListener(() => {
+                this.LoadScene("House");
+            });
+            cancelProfile.onClick.AddListener(() => this.ShowConfirmProfilePanel(false));
 
             // Hide the optionsPanel at first render
             this.optionsPanel.gameObject.SetActive(false);
             this.volumePanel.gameObject.SetActive(false);
+            this.saveSlotsPanel.gameObject.SetActive(false);
+            this.profileConfirmationPanel.gameObject.SetActive(false);
         }
     }
+
+    // For CharacterCreation Scene
     public void OnCharacterCreationSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("CharacterCreation"))
         {
+            // Get the 'Back' and 'Confirm' button and Add Events to it.
             Button backButton = GameObject.Find("Back Button").GetComponent<Button>();
             Button confirm = GameObject.Find("Confirm").GetComponent<Button>();
 
             backButton.onClick.AddListener(() => this.LoadScene("Menu") );
             confirm.onClick.AddListener(() => this.LoadScene("House") );
+
+            
         }
     }
+
+    // For House Scene
     public void OnHouseSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House"))
@@ -108,6 +138,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
             print("FROM GAME MANAGER : HOUSE SCENE LOADED");
 
             // GET ALL THE NECESSARY COMPONENTS.
+            this.homeCanvasGroup = GameObject.Find("House Canvas Group").GetComponent<CanvasGroup>();
             this.optionsPanel = GameObject.Find("Options Panel").GetComponent<RectTransform>();
             this.soundButton = GameObject.Find("Sounds").GetComponent<Button>();
             this.quitButton = GameObject.Find("Quit").GetComponent<Button>();
@@ -129,15 +160,24 @@ public class GameManager : MonoBehaviour, IDataPersistence
             this.volumePanel.gameObject.SetActive(false);
         }
     }
+
+    // For Philippine Map Scene
     public void OnPhilippineMapSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Philippine Map"))
         {
             print("FROM GAME MANAGER : Philippine Map Loaded");
+
+            // Get the Go To House button and add an event to it.
             Button goToHouseButton = GameObject.Find("Go to House").GetComponent<Button>();
             goToHouseButton.onClick.AddListener(() => this.LoadScene("House"));
+
+            // Set the value of dunong points of a current player.
+            GameObject.Find("DP Value").GetComponent<TMPro.TextMeshProUGUI>().text = this.playerData.dunongPoints.ToString();
         }
     }
+
+    // For Assessment Scene
     public void OnAssessmentSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Assessment")
@@ -170,11 +210,38 @@ public class GameManager : MonoBehaviour, IDataPersistence
         SceneManager.LoadScene(sceneName);
     }
 
+    public void DisableCanvasGroup()
+    {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Menu"))
+        {
+            this.menuCanvasGroup.interactable = false;
+        }
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House"))
+        {
+            this.homeCanvasGroup.interactable = false;
+            this.homeCanvasGroup.blocksRaycasts = false;
+        }
+    }
+
+    public void EnableCanvasGroup()
+    {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Menu"))
+        {
+            this.menuCanvasGroup.interactable = true;
+        }
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House"))
+        {
+            this.homeCanvasGroup.interactable = true;
+            this.homeCanvasGroup.blocksRaycasts = true;
+        }
+    }
+
     public void ShowSaveSlots(bool active)
     {
         if (active)
         {
             saveSlotsPanel.gameObject.SetActive(true);
+            this.DisableCanvasGroup();
             LeanTween.scale(saveSlotsPanel.gameObject, new Vector2(0.6188691f, 0.6188691f), .3f);
         }
         else
@@ -183,14 +250,37 @@ public class GameManager : MonoBehaviour, IDataPersistence
                 .setOnComplete(() =>
                 {
                     saveSlotsPanel.gameObject.SetActive(false);
+                    this.EnableCanvasGroup();
                     DataPersistenceManager.instance.playerData = null;
+                });
+        }
+    }
+
+    public void ShowConfirmProfilePanel(bool show)
+    {
+        if (show)
+        {
+            this.profileConfirmationPanel.gameObject.SetActive(show);
+            this.saveSlotsPanel.GetComponent<CanvasGroup>().interactable = false;
+            this.saveSlotsPanel.GetComponent<CanvasGroup>().alpha = 0.5f;
+            LeanTween.scale(this.profileConfirmationPanel.gameObject, new Vector2(1, 1), .3f);
+        }
+        else
+        {
+            this.saveSlotsPanel.GetComponent<CanvasGroup>().interactable = true;
+            this.saveSlotsPanel.GetComponent<CanvasGroup>().alpha = 1f;
+            LeanTween.scale(this.profileConfirmationPanel.gameObject, new Vector2(0, 0), .3f)
+                .setOnComplete(() =>
+                {
+                    this.profileConfirmationPanel.gameObject.SetActive(false);
                 });
         }
     }
 
     public void ShowOptionsPanel()
     {
-        optionsPanel.gameObject.SetActive(true);
+        this.optionsPanel.gameObject.SetActive(true);
+        this.DisableCanvasGroup();
         LeanTween.scale(optionsPanel.gameObject, new Vector3(1.586f, 1.586f, 1.586f), .3f)
             .setEase(LeanTweenType.easeInCubic);
     }
@@ -204,6 +294,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
             .setEase(LeanTweenType.easeInCubic)
             .setOnComplete(() => {
                 optionsPanel.gameObject.SetActive(false);
+                this.EnableCanvasGroup();
             });
         }
         else

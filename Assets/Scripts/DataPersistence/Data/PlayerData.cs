@@ -47,7 +47,7 @@ public class PlayerData
             false,
             "REGION 3",
             "",
-            new Category[1] { new Category("National Heroes") }));
+            new Category[1] { new Category("Philippine Myths") }));
         //this.regionsData.Add(new RegionData(false, "REGION 3", ""));
         //this.regionsData.Add(new RegionData(false, "REGION 4", ""));
         //this.regionsData.Add(new RegionData(false, "REGION 5", ""));

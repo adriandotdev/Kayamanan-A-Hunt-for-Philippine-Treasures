@@ -9,8 +9,8 @@ public class PlayerInfoManager : MonoBehaviour, IDataPersistence
     public static PlayerInfoManager instance;
     public PlayerData playerData;
 
-    [Header("UI")] // Textfield from Character Creation
-    [SerializeField] private TMPro.TMP_InputField inputField;
+    [Header("UI")] 
+    [SerializeField] private TMPro.TMP_InputField inputField; // Textfield from Character Creation scene.
     [SerializeField] private Button button;
 
     public void LoadPlayerData(PlayerData playerData)

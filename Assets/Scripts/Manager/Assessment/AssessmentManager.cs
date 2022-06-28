@@ -71,7 +71,7 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
             scorePanel.gameObject.SetActive(false);
             foreach (GameObject star in stars)
             {
-                star.GetComponent<Image>().sprite = Resources.Load<Sprite>("UI and Fonts/UI Elements/UI ELEMENTS/Empty Star");
+                star.GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Empty Star");
             }
             choices = GameObject.FindGameObjectsWithTag("Choices");
 
@@ -196,7 +196,7 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
         
         for (int i = 0; i < noOfStars; i++)
         {
-            this.stars[i].GetComponent<Image>().sprite = Resources.Load<Sprite>("UI and Fonts/UI Elements/UI ELEMENTS/Fill Star");
+            this.stars[i].GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Fill Star");
         }
         
         foreach(RegionData regionData in this.playerData.regionsData)

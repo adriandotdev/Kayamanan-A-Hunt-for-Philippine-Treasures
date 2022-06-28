@@ -2045,8 +2045,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 495.81, y: -11}
-  m_SizeDelta: {x: 343.3, y: 77.46}
+  m_AnchoredPosition: {x: 504.39, y: -11}
+  m_SizeDelta: {x: 407.5, y: 77.46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1512285041
 MonoBehaviour:
@@ -2658,7 +2658,6 @@ MonoBehaviour:
   letter: {fileID: 4827882262850510168, guid: 2b5a9fba3e8b50143a3e4757fda99a8b, type: 3}
   regionName: 
   categoryName: 
-  currentIndex: 0
   words:
   - question: Sino ang ating pambansang bayani?
     word: Jose Rizal
@@ -2666,6 +2665,50 @@ MonoBehaviour:
     word: Calamba
   - question: Sino ka?
     word: Nads
+  currentIndex: 0
+  correctAnswers: 
+  scorePanel: {fileID: 0}
+  scoreLabel: {fileID: 0}
+  stars: []
+  playerData:
+    id: 
+    name: 
+    dunongPoints: 25
+    remainingTime: 18000
+    regionsData:
+    - regionNumber: 1
+      isOpen: 1
+      regionName: REGION 1
+      information: It is more about Region 1
+      currentScore: 0
+      highestScore: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+      - categoryName: National Symbols
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 2
+      isOpen: 0
+      regionName: REGION 2
+      information: 
+      currentScore: 0
+      highestScore: 0
+      categories:
+      - categoryName: National Games
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 3
+      isOpen: 0
+      regionName: REGION 3
+      information: 
+      currentScore: 0
+      highestScore: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
 --- !u!4 &1996581987
 Transform:
   m_ObjectHideFlags: 0

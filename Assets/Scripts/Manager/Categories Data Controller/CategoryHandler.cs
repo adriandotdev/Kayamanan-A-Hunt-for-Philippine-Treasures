@@ -32,7 +32,7 @@ public class CategoryHandler : MonoBehaviour
                         for (int i = 0; i < category.noOfStars; i++)
                         {
                             categoryButton.transform.GetChild(0).transform.GetChild(i).GetComponent<SpriteRenderer>().sprite 
-                                = Resources.Load<Sprite>("UI and Fonts/UI Elements/UI ELEMENTS/Fill Star");
+                                = Resources.Load<Sprite>("UI ELEMENTS/Fill Star");
                         }
                         print(category.categoryName + " has " + category.noOfStars + " stars.");
                     }

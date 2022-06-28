@@ -59,10 +59,10 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
                 buttons[0].transform.GetChild(2).GetComponent<Button>().name = "National Heroes";
                 buttons[0].transform.GetChild(2).GetComponent<Button>().onClick.AddListener(() =>
                 {
-                    //if (playerData.dunongPoints >= 5)
-                    //{
+                    if (playerData.dunongPoints >= 5)
+                    {
                         AddButtonEventForAssessment(setup);
-                    //}
+                    }
                 });
             }
             else if (setup.categoryName == AssessmentSetup.CategoryType.NATIONAL_SYMBOLS)
@@ -70,10 +70,10 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
                 buttons[1].transform.GetChild(2).GetComponent<Button>().name = "National Symbols";
                 buttons[1].transform.GetChild(2).GetComponent<Button>().onClick.AddListener(() =>
                 {
-                    //if (playerData.dunongPoints >= 5)
-                    //{
-                    AddButtonEventForAssessment(setup);
-                    //}
+                    if (playerData.dunongPoints >= 5)
+                    {
+                        AddButtonEventForAssessment(setup);
+                    }
                 });
             }
             else if (setup.categoryName == AssessmentSetup.CategoryType.PHILIPPINE_MYTHS)
@@ -81,10 +81,10 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
                 buttons[2].transform.GetChild(2).GetComponent<Button>().name = "Philippine Myths";
                 buttons[2].transform.GetChild(2).GetComponent<Button>().onClick.AddListener(() =>
                 {
-                    //if (playerData.dunongPoints >= 5)
-                    //{
-                    AddButtonEventForAssessment(setup);
-                    //}
+                    if (playerData.dunongPoints >= 5)
+                    {
+                        AddButtonEventForAssessment(setup);
+                    }
                 });
             }
             else if (setup.categoryName == AssessmentSetup.CategoryType.NATIONAL_FESTIVALS)
@@ -92,10 +92,10 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
                 buttons[3].transform.GetChild(2).GetComponent<Button>().name = "National Festivals";
                 buttons[3].transform.GetChild(2).GetComponent<Button>().onClick.AddListener(() =>
                 {
-                    //if (playerData.dunongPoints >= 5)
-                    //{
-                    AddButtonEventForAssessment(setup);
-                    //}
+                    if (playerData.dunongPoints >= 5)
+                    {
+                        AddButtonEventForAssessment(setup);
+                    }
                 });
             }
             else if (setup.categoryName == AssessmentSetup.CategoryType.NATIONAL_GAMES)
@@ -103,16 +103,17 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
                 buttons[4].transform.GetChild(2).GetComponent<Button>().name = "National Games";
                 buttons[4].transform.GetChild(2).GetComponent<Button>().onClick.AddListener(() =>
                 {
-                    //if (playerData.dunongPoints >= 5)
-                    //{
-                    AddButtonEventForAssessment(setup);
-                    //}
+                    if (playerData.dunongPoints >= 5)
+                    {
+                        AddButtonEventForAssessment(setup);
+                    }
                 });
             }
             
         }
     }
 
+    // Get 
     public void GetAllWordGames()
     {
         WordSetup[] wordGamesSetups = EventSystem.current.currentSelectedGameObject.GetComponents<WordSetup>();
@@ -135,10 +136,10 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
                 buttons[1].transform.GetChild(2).GetComponent<Button>().name = "National Symbols";
                 buttons[1].transform.GetChild(2).GetComponent<Button>().onClick.AddListener(() =>
                 {
-                    //if (playerData.dunongPoints >= 5)
-                    //{
+                    if (playerData.dunongPoints >= 5)
+                    {
                         AddButtonEventForWordGames(setup);
-                    //}
+                    }
                 });
             }
             else if (setup.categoryName == WordSetup.CategoryType.PHILIPPINE_MYTHS)
@@ -146,10 +147,10 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
                 buttons[2].transform.GetChild(2).GetComponent<Button>().name = "Philippine Myths";
                 buttons[2].transform.GetChild(2).GetComponent<Button>().onClick.AddListener(() =>
                 {
-                    //if (playerData.dunongPoints >= 5)
-                    //{
-                    AddButtonEventForWordGames(setup);
-                    //}
+                    if (playerData.dunongPoints >= 5)
+                    {
+                        AddButtonEventForWordGames(setup);
+                    }
                 });
             }
             else if (setup.categoryName == WordSetup.CategoryType.NATIONAL_FESTIVALS)
@@ -157,10 +158,10 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
                 buttons[3].transform.GetChild(2).GetComponent<Button>().name = "National Festivals";
                 buttons[3].transform.GetChild(2).GetComponent<Button>().onClick.AddListener(() =>
                 {
-                    //if (playerData.dunongPoints >= 5)
-                    //{
-                    AddButtonEventForWordGames(setup);
-                    //}
+                    if (playerData.dunongPoints >= 5)
+                    {
+                        AddButtonEventForWordGames(setup);
+                    }
                 });
             }
             else if (setup.categoryName == WordSetup.CategoryType.NATIONAL_GAMES)
@@ -168,10 +169,10 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
                 buttons[4].transform.GetChild(2).GetComponent<Button>().name = "National Games";
                 buttons[4].transform.GetChild(2).GetComponent<Button>().onClick.AddListener(() =>
                 {
-                    //if (playerData.dunongPoints >= 5)
-                    //{
-                    AddButtonEventForWordGames(setup);
-                    //}
+                    if (playerData.dunongPoints >= 5)
+                    {
+                        AddButtonEventForWordGames(setup);
+                    }
                 });
             }
         }
@@ -195,6 +196,7 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
     {
         foreach (GameObject obj in this.buttons)
         {
+            // If the name of the gameobject is equal to 'Category Name BTN' then it means that it is not available to current region.
             if (obj.transform.GetChild(2).GetComponent<Button>().name == "Category Name BTN")
             {
                 obj.gameObject.SetActive(false);
@@ -236,5 +238,12 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
     public void SaveSlotsData(ref Slots slots)
     {
         throw new System.NotImplementedException();
+    }
+
+    public void Test()
+    {
+        DataPersistenceManager.instance.playerData.dunongPoints = 25;
+        DataPersistenceManager.instance.SaveGame();
+        GameObject.Find("DP Value").GetComponent<TMPro.TextMeshProUGUI>().text = "25";
     }
 }

@@ -37,6 +37,7 @@ public class DataPersistenceManager : MonoBehaviour
         SceneManager.sceneLoaded += HouseSceneLoaded;
         SceneManager.sceneLoaded += PhilippineMapSceneLoaded;
         SceneManager.sceneLoaded += AssessmentSceneLoaded;
+        SceneManager.sceneLoaded += WordSceneLoaded;
     }
 
     private void OnDisable()
@@ -46,6 +47,7 @@ public class DataPersistenceManager : MonoBehaviour
         SceneManager.sceneLoaded -= HouseSceneLoaded;
         SceneManager.sceneLoaded -= PhilippineMapSceneLoaded;
         SceneManager.sceneLoaded -= AssessmentSceneLoaded;
+        SceneManager.sceneLoaded -= WordSceneLoaded;
     }
 
     /** All registered function to SceneManager delegates. */
@@ -71,7 +73,7 @@ public class DataPersistenceManager : MonoBehaviour
         }
     }
 
-    private void HouseSceneLoaded(Scene scene, LoadSceneMode mode)
+    private void HouseSceneLoaded(Scene scene, LoadSceneMode mode) 
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House"))
         {
@@ -89,9 +91,23 @@ public class DataPersistenceManager : MonoBehaviour
 
     private void AssessmentSceneLoaded(Scene scene, LoadSceneMode mode) 
     {
-        // Check if the loaded scene is 'Assessment' scene.
+        // Check if the loaded scene is 'Assessment' or 'Word Games' scene.
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Assessment"))
         {
+            print("FROM ASSESSMENT/WORD SCENE : DUNONG POINTS DEDUCTED");
+
+            this.playerData.dunongPoints -= 5;
+
+            this.SaveGame();
+        }
+    }
+
+    private void WordSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Word Games"))
+        {
+            print("FROM ASSESSMENT/WORD SCENE : DUNONG POINTS DEDUCTED");
+
             this.playerData.dunongPoints -= 5;
 
             this.SaveGame();

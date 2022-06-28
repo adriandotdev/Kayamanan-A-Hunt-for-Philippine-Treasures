@@ -149,18 +149,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 42664522}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 2106938578}
-  m_Father: {fileID: 1235647727}
-  m_RootOrder: 4
+  m_Father: {fileID: 1121248414}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 204, y: -157}
-  m_SizeDelta: {x: 260, y: 176}
+  m_AnchoredPosition: {x: -797.92566, y: 305.9179}
+  m_SizeDelta: {x: 245.52, y: 132.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &42664524
 MonoBehaviour:
@@ -238,7 +238,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eebf4bece419380468f44ce01670e3de, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5a76bcd8c789ca54bafa7077894b5a9b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -291,7 +291,8 @@ MonoBehaviour:
     dunongPoints: 25
     remainingTime: 18000
     regionsData:
-    - isOpen: 0
+    - regionNumber: 0
+      isOpen: 0
       regionName: 
       information: 
       currentScore: 0
@@ -424,11 +425,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saveSlotsPanel: {fileID: 0}
-  optionsPanelTitle: {fileID: 0}
   optionsPanel: {fileID: 0}
   soundButton: {fileID: 0}
   quitButton: {fileID: 0}
   volumePanel: {fileID: 0}
+  menuCanvasGroup: {fileID: 0}
+  homeCanvasGroup: {fileID: 0}
+  characterCreationGroup: {fileID: 0}
+  playerData:
+    id: 
+    name: 
+    dunongPoints: 25
+    remainingTime: 18000
+    regionsData:
+    - regionNumber: 1
+      isOpen: 1
+      regionName: REGION 1
+      information: It is more about Region 1
+      currentScore: 0
+      highestScore: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
+      - categoryName: National Symbols
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 2
+      isOpen: 0
+      regionName: REGION 2
+      information: 
+      currentScore: 0
+      highestScore: 0
+      categories:
+      - categoryName: National Games
+        highestScore: 0
+        noOfStars: 0
+    - regionNumber: 3
+      isOpen: 0
+      regionName: REGION 3
+      information: 
+      currentScore: 0
+      highestScore: 0
+      categories:
+      - categoryName: National Heroes
+        highestScore: 0
+        noOfStars: 0
 --- !u!1 &440965297
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,16 +627,16 @@ RectTransform:
   m_GameObject: {fileID: 755300555}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9445159, y: 0.9445159, z: 0.9445159}
+  m_LocalScale: {x: 0.94451576, y: 0.94451576, z: 0.94451576}
   m_Children:
   - {fileID: 1369633164}
-  m_Father: {fileID: 1235647727}
-  m_RootOrder: 3
+  m_Father: {fileID: 1121248414}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -177.99998}
-  m_SizeDelta: {x: 260, y: 176}
+  m_AnchoredPosition: {x: -9.01, y: -197.66}
+  m_SizeDelta: {x: 240.92, y: 134.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &755300557
 MonoBehaviour:
@@ -672,7 +714,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3c527af6febec744895b42c2ff0bfd16, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 77a73cc010be1f14d8da7c3030a28959, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -703,6 +745,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   confirmPanel: {fileID: 953002289}
+  characterCreationGroup: {fileID: 0}
 --- !u!1 &917948830
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,7 +934,7 @@ RectTransform:
   - {fileID: 1258673337}
   - {fileID: 1382411044}
   m_Father: {fileID: 1235647727}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1070,6 +1113,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1049216183}
   m_CullTransparentMesh: 1
+--- !u!1 &1121248413
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1121248414}
+  - component: {fileID: 1121248415}
+  m_Layer: 5
+  m_Name: Character Creation Canvas Group
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1121248414
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121248413}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 42664523}
+  - {fileID: 755300556}
+  m_Father: {fileID: 1235647727}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &1121248415
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121248413}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1216273130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,7 +1194,7 @@ RectTransform:
   - {fileID: 1744445360}
   - {fileID: 1510377034}
   m_Father: {fileID: 1235647727}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -1164,9 +1257,8 @@ RectTransform:
   m_Children:
   - {fileID: 2063680065}
   - {fileID: 1981754584}
+  - {fileID: 1121248414}
   - {fileID: 1216273131}
-  - {fileID: 755300556}
-  - {fileID: 42664523}
   - {fileID: 953002289}
   m_Father: {fileID: 1944839659}
   m_RootOrder: 1
@@ -1359,7 +1451,8 @@ MonoBehaviour:
     dunongPoints: 25
     remainingTime: 18000
     regionsData:
-    - isOpen: 0
+    - regionNumber: 0
+      isOpen: 0
       regionName: 
       information: 
       currentScore: 0

@@ -6,14 +6,35 @@ public class Character : MonoBehaviour, IDataPersistence
 { 
     [Header("UI")]
     public TMPro.TextMeshProUGUI characterNameText;
+
+    [Header("Joystick Controller")]
     public Joystick joystick;
 
+    [Header("Animator")]
     public Animator animator;
+
+    [Header("Speed")]
     public float speed = 4;
+
+    [Header("Virtual Camera")]
+    public Cinemachine.CinemachineVirtualCamera virtualCam;
+
+    [Header("Sprites")]
+    public Sprite up;
+    public Sprite down;
+
     Vector3 movement;
 
     // Player Data
     public PlayerData playerData;
+
+    private void Start()
+    {
+        print("CHARACTER CLASS STARTED");
+        this.joystick = GameObject.Find("Fixed Joystick").GetComponent<FixedJoystick>();
+        this.virtualCam = GameObject.Find("Virtual Cam").GetComponent<Cinemachine.CinemachineVirtualCamera>();
+        this.virtualCam.Follow = transform;
+    }
 
     // Update is called once per frame
     void FixedUpdate()
