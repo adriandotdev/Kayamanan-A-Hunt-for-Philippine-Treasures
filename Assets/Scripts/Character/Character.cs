@@ -30,7 +30,6 @@ public class Character : MonoBehaviour, IDataPersistence
 
     private void Start()
     {
-        print("CHARACTER CLASS STARTED");
         this.joystick = GameObject.Find("Fixed Joystick").GetComponent<FixedJoystick>();
         this.virtualCam = GameObject.Find("Virtual Cam").GetComponent<Cinemachine.CinemachineVirtualCamera>();
         this.virtualCam.Follow = transform;
@@ -57,6 +56,10 @@ public class Character : MonoBehaviour, IDataPersistence
         movement = new Vector3(horizontal, vertical) * speed * Time.deltaTime;
 
         transform.position += movement;
+
+        DataPersistenceManager.instance.playerData.xPos = transform.position.x;
+        DataPersistenceManager.instance.playerData.yPos = transform.position.y;
+        DataPersistenceManager.instance.SaveGame();
     }
 
     public void LoadPlayerData(PlayerData playerData)

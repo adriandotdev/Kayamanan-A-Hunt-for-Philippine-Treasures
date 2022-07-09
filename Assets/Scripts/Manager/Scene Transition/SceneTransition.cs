@@ -10,12 +10,15 @@ public class SceneTransition : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         if (collision.gameObject.CompareTag("Player"))
         {
+        
             // Check if not null 
             if (SceneTransitionManager.instance != null)
             {
                 SceneTransitionManager.instance.nameOfExit = this.nameOfExit;
+                SceneTransitionManager.instance.fromEnter = true;
             }
             SceneManager.LoadScene(this.sceneToLoad);
         }

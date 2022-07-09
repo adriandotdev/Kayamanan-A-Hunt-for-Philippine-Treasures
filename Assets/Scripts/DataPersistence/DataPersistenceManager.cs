@@ -16,6 +16,7 @@ public class DataPersistenceManager : MonoBehaviour
     public PlayerDataHandler playerDataHandler;
     public SlotsFileHandler slotsHandler;
     public GameObject confirmButton;
+    private TMPro.TMP_InputField inputField;
 
     private void Awake()
     {
@@ -32,6 +33,7 @@ public class DataPersistenceManager : MonoBehaviour
 
     private void OnEnable()
     {
+        print("Data Persistence On Enable");
         SceneManager.sceneLoaded += MenuSceneLoaded;
         SceneManager.sceneLoaded += CharacterCreationSceneLoaded;
         SceneManager.sceneLoaded += HouseSceneLoaded;
@@ -42,6 +44,7 @@ public class DataPersistenceManager : MonoBehaviour
 
     private void OnDisable()
     {
+        print("Data Persistence On Disable");
         SceneManager.sceneLoaded -= MenuSceneLoaded;
         SceneManager.sceneLoaded -= CharacterCreationSceneLoaded;
         SceneManager.sceneLoaded -= HouseSceneLoaded;
@@ -65,8 +68,9 @@ public class DataPersistenceManager : MonoBehaviour
         this.dataPersistenceObjects = FindAllDataPersistenceObjects();
 
         // If nag loaded na ang 'CharacterCreation' Scene
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("CharacterCreation"))
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("CharacterAndLoad"))
         {
+            this.inputField = GameObject.Find("Character Name").GetComponent<TMPro.TMP_InputField>();
             // Create o mag instantiate ng new data.
             this.playerData = new PlayerData();
             this.LoadGame(); // i-load sa lahat ng nag implement ng IDataPersistence na interface.
@@ -94,7 +98,7 @@ public class DataPersistenceManager : MonoBehaviour
         // Check if the loaded scene is 'Assessment' or 'Word Games' scene.
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Assessment"))
         {
-            print("FROM ASSESSMENT/WORD SCENE : DUNONG POINTS DEDUCTED");
+            print("FROM ASSESSMENT SCENE : DUNONG POINTS DEDUCTED");
 
             this.playerData.dunongPoints -= 5;
 
@@ -106,7 +110,7 @@ public class DataPersistenceManager : MonoBehaviour
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Word Games"))
         {
-            print("FROM ASSESSMENT/WORD SCENE : DUNONG POINTS DEDUCTED");
+            print("FROM WORD SCENE : DUNONG POINTS DEDUCTED");
 
             this.playerData.dunongPoints -= 5;
 
@@ -126,13 +130,15 @@ public class DataPersistenceManager : MonoBehaviour
         this.playerData.id = id; // Set the id to the playerData's id.
 
         this.slots = slotsHandler.Load();
+
         this.slots.ids.Add(id);
 
         slotsHandler.Save(this.slots);
 
-        PlayerInfoManager.instance.SavePlayerData();
+        //PlayerInfoManager.instance.SavePlayerData();
 
         this.SaveGame();
+        
     }
 
     public void LoadGame()
@@ -148,17 +154,17 @@ public class DataPersistenceManager : MonoBehaviour
     {
         if (this.playerData.id != null)
         {
-            playerDataHandler = new PlayerDataHandler(this.playerData.id);
+            this.playerDataHandler = new PlayerDataHandler(this.playerData.id);
 
-            playerDataHandler.Save(this.playerData);
+            this.playerDataHandler.Save(this.playerData);
+
+            this.playerDataHandler = null;
         }
     }
 
     public List<IDataPersistence> FindAllDataPersistenceObjects()
     {
         IEnumerable<IDataPersistence> dataPersistenceObjects = FindObjectsOfType<MonoBehaviour>().OfType<IDataPersistence>();
-
-        print(dataPersistenceObjects == null); // FOR TESTING
 
         return new List<IDataPersistence>(dataPersistenceObjects);
     }

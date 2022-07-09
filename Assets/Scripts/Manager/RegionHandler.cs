@@ -7,12 +7,21 @@ using UnityEngine.SceneManagement;
 
 public class RegionHandler : MonoBehaviour, IDataPersistence
 {
-    public static RegionHandler instance; 
+    public static RegionHandler instance;
 
+    [SerializeField] public CanvasGroup UICanvasGroup;
     [SerializeField] public CanvasGroup regionsCanvasGroup;
     [SerializeField] public RectTransform categoriesPanel;
     [SerializeField] public PlayerData playerData;
     [SerializeField] public GameObject[] buttons;
+
+    public float categoriesPanelScale;
+
+    private void Start()
+    {
+        this.categoriesPanelScale = 0.86f;
+        this.categoriesPanel.localScale = Vector2.zero;
+    }
 
     public void ShowCategories(bool show)
     {
@@ -31,15 +40,19 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
 
             if (show)
             {
-                regionsCanvasGroup.GetComponent<CanvasGroup>().blocksRaycasts = false;
+                this.UICanvasGroup.interactable = false;
+                this.regionsCanvasGroup.blocksRaycasts = false;
                 Camera.main.gameObject.GetComponent<PanZoom>().enabled = false;
                 categoriesPanel.gameObject.SetActive(show);
+                LeanTween.scale(this.categoriesPanel.gameObject, new Vector3(this.categoriesPanelScale, this.categoriesPanelScale, 1), .2f);
             }
             else
             {
-                regionsCanvasGroup.GetComponent<CanvasGroup>().blocksRaycasts = true;
+                this.UICanvasGroup.interactable = true;
+                this.regionsCanvasGroup.blocksRaycasts = true;
                 Camera.main.gameObject.GetComponent<PanZoom>().enabled = true;
-                categoriesPanel.gameObject.SetActive(false);
+                LeanTween.scale(this.categoriesPanel.gameObject, Vector2.zero, .2f)
+                    .setOnComplete(() => categoriesPanel.gameObject.SetActive(false));
             }
         }
         else

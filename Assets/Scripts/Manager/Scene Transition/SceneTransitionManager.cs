@@ -7,6 +7,7 @@ public class SceneTransitionManager : MonoBehaviour
 {
     public static SceneTransitionManager instance;
     public string nameOfExit;
+    public bool fromEnter = false;
 
     private void Awake()
     {
@@ -36,12 +37,36 @@ public class SceneTransitionManager : MonoBehaviour
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House"))
         {
-            print("FROM SCENE TRANSITION MANAGER : PLAYER HOUSE LOADED");
             this.nameOfExit = "Building";
 
-            Vector2 position = GameObject.Find(this.nameOfExit).transform.GetChild(0).position;
+            Vector2 position;
 
-            GameObject player = Instantiate(Resources.Load<GameObject>("Prefabs/Player"));
+            if (DataPersistenceManager.instance.playerData.isNewlyCreated)
+            {
+                DataPersistenceManager.instance.playerData.isNewlyCreated = false;
+                position = GameObject.Find(this.nameOfExit).transform.GetChild(0).position;
+            }
+            else
+            {
+                if (fromEnter)
+                {
+                    position = GameObject.Find(this.nameOfExit).transform.GetChild(0).position;
+                    fromEnter = false;
+                }
+                else
+                    position = new Vector2(DataPersistenceManager.instance.playerData.xPos, DataPersistenceManager.instance.playerData.yPos);
+            }
+
+            GameObject player = null;
+
+            if (DataPersistenceManager.instance.playerData.gender == "male")
+            {
+                player = Instantiate(Resources.Load<GameObject>("Prefabs/Player"));
+            }
+            else
+            {
+                player = Instantiate(Resources.Load<GameObject>("Prefabs/Female"));
+            }
             player.transform.position = new Vector2(position.x, position.y - .5f);
         }
     }
@@ -50,12 +75,29 @@ public class SceneTransitionManager : MonoBehaviour
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside"))
         {
-            // Get the 
-            Vector2 position = GameObject.Find(this.nameOfExit).transform.GetChild(0).position;
+            Vector2 position;
 
-            GameObject player = Instantiate(Resources.Load<GameObject>("Prefabs/Player"));
+            if (fromEnter)
+            {
+                position = GameObject.Find(this.nameOfExit).transform.GetChild(0).position;
+                fromEnter = false;
+            }
+            else
+                position = new Vector2(DataPersistenceManager.instance.playerData.xPos, DataPersistenceManager.instance.playerData.yPos);
+
+            GameObject player = null;
+
+            if (DataPersistenceManager.instance.playerData.gender == "male")
+            {
+                print("MALE FROM SceneTransitionManager");
+                player = Instantiate(Resources.Load<GameObject>("Prefabs/Player"));
+            }
+            else
+            {
+                print("FEMALE FROM SceneTransitionManager");
+                player = Instantiate(Resources.Load<GameObject>("Prefabs/Female"));
+            }
             player.transform.position = new Vector2(position.x, position.y - .5f);
-            player.GetComponent<SpriteRenderer>().sprite = player.GetComponent<Character>().up;
         }
     }
 }

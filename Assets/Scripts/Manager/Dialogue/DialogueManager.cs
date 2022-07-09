@@ -137,7 +137,6 @@ public class DialogueManager : MonoBehaviour
         currentStory.ChooseChoiceIndex(choiceIndex);
 
         this.ContinueDialogue();
-        print(currentStory.currentText);
     }
 }
 

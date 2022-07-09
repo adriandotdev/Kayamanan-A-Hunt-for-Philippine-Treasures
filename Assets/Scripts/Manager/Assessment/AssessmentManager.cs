@@ -57,18 +57,17 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Assessment"))
         {
-            Debug.Log("Assessment Scene Loaded");
+            this.currentIndex = 0; // reset the current index to '0'.
+            this.correctAnswers = new List<bool>(); // instantiate again the correctAnswers variable.
 
-            this.currentIndex = 0;
-            this.correctAnswers = new List<bool>();
-
-            questionLabel = GameObject.Find("Question").GetComponent<TMPro.TextMeshProUGUI>();
             questionsPanel = GameObject.Find("Layout").GetComponent<RectTransform>();
+            questionLabel = GameObject.Find("Question").GetComponent<TMPro.TextMeshProUGUI>();
             scorePanel = GameObject.Find("Score Panel").GetComponent<RectTransform>();
             scoreLabel = GameObject.Find("Score").GetComponent<TMPro.TextMeshProUGUI>();
             stars = GameObject.FindGameObjectsWithTag("Score Star");
 
             scorePanel.gameObject.SetActive(false);
+
             foreach (GameObject star in stars)
             {
                 star.GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Empty Star");
@@ -97,6 +96,7 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
             this.questionLabel.text = assessments[this.currentIndex].question.ToString();
             this.SetChoices();
         }
+        // If all the questions are loaded.
         else
         {
             questionsPanel.gameObject.SetActive(false); // Disable the question panel.
@@ -114,11 +114,13 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
 
             scoreLabel.text = noOfCorrectAns + "/" + this.assessments.Length;
 
-            this.SetRegionScore(noOfCorrectAns);
+            this.SetRegionHighscore(noOfCorrectAns);
 
-            this.ShowStars(noOfCorrectAns);
+            this.SetNumberOfStars(noOfCorrectAns);
 
             this.CheckIfNextRegionIsReadyToOpen();
+
+            this.CollectAllRewards();
 
             DataPersistenceManager.instance.SaveGame();
         }
@@ -156,9 +158,10 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
         }
     }
 
-    public void SetRegionScore(int noOfCorrectAnswers)
+    // This function updates the highest score of the specified region.
+    public void SetRegionHighscore(int noOfCorrectAnswers)
     {
-        // Get all the regions.
+        // Get all the regions from 'playerData.regionsData'.
         foreach(RegionData regionData in playerData.regionsData)
         {
             if (regionData.regionName == this.regionName.ToUpper())
@@ -177,16 +180,30 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
         }
     }
 
-    public void ShowStars(int noOfCorrectAnswers)
+    // This function will set the number of stars in a specified category of a current region.
+    public void SetNumberOfStars(int noOfCorrectAnswers)
     {
         int noOfStars = 0;
+
+        /** 
+         <summary>
+            The passing score is computed by
+            dividing the number of assessment items
+            by 2 and adding 1.
+        </summary>
+         */
         int passingScore = this.assessments.Length / 2 + 1;
 
+        // If the result of assessment is 0, then the number of stars will remain.
         if (noOfCorrectAnswers == 0)
         {
             return;
         }
 
+        /** 
+         * Evaluate the number of stars that the 
+            player will get based on assessment's result.
+         */
         if (noOfCorrectAnswers == this.assessments.Length)
             noOfStars = 3;
         else if (noOfCorrectAnswers >= passingScore)
@@ -194,6 +211,7 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
         else if (noOfCorrectAnswers < passingScore)
             noOfStars = 1;
         
+        // Load the fill star asset from the 'Resources' folder.
         for (int i = 0; i < noOfStars; i++)
         {
             this.stars[i].GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Fill Star");
@@ -215,6 +233,7 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
         }
     }
 
+    // This function determines if the next region is going to be opened.
     public void CheckIfNextRegionIsReadyToOpen()
     {
         int regionNumber = 0;
@@ -235,8 +254,37 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
             }
         }
 
-        print("REGION IS OPEN: " + regionNumber);
         this.playerData.regionsData[regionNumber].isOpen = true;
+    }
+
+    public bool AllCategoriesCompleted()
+    {
+        foreach (RegionData regionData in this.playerData.regionsData)
+        {
+            if (regionData.regionName.ToUpper() == this.regionName.ToUpper())
+            {
+                foreach (Category category in regionData.categories)
+                {
+                    if (category.noOfStars < 3)
+                        return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public void CollectAllRewards()
+    {
+        if (AllCategoriesCompleted() != true)
+            return;
+
+        foreach (Collectible collectible in playerData.notebook.collectibles)
+        {
+            if (collectible.regionName.ToUpper() == this.regionName.ToUpper())
+            {
+                collectible.isCollected = true;
+            }
+        }
     }
 
     public void LoadScene ()

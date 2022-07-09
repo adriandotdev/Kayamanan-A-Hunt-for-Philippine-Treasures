@@ -286,6 +286,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerData:
+    notebook:
+      collectibles:
+      - imagePath: Collectibles/C1
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: Region 1
+      - imagePath: Collectibles/C2
+        isCollected: 0
+        categoryName: National Symbols
+        regionName: Region 1
+      - imagePath: Collectibles/C3
+        isCollected: 0
+        categoryName: National Symbols
+        regionName: Region 2
+      - imagePath: Collectibles/C4
+        isCollected: 0
+        categoryName: National Symbols
+        regionName: Region 3
     id: 
     name: 
     dunongPoints: 25
@@ -426,6 +444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   saveSlotsPanel: {fileID: 0}
   optionsPanel: {fileID: 0}
+  profileConfirmationPanel: {fileID: 0}
   soundButton: {fileID: 0}
   quitButton: {fileID: 0}
   volumePanel: {fileID: 0}
@@ -433,6 +452,24 @@ MonoBehaviour:
   homeCanvasGroup: {fileID: 0}
   characterCreationGroup: {fileID: 0}
   playerData:
+    notebook:
+      collectibles:
+      - imagePath: Collectibles/C1
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: Region 1
+      - imagePath: Collectibles/C2
+        isCollected: 0
+        categoryName: National Symbols
+        regionName: Region 1
+      - imagePath: Collectibles/C3
+        isCollected: 0
+        categoryName: National Symbols
+        regionName: Region 2
+      - imagePath: Collectibles/C4
+        isCollected: 0
+        categoryName: National Symbols
+        regionName: Region 3
     id: 
     name: 
     dunongPoints: 25
@@ -746,6 +783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   confirmPanel: {fileID: 953002289}
   characterCreationGroup: {fileID: 0}
+  inputField: {fileID: 0}
 --- !u!1 &917948830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1446,6 +1484,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerData:
+    notebook:
+      collectibles:
+      - imagePath: Collectibles/C1
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: Region 1
+      - imagePath: Collectibles/C2
+        isCollected: 0
+        categoryName: National Symbols
+        regionName: Region 1
+      - imagePath: Collectibles/C3
+        isCollected: 0
+        categoryName: National Symbols
+        regionName: Region 2
+      - imagePath: Collectibles/C4
+        isCollected: 0
+        categoryName: National Symbols
+        regionName: Region 3
     id: 
     name: 
     dunongPoints: 25

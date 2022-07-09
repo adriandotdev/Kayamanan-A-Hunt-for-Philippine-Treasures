@@ -189,6 +189,36 @@ public class WordManager : MonoBehaviour, IDataPersistence
         }
     }
 
+    public bool AllCategoriesCompleted()
+    {
+        foreach (RegionData regionData in this.playerData.regionsData)
+        {
+            if (regionData.regionName.ToUpper() == this.regionName.ToUpper())
+            {
+                foreach (Category category in regionData.categories)
+                {
+                    if (category.noOfStars < 3)
+                        return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public void CollectAllRewards()
+    {
+        if (AllCategoriesCompleted() != true)
+            return;
+
+        foreach (Collectible collectible in playerData.notebook.collectibles)
+        {
+            if (collectible.regionName.ToUpper() == this.regionName.ToUpper())
+            {
+                collectible.isCollected = true;
+            }
+        }
+    }
+
     public void SetNextWord()
     {
         this.CheckAnswer();
@@ -204,6 +234,7 @@ public class WordManager : MonoBehaviour, IDataPersistence
             this.SetRegionScore(noOfCorrectAnswers);
             this.ShowStars(noOfCorrectAnswers);
             this.CheckIfNextRegionIsReadyToOpen();
+            this.CollectAllRewards();
 
             DataPersistenceManager.instance.SaveGame();
 
@@ -299,7 +330,7 @@ public class WordManager : MonoBehaviour, IDataPersistence
 
                     /** 
                         <summary>
-                            Iif the child count of the shuffled container is 0, we
+                            If the child count of the shuffled container is 0, we
                             need to show the confirm button to go to the next question
                             or word.
                         </summary>

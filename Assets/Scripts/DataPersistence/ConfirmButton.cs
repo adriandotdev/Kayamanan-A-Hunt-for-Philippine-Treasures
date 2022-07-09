@@ -14,15 +14,18 @@ public class ConfirmButton : MonoBehaviour
     [Header("Character Creation Canvas Group")]
     public CanvasGroup characterCreationGroup;
 
+    public TMPro.TMP_InputField inputField;
+
     private void Start()
     {
         // Get the canvas group to disable the back button and confirm button.
         this.characterCreationGroup = GameObject.Find("Character Creation Canvas Group").GetComponent<CanvasGroup>();
+        this.inputField = GameObject.Find("Character Name").GetComponent<TMPro.TMP_InputField>();
     }
 
     public void ShowConfirmation(bool confirm)
     {
-        if (confirm)
+        if (confirm && this.inputField.text.Length != 0)
         {
             this.confirmPanel.gameObject.SetActive(confirm);
             this.characterCreationGroup.interactable = false;

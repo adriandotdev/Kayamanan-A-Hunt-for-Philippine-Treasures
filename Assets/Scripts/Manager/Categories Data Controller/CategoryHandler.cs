@@ -34,7 +34,6 @@ public class CategoryHandler : MonoBehaviour
                             categoryButton.transform.GetChild(0).transform.GetChild(i).GetComponent<SpriteRenderer>().sprite 
                                 = Resources.Load<Sprite>("UI ELEMENTS/Fill Star");
                         }
-                        print(category.categoryName + " has " + category.noOfStars + " stars.");
                     }
                 }
             }

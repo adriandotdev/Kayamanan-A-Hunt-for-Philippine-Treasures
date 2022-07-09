@@ -6,26 +6,34 @@ using System.Linq;
 [System.Serializable]
 public class PlayerData
 {
+    public bool isNewlyCreated;
     public string id;
     public string name;
+    public string gender;
     public int dunongPoints;
     public int remainingTime;
-    public struct PlayerPosition
-    {
-        float x;
-        float y;
-        float z;
-    }
+
+    public string sceneToLoad;
+    public float xPos;
+    public float yPos;
+
+    public Notebook notebook;
 
     public List<RegionData> regionsData;
 
     public PlayerData()
     {
+        this.isNewlyCreated = true;
         this.id = null;
         this.name = null;
+        this.gender = "male";
         this.dunongPoints = 25;
         this.remainingTime = 18000;
+        this.sceneToLoad = "House";
+        this.xPos = 0;
+        this.yPos = 0;
         this.regionsData = new List<RegionData>();
+        this.notebook = new Notebook();
 
         this.regionsData.Add(
             new RegionData(
@@ -48,28 +56,55 @@ public class PlayerData
             "REGION 3",
             "",
             new Category[1] { new Category("Philippine Myths") }));
-        //this.regionsData.Add(new RegionData(false, "REGION 3", ""));
-        //this.regionsData.Add(new RegionData(false, "REGION 4", ""));
-        //this.regionsData.Add(new RegionData(false, "REGION 5", ""));
-        //this.regionsData.Add(new RegionData(false, "REGION 6", ""));
-        //this.regionsData.Add(new RegionData(false, "REGION 7", ""));
-        //this.regionsData.Add(new RegionData(false, "REGION 8", ""));
-        //this.regionsData.Add(new RegionData(false, "REGION 9", ""));
-        //this.regionsData.Add(new RegionData(false, "REGION 10", ""));
-        //this.regionsData.Add(new RegionData(false, "REGION 11", ""));
-        //this.regionsData.Add(new RegionData(false, "REGION 12", ""));
-        //this.regionsData.Add(new RegionData(false, "REGION 13", ""));
-        //this.regionsData.Add(new RegionData(false, "REGION 14", ""));
-        //this.regionsData.Add(new RegionData(false, "REGION 15", ""));
-        //this.regionsData.Add(new RegionData(false, "REGION 16", ""));
-        //this.regionsData.Add(new RegionData(false, "REGION 17", ""));
+    }
+
+    public void Copy(PlayerData playerData)
+    {
+        this.id = playerData.id;
+        this.name = playerData.name;
+        this.gender = playerData.gender;
+        this.dunongPoints = playerData.dunongPoints;
+        this.remainingTime = playerData.remainingTime;
+        this.regionsData = playerData.regionsData;
+        this.notebook = playerData.notebook;
     }
 }
 
 [System.Serializable]
 public class Notebook
 {
+    public List<Collectible> collectibles;
+    private string NATIONAL_HEROES = "National Heroes";
+    private string NATIONAL_SYMBOLS = "National Symbols";
+    private string NATIONAL_GAMES = "National Games";
+    private string NATIONAL_FESTIVALS = "National Festivals";
+    private string PHILIPPINE_MYTH = "Philippine Myth";
+    public Notebook()
+    {
+        this.collectibles = new List<Collectible>();
 
+        this.collectibles.Add(new Collectible("Collectibles/C1", this.NATIONAL_HEROES, "Region 1"));
+        this.collectibles.Add(new Collectible("Collectibles/C2", this.NATIONAL_SYMBOLS, "Region 1"));
+        this.collectibles.Add(new Collectible("Collectibles/C3", this.NATIONAL_SYMBOLS, "Region 2"));
+        this.collectibles.Add(new Collectible("Collectibles/C4", this.NATIONAL_SYMBOLS, "Region 3"));
+    }
+}
+
+[System.Serializable]
+public class Collectible
+{
+    public string imagePath;
+    public bool isCollected;
+    public string categoryName;
+    public string regionName;
+
+    public Collectible(string imagePath, string categoryName, string regionName)
+    {
+        this.imagePath = imagePath;
+        this.categoryName = categoryName;
+        this.regionName = regionName;
+        this.isCollected = false;
+    }
 }
 
 [System.Serializable]

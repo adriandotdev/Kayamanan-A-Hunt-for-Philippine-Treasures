@@ -12,7 +12,7 @@ public class PlayerInfoManager : MonoBehaviour, IDataPersistence
     [Header("UI")] 
     [SerializeField] private TMPro.TMP_InputField inputField; // Textfield from Character Creation scene.
     [SerializeField] private Button button;
-
+ 
     public void LoadPlayerData(PlayerData playerData)
     {
         Debug.Log("LOADED PLAYER DATA: PLAYER INFO MANAGER");
