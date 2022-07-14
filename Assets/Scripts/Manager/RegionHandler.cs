@@ -193,6 +193,7 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
 
     public void AddButtonEventForAssessment(AssessmentSetup setup)
     {
+        this.playerData.dunongPoints -= 5;
         AssessmentManager.instance.categoryName = EventSystem.current.currentSelectedGameObject.name.ToString();
         AssessmentManager.instance.StartAssessments(setup.assessments);
         SceneManager.LoadScene(setup.sceneToLoad);
@@ -200,6 +201,7 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
 
     public void AddButtonEventForWordGames(WordSetup setup)
     {
+        this.playerData.dunongPoints -= 5;
         WordManager.instance.categoryName = EventSystem.current.currentSelectedGameObject.name.ToString();
         WordManager.instance.StartWordGames(setup.words);
         SceneManager.LoadScene(setup.sceneToLoad);
@@ -221,6 +223,7 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
     {
         foreach (GameObject obj in this.buttons)
         {
+            obj.transform.GetChild(2).GetComponent<Button>().onClick.RemoveAllListeners();
             obj.transform.GetChild(2).GetComponent<Button>().name = "Category Name BTN";
             obj.gameObject.SetActive(true);
         }

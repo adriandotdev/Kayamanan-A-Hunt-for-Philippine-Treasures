@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour, IDataPersistence
 {
     public static GameManager instance;
 
-    [Header("Save Panel")]
-    [SerializeField] private RectTransform saveSlotsPanel;
+    //[Header("Save Panel")]
+    //[SerializeField] private RectTransform saveSlotsPanel;
 
     [Header("Settings UI")]
     [SerializeField] private RectTransform optionsPanel;
@@ -22,8 +22,8 @@ public class GameManager : MonoBehaviour, IDataPersistence
     [SerializeField] public Button quitButton;
     [SerializeField] public RectTransform volumePanel;
 
-    [Header("Home Canvas Group")]
-    public CanvasGroup menuCanvasGroup;
+    [Header("Canvas Groups")]
+    public CanvasGroup menuSceneCanvasGroup;
     public CanvasGroup homeCanvasGroup;
     public CanvasGroup characterCreationGroup;
 
@@ -48,21 +48,21 @@ public class GameManager : MonoBehaviour, IDataPersistence
     private void OnEnable()
     {
         SceneManager.sceneLoaded += OnMenuSceneLoaded;
-        SceneManager.sceneLoaded += OnCharacterCreationSceneLoaded;
+        SceneManager.sceneLoaded += OnCharacterAndLoadSceneLoaded;
         SceneManager.sceneLoaded += OnHouseSceneLoaded;
         SceneManager.sceneLoaded += OnOutsideSceneLoaded;
         SceneManager.sceneLoaded += OnPhilippineMapSceneLoaded;
-        SceneManager.sceneLoaded += OnAssessmentSceneLoaded;
+        SceneManager.sceneLoaded += OnAssessmentAndWordGamesSceneLoaded;
     }
 
     private void OnDisable()
     {
         SceneManager.sceneLoaded -= OnMenuSceneLoaded;
-        SceneManager.sceneLoaded -= OnCharacterCreationSceneLoaded;
+        SceneManager.sceneLoaded -= OnCharacterAndLoadSceneLoaded;
         SceneManager.sceneLoaded -= OnHouseSceneLoaded;
         SceneManager.sceneLoaded -= OnOutsideSceneLoaded;
         SceneManager.sceneLoaded -= OnPhilippineMapSceneLoaded;
-        SceneManager.sceneLoaded -= OnAssessmentSceneLoaded;
+        SceneManager.sceneLoaded -= OnAssessmentAndWordGamesSceneLoaded;
     }
 
     // For Menu Scene
@@ -71,59 +71,36 @@ public class GameManager : MonoBehaviour, IDataPersistence
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Menu"))
         {
             // GET ALL THE NECESSARY COMPONENTS.
-            this.menuCanvasGroup = GameObject.Find("Menu Canvas Group").GetComponent<CanvasGroup>();
-            this.saveSlotsPanel = GameObject.Find("Save Slots Panel").GetComponent<RectTransform>();
+            this.menuSceneCanvasGroup = GameObject.Find("Menu Canvas Group").GetComponent<CanvasGroup>();
             this.optionsPanel = GameObject.Find("Options Panel").GetComponent<RectTransform>();
             this.soundButton = GameObject.Find("Sounds").GetComponent<Button>();
             this.quitButton = GameObject.Find("Quit").GetComponent<Button>();
             this.volumePanel = GameObject.Find("Volume Panel").GetComponent<RectTransform>();
-            Button closeButton = GameObject.Find("Close Button").GetComponent<Button>();
 
+            Button optionsPanelCloseBtn = GameObject.Find("Options Panel Close Button").GetComponent<Button>();
             Button playButton = GameObject.Find("Play Button").GetComponent<Button>();
             Button optionsButton = GameObject.Find("Options Button").GetComponent<Button>();
-            Button loadButton = GameObject.Find("Load Button").GetComponent<Button>();
-            Button loadPlayerProfileBTN = GameObject.Find("Load Player Profile Button").GetComponent<Button>();
-            Button closeSlotsPanelBTN = GameObject.Find("Close Slots Panel Button").GetComponent<Button>();
-  
-            this.soundButton.onClick.AddListener(() => this.ShowVolume());
+
+            print(optionsButton.onClick.GetPersistentEventCount());
+            this.soundButton.onClick.AddListener(() => this.ShowVolumeUI());
             this.quitButton.onClick.AddListener(() => this.Quit());
 
-            closeButton.onClick.AddListener(() => this.Close());
+            optionsPanelCloseBtn.onClick.AddListener(() => this.CloseOptionPanel());
             playButton.onClick.AddListener(() => {
 
                 this.LoadScene("CharacterAndLoad");
                 //TransitionLoader.instance.StartAnimation("CharacterAndLoad");
             });
             optionsButton.onClick.AddListener(() => this.ShowOptionsPanel() );
-            loadButton.onClick.AddListener(() => this.ShowSaveSlots(true) );
-            loadPlayerProfileBTN.onClick.AddListener(() => {
-
-                if (DataPersistenceManager.instance.playerData != null && DataPersistenceManager.instance.playerData.id != null)
-                    this.ShowConfirmProfilePanel(true);
-                //if (DataPersistenceManager.instance.playerData != null && DataPersistenceManager.instance.playerData.id != null)
-                //    this.LoadScene("House");
-            });
-            closeSlotsPanelBTN.onClick.AddListener(() => this.ShowSaveSlots(false));
-
-            // Get the UI Elements for profile confirmation.
-            this.profileConfirmationPanel = GameObject.Find("Load Profile Confirmation").GetComponent<RectTransform>();
-            Button confirmProfile = GameObject.Find("Confirm Profile").GetComponent<Button>();
-            Button cancelProfile = GameObject.Find("Cancel Profile").GetComponent<Button>();
-            confirmProfile.onClick.AddListener(() => {
-                this.LoadScene("House");
-            });
-            cancelProfile.onClick.AddListener(() => this.ShowConfirmProfilePanel(false));
 
             // Hide the optionsPanel at first render
             this.optionsPanel.gameObject.SetActive(false);
             this.volumePanel.gameObject.SetActive(false);
-            this.saveSlotsPanel.gameObject.SetActive(false);
-            this.profileConfirmationPanel.gameObject.SetActive(false);
         }
     }
 
     // For CharacterAndLoad Scene
-    public void OnCharacterCreationSceneLoaded(Scene scene, LoadSceneMode mode)
+    public void OnCharacterAndLoadSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("CharacterAndLoad"))
         {
@@ -132,32 +109,6 @@ public class GameManager : MonoBehaviour, IDataPersistence
             backButton.onClick.AddListener(() => SceneManager.LoadScene("Menu"));
             //backButton.onClick.AddListener(() => TransitionLoader.instance.StartAnimation("Menu"));
         }
-    }
-
-    public void SetUpHouseOrOutsideSceneButtons()
-    {
-        // GET ALL THE NECESSARY COMPONENTS.
-        GameObject.Find("Character Name").GetComponent<TMPro.TextMeshProUGUI>().text = DataPersistenceManager.instance.playerData.name;
-        this.homeCanvasGroup = GameObject.Find("House Canvas Group").GetComponent<CanvasGroup>();
-        this.optionsPanel = GameObject.Find("Options Panel").GetComponent<RectTransform>();
-        this.soundButton = GameObject.Find("Sounds").GetComponent<Button>();
-        this.quitButton = GameObject.Find("Quit").GetComponent<Button>();
-        this.volumePanel = GameObject.Find("Volume Panel").GetComponent<RectTransform>();
-        Button closeButton = GameObject.Find("Close Button").GetComponent<Button>();
-
-        this.soundButton.onClick.AddListener(() => this.ShowVolume());
-        closeButton.onClick.AddListener(() => this.Close());
-
-        this.quitButton.onClick.AddListener(() => this.LoadScene("Menu"));
-        Button showMapButton = GameObject.Find("Show Map").GetComponent<Button>();
-        showMapButton.onClick.AddListener(() => this.LoadScene("Philippine Map"));
-
-        Button optionsButton = GameObject.Find("Options Button").GetComponent<Button>();
-        optionsButton.onClick.AddListener(() => this.ShowOptionsPanel());
-
-        // Hide the optionsPanel at first render
-        this.optionsPanel.gameObject.SetActive(false);
-        this.volumePanel.gameObject.SetActive(false);
     }
 
     // For House Scene
@@ -171,6 +122,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         }
     }
 
+    // For Outside Scene
     public void OnOutsideSceneLoaded( Scene scene, LoadSceneMode mode )
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside") )
@@ -195,8 +147,18 @@ public class GameManager : MonoBehaviour, IDataPersistence
         }
     }
 
-    // For Assessment Scene
-    public void OnAssessmentSceneLoaded(Scene scene, LoadSceneMode mode)
+    /**
+     * <summary>
+     *  This is the registered function for Assessment and Word Games scene.
+     *  
+     *  Since ang dalawang scene na iyon ay may parehas na replay and exit button.
+     *  Pinagsama ko na lang sila sa isang function na ito.
+     *  
+     *  Also, to know kung anong scene ang iloload, magbabase ang iloload na scene
+     *  sa current na active na scene.
+     * </summary>
+     */
+    public void OnAssessmentAndWordGamesSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Assessment")
             || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Word Games"))
@@ -223,29 +185,51 @@ public class GameManager : MonoBehaviour, IDataPersistence
         }
     }
 
+    /**
+     * <summary>
+     *  Ang function na ito ay isesetup ang common UI
+     *  sa house and outside scene.
+     *  
+     *  Example ay ang mga optionsPanel, soundButton, volumePanel etc.
+     * </summary>
+     */
+    public void SetUpHouseOrOutsideSceneButtons()
+    {
+        // GET ALL THE NECESSARY COMPONENTS.
+        GameObject.Find("Character Name").GetComponent<TMPro.TextMeshProUGUI>().text = DataPersistenceManager.instance.playerData.name;
+        this.homeCanvasGroup = GameObject.Find("House Canvas Group").GetComponent<CanvasGroup>();
+        this.optionsPanel = GameObject.Find("Options Panel").GetComponent<RectTransform>();
+        this.soundButton = GameObject.Find("Sounds").GetComponent<Button>();
+        this.quitButton = GameObject.Find("Quit").GetComponent<Button>();
+        this.volumePanel = GameObject.Find("Volume Panel").GetComponent<RectTransform>();
+        Button closeButton = GameObject.Find("Close Button").GetComponent<Button>();
+
+        this.soundButton.onClick.AddListener(() => this.ShowVolumeUI());
+        closeButton.onClick.AddListener(() => this.CloseOptionPanel());
+
+        this.quitButton.onClick.AddListener(() => this.LoadScene("Menu"));
+        Button showMapButton = GameObject.Find("Show Map").GetComponent<Button>();
+        showMapButton.onClick.AddListener(() => this.LoadScene("Philippine Map"));
+
+        Button optionsButton = GameObject.Find("Options Button").GetComponent<Button>();
+        optionsButton.onClick.AddListener(() => this.ShowOptionsPanel());
+
+        // Hide the optionsPanel at first render
+        this.optionsPanel.gameObject.SetActive(false);
+        this.volumePanel.gameObject.SetActive(false);
+    }
+
     public void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
     }
 
-    public void DisableCanvasGroup()
-    {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Menu"))
-        {
-            this.menuCanvasGroup.interactable = false;
-        }
-        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House"))
-        {
-            this.homeCanvasGroup.interactable = false;
-            this.homeCanvasGroup.blocksRaycasts = false;
-        }
-    }
 
-    public void EnableCanvasGroup()
+    public void EnableCanvasGroupWhenOptionPanelIsClosed()
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Menu"))
         {
-            this.menuCanvasGroup.interactable = true;
+            this.menuSceneCanvasGroup.interactable = true;
         }
         else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House"))
         {
@@ -254,57 +238,31 @@ public class GameManager : MonoBehaviour, IDataPersistence
         }
     }
 
-    public void ShowSaveSlots(bool active)
+
+    public void DisableCanvasGroupWhenOptionPanelIsOpen()
     {
-        if (active)
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Menu"))
         {
-            saveSlotsPanel.gameObject.SetActive(true);
-            this.DisableCanvasGroup();
-            LeanTween.scale(saveSlotsPanel.gameObject, new Vector2(0.6188691f, 0.6188691f), .3f);
+            this.menuSceneCanvasGroup.interactable = false;
         }
-        else
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House"))
         {
-            LeanTween.scale(saveSlotsPanel.gameObject, new Vector2(0, 0), .3f)
-                .setOnComplete(() =>
-                {
-                    saveSlotsPanel.gameObject.SetActive(false);
-                    this.EnableCanvasGroup();
-                    DataPersistenceManager.instance.playerData = null;
-                });
+            this.homeCanvasGroup.interactable = false;
+            this.homeCanvasGroup.blocksRaycasts = false;
         }
     }
 
-    public void ShowConfirmProfilePanel(bool show)
-    {
-        if (show)
-        {
-            this.profileConfirmationPanel.gameObject.SetActive(show);
-            this.saveSlotsPanel.GetComponent<CanvasGroup>().interactable = false;
-            this.saveSlotsPanel.GetComponent<CanvasGroup>().alpha = 0.5f;
-            LeanTween.scale(this.profileConfirmationPanel.gameObject, new Vector2(1, 1), .2f);
-        }
-        else
-        {
-            this.saveSlotsPanel.GetComponent<CanvasGroup>().interactable = true;
-            this.saveSlotsPanel.GetComponent<CanvasGroup>().alpha = 1f;
-            LeanTween.scale(this.profileConfirmationPanel.gameObject, new Vector2(0, 0), .2f)
-                .setOnComplete(() =>
-                {
-                    this.profileConfirmationPanel.gameObject.SetActive(false);
-                });
-        }
-    }
-
+    
     public void ShowOptionsPanel()
     {
         this.optionsPanel.gameObject.SetActive(true);
-        this.DisableCanvasGroup();
+        this.DisableCanvasGroupWhenOptionPanelIsOpen();
         LeanTween.scale(optionsPanel.gameObject, new Vector3(1.586f, 1.586f, 1.586f), .2f)
             .setEase(LeanTweenType.easeInCubic);
     }
 
     // Function for closing the options panel.
-    public void Close()
+    public void CloseOptionPanel()
     {
         if (soundButton.gameObject.activeInHierarchy)
         {
@@ -312,21 +270,28 @@ public class GameManager : MonoBehaviour, IDataPersistence
             .setEase(LeanTweenType.easeInCubic)
             .setOnComplete(() => {
                 optionsPanel.gameObject.SetActive(false);
-                this.EnableCanvasGroup();
+                this.EnableCanvasGroupWhenOptionPanelIsClosed();
             });
         }
         else
         {
-            CloseVolume();
+            CloseVolumeUI();
         }
     }
 
     // Function for showing the volume.
-    public void ShowVolume()
+    public void ShowVolumeUI()
     {
         soundButton.gameObject.SetActive(false);
         quitButton.gameObject.SetActive(false);
         volumePanel.gameObject.SetActive(true);
+    }
+
+    public void CloseVolumeUI()
+    {
+        soundButton.gameObject.SetActive(true);
+        quitButton.gameObject.SetActive(true);
+        volumePanel.gameObject.SetActive(false);
     }
 
     public void UnloadScene()
@@ -334,12 +299,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         SceneManager.LoadScene("Philippine Map");
     }
 
-    public void CloseVolume()
-    {
-        soundButton.gameObject.SetActive(true);
-        quitButton.gameObject.SetActive(true);
-        volumePanel.gameObject.SetActive(false);
-    }
+ 
     public void Quit()
     {
         Application.Quit();

@@ -10,10 +10,8 @@ public class SceneTransition : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && SceneTransitionManager.instance.fromEnter == false)
         {
-        
             // Check if not null 
             if (SceneTransitionManager.instance != null)
             {

@@ -382,7 +382,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -32, y: -200}
+  m_AnchoredPosition: {x: -40, y: 324}
   m_SizeDelta: {x: 1323, y: 473}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &74532958
@@ -849,7 +849,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Character
+  m_text: New Profile
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
   m_sharedMaterial: {fileID: -5432314662704744868, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
@@ -992,7 +992,7 @@ MonoBehaviour:
   m_Padding:
     m_Left: 30
     m_Right: 15
-    m_Top: 15
+    m_Top: 90
     m_Bottom: 15
   m_ChildAlignment: 4
   m_Spacing: 15
@@ -1116,7 +1116,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18.62, y: 37}
+  m_AnchoredPosition: {x: -18.62, y: 62}
   m_SizeDelta: {x: 1017.4, y: 566.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &271496911
@@ -1201,25 +1201,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   content: {fileID: 181629256}
   saveSlot: {fileID: 8526068798244289518, guid: 6807236c9128441428f93751846756bc, type: 3}
-  confirmationPanel: {fileID: 1825687633}
-  confirm: {fileID: 2111274311}
-  cancel: {fileID: 899851015}
   UICanvasGroup: {fileID: 2054921516}
+  createCharacterPanelCanvasGroup: {fileID: 1672492624}
+  confirmationPanel: {fileID: 1825687633}
   confirmationMessage: {fileID: 2092393820}
   profileNameLabel: {fileID: 1529713813}
+  btnConfirm: {fileID: 2111274311}
+  btnCancel: {fileID: 899851015}
   deletePanel: {fileID: 1359039475}
   lblMainMessage: {fileID: 1507573751}
   lblProfile: {fileID: 125387844}
   btnDelete: {fileID: 2118675067}
   btnCancelDelete: {fileID: 1130381300}
-  createCharacterPanelCanvasGroup: {fileID: 1672492624}
   createCharacterPanel: {fileID: 1672492621}
-  create: {fileID: 1051441029}
-  checkButtonCharCreationPanel: {fileID: 1250492659}
-  closeCharCreationPanel: {fileID: 2044772372}
-  characterName: {fileID: 932464567}
-  male: {fileID: 1430133257}
-  female: {fileID: 1744513132}
+  btnCharacterName: {fileID: 932464567}
+  btnMale: {fileID: 1430133257}
+  btnFemale: {fileID: 1744513132}
+  btnCheckButtonCharCreationPanel: {fileID: 1250492659}
+  btnCloseCharCreationPanel: {fileID: 2044772372}
+  btnCreateNewProfile: {fileID: 1051441029}
   playerData:
     isNewlyCreated: 1
     id: 
@@ -2109,7 +2109,7 @@ GameObject:
   - component: {fileID: 932464568}
   - component: {fileID: 932464567}
   m_Layer: 5
-  m_Name: Character Name
+  m_Name: Character Name TXT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2430,7 +2430,7 @@ GameObject:
   - component: {fileID: 1051441030}
   - component: {fileID: 1051441029}
   m_Layer: 5
-  m_Name: Create
+  m_Name: Create New Prof BTN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2453,7 +2453,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20, y: -406}
+  m_AnchoredPosition: {x: -20, y: -347}
   m_SizeDelta: {x: 1075.74, y: 484.94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1051441029
@@ -3207,7 +3207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.70358664, g: 0.73468953, b: 0.9150943, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3404,7 +3404,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10, y: 38}
+  m_AnchoredPosition: {x: -10, y: 65}
   m_SizeDelta: {x: 853.82996, y: 543.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1359039476
@@ -4243,114 +4243,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529713811}
   m_CullTransparentMesh: 1
---- !u!1 &1567832658
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1567832660}
-  - component: {fileID: 1567832659}
-  m_Layer: 0
-  m_Name: DPM
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1567832659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1567832658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49c5d0bb1b77b254dadaba3788c72cc3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerData:
-    isNewlyCreated: 1
-    id: 
-    name: 
-    gender: 
-    dunongPoints: 25
-    remainingTime: 18000
-    sceneToLoad: House
-    xPos: 0
-    yPos: 0
-    notebook:
-      collectibles:
-      - imagePath: Collectibles/C1
-        isCollected: 0
-        categoryName: National Heroes
-        regionName: Region 1
-      - imagePath: Collectibles/C2
-        isCollected: 0
-        categoryName: National Symbols
-        regionName: Region 1
-      - imagePath: Collectibles/C3
-        isCollected: 0
-        categoryName: National Symbols
-        regionName: Region 2
-      - imagePath: Collectibles/C4
-        isCollected: 0
-        categoryName: National Symbols
-        regionName: Region 3
-    regionsData:
-    - regionNumber: 1
-      isOpen: 1
-      regionName: REGION 1
-      information: It is more about Region 1
-      currentScore: 0
-      highestScore: 0
-      categories:
-      - categoryName: National Heroes
-        highestScore: 0
-        noOfStars: 0
-      - categoryName: National Symbols
-        highestScore: 0
-        noOfStars: 0
-    - regionNumber: 2
-      isOpen: 0
-      regionName: REGION 2
-      information: 
-      currentScore: 0
-      highestScore: 0
-      categories:
-      - categoryName: National Games
-        highestScore: 0
-        noOfStars: 0
-    - regionNumber: 3
-      isOpen: 0
-      regionName: REGION 3
-      information: 
-      currentScore: 0
-      highestScore: 0
-      categories:
-      - categoryName: Philippine Myths
-        highestScore: 0
-        noOfStars: 0
-  slots:
-    ids: []
-  confirmButton: {fileID: 0}
---- !u!4 &1567832660
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1567832658}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1672492620
 GameObject:
   m_ObjectHideFlags: 0
@@ -5028,7 +4920,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10, y: 34}
+  m_AnchoredPosition: {x: -10, y: 61}
   m_SizeDelta: {x: 853.82996, y: 543.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1825687634
@@ -5598,7 +5490,7 @@ GameObject:
   - component: {fileID: 2118675068}
   - component: {fileID: 2118675067}
   m_Layer: 5
-  m_Name: Confirm
+  m_Name: Delete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -106,10 +106,33 @@ MonoBehaviour:
   up: {fileID: 7915713974106191918, guid: 84d4727d711bf184b90aac3691ab37bf, type: 3}
   down: {fileID: 7351329100123977731, guid: 84d4727d711bf184b90aac3691ab37bf, type: 3}
   playerData:
+    isNewlyCreated: 1
     id: 
     name: 
+    gender: male
     dunongPoints: 25
     remainingTime: 18000
+    sceneToLoad: House
+    xPos: 0
+    yPos: 0
+    notebook:
+      collectibles:
+      - imagePath: Collectibles/C1
+        isCollected: 0
+        categoryName: National Heroes
+        regionName: Region 1
+      - imagePath: Collectibles/C2
+        isCollected: 0
+        categoryName: National Symbols
+        regionName: Region 1
+      - imagePath: Collectibles/C3
+        isCollected: 0
+        categoryName: National Symbols
+        regionName: Region 2
+      - imagePath: Collectibles/C4
+        isCollected: 0
+        categoryName: National Symbols
+        regionName: Region 3
     regionsData:
     - regionNumber: 1
       isOpen: 1

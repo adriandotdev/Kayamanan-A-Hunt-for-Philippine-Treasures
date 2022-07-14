@@ -10,15 +10,18 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
 {
     [SerializeField] private GameObject content; // Container of all the slots.
     [SerializeField] private GameObject saveSlot; // Save slot to render or to put inside of 'content'.
-    [SerializeField] private RectTransform confirmationPanel;
-    [SerializeField] private Button confirm;
-    [SerializeField] private Button cancel;
+
+    [Header("Canvas Groups")]
     [SerializeField] private CanvasGroup UICanvasGroup;
+    [SerializeField] private CanvasGroup createCharacterPanelCanvasGroup;
 
     [Header("Confirmation Message UI")]
+    [SerializeField] private RectTransform confirmationPanel;
     [SerializeField] private TMPro.TextMeshProUGUI confirmationMessage;
     [SerializeField] private TMPro.TextMeshProUGUI profileNameLabel;
-
+    [SerializeField] private Button btnConfirm;
+    [SerializeField] private Button btnCancel;
+    
     [Header("Delete Confirmation UI")]
     [SerializeField] private RectTransform deletePanel;
     [SerializeField] private TMPro.TextMeshProUGUI lblMainMessage;
@@ -27,24 +30,62 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
     [SerializeField] private Button btnCancelDelete;
 
     [Header("Character Creation UI Elements")]
-    [SerializeField] private CanvasGroup createCharacterPanelCanvasGroup;
     [SerializeField] private RectTransform createCharacterPanel;
-    [SerializeField] private Button create;
-    [SerializeField] private Button checkButtonCharCreationPanel;
-    [SerializeField] private Button closeCharCreationPanel;
-    [SerializeField] private TMPro.TMP_InputField characterName;
-    [SerializeField] private Button male;
-    [SerializeField] private Button female;
+    [SerializeField] private TMPro.TMP_InputField btnCharacterName;
+    [SerializeField] private Button btnMale;
+    [SerializeField] private Button btnFemale;
+    [SerializeField] private Button btnCheckButtonCharCreationPanel;
+    [SerializeField] private Button btnCloseCharCreationPanel;
+    [SerializeField] private Button btnCreateNewProfile;
 
     private bool isCharacterPanelOpen = false;
 
     public PlayerData playerData;
 
-    private void SetupConfirmationPanelButtons()
+    private void Start()
     {
-        cancel.onClick.AddListener(() =>
+        this.createCharacterPanel.localScale = Vector2.zero;
+        this.confirmationPanel.localScale = Vector2.zero;
+        this.deletePanel.localScale = Vector2.zero;
+
+        this.AddEventsToConfirmationPanelButtons();
+        this.SetupCharacterPanelUIElements();
+        this.SetupDeleteConfirmation();
+
+        this.LoadAllSlots();
+    }
+
+    /**
+     * <summary>
+     *  Ang function na ito ay ang responsible
+     *  para sa event ng button sa loob ng confirmation panel.
+     *  
+     *  Since ang load button sa confirmation panel ay magbabase
+     *  depende kung ang player ay nag loload o nagcrecreate ng profile,
+     *  kaya hindi siya direct na inimplement ang event dito.
+     * </summary>
+     */
+    private void AddEventsToConfirmationPanelButtons()
+    {
+        /**
+         * <summary>
+         *  Ang btnCancel ay iche-check kung ang character panel ay 
+         *  open. 
+         *  
+         *  Kung ang character panel ay hindi open, it means na ang
+         *  confirmation panel ay triggered by load button from a 
+         *  specific slot.
+         *  
+         *  Kung ang character panel ay true, it means na triggered ito
+         *  by the check button sa character panel.
+         *  
+         *  So, i didisable natin ang interactable property ng canvas group
+         *  based doon sa condition.
+         * </summary> 
+         */
+        btnCancel.onClick.AddListener(() =>
         {
-            if (isCharacterPanelOpen != true)
+            if (this.isCharacterPanelOpen != true)
             {
                 this.UICanvasGroup.interactable = true;
                 DataPersistenceManager.instance.playerData = new PlayerData();
@@ -56,49 +97,101 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
         });
     }
 
+    /**
+     * <summary>
+     *  Ang function na ito ay ang magseset up
+     *  para sa event ng male at female button
+     *  sa loob ng character panel.
+     * </summary>
+     */
+    private void CharacterButtons()
+    {
+        btnMale.onClick.AddListener(() =>
+        {
+            // Show the check symbol under the btnMale.
+            btnMale.transform.GetChild(0).gameObject.SetActive(true);
+
+            // Hide the check symbol under the btnFemale.
+            btnFemale.transform.GetChild(0).gameObject.SetActive(false);
+
+            // Set the 'gender' property at playerData.
+            this.playerData.gender = "male";
+        });
+
+        btnFemale.onClick.AddListener(() =>
+        {
+            // Show the check symbol at btnFemale.
+            btnFemale.transform.GetChild(0).gameObject.SetActive(true);
+
+            // Hide the check symbol at btnMale.
+            btnMale.transform.GetChild(0).gameObject.SetActive(false);
+
+            // Set the 'gender' property to 'female'.
+            this.playerData.gender = "female";
+        });
+    }
+
+    /**
+     * <summary>
+     *  Ang function na ito ay ang magseset up ng mga
+     *  events ng button sa loob ng character panel.
+     * </summary>
+     */
     private void SetupCharacterPanelUIElements()
     {
-        this.CharacterButtons();
-        create.onClick.AddListener(() =>
+        this.CharacterButtons(); // Invoke the function 'CharacterButtons()'.
+
+        btnCreateNewProfile.onClick.AddListener(() =>
         {
             this.UICanvasGroup.interactable = false;
             this.isCharacterPanelOpen = true;
             LeanTween.scale(createCharacterPanel.gameObject, new Vector2(1, 1), .2f);
         });
 
-        checkButtonCharCreationPanel.onClick.AddListener(() =>
+        btnCheckButtonCharCreationPanel.onClick.AddListener(() =>
         {
-            if (this.characterName.text.Length != 0)
+            if (this.btnCharacterName.text.Length != 0)
             {
                 this.UICanvasGroup.interactable = false;
                 this.createCharacterPanelCanvasGroup.interactable = false;
                 LeanTween.scale(confirmationPanel.gameObject, new Vector2(1, 1), .2f);
+
                 this.confirmationMessage.text = "Create new profile";
-                this.profileNameLabel.text = "'" + this.characterName.text + "'?";
-                this.confirm.onClick.RemoveAllListeners();
-                this.confirm.onClick.AddListener(this.ConfirmBtnEventWhileCreatingProfile);
+                this.profileNameLabel.text = "'" + this.btnCharacterName.text + "'?";
+                this.btnConfirm.onClick.RemoveAllListeners();
+                this.btnConfirm.onClick.AddListener(this.ConfirmBtnEventWhileCreatingProfile);
             }
         });
 
-        closeCharCreationPanel.onClick.AddListener(() =>
+        btnCloseCharCreationPanel.onClick.AddListener(() =>
         {
             this.UICanvasGroup.interactable = true;
             this.isCharacterPanelOpen = false;
             LeanTween.scale(createCharacterPanel.gameObject, new Vector2(0, 0), .2f);
-            this.characterName.text = "";
+            this.btnCharacterName.text = "";
         });
     }
 
+
+    /**
+     * <summary>
+     *  Ang function na ito ay responsible 
+     *  para i set up ang mga events ng buttons
+     *  sa delete confirmation panel.
+     * </summary>
+     */
     private void SetupDeleteConfirmation()
     {
         this.btnDelete.onClick.AddListener(() =>
         {
+            // Create and Load all the slots.
             SlotsFileHandler fileHandler = new SlotsFileHandler();
             Slots slots = fileHandler.Load();
 
             LeanTween.scale(this.deletePanel.gameObject, Vector2.zero, .2f)
             .setOnComplete(() => this.UICanvasGroup.interactable = true);
 
+            // Delete the file based on the playerData 'id'.
             File.Delete(Application.persistentDataPath + "/" + this.playerData.id + ".txt");
 
             slots.ids.Remove(this.playerData.id);
@@ -113,76 +206,40 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
 
         this.btnCancelDelete.onClick.AddListener(() =>
         {
+            DataPersistenceManager.instance.playerData = new PlayerData();
+            this.playerData = DataPersistenceManager.instance.playerData;
+
             LeanTween.scale(this.deletePanel.gameObject, Vector2.zero, .2f).
             setOnComplete(() => this.UICanvasGroup.interactable = true );
         });
     }
 
-    private void CharacterButtons()
-    {
-        male.onClick.AddListener(() =>
-        {
-            male.transform.GetChild(0).gameObject.SetActive(true);
-            female.transform.GetChild(0).gameObject.SetActive(false);
-            this.playerData.gender = "male";
-        });
 
-        female.onClick.AddListener(() =>
-        {
-            female.transform.GetChild(0).gameObject.SetActive(true);
-            male.transform.GetChild(0).gameObject.SetActive(false);
-            this.playerData.gender = "female";
-        });
-    }
-
+    /**
+     * <summary>
+     * 
+     * Ito ang ireregister na event sa confirm button
+     * sa confirmation panel kapag ang player ay nag
+     * loload ng profile. 
+     * </summary>
+     */
     private void ConfirmBtnEventWhileLoadingProfile()
     {
         SceneManager.LoadScene(this.playerData.sceneToLoad);
     }
 
+    /**
+     * <summary>
+     *    Ito ang ireregister kapag ang player ay
+     *    nagcrecreate ng bagong profile. 
+     * </summary>
+     */
     private void ConfirmBtnEventWhileCreatingProfile()
     {
-        this.playerData.name = this.characterName.text;
+        this.playerData.name = this.btnCharacterName.text;
         DataPersistenceManager.instance.ConfirmCharacter();
 
         SceneManager.LoadScene("House");
-    }
-
-    private void Start()
-    {
-        this.createCharacterPanel.localScale = Vector2.zero;
-        this.confirmationPanel.localScale = Vector2.zero;
-        this.deletePanel.localScale = Vector2.zero;
-
-        this.SetupConfirmationPanelButtons();
-        this.SetupCharacterPanelUIElements();
-        this.SetupDeleteConfirmation();
-
-        this.LoadAllSlots();
-        //Slots slots = DataPersistenceManager.instance.GetAllSlots();
-        //PlayerDataHandler playerDataHandler = null;
-
-        //for (int i = 0; i < slots.ids.Count; i++)
-        //{
-        //    GameObject gameObject = Instantiate(saveSlot, content.transform);
-
-        //    playerDataHandler = new PlayerDataHandler(slots.ids[i]);
-
-        //    PlayerData playerData = playerDataHandler.Load();
-
-        //    gameObject.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = playerData.name;
-        //    gameObject.transform.GetChild(1).gameObject.GetComponent<Button>().onClick.AddListener(() =>
-        //    {
-        //        UICanvasGroup.interactable = false;
-        //        DataPersistenceManager.instance.playerData = playerData;
-        //        LeanTween.scale(confirmationPanel.gameObject, new Vector2(1, 1), .2f);
-        //        this.confirmationMessage.text = "Are you sure you want to load";
-        //        this.profileNameLabel.text = "'" + playerData.name + "' Profile?";
-        //        this.confirm.onClick.RemoveAllListeners();
-        //        this.confirm.onClick.AddListener(this.ConfirmBtnEventWhileLoadingProfile);
-        //    });
-        //    gameObject.AddComponent<SlotScript>();
-        //}
     }
 
     public void RemoveAllSlots()
@@ -193,11 +250,22 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
         }
     }
 
+    /**
+     * <summary>
+     *   Load and Display all created profile/slots.
+     * </summary> 
+     */
     private void LoadAllSlots()
     {
         Slots slots = DataPersistenceManager.instance.GetAllSlots();
         PlayerDataHandler playerDataHandler = null;
 
+        /**
+         * <summary>
+         *  Traverse the slots ids list and instantiate a 
+         *  slot game object at 'content' game object.
+         * </summary> 
+         */
         for (int i = 0; i < slots.ids.Count; i++)
         {
             GameObject gameObject = Instantiate(saveSlot, content.transform);
@@ -207,6 +275,8 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
             PlayerData playerData = playerDataHandler.Load();
 
             gameObject.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = playerData.name;
+
+            // UPDATE Button Event
             gameObject.transform.GetChild(1).gameObject.GetComponent<Button>().onClick.AddListener(() =>
             {
                 UICanvasGroup.interactable = false;
@@ -217,8 +287,8 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
                 LeanTween.scale(confirmationPanel.gameObject, new Vector2(1, 1), .2f);
                 this.confirmationMessage.text = "Are you sure you want to load";
                 this.profileNameLabel.text = "'" + playerData.name + "' Profile?";
-                this.confirm.onClick.RemoveAllListeners();
-                this.confirm.onClick.AddListener(this.ConfirmBtnEventWhileLoadingProfile);
+                this.btnConfirm.onClick.RemoveAllListeners();
+                this.btnConfirm.onClick.AddListener(this.ConfirmBtnEventWhileLoadingProfile);
             });
 
             // DELETE Button Event
@@ -233,9 +303,9 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
                 this.lblProfile.text = "'" + playerData.name + "' Profile?";
                 
             });
-            gameObject.AddComponent<SlotScript>();
         }
 
+        // Delete the instance of slots and playerDataHandler to avoid memory leak.
         slots = null;
         playerDataHandler = null;
 
@@ -257,48 +327,3 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
         throw new System.NotImplementedException();
     }
 }
-
-public class SlotScript : MonoBehaviour
-{
-    private void OnDisable()
-    {
-        Destroy(gameObject);
-    }
-}
-
-
-//private void OnEnable()
-//{
-//    Slots slots = DataPersistenceManager.instance.GetAllSlots();
-//    PlayerDataHandler playerDataHandler = null;
-
-//    for (int i = 0; i < slots.ids.Count; i++)
-//    {
-//        GameObject gameObject = Instantiate(saveSlot, content.transform);
-
-//        playerDataHandler = new PlayerDataHandler(slots.ids[i]);
-
-//        PlayerData playerData = playerDataHandler.Load();
-
-//        gameObject.GetComponent<Button>().onClick.AddListener(() => 
-//        {
-//            DataPersistenceManager.instance.playerData = playerData;
-//        });
-
-//        gameObject.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = playerData.name;
-//        gameObject.AddComponent<SlotScript>();
-//    }
-
-//    //if (content.transform.childCount > 0)
-//    //{
-//    //    content.transform.GetChild(0).GetComponent<Button>().Select();
-
-//    //    playerDataHandler = new PlayerDataHandler(slots.ids[0]);
-
-//    //    PlayerData playerData = playerDataHandler.Load();
-
-//    //    DataPersistenceManager.instance.playerData = playerData;
-//    //}
-
-//     //gameObject.GetComponent<Button>().Select();
-//}

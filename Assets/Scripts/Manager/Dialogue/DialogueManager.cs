@@ -19,7 +19,6 @@ public class DialogueManager : MonoBehaviour
     public CanvasGroup houseGroup;
 
     private Story currentStory;
-    private bool isDialogueRunning;
 
     public GameObject[] choicesBtn;
 
@@ -37,8 +36,6 @@ public class DialogueManager : MonoBehaviour
     {
         if (_instance == null)
             _instance = this;
-
-        isDialogueRunning = false;
     }
 
     // Run this function when house scene is loaded.
@@ -55,7 +52,6 @@ public class DialogueManager : MonoBehaviour
     {
         currentStory = new Story(ink.text);
         panel.gameObject.SetActive(true);
-        isDialogueRunning = true;
         this.houseGroup.interactable = false;
         this.houseGroup.blocksRaycasts = false;
 
@@ -105,7 +101,6 @@ public class DialogueManager : MonoBehaviour
     public void ExitDialogue()
     {
         panel.gameObject.SetActive(false);
-        isDialogueRunning = false;
         dialogueField.text = "";
     }
 

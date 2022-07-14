@@ -95,7 +95,13 @@ public class WordManager : MonoBehaviour, IDataPersistence
         this.words = words;
     }
 
-    public void SetRegionScore(int noOfCorrectAnswers)
+    /**
+     * <summary>
+     *  Ang function na ito ay i-seset niya ang score ng category
+     *  based sa current region.
+     * </summary>
+     */
+    public void SetRegionCategoriesScores(int noOfCorrectAnswers)
     {
         // Get all the regions.
         foreach (RegionData regionData in playerData.regionsData)
@@ -116,30 +122,31 @@ public class WordManager : MonoBehaviour, IDataPersistence
         }
     }
 
-    public void ShowStars(int noOfCorrectAnswers)
+    private int CountNoOfStarsToShow(int noOfCorrectAnswers)
     {
-        int noOfStars = 0;
         int passingScore = this.words.Length / 2 + 1;
 
+        if (noOfCorrectAnswers == this.words.Length)
+        {
+            return 3;
+        }
+        else if (noOfCorrectAnswers >= passingScore)
+        {
+            return 2;
+        }
+
+        return 1;
+    }
+
+
+    public void ShowStars(int noOfCorrectAnswers)
+    {
         if (noOfCorrectAnswers == 0)
         {
             return;
         }
 
-        if (noOfCorrectAnswers == this.words.Length)
-        {
-            print("PERFECT");
-            noOfStars = 3;
-        }
-        else if (noOfCorrectAnswers >= passingScore)
-        {
-            print("MEDIUM");
-            noOfStars = 2;
-        }
-        else if (noOfCorrectAnswers < passingScore)
-        {
-            noOfStars = 1;
-        }
+        int noOfStars = this.CountNoOfStarsToShow(noOfCorrectAnswers);
 
         for (int i = 0; i < noOfStars; i++)
         {
@@ -161,6 +168,7 @@ public class WordManager : MonoBehaviour, IDataPersistence
             }
         }
     }
+
 
     public void CheckIfNextRegionIsReadyToOpen()
     {
@@ -184,7 +192,7 @@ public class WordManager : MonoBehaviour, IDataPersistence
 
         if (regionNumber < this.playerData.regionsData.Count)
         {
-            print("REGION IS OPEN: " + regionNumber);
+            print("TEST : REGION IS OPEN: " + (regionNumber + 1));
             this.playerData.regionsData[regionNumber].isOpen = true;
         }
     }
@@ -219,6 +227,32 @@ public class WordManager : MonoBehaviour, IDataPersistence
         }
     }
 
+
+    public void CheckAnswer()
+    {
+        // Get all the child buttons of the answered container.
+        Transform buttons = this.wordContainer.transform;
+        string answer = ""; // Variable for storing the content/text of each button.
+
+        // Traverse and concatenate the characters.
+        foreach (Transform button in buttons)
+        {
+            answer += button.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text;
+        }
+
+        /** Since some words have spaces, we need to replace all that spaces so that we can evaluate
+         if it is correct or not based on the 'answer' variable from all the concatenated characters from buttons. */
+        bool isCorrect = this.words[this.currentIndex].word.Replace(" ", "").ToUpper() == answer;
+
+        this.correctAnswers.Add(isCorrect);
+    }
+
+    /**
+     * <summary>
+     *  This function is registered to the listener
+     *  of confirm button as an event.
+     * </summary>
+     */
     public void SetNextWord()
     {
         this.CheckAnswer();
@@ -231,7 +265,7 @@ public class WordManager : MonoBehaviour, IDataPersistence
             this.scorePanel.gameObject.SetActive(true);
             this.scoreLabel.text = noOfCorrectAnswers + "/" + this.words.Length;
 
-            this.SetRegionScore(noOfCorrectAnswers);
+            this.SetRegionCategoriesScores(noOfCorrectAnswers);
             this.ShowStars(noOfCorrectAnswers);
             this.CheckIfNextRegionIsReadyToOpen();
             this.CollectAllRewards();
@@ -268,24 +302,7 @@ public class WordManager : MonoBehaviour, IDataPersistence
         return count;
     }
 
-    public void CheckAnswer()
-    {
-        // Get all the child buttons of the answered container.
-        Transform buttons = this.wordContainer.transform;
-        string answer = ""; // Variable for storing the content/text of each button.
-
-        // Traverse and concatenate the characters.
-        foreach (Transform button in buttons)
-        {
-           answer += button.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text;
-        }
-
-        /** Since some words have spaces, we need to replace all that spaces so that we can evaluate
-         if it is correct or not based on the 'answer' variable from all the concatenated characters from buttons. */
-        bool isCorrect = this.words[this.currentIndex].word.Replace(" ", "").ToUpper() == answer;
-
-        this.correctAnswers.Add(isCorrect);
-    }
+   
 
     public void SetWord()
     {

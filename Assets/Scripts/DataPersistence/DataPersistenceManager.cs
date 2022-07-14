@@ -38,8 +38,8 @@ public class DataPersistenceManager : MonoBehaviour
         SceneManager.sceneLoaded += CharacterCreationSceneLoaded;
         SceneManager.sceneLoaded += HouseSceneLoaded;
         SceneManager.sceneLoaded += PhilippineMapSceneLoaded;
-        SceneManager.sceneLoaded += AssessmentSceneLoaded;
-        SceneManager.sceneLoaded += WordSceneLoaded;
+        //SceneManager.sceneLoaded += WordSceneLoaded;
+        //SceneManager.sceneLoaded += AssessmentSceneLoaded;
     }
 
     private void OnDisable()
@@ -49,8 +49,8 @@ public class DataPersistenceManager : MonoBehaviour
         SceneManager.sceneLoaded -= CharacterCreationSceneLoaded;
         SceneManager.sceneLoaded -= HouseSceneLoaded;
         SceneManager.sceneLoaded -= PhilippineMapSceneLoaded;
-        SceneManager.sceneLoaded -= AssessmentSceneLoaded;
-        SceneManager.sceneLoaded -= WordSceneLoaded;
+        //SceneManager.sceneLoaded -= WordSceneLoaded;
+        //SceneManager.sceneLoaded -= AssessmentSceneLoaded;
     }
 
     /** All registered function to SceneManager delegates. */
@@ -70,7 +70,7 @@ public class DataPersistenceManager : MonoBehaviour
         // If nag loaded na ang 'CharacterCreation' Scene
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("CharacterAndLoad"))
         {
-            this.inputField = GameObject.Find("Character Name").GetComponent<TMPro.TMP_InputField>();
+            this.inputField = GameObject.Find("Character Name TXT").GetComponent<TMPro.TMP_InputField>();
             // Create o mag instantiate ng new data.
             this.playerData = new PlayerData();
             this.LoadGame(); // i-load sa lahat ng nag implement ng IDataPersistence na interface.
@@ -93,30 +93,30 @@ public class DataPersistenceManager : MonoBehaviour
         }
     }
 
-    private void AssessmentSceneLoaded(Scene scene, LoadSceneMode mode) 
-    {
-        // Check if the loaded scene is 'Assessment' or 'Word Games' scene.
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Assessment"))
-        {
-            print("FROM ASSESSMENT SCENE : DUNONG POINTS DEDUCTED");
+    //private void AssessmentSceneLoaded(Scene scene, LoadSceneMode mode) 
+    //{
+    //    // Check if the loaded scene is 'Assessment' scene.
+    //    if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Assessment"))
+    //    {
+    //        print("FROM ASSESSMENT SCENE : DUNONG POINTS DEDUCTED");
 
-            this.playerData.dunongPoints -= 5;
+    //        this.playerData.dunongPoints -= 5;
 
-            this.SaveGame();
-        }
-    }
+    //        this.SaveGame();
+    //    }
+    //}
 
-    private void WordSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Word Games"))
-        {
-            print("FROM WORD SCENE : DUNONG POINTS DEDUCTED");
+    //private void WordSceneLoaded(Scene scene, LoadSceneMode mode)
+    //{
+    //    if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Word Games"))
+    //    {
+    //        print("FROM WORD SCENE : DUNONG POINTS DEDUCTED");
 
-            this.playerData.dunongPoints -= 5;
+    //        this.playerData.dunongPoints -= 5;
 
-            this.SaveGame();
-        }
-    }
+    //        this.SaveGame();
+    //    }
+    //}
 
     public void ConfirmCharacter()
     {
@@ -135,10 +135,7 @@ public class DataPersistenceManager : MonoBehaviour
 
         slotsHandler.Save(this.slots);
 
-        //PlayerInfoManager.instance.SavePlayerData();
-
         this.SaveGame();
-        
     }
 
     public void LoadGame()

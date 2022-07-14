@@ -9,6 +9,7 @@ TagManager:
   - Shuffle
   - Confirm Button
   - Score Star
+  - House Tile
   layers:
   - Default
   - TransparentFX
@@ -52,9 +53,12 @@ TagManager:
   - name: Human
     uniqueID: 3246048145
     locked: 0
-  - name: User Interface
-    uniqueID: 2723943027
-    locked: 0
   - name: Locations
     uniqueID: 2983063413
+    locked: 0
+  - name: PH Map
+    uniqueID: 3262423607
+    locked: 0
+  - name: User Interface
+    uniqueID: 2723943027
     locked: 0

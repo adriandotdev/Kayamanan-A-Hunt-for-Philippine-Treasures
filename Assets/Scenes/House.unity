@@ -3750,7 +3750,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -322, y: -94}
+  m_AnchoredPosition: {x: -322, y: -96}
   m_SizeDelta: {x: 876, y: 475}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &764378640
@@ -4359,6 +4359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameOfExit: 
+  fromEnter: 0
 --- !u!4 &828833710
 Transform:
   m_ObjectHideFlags: 0
@@ -4965,7 +4966,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -129, y: -97}
+  m_AnchoredPosition: {x: -129, y: -96}
   m_SizeDelta: {x: 604.62, y: 579.19995}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1002182055
@@ -8028,7 +8029,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1311903883
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
@@ -8192,7 +8193,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 255, y: -93}
+  m_AnchoredPosition: {x: 255, y: -96}
   m_SizeDelta: {x: 671, y: 199}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1466775513
@@ -9943,7 +9944,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Character Name
+  m_text: Mika
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
   m_sharedMaterial: {fileID: -5432314662704744868, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
@@ -9970,8 +9971,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 59.63
-  m_fontSizeBase: 59.63
+  m_fontSize: 73
+  m_fontSizeBase: 73
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9980,7 +9981,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 9.97
+  m_characterSpacing: 21
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0

@@ -24,6 +24,8 @@ public class DialogueTrigger : MonoBehaviour
         talkButton.gameObject.SetActive(false);
         DialogueManager._instance.StartDialogue(ink);
         DialogueManager._instance.actorField.text = this.NPC_NAME;
+        //print(gameObject.name);
+        //QuestManager.instance.FindTalkQuestGoal(gameObject.name);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
