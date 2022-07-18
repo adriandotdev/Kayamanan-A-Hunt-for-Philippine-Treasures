@@ -1548,7 +1548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3679245, g: 0.24123353, b: 0.24123353, a: 1}
+  m_Color: {r: 0.2, g: 0.07450981, b: 0.07450981, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1665,19 +1665,23 @@ MonoBehaviour:
     yPos: 0
     notebook:
       collectibles:
-      - imagePath: Collectibles/C1
+      - name: Jose Rizal
+        imagePath: Collectibles/C1
         isCollected: 0
         categoryName: National Heroes
         regionName: Region 1
-      - imagePath: Collectibles/C2
+      - name: Anahaw
+        imagePath: Collectibles/C2
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 1
-      - imagePath: Collectibles/C3
+      - name: Andres Bonifacio
+        imagePath: Collectibles/C3
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 2
-      - imagePath: Collectibles/C4
+      - name: Kalabaw
+        imagePath: Collectibles/C4
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 3
@@ -1868,7 +1872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.36862746, g: 0.24313727, b: 0.24313727, a: 1}
+  m_Color: {r: 0.2, g: 0.07450981, b: 0.07450981, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1956,19 +1960,23 @@ MonoBehaviour:
     yPos: 0
     notebook:
       collectibles:
-      - imagePath: Collectibles/C1
+      - name: Jose Rizal
+        imagePath: Collectibles/C1
         isCollected: 0
         categoryName: National Heroes
         regionName: Region 1
-      - imagePath: Collectibles/C2
+      - name: Anahaw
+        imagePath: Collectibles/C2
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 1
-      - imagePath: Collectibles/C3
+      - name: Andres Bonifacio
+        imagePath: Collectibles/C3
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 2
-      - imagePath: Collectibles/C4
+      - name: Kalabaw
+        imagePath: Collectibles/C4
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 3
@@ -4138,7 +4146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.3679245, g: 0.24123353, b: 0.24123353, a: 1}
+  m_Color: {r: 0.2, g: 0.07450981, b: 0.07450981, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

@@ -12,7 +12,7 @@ public class PlayerData
     public string gender;
     public int dunongPoints;
     public int remainingTime;
-
+    
     public string sceneToLoad;
     public float xPos;
     public float yPos;
@@ -20,6 +20,9 @@ public class PlayerData
     public Notebook notebook;
 
     public List<RegionData> regionsData;
+
+    public List<Quest> quests;
+    public List<Quest> currentQuests;
 
     public PlayerData()
     {
@@ -34,6 +37,8 @@ public class PlayerData
         this.yPos = 0;
         this.regionsData = new List<RegionData>();
         this.notebook = new Notebook();
+        this.quests = new List<Quest>();
+        this.currentQuests = new List<Quest>();
 
         this.regionsData.Add(
             new RegionData(
@@ -56,17 +61,12 @@ public class PlayerData
             "REGION 3",
             "",
             new Category[1] { new Category("Philippine Myths") }));
-    }
 
-    public void Copy(PlayerData playerData)
-    {
-        this.id = playerData.id;
-        this.name = playerData.name;
-        this.gender = playerData.gender;
-        this.dunongPoints = playerData.dunongPoints;
-        this.remainingTime = playerData.remainingTime;
-        this.regionsData = playerData.regionsData;
-        this.notebook = playerData.notebook;
+        // These are the quests that the user can get (Main Quests for each Region)
+        this.quests.Add(new Quest("Known All Heroes", "Talk to Mang Esterlito", 25, "Region 1", new TalkGoal("Mang Esterlito")));
+        this.quests.Add(new Quest("Talk to your MILF", "Talk to Aling Nena", 30, "Region 1", new TalkGoal("Aling Nena")));
+        this.quests.Add(new Quest("Best Friends", "Talk to Aling Missy", 30, "Region 2", new TalkGoal("Aling Nena")));
+        this.quests.Add(new Quest("Gather Goal", "This is gather goal", 45, "Region 2", new GatherGoal()));
     }
 }
 
@@ -83,23 +83,25 @@ public class Notebook
     {
         this.collectibles = new List<Collectible>();
 
-        this.collectibles.Add(new Collectible("Collectibles/C1", this.NATIONAL_HEROES, "Region 1"));
-        this.collectibles.Add(new Collectible("Collectibles/C2", this.NATIONAL_SYMBOLS, "Region 1"));
-        this.collectibles.Add(new Collectible("Collectibles/C3", this.NATIONAL_SYMBOLS, "Region 2"));
-        this.collectibles.Add(new Collectible("Collectibles/C4", this.NATIONAL_SYMBOLS, "Region 3"));
+        this.collectibles.Add(new Collectible("Jose Rizal", "Collectibles/Rizal", this.NATIONAL_HEROES, "Region 1"));
+        this.collectibles.Add(new Collectible("Anahaw", "Collectibles/Anahaw", this.NATIONAL_SYMBOLS, "Region 1"));
+        this.collectibles.Add(new Collectible("Andres Bonifacio", "Collectibles/Bonifacio", this.NATIONAL_SYMBOLS, "Region 2"));
+        this.collectibles.Add(new Collectible("Kalabaw", "Collectibles/Kalabaw", this.NATIONAL_SYMBOLS, "Region 3"));
     }
 }
 
 [System.Serializable]
 public class Collectible
 {
+    public string name;
     public string imagePath;
     public bool isCollected;
     public string categoryName;
     public string regionName;
 
-    public Collectible(string imagePath, string categoryName, string regionName)
+    public Collectible(string name, string imagePath, string categoryName, string regionName)
     {
+        this.name = name;
         this.imagePath = imagePath;
         this.categoryName = categoryName;
         this.regionName = regionName;

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class AssessmentManager : MonoBehaviour, IDataPersistence
 {
     public static AssessmentManager instance; 
@@ -57,27 +58,34 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Assessment"))
         {
-            this.currentIndex = 0; // reset the current index to '0'.
-            this.correctAnswers = new List<bool>(); // instantiate again the correctAnswers variable.
-
-            questionsPanel = GameObject.Find("Layout").GetComponent<RectTransform>();
-            questionLabel = GameObject.Find("Question").GetComponent<TMPro.TextMeshProUGUI>();
-            scorePanel = GameObject.Find("Score Panel").GetComponent<RectTransform>();
-            scoreLabel = GameObject.Find("Score").GetComponent<TMPro.TextMeshProUGUI>();
-            stars = GameObject.FindGameObjectsWithTag("Score Star");
-
-            scorePanel.gameObject.SetActive(false);
-
-            foreach (GameObject star in stars)
+            try
             {
-                star.GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Empty Star");
-            }
-            choices = GameObject.FindGameObjectsWithTag("Choices");
+                this.currentIndex = 0; // reset the current index to '0'.
+                this.correctAnswers = new List<bool>(); // instantiate again the correctAnswers variable.
 
-            FisherYates.shuffle(this.assessments);
-            questionLabel.text = assessments[this.currentIndex].question.ToString();
-            this.SetChoices();
-            this.AddEvents();
+                questionsPanel = GameObject.Find("Layout").GetComponent<RectTransform>();
+                questionLabel = GameObject.Find("Question").GetComponent<TMPro.TextMeshProUGUI>();
+                scorePanel = GameObject.Find("Score Panel").GetComponent<RectTransform>();
+                scoreLabel = GameObject.Find("Score").GetComponent<TMPro.TextMeshProUGUI>();
+                stars = GameObject.FindGameObjectsWithTag("Score Star");
+
+                scorePanel.gameObject.SetActive(false);
+
+                foreach (GameObject star in stars)
+                {
+                    star.GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Empty Star");
+                }
+                choices = GameObject.FindGameObjectsWithTag("Choices");
+
+                FisherYates.shuffle(this.assessments);
+                questionLabel.text = assessments[this.currentIndex].question.ToString();
+                this.SetChoices();
+                this.AddEvents();
+            }
+            catch (System.Exception e)
+            {
+
+            }
         }
     }
 
@@ -282,9 +290,14 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
         {
             if (collectible.regionName.ToUpper() == this.regionName.ToUpper())
             {
+                if (collectible.isCollected)
+                    return;
+
                 collectible.isCollected = true;
             }
         }
+
+        SceneManager.LoadSceneAsync("Collectibles", LoadSceneMode.Additive);
     }
 
     public void LoadScene ()

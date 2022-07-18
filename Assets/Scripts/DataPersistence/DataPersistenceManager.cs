@@ -38,6 +38,7 @@ public class DataPersistenceManager : MonoBehaviour
         SceneManager.sceneLoaded += CharacterCreationSceneLoaded;
         SceneManager.sceneLoaded += HouseSceneLoaded;
         SceneManager.sceneLoaded += PhilippineMapSceneLoaded;
+        SceneManager.sceneLoaded += OutsideSceneLoaded;
         //SceneManager.sceneLoaded += WordSceneLoaded;
         //SceneManager.sceneLoaded += AssessmentSceneLoaded;
     }
@@ -49,6 +50,7 @@ public class DataPersistenceManager : MonoBehaviour
         SceneManager.sceneLoaded -= CharacterCreationSceneLoaded;
         SceneManager.sceneLoaded -= HouseSceneLoaded;
         SceneManager.sceneLoaded -= PhilippineMapSceneLoaded;
+        SceneManager.sceneLoaded -= OutsideSceneLoaded;
         //SceneManager.sceneLoaded -= WordSceneLoaded;
         //SceneManager.sceneLoaded -= AssessmentSceneLoaded;
     }
@@ -85,6 +87,14 @@ public class DataPersistenceManager : MonoBehaviour
         }
     }
 
+    private void OutsideSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside"))
+        {
+            this.LoadGame();
+        }
+    }
+
     private void PhilippineMapSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Philippine Map"))
@@ -92,31 +102,6 @@ public class DataPersistenceManager : MonoBehaviour
             this.LoadGame();
         }
     }
-
-    //private void AssessmentSceneLoaded(Scene scene, LoadSceneMode mode) 
-    //{
-    //    // Check if the loaded scene is 'Assessment' scene.
-    //    if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Assessment"))
-    //    {
-    //        print("FROM ASSESSMENT SCENE : DUNONG POINTS DEDUCTED");
-
-    //        this.playerData.dunongPoints -= 5;
-
-    //        this.SaveGame();
-    //    }
-    //}
-
-    //private void WordSceneLoaded(Scene scene, LoadSceneMode mode)
-    //{
-    //    if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Word Games"))
-    //    {
-    //        print("FROM WORD SCENE : DUNONG POINTS DEDUCTED");
-
-    //        this.playerData.dunongPoints -= 5;
-
-    //        this.SaveGame();
-    //    }
-    //}
 
     public void ConfirmCharacter()
     {
@@ -179,7 +164,7 @@ public class DataPersistenceManager : MonoBehaviour
     {
         if (SceneManager.GetActiveScene() != SceneManager.GetSceneByName("CharacterCreation"))
         {
-            // Save all data.
+            
         }
     }
 }

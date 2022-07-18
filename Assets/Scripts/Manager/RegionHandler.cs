@@ -61,6 +61,10 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
         }
     }
 
+    /**<summary>
+     *  Ang function na ito ay hahanapin ang lahat ng game
+     *  object na may 'AssessmentSetup' na script.
+     * </summary> */
     public void GetAllAssessments()
     {
         AssessmentSetup[] assessmentSetups = EventSystem.current.currentSelectedGameObject.GetComponents<AssessmentSetup>();
@@ -126,7 +130,12 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
         }
     }
 
-    // Get 
+    /**
+     * <summary>
+     *  Ang function na ito ay hahanapin ang lahat ng game
+     *  object na may 'WordSetup' script.
+     * </summary> 
+     */
     public void GetAllWordGames()
     {
         WordSetup[] wordGamesSetups = EventSystem.current.currentSelectedGameObject.GetComponents<WordSetup>();

@@ -17,7 +17,11 @@ public class QuestGoal
 public class TalkGoal : QuestGoal
 {
     [SerializeField] private string npcName;
-    QuestType questType = QuestType.TALK_GOAL;
+
+    public TalkGoal(string npcName)
+    {
+        this.npcName = npcName;
+    }
 
     public string GetNPCName()
     {

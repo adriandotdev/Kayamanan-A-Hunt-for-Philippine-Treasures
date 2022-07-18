@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+using System;
 public class GameManager : MonoBehaviour, IDataPersistence
 {
     public static GameManager instance;
@@ -70,32 +70,32 @@ public class GameManager : MonoBehaviour, IDataPersistence
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Menu"))
         {
-            // GET ALL THE NECESSARY COMPONENTS.
-            this.menuSceneCanvasGroup = GameObject.Find("Menu Canvas Group").GetComponent<CanvasGroup>();
-            this.optionsPanel = GameObject.Find("Options Panel").GetComponent<RectTransform>();
-            this.soundButton = GameObject.Find("Sounds").GetComponent<Button>();
-            this.quitButton = GameObject.Find("Quit").GetComponent<Button>();
-            this.volumePanel = GameObject.Find("Volume Panel").GetComponent<RectTransform>();
+                // GET ALL THE NECESSARY COMPONENTS.
+                this.menuSceneCanvasGroup = GameObject.Find("Menu Canvas Group").GetComponent<CanvasGroup>();
+                this.optionsPanel = GameObject.Find("Options Panel").GetComponent<RectTransform>();
+                this.soundButton = GameObject.Find("Sounds").GetComponent<Button>();
+                this.quitButton = GameObject.Find("Quit").GetComponent<Button>();
+                this.volumePanel = GameObject.Find("Volume Panel").GetComponent<RectTransform>();
 
-            Button optionsPanelCloseBtn = GameObject.Find("Options Panel Close Button").GetComponent<Button>();
-            Button playButton = GameObject.Find("Play Button").GetComponent<Button>();
-            Button optionsButton = GameObject.Find("Options Button").GetComponent<Button>();
+                Button optionsPanelCloseBtn = GameObject.Find("Options Panel Close Button").GetComponent<Button>();
+                Button playButton = GameObject.Find("Play Button").GetComponent<Button>();
+                Button optionsButton = GameObject.Find("Options Button").GetComponent<Button>();
 
-            print(optionsButton.onClick.GetPersistentEventCount());
-            this.soundButton.onClick.AddListener(() => this.ShowVolumeUI());
-            this.quitButton.onClick.AddListener(() => this.Quit());
+                print(optionsButton.onClick.GetPersistentEventCount());
+                this.soundButton.onClick.AddListener(() => this.ShowVolumeUI());
+                this.quitButton.onClick.AddListener(() => this.Quit());
 
-            optionsPanelCloseBtn.onClick.AddListener(() => this.CloseOptionPanel());
-            playButton.onClick.AddListener(() => {
+                optionsPanelCloseBtn.onClick.AddListener(() => this.CloseOptionPanel());
+                playButton.onClick.AddListener(() => {
 
-                this.LoadScene("CharacterAndLoad");
-                //TransitionLoader.instance.StartAnimation("CharacterAndLoad");
-            });
-            optionsButton.onClick.AddListener(() => this.ShowOptionsPanel() );
-
-            // Hide the optionsPanel at first render
-            this.optionsPanel.gameObject.SetActive(false);
-            this.volumePanel.gameObject.SetActive(false);
+                    this.LoadScene("CharacterAndLoad");
+                    //TransitionLoader.instance.StartAnimation("CharacterAndLoad");
+                });
+                optionsButton.onClick.AddListener(() => this.ShowOptionsPanel());
+                // Hide the optionsPanel at first render
+                this.optionsPanel.gameObject.SetActive(false);
+                this.volumePanel.gameObject.SetActive(false);
+        
         }
     }
 
@@ -171,6 +171,8 @@ public class GameManager : MonoBehaviour, IDataPersistence
             {
                 if (DataPersistenceManager.instance.playerData.dunongPoints >= 5)
                 {
+                    this.playerData.dunongPoints -= 5;
+
                     if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Assessment"))
                     {
                         this.LoadScene("Assessment");

@@ -9,6 +9,7 @@ public class WordManager : MonoBehaviour, IDataPersistence
     public static WordManager instance;
 
     [Header("UI")]
+    public RectTransform layout;
     public RectTransform wordContainer;
     public RectTransform shuffledContainer;
     public TMPro.TextMeshProUGUI questionLabel;
@@ -61,6 +62,7 @@ public class WordManager : MonoBehaviour, IDataPersistence
             this.currentIndex = 0;
             this.correctAnswers = new List<bool>();
 
+            this.layout = GameObject.Find("Layout").GetComponent<RectTransform>();
             this.wordContainer = GameObject.Find("Answered").GetComponent<RectTransform>();
             this.shuffledContainer = GameObject.Find("Shuffled Letters").GetComponent<RectTransform>();
             this.questionLabel = GameObject.Find("Question").GetComponent<TMPro.TextMeshProUGUI>();
@@ -222,9 +224,13 @@ public class WordManager : MonoBehaviour, IDataPersistence
         {
             if (collectible.regionName.ToUpper() == this.regionName.ToUpper())
             {
+                if (collectible.isCollected)
+                    return;
+
                 collectible.isCollected = true;
             }
         }
+        SceneManager.LoadSceneAsync("Collectibles", LoadSceneMode.Additive);
     }
 
 
@@ -263,6 +269,7 @@ public class WordManager : MonoBehaviour, IDataPersistence
             int noOfCorrectAnswers = this.CountCorrectAnswers();
 
             this.scorePanel.gameObject.SetActive(true);
+            this.layout.gameObject.SetActive(false); 
             this.scoreLabel.text = noOfCorrectAnswers + "/" + this.words.Length;
 
             this.SetRegionCategoriesScores(noOfCorrectAnswers);

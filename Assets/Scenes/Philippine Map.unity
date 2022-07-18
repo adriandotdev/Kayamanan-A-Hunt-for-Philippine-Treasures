@@ -436,7 +436,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1571024269
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f8ddad5e03ca8a140983f8fdef0e16e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -523,7 +523,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1571024269
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f8ddad5e03ca8a140983f8fdef0e16e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1398,7 +1398,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1571024269
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f8ddad5e03ca8a140983f8fdef0e16e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1724,7 +1724,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1571024269
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f8ddad5e03ca8a140983f8fdef0e16e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2177,19 +2177,23 @@ MonoBehaviour:
     yPos: 0
     notebook:
       collectibles:
-      - imagePath: Collectibles/C1
+      - name: Jose Rizal
+        imagePath: Collectibles/C1
         isCollected: 0
         categoryName: National Heroes
         regionName: Region 1
-      - imagePath: Collectibles/C2
+      - name: Anahaw
+        imagePath: Collectibles/C2
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 1
-      - imagePath: Collectibles/C3
+      - name: Andres Bonifacio
+        imagePath: Collectibles/C3
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 2
-      - imagePath: Collectibles/C4
+      - name: Kalabaw
+        imagePath: Collectibles/C4
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 3
@@ -2305,7 +2309,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1571024269
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f8ddad5e03ca8a140983f8fdef0e16e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2392,7 +2396,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1571024269
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f8ddad5e03ca8a140983f8fdef0e16e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2736,7 +2740,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1571024269
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f8ddad5e03ca8a140983f8fdef0e16e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2988,7 +2992,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1571024269
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f8ddad5e03ca8a140983f8fdef0e16e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3075,7 +3079,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1571024269
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f8ddad5e03ca8a140983f8fdef0e16e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3237,7 +3241,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1571024269
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f8ddad5e03ca8a140983f8fdef0e16e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3324,7 +3328,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1571024269
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f8ddad5e03ca8a140983f8fdef0e16e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3411,7 +3415,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1571024269
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f8ddad5e03ca8a140983f8fdef0e16e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3857,19 +3861,23 @@ MonoBehaviour:
     yPos: 0
     notebook:
       collectibles:
-      - imagePath: Collectibles/C1
+      - name: Jose Rizal
+        imagePath: Collectibles/C1
         isCollected: 0
         categoryName: National Heroes
         regionName: Region 1
-      - imagePath: Collectibles/C2
+      - name: Anahaw
+        imagePath: Collectibles/C2
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 1
-      - imagePath: Collectibles/C3
+      - name: Andres Bonifacio
+        imagePath: Collectibles/C3
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 2
-      - imagePath: Collectibles/C4
+      - name: Kalabaw
+        imagePath: Collectibles/C4
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 3
@@ -4002,7 +4010,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1571024269
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f8ddad5e03ca8a140983f8fdef0e16e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4332,7 +4340,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1571024269
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f8ddad5e03ca8a140983f8fdef0e16e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4688,8 +4696,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 203
-  m_fontSizeBase: 203
+  m_fontSize: 279.7
+  m_fontSizeBase: 279.7
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -5463,7 +5471,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1571024269
-  m_SortingLayer: 3
+  m_SortingLayer: 5
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: f8ddad5e03ca8a140983f8fdef0e16e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6215,8 +6223,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 154, y: -117}
-  m_SizeDelta: {x: 876, y: 475}
+  m_AnchoredPosition: {x: 185.3, y: -105.82}
+  m_SizeDelta: {x: 1239.44, y: 604.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2018916437
 MonoBehaviour:
@@ -6801,6 +6809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fd70cdc5b96693439531bf4ef7ff099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layout: {fileID: 0}
   wordContainer: {fileID: 0}
   shuffledContainer: {fileID: 0}
   questionLabel: {fileID: 0}
@@ -6826,19 +6835,23 @@ MonoBehaviour:
     yPos: 0
     notebook:
       collectibles:
-      - imagePath: Collectibles/C1
+      - name: Jose Rizal
+        imagePath: Collectibles/C1
         isCollected: 0
         categoryName: National Heroes
         regionName: Region 1
-      - imagePath: Collectibles/C2
+      - name: Anahaw
+        imagePath: Collectibles/C2
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 1
-      - imagePath: Collectibles/C3
+      - name: Andres Bonifacio
+        imagePath: Collectibles/C3
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 2
-      - imagePath: Collectibles/C4
+      - name: Kalabaw
+        imagePath: Collectibles/C4
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 3
