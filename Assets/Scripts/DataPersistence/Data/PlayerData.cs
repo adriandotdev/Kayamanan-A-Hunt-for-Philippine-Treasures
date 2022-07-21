@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Linq;
 
 [System.Serializable]
-public class PlayerData
+public class PlayerData 
 {
     public bool isNewlyCreated;
     public string id;
@@ -23,6 +23,8 @@ public class PlayerData
 
     public List<Quest> quests;
     public List<Quest> currentQuests;
+    public List<Quest> completedQuests;
+    public List<Item> inventory;
 
     public PlayerData()
     {
@@ -39,6 +41,8 @@ public class PlayerData
         this.notebook = new Notebook();
         this.quests = new List<Quest>();
         this.currentQuests = new List<Quest>();
+        this.completedQuests = new List<Quest>();
+        this.inventory = new List<Item>();
 
         this.regionsData.Add(
             new RegionData(
@@ -63,10 +67,21 @@ public class PlayerData
             new Category[1] { new Category("Philippine Myths") }));
 
         // These are the quests that the user can get (Main Quests for each Region)
-        this.quests.Add(new Quest("Known All Heroes", "Talk to Mang Esterlito", 25, "Region 1", new TalkGoal("Mang Esterlito")));
-        this.quests.Add(new Quest("Talk to your MILF", "Talk to Aling Nena", 30, "Region 1", new TalkGoal("Aling Nena")));
-        this.quests.Add(new Quest("Best Friends", "Talk to Aling Missy", 30, "Region 2", new TalkGoal("Aling Nena")));
-        this.quests.Add(new Quest("Gather Goal", "This is gather goal", 45, "Region 2", new GatherGoal()));
+        this.quests.Add(new Quest("Known All Heroes", "Talk to Mang Esterlito", 15, "Region 1", new TalkGoal("Mang Esterlito")));
+        this.quests.Add(new Quest("Talk to your MILF", "Talk to Aling Nena", 10, "Region 1", new TalkGoal("Aling Nena")));
+        this.quests.Add(new Quest("Best Friends", "Talk to Aling Missy", 5, "Region 2", new TalkGoal("Aling Nena")));
+
+        this.quests.Add(new Quest("Buko Pie Ayayay!", "Get the Buko Pie from Aling Marites and give it to Mang Esterlito", 10, "Region 1", 
+            new DeliveryGoal("Aling Marites", "Mang Esterlito", "Can you give this Buko Pie to Mang Esterlito?", 
+            new Item("Buko Pie", "", false))));
+
+        this.quests.Add(new Quest("Mango Aloho!", "Help Aling Julia to give Aling Marites a Mango", 10, "Region 1",
+            new DeliveryGoal("Aling Julia", "Aling Marites", "Hey! Would you mind if you give this to Aling Marites?",
+            new Item("Mango", "", false))));
+
+        this.quests.Add(new Quest("Gumamela Pula!", "Help Mang Esterlito give a gumamela to Aling Nena", 10, "Region 1",
+            new DeliveryGoal("Mang Esterlito", "Aling Nena", "Hey! Would you mind if you give this to ur mother?",
+            new Item("Gumamela", "", false))));
     }
 }
 

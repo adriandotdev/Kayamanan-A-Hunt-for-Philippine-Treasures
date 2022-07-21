@@ -1098,19 +1098,23 @@ MonoBehaviour:
     yPos: 0
     notebook:
       collectibles:
-      - imagePath: Collectibles/C1
+      - name: Jose Rizal
+        imagePath: Collectibles/C1
         isCollected: 0
         categoryName: National Heroes
         regionName: Region 1
-      - imagePath: Collectibles/C2
+      - name: Anahaw
+        imagePath: Collectibles/C2
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 1
-      - imagePath: Collectibles/C3
+      - name: Andres Bonifacio
+        imagePath: Collectibles/C3
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 2
-      - imagePath: Collectibles/C4
+      - name: Kalabaw
+        imagePath: Collectibles/C4
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 3
@@ -1148,6 +1152,142 @@ MonoBehaviour:
       - categoryName: Philippine Myths
         highestScore: 0
         noOfStars: 0
+    quests:
+    - questID: d675a5f8-ab80-4432-917d-3ab9a3ae6a49
+      isCompleted: 0
+      isClaimed: 0
+      title: Known All Heroes
+      description: Talk to Mang Esterlito
+      dunongPointsRewards: 15
+      region: Region 1
+      talkGoal:
+        isFinished: 0
+        npcName: Mang Esterlito
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+    - questID: 588f4408-a285-4bf0-ae0f-a3a5b18d81b9
+      isCompleted: 0
+      isClaimed: 0
+      title: Talk to your MILF
+      description: Talk to Aling Nena
+      dunongPointsRewards: 10
+      region: Region 1
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Nena
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+    - questID: 432866b6-9824-4c2c-99f7-4923d5a1e9a2
+      isCompleted: 0
+      isClaimed: 0
+      title: Best Friends
+      description: Talk to Aling Missy
+      dunongPointsRewards: 5
+      region: Region 2
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Nena
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+    - questID: 36e1ba29-068b-4227-9d00-af2b90b13ca0
+      isCompleted: 0
+      isClaimed: 0
+      title: Buko Pie Ayayay!
+      description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
+      dunongPointsRewards: 10
+      region: Region 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 64989e67-c309-43e5-bd1b-1601674c9481
+        deliveryMessage: Can you give this Buko Pie to Mang Esterlito?
+        giverName: Aling Marites
+        receiverName: Mang Esterlito
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Buko Pie
+          information: 
+          quantity: 0
+          stackable: 0
+    - questID: 3697cdf6-5c19-4fbf-abff-11bf894e4a31
+      isCompleted: 0
+      isClaimed: 0
+      title: Mango Aloho!
+      description: Help Aling Julia to give Aling Marites a Mango
+      dunongPointsRewards: 10
+      region: Region 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 92fe9058-93d1-448c-b19f-292f4dcc2351
+        deliveryMessage: Hey! Would you mind if you give this to Aling Marites?
+        giverName: Aling Julia
+        receiverName: Aling Marites
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Mango
+          information: 
+          quantity: 0
+          stackable: 0
+    - questID: 5a14fc8c-7303-4621-9309-d148ff88f2b9
+      isCompleted: 0
+      isClaimed: 0
+      title: Gumamela Pula!
+      description: Help Mang Esterlito give a gumamela to Aling Nena
+      dunongPointsRewards: 10
+      region: Region 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: e31ac2f1-deea-4756-b496-83d43511ae15
+        deliveryMessage: Hey! Would you mind if you give this to ur mother?
+        giverName: Mang Esterlito
+        receiverName: Aling Nena
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Gumamela
+          information: 
+          quantity: 0
+          stackable: 0
+    currentQuests: []
+    completedQuests: []
+    inventory: []
 --- !u!1 &339716368
 GameObject:
   m_ObjectHideFlags: 0
@@ -3780,7 +3920,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7351329100123977731, guid: 84d4727d711bf184b90aac3691ab37bf, type: 3}
+  m_Sprite: {fileID: -4025726472542044644, guid: e19c376318d275f4a8c64da261527a3d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

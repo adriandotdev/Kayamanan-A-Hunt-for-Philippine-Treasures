@@ -1805,6 +1805,98 @@ MonoBehaviour:
       currentScore: 0
       highestScore: 0
       categories: []
+    quests:
+    - questID: 4f3295a4-d1a4-40aa-aa4c-3314254f0656
+      isCompleted: 0
+      isClaimed: 0
+      title: Known All Heroes
+      description: Talk to Mang Esterlito
+      dunongPointsRewards: 15
+      region: Region 1
+      talkGoal:
+        isFinished: 0
+        npcName: Mang Esterlito
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+    - questID: 3dc58456-1ff2-4ba2-9282-44471e443214
+      isCompleted: 0
+      isClaimed: 0
+      title: Talk to your MILF
+      description: Talk to Aling Nena
+      dunongPointsRewards: 10
+      region: Region 1
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Nena
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+    - questID: 454d9ddc-95c3-4277-8750-dfc6044b0712
+      isCompleted: 0
+      isClaimed: 0
+      title: Best Friends
+      description: Talk to Aling Missy
+      dunongPointsRewards: 5
+      region: Region 2
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Nena
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+    - questID: b0aec0aa-ccda-4a25-a07a-58e7ca7ac7e2
+      isCompleted: 0
+      isClaimed: 0
+      title: Buko Pie
+      description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
+      dunongPointsRewards: 10
+      region: Region 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: Aling Marites
+        receiverName: Mang Esterlito
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+    currentQuests: []
+    completedQuests: []
+    inventory: []
   slots:
     ids: []
   confirmButton: {fileID: 0}
@@ -2014,6 +2106,98 @@ MonoBehaviour:
       - categoryName: Philippine Myths
         highestScore: 0
         noOfStars: 0
+    quests:
+    - questID: c3ebe647-ba87-4ce3-9095-86d5ecab88ce
+      isCompleted: 0
+      isClaimed: 0
+      title: Known All Heroes
+      description: Talk to Mang Esterlito
+      dunongPointsRewards: 15
+      region: Region 1
+      talkGoal:
+        isFinished: 0
+        npcName: Mang Esterlito
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+    - questID: 7e1afd59-b062-4058-8546-726e9350af49
+      isCompleted: 0
+      isClaimed: 0
+      title: Talk to your MILF
+      description: Talk to Aling Nena
+      dunongPointsRewards: 10
+      region: Region 1
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Nena
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+    - questID: 9c384318-8381-4dcd-a3fd-4575ed0ecbd2
+      isCompleted: 0
+      isClaimed: 0
+      title: Best Friends
+      description: Talk to Aling Missy
+      dunongPointsRewards: 5
+      region: Region 2
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Nena
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+    - questID: ec60f6b9-11b4-46e9-a0d1-c8d7983b4765
+      isCompleted: 0
+      isClaimed: 0
+      title: Buko Pie
+      description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
+      dunongPointsRewards: 10
+      region: Region 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: Aling Marites
+        receiverName: Mang Esterlito
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+    currentQuests: []
+    completedQuests: []
+    inventory: []
   sceneToLoadFromPhilippineMap: 
 --- !u!1 &871095292
 GameObject:

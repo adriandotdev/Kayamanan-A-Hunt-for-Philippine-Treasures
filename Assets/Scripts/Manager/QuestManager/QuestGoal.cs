@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 [System.Serializable]
 public class QuestGoal
@@ -35,13 +36,49 @@ public class TalkGoal : QuestGoal
 }
 
 
-[System.Serializable] 
-public class GatherGoal : QuestGoal
+[System.Serializable]
+public class DeliveryGoal : QuestGoal
 {
+    public string deliverGoalId;
+    public string deliveryMessage;
+    public string giverName;
+    public string receiverName;
+    public bool itemReceivedFromGiver;
+    public Item item;
 
+    public DeliveryGoal(string giverName, string receiverName,  string deliveryMessage, Item item)
+    {
+        this.deliverGoalId = Guid.NewGuid().ToString();
+        this.giverName = giverName;
+        this.receiverName = receiverName;
+        this.deliveryMessage = deliveryMessage;
+        this.item = item;
+    }
+
+    public DeliveryGoal Copy()
+    {
+        DeliveryGoal dg =  new DeliveryGoal(this.giverName, this.receiverName, 
+            this.deliveryMessage, new Item(this.item.itemName, 
+            this.item.information, this.item.stackable));
+
+        dg.itemReceivedFromGiver = this.itemReceivedFromGiver;
+
+        return dg;
+    }
 }
 
-public enum QuestType
+[System.Serializable]
+public class Item
 {
-    TALK_GOAL
+    public string itemName;
+    public string information;
+    public int quantity;
+    public bool stackable;
+
+    public Item(string itemName, string information, bool stackable)
+    {
+        this.itemName = itemName;
+        this.information = information;
+        this.stackable = stackable;
+    }
 }

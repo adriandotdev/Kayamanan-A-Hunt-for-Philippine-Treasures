@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 2618897702407668079}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.03, y: -3.43, z: 0}
-  m_LocalScale: {x: 6.5062, y: 6.5062, z: 6.5062}
+  m_LocalScale: {x: 1.12, y: 1.12, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: -1048919151
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: -6856886657674829975, guid: 84d4727d711bf184b90aac3691ab37bf, type: 3}
+  m_Sprite: {fileID: -4025726472542044644, guid: e19c376318d275f4a8c64da261527a3d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -117,19 +117,23 @@ MonoBehaviour:
     yPos: 0
     notebook:
       collectibles:
-      - imagePath: Collectibles/C1
+      - name: Jose Rizal
+        imagePath: Collectibles/C1
         isCollected: 0
         categoryName: National Heroes
         regionName: Region 1
-      - imagePath: Collectibles/C2
+      - name: Anahaw
+        imagePath: Collectibles/C2
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 1
-      - imagePath: Collectibles/C3
+      - name: Andres Bonifacio
+        imagePath: Collectibles/C3
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 2
-      - imagePath: Collectibles/C4
+      - name: Kalabaw
+        imagePath: Collectibles/C4
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 3
@@ -167,6 +171,142 @@ MonoBehaviour:
       - categoryName: Philippine Myths
         highestScore: 0
         noOfStars: 0
+    quests:
+    - questID: e226d161-1bf6-4d5c-a6c8-4add500a669f
+      isCompleted: 0
+      isClaimed: 0
+      title: Known All Heroes
+      description: Talk to Mang Esterlito
+      dunongPointsRewards: 15
+      region: Region 1
+      talkGoal:
+        isFinished: 0
+        npcName: Mang Esterlito
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+    - questID: 0ac36ac1-0279-4623-b349-1126f7a6765e
+      isCompleted: 0
+      isClaimed: 0
+      title: Talk to your MILF
+      description: Talk to Aling Nena
+      dunongPointsRewards: 10
+      region: Region 1
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Nena
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+    - questID: 25ab664e-81cb-471b-9af8-511dc0ac4882
+      isCompleted: 0
+      isClaimed: 0
+      title: Best Friends
+      description: Talk to Aling Missy
+      dunongPointsRewards: 5
+      region: Region 2
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Nena
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+    - questID: 458f4936-2c76-409f-a2a1-6cf52e6c6ef6
+      isCompleted: 0
+      isClaimed: 0
+      title: Buko Pie Ayayay!
+      description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
+      dunongPointsRewards: 10
+      region: Region 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 7fa231b8-4621-48f9-a0ef-2101bea23cde
+        deliveryMessage: Can you give this Buko Pie to Mang Esterlito?
+        giverName: Aling Marites
+        receiverName: Mang Esterlito
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Buko Pie
+          information: 
+          quantity: 0
+          stackable: 0
+    - questID: b3416250-613f-4100-befc-f8c282e3da28
+      isCompleted: 0
+      isClaimed: 0
+      title: Mango Aloho!
+      description: Help Aling Julia to give Aling Marites a Mango
+      dunongPointsRewards: 10
+      region: Region 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 73ec900a-739a-4a5a-b1ba-c014cae90309
+        deliveryMessage: Hey! Would you mind if you give this to Aling Marites?
+        giverName: Aling Julia
+        receiverName: Aling Marites
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Mango
+          information: 
+          quantity: 0
+          stackable: 0
+    - questID: b6cc1a4d-530c-48a7-9322-9a0fa3557a70
+      isCompleted: 0
+      isClaimed: 0
+      title: Gumamela Pula!
+      description: Help Mang Esterlito give a gumamela to Aling Nena
+      dunongPointsRewards: 10
+      region: Region 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: b145e11f-512d-4d26-828c-221cffc1e8d0
+        deliveryMessage: Hey! Would you mind if you give this to ur mother?
+        giverName: Mang Esterlito
+        receiverName: Aling Nena
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Gumamela
+          information: 
+          quantity: 0
+          stackable: 0
+    currentQuests: []
+    completedQuests: []
+    inventory: []
 --- !u!95 &2618897702407668067
 Animator:
   serializedVersion: 3
@@ -199,18 +339,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.025079437, y: -0.030652523}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.15, y: 0.2}
+    oldSize: {x: 0.87, y: 1.33}
     newSize: {x: 0.15, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.15, y: 0.2}
+  m_Size: {x: 0.4342323, y: 1.275624}
   m_EdgeRadius: 0
 --- !u!50 &2618897702407668069
 Rigidbody2D:

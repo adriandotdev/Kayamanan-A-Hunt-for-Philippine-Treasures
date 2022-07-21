@@ -27,11 +27,6 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         }
     }
 
-    private void Start()
-    {
-        
-    }
-
     private void OnEnable()
     {
         SceneManager.sceneLoaded += OnHouseSceneLoaded;
@@ -44,13 +39,13 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         SceneManager.sceneLoaded -= OnOutsideSceneLoaded;
     }
 
-    
     void OnHouseSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House"))
         {
             this.GetAllNecessaryGameObjects();
             this.GetListOfQuests();
+            this.SetupScriptsForDeliveryQuestToNPCs();
         }
     }
 
@@ -60,9 +55,12 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         {
             this.GetAllNecessaryGameObjects();
             this.GetListOfQuests();
+            this.SetupScriptsForDeliveryQuestToNPCs();
         }
     }
 
+    /** Gets all the quest that is related to the 
+     current open region. */
     public void GetListOfQuests()
     {
         string currentRegion = this.GetCurrentOpenRegion();
@@ -81,6 +79,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         }
     }
 
+    /** Get the last open region */
     public string GetCurrentOpenRegion()
     {
         string regionNameOpened = "Region 1";
@@ -99,35 +98,74 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     public void GetAllNecessaryGameObjects()
     {
         Transform questPanel = GameObject.Find("Quest Panel").transform;
-        Button closeQuestPanel = questPanel.GetChild(2).GetComponent<Button>();
+        Button closeQuestPanel = questPanel.GetChild(3).GetComponent<Button>();
 
         RectTransform questContentScrollView = GameObject.Find("Quest Content Scroll View").GetComponent<RectTransform>();
+
         CanvasGroup canvasGroup = GameObject.Find("House Canvas Group").GetComponent<CanvasGroup>();
         Button openQuestPanel = GameObject.Find("Quest Button").GetComponent<Button>();
+        Button pendingBtn = GameObject.Find("Pending").GetComponent<Button>();
+        Button completedBtn = GameObject.Find("Completed").GetComponent<Button>();
+
         this.questAlertBox = GameObject.Find("Alert Box");
+
+        pendingBtn.onClick.AddListener(() =>
+        {
+            this.RemoveAllQuest(questContentScrollView); // reset
+            this.GetAllCurrentQuests(questContentScrollView);
+
+            this.ChangeButtonColor(pendingBtn, completedBtn);
+        });
+
+        completedBtn.onClick.AddListener(() =>
+        {
+            this.RemoveAllQuest(questContentScrollView);
+            this.GetAllCompletedQuest(questContentScrollView);
+
+            this.ChangeButtonColor(completedBtn, pendingBtn);
+        });
 
         closeQuestPanel.onClick.AddListener(() =>
         {
             LeanTween.scale(questPanel.gameObject, Vector2.zero, .2f)
             .setOnComplete(() => {
-
-                canvasGroup.interactable = true;
                 this.RemoveAllQuest(questContentScrollView);
+                canvasGroup.interactable = true;
             });
+
+            this.ChangeButtonColor(pendingBtn, completedBtn);
         });
 
         openQuestPanel.onClick.AddListener(() =>
         {
-            this.GetAllQuests(questContentScrollView);
+            this.GetAllCurrentQuests(questContentScrollView);
             LeanTween.scale(questPanel.gameObject, Vector2.one, .2f);
             canvasGroup.interactable = false;
         });
+
+        this.ChangeButtonColor(pendingBtn, completedBtn);
 
         questPanel.transform.localScale = Vector2.zero;
         this.questAlertBox.SetActive(false);
     }
 
-    public void GetAllQuests(RectTransform content)
+    /** This function is responsible for changing the color
+     of 'Pending' and 'Completed' buttons in Quest Panel. */
+    void ChangeButtonColor(Button buttonToChange, Button buttonToRevert)
+    {
+        // Setup the color for selecting button.
+        Color selectedColor;
+        ColorUtility.TryParseHtmlString("#331313", out selectedColor);
+
+        buttonToChange.GetComponent<Image>().color = selectedColor;
+        buttonToChange.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().color = Color.white;
+
+        buttonToRevert.GetComponent<Image>().color = Color.white;
+        buttonToRevert.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().color = selectedColor;
+    }
+
+    /** Display all the current quest at Quest Panel. */
+    public void GetAllCurrentQuests(RectTransform content)
     {
         foreach (Quest quest in this.playerData.currentQuests)
         {
@@ -153,6 +191,56 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         }
     }
 
+    /** Display all the complete quest at Quest Panel. */
+    public void GetAllCompletedQuest(RectTransform content)
+    {
+        foreach (Quest quest in this.playerData.completedQuests)
+        {
+            GameObject questSlot = Instantiate(questPrefab, content.transform);
+
+            questSlot.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>()
+                .text = quest.title;
+            questSlot.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>()
+                .text = quest.description;
+
+            if (quest.isCompleted)
+            {
+                Button claimBtn = questSlot.transform.GetChild(2).GetComponent<Button>();
+
+                if (!quest.isClaimed)
+                {
+                    claimBtn.onClick.AddListener(() =>
+                    {
+                        questSlot.transform.GetChild(2).transform.GetChild(0)
+                         .GetComponent<TMPro.TextMeshProUGUI>()
+                         .text = "Claimed";
+                        this.playerData.dunongPoints += quest.dunongPointsRewards;
+                        quest.isClaimed = true;
+                        claimBtn.interactable = false;
+                        DataPersistenceManager.instance.SaveGame();
+                    });
+                    questSlot.transform.GetChild(2).transform.GetChild(0)
+                     .GetComponent<TMPro.TextMeshProUGUI>()
+                     .text = "Claim";
+                }
+                else
+                {
+                    claimBtn.interactable = false;
+                    questSlot.transform.GetChild(2).transform.GetChild(0)
+                     .GetComponent<TMPro.TextMeshProUGUI>()
+                     .text = "Claimed";
+                }
+            }
+            else
+            {
+                questSlot.transform.GetChild(2).transform.GetChild(0)
+                .GetComponent<TMPro.TextMeshProUGUI>()
+                .text = quest.dunongPointsRewards.ToString();
+            }
+        }
+    }
+
+    /** Remove all quest at Quest Panel */
     public void RemoveAllQuest(RectTransform content)
     {
         foreach (Transform questSlot in content)
@@ -161,18 +249,98 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         }
     }
 
+    /** Setups all the gameobject who handles DeliveryGoalGiver and DeliveryGoalReceiver Quest. */
+    public void SetupScriptsForDeliveryQuestToNPCs()
+    {
+        DeliveryGoalGiver[] dgg = GameObject.FindObjectsOfType<DeliveryGoalGiver>();
+        DeliveryGoalReceiver[] dgr = GameObject.FindObjectsOfType<DeliveryGoalReceiver>();
 
-    // Functions to call to complete all quests.
+        foreach (DeliveryGoalGiver dg in dgg)
+        {
+            dg.quest = null;
+        }
+
+        foreach (DeliveryGoalReceiver dr in dgr)
+        {
+            dr.quest = null;
+        }
+        foreach (Quest quest in this.playerData.currentQuests)
+        {
+            if (quest.deliveryGoal != null)
+            {
+                GameObject giver = GameObject.Find(quest.deliveryGoal.giverName);
+                GameObject receiver = GameObject.Find(quest.deliveryGoal.receiverName);
+
+                if (giver != null)
+                {
+                    giver.GetComponent<DeliveryGoalGiver>().quest = quest.CopyQuestDeliveryGoal();
+                }
+
+                if (receiver != null)
+                {
+                    receiver.GetComponent<DeliveryGoalReceiver>().quest = quest.CopyQuestDeliveryGoal();
+                }
+            }
+        }
+    }
+
+    /** Find the delivery quest based on ID and set it as completed. */
+    public void FindDeliveryQuestGoal(string deliveryQuestID)
+    {
+        foreach (Quest quest in this.playerData.currentQuests)
+        {
+            if (quest.questID == deliveryQuestID)
+            {
+                this.questAlertBox.SetActive(true);
+
+                Quest questFound = this.playerData.quests.Find((questToFind) => questToFind.questID == quest.questID);
+
+                questFound = this.playerData.currentQuests.Find(questToFind => questToFind.questID == quest.questID);
+                this.playerData.currentQuests.Remove(questFound);
+
+                questFound = this.playerData.quests.Find(questToFind => questToFind.questID == quest.questID);
+                this.playerData.quests.Remove(questFound); // NEED TO TEST.
+
+                questFound.isCompleted = true;
+
+                this.playerData.completedQuests.Add(questFound);
+
+                this.GetListOfQuests();
+
+                DataPersistenceManager.instance.SaveGame();
+
+                StartCoroutine(HideQuestAlertBox());
+
+                return;
+            }
+        }
+    }
+
+    /** Find the talk quest and set it as completed. */
     public void FindTalkQuestGoal(string npcName)
     {
         foreach(Quest quest in this.playerData.currentQuests)
         {
-            if (!quest.isCompleted && quest.talkGoal.GetNPCName().ToUpper() == npcName.ToUpper())
+            if (!quest.isCompleted 
+                && quest.talkGoal != null 
+                && quest.talkGoal.GetNPCName().ToUpper() == npcName.ToUpper())
             {
                 quest.isCompleted = true;
                 this.questAlertBox.SetActive(true);
+
                 Quest questFound = this.playerData.quests.Find((questToFind) => questToFind.questID == quest.questID);
+                
+                questFound = this.playerData.currentQuests.Find(questToFind => questToFind.questID == quest.questID);
+                this.playerData.currentQuests.Remove(questFound);
+
+                questFound = this.playerData.quests.Find(questToFind => questToFind.questID == quest.questID);
+                this.playerData.quests.Remove(questFound); // NEED TO TEST.
+
                 questFound.isCompleted = true;
+
+                this.playerData.completedQuests.Add(questFound);
+
+                this.GetListOfQuests();
 
                 DataPersistenceManager.instance.SaveGame();
 

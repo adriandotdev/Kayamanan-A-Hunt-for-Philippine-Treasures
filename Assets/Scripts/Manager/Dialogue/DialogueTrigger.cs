@@ -28,7 +28,7 @@ public class DialogueTrigger : MonoBehaviour
         QuestManager.instance.FindTalkQuestGoal(this.NPC_NAME);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
@@ -37,10 +37,8 @@ public class DialogueTrigger : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
-        //actorName.gameObject.SetActive(true);
         talkButton.gameObject.SetActive(false);
-
     }
 }
