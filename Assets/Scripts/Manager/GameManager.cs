@@ -51,6 +51,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         SceneManager.sceneLoaded += OnCharacterAndLoadSceneLoaded;
         SceneManager.sceneLoaded += OnHouseSceneLoaded;
         SceneManager.sceneLoaded += OnOutsideSceneLoaded;
+        SceneManager.sceneLoaded += OnSchoolSceneLoaded;
         SceneManager.sceneLoaded += OnPhilippineMapSceneLoaded;
         SceneManager.sceneLoaded += OnAssessmentAndWordGamesSceneLoaded;
     }
@@ -61,6 +62,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         SceneManager.sceneLoaded -= OnCharacterAndLoadSceneLoaded;
         SceneManager.sceneLoaded -= OnHouseSceneLoaded;
         SceneManager.sceneLoaded -= OnOutsideSceneLoaded;
+        SceneManager.sceneLoaded -= OnSchoolSceneLoaded;
         SceneManager.sceneLoaded -= OnPhilippineMapSceneLoaded;
         SceneManager.sceneLoaded -= OnAssessmentAndWordGamesSceneLoaded;
     }
@@ -129,6 +131,17 @@ public class GameManager : MonoBehaviour, IDataPersistence
         {
             this.sceneToLoadFromPhilippineMap = "Outside";
             this.playerData.sceneToLoad = "Outside";
+            this.SetUpHouseOrOutsideSceneButtons();
+        }
+    }
+
+    // For Outside Scene
+    public void OnSchoolSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School"))
+        {
+            this.sceneToLoadFromPhilippineMap = "School";
+            this.playerData.sceneToLoad = "School";
             this.SetUpHouseOrOutsideSceneButtons();
         }
     }
@@ -233,7 +246,9 @@ public class GameManager : MonoBehaviour, IDataPersistence
         {
             this.menuSceneCanvasGroup.interactable = true;
         }
-        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House"))
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School"))
         {
             this.homeCanvasGroup.interactable = true;
             this.homeCanvasGroup.blocksRaycasts = true;
@@ -247,7 +262,9 @@ public class GameManager : MonoBehaviour, IDataPersistence
         {
             this.menuSceneCanvasGroup.interactable = false;
         }
-        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House"))
+        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School"))
         {
             this.homeCanvasGroup.interactable = false;
             this.homeCanvasGroup.blocksRaycasts = false;

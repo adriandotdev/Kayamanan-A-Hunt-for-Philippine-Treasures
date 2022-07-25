@@ -1087,8 +1087,8 @@ MonoBehaviour:
   btnCloseCharCreationPanel: {fileID: 2044772372}
   btnCreateNewProfile: {fileID: 1051441029}
   playerData:
-    isNewlyCreated: 1
     id: 
+    isNewlyCreated: 1
     name: 
     gender: male
     dunongPoints: 25
@@ -3727,8 +3727,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279440179
+  m_fontColor: {r: 0.2, g: 0.07450981, b: 0.07450981, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

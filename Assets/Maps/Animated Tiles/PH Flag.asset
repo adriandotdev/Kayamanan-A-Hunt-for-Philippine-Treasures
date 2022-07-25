@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: PH Flag
   m_EditorClassIdentifier: 
   m_AnimatedSprites:
-  - {fileID: -4810925492337279230, guid: ac9345a61fe05cf4288f6c1c202f003f, type: 3}
-  - {fileID: 2362961250355114410, guid: ac9345a61fe05cf4288f6c1c202f003f, type: 3}
-  - {fileID: 382137942443960846, guid: ac9345a61fe05cf4288f6c1c202f003f, type: 3}
-  - {fileID: 8852129813403162523, guid: ac9345a61fe05cf4288f6c1c202f003f, type: 3}
-  - {fileID: 1310196373679841042, guid: ac9345a61fe05cf4288f6c1c202f003f, type: 3}
+  - {fileID: 1805158079502305607, guid: f95225d53f7939b48852289808e408db, type: 3}
+  - {fileID: -477789389410734736, guid: f95225d53f7939b48852289808e408db, type: 3}
+  - {fileID: -8119871676797884261, guid: f95225d53f7939b48852289808e408db, type: 3}
+  - {fileID: 5006722515616286978, guid: f95225d53f7939b48852289808e408db, type: 3}
+  - {fileID: -1620801062248390355, guid: f95225d53f7939b48852289808e408db, type: 3}
   m_MinSpeed: 3
   m_MaxSpeed: 4
   m_AnimationStartTime: 0

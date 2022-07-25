@@ -36,9 +36,10 @@ public class DataPersistenceManager : MonoBehaviour
         print("Data Persistence On Enable");
         SceneManager.sceneLoaded += MenuSceneLoaded;
         SceneManager.sceneLoaded += CharacterCreationSceneLoaded;
-        SceneManager.sceneLoaded += HouseSceneLoaded;
-        SceneManager.sceneLoaded += PhilippineMapSceneLoaded;
-        SceneManager.sceneLoaded += OutsideSceneLoaded;
+        SceneManager.sceneLoaded += OnSceneThatRequiresPlayerDataLoaded;
+        //SceneManager.sceneLoaded += HouseSceneLoaded;
+        //SceneManager.sceneLoaded += PhilippineMapSceneLoaded;
+        //SceneManager.sceneLoaded += OutsideSceneLoaded;
         //SceneManager.sceneLoaded += WordSceneLoaded;
         //SceneManager.sceneLoaded += AssessmentSceneLoaded;
     }
@@ -48,9 +49,10 @@ public class DataPersistenceManager : MonoBehaviour
         print("Data Persistence On Disable");
         SceneManager.sceneLoaded -= MenuSceneLoaded;
         SceneManager.sceneLoaded -= CharacterCreationSceneLoaded;
-        SceneManager.sceneLoaded -= HouseSceneLoaded;
-        SceneManager.sceneLoaded -= PhilippineMapSceneLoaded;
-        SceneManager.sceneLoaded -= OutsideSceneLoaded;
+        SceneManager.sceneLoaded -= OnSceneThatRequiresPlayerDataLoaded;
+        //SceneManager.sceneLoaded -= HouseSceneLoaded;
+        //SceneManager.sceneLoaded -= PhilippineMapSceneLoaded;
+        //SceneManager.sceneLoaded -= OutsideSceneLoaded;
         //SceneManager.sceneLoaded -= WordSceneLoaded;
         //SceneManager.sceneLoaded -= AssessmentSceneLoaded;
     }
@@ -79,29 +81,40 @@ public class DataPersistenceManager : MonoBehaviour
         }
     }
 
-    private void HouseSceneLoaded(Scene scene, LoadSceneMode mode) 
+    private void OnSceneThatRequiresPlayerDataLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House"))
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Philippine Map"))
         {
             this.LoadGame();
         }
     }
 
-    private void OutsideSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside"))
-        {
-            this.LoadGame();
-        }
-    }
+    //private void HouseSceneLoaded(Scene scene, LoadSceneMode mode) 
+    //{
+    //    if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House"))
+    //    {
+    //        this.LoadGame();
+    //    }
+    //}
 
-    private void PhilippineMapSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Philippine Map"))
-        {
-            this.LoadGame();
-        }
-    }
+    //private void OutsideSceneLoaded(Scene scene, LoadSceneMode mode)
+    //{
+    //    if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside"))
+    //    {
+    //        this.LoadGame();
+    //    }
+    //}
+
+    //private void PhilippineMapSceneLoaded(Scene scene, LoadSceneMode mode)
+    //{
+    //    if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Philippine Map"))
+    //    {
+    //        this.LoadGame();
+    //    }
+    //}
 
     public void ConfirmCharacter()
     {

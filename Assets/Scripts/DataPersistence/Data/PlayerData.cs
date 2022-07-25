@@ -6,13 +6,13 @@ using System.Linq;
 [System.Serializable]
 public class PlayerData 
 {
-    public bool isNewlyCreated;
     public string id;
+    public bool isNewlyCreated;
     public string name;
     public string gender;
     public int dunongPoints;
     public int remainingTime;
-    
+
     public string sceneToLoad;
     public float xPos;
     public float yPos;

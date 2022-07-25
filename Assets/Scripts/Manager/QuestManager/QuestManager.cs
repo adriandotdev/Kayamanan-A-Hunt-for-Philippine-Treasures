@@ -31,13 +31,29 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     {
         SceneManager.sceneLoaded += OnHouseSceneLoaded;
         SceneManager.sceneLoaded += OnOutsideSceneLoaded;
+        SceneManager.sceneLoaded += OnSchoolSceneLoaded;
+        //SceneManager.sceneLoaded += OnSceneWithQuestManagerSceneLoaded;
     }
 
     private void OnDisable()
     {
         SceneManager.sceneLoaded -= OnHouseSceneLoaded;
         SceneManager.sceneLoaded -= OnOutsideSceneLoaded;
+        SceneManager.sceneLoaded -= OnSchoolSceneLoaded;
+        //SceneManager.sceneLoaded -= OnSceneWithQuestManagerSceneLoaded;
     }
+
+    //void OnSceneWithQuestManagerSceneLoaded(Scene scene, LoadSceneMode mode)
+    //{
+    //    if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House")
+    //        || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside")
+    //        || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School"))
+    //    {
+    //        this.GetAllNecessaryGameObjects();
+    //        this.GetListOfQuests();
+    //        this.SetupScriptsForDeliveryQuestToNPCs();
+    //    }
+    //}
 
     void OnHouseSceneLoaded(Scene scene, LoadSceneMode mode)
     {
@@ -59,6 +75,15 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         }
     }
 
+    void OnSchoolSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School"))
+        {
+            this.GetAllNecessaryGameObjects();
+            this.GetListOfQuests();
+            this.SetupScriptsForDeliveryQuestToNPCs();
+        }
+    }
     /** Gets all the quest that is related to the 
      current open region. */
     public void GetListOfQuests()

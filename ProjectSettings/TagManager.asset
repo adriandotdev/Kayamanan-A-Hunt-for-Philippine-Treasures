@@ -10,6 +10,7 @@ TagManager:
   - Confirm Button
   - Score Star
   - House Tile
+  - PH Flag
   layers:
   - Default
   - TransparentFX

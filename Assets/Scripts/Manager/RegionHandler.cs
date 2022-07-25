@@ -10,6 +10,8 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
     public static RegionHandler instance;
 
     [SerializeField] public CanvasGroup UICanvasGroup;
+    [SerializeField] public RectTransform alertBox;
+    [SerializeField] public TMPro.TextMeshProUGUI categoriesPanelTitle;
     [SerializeField] public CanvasGroup regionsCanvasGroup;
     [SerializeField] public RectTransform categoriesPanel;
     [SerializeField] public PlayerData playerData;
@@ -28,14 +30,16 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
         // Set the name of the region.
         string regionName = EventSystem.current.currentSelectedGameObject.name.ToString();
 
+        this.categoriesPanelTitle.text = regionName + " Categories";
+
         WordManager.instance.regionName = regionName;
         AssessmentManager.instance.regionName = regionName;
 
         if (this.IsRegionOpen(regionName) || regionName == "Close")
         {
             this.ResetCategories();
-            GetAllAssessments();
-            GetAllWordGames();
+            this.GetAllAssessments();
+            this.GetAllWordGames();
             this.HideUnavailableCategories();
 
             if (show)
@@ -57,8 +61,17 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
         }
         else
         {
-            Debug.Log(regionName + " is closed");
+            this.alertBox.gameObject.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = regionName + " is still closed";
+            this.alertBox.gameObject.SetActive(true);
+            StartCoroutine(CloseAlertBox());
         }
+    }
+
+    IEnumerator CloseAlertBox()
+    {
+        yield return new WaitForSeconds(.9f);
+
+        this.alertBox.gameObject.SetActive(false);
     }
 
     /**<summary>

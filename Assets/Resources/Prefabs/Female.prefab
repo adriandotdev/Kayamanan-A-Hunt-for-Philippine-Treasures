@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1823698290030706104}
   - component: {fileID: 1823698290030706105}
   - component: {fileID: 1264058201}
+  - component: {fileID: 7849359187470511372}
   m_Layer: 0
   m_Name: Female
   m_TagString: Player
@@ -120,13 +121,13 @@ MonoBehaviour:
   characterNameText: {fileID: 0}
   joystick: {fileID: 0}
   animator: {fileID: 1823698290030706110}
-  speed: 4
+  speed: 5
   virtualCam: {fileID: 0}
   up: {fileID: 0}
   down: {fileID: 0}
   playerData:
-    isNewlyCreated: 1
     id: 
+    isNewlyCreated: 1
     name: 
     gender: male
     dunongPoints: 25
@@ -136,19 +137,23 @@ MonoBehaviour:
     yPos: 0
     notebook:
       collectibles:
-      - imagePath: Collectibles/C1
+      - name: Jose Rizal
+        imagePath: Collectibles/C1
         isCollected: 0
         categoryName: National Heroes
         regionName: Region 1
-      - imagePath: Collectibles/C2
+      - name: Anahaw
+        imagePath: Collectibles/C2
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 1
-      - imagePath: Collectibles/C3
+      - name: Andres Bonifacio
+        imagePath: Collectibles/C3
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 2
-      - imagePath: Collectibles/C4
+      - name: Kalabaw
+        imagePath: Collectibles/C4
         isCollected: 0
         categoryName: National Symbols
         regionName: Region 3
@@ -186,6 +191,142 @@ MonoBehaviour:
       - categoryName: Philippine Myths
         highestScore: 0
         noOfStars: 0
+    quests:
+    - questID: 701a1642-2c69-4b70-a573-e0f62c216f2a
+      isCompleted: 0
+      isClaimed: 0
+      title: Known All Heroes
+      description: Talk to Mang Esterlito
+      dunongPointsRewards: 15
+      region: Region 1
+      talkGoal:
+        isFinished: 0
+        npcName: Mang Esterlito
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+    - questID: 0e315877-9b92-4e45-a833-ce1ca1cd55f5
+      isCompleted: 0
+      isClaimed: 0
+      title: Talk to your MILF
+      description: Talk to Aling Nena
+      dunongPointsRewards: 10
+      region: Region 1
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Nena
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+    - questID: cbe9eae4-f90a-4ee8-a548-9e50df5bd96c
+      isCompleted: 0
+      isClaimed: 0
+      title: Best Friends
+      description: Talk to Aling Missy
+      dunongPointsRewards: 5
+      region: Region 2
+      talkGoal:
+        isFinished: 0
+        npcName: Aling Nena
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 
+        deliveryMessage: 
+        giverName: 
+        receiverName: 
+        itemReceivedFromGiver: 0
+        item:
+          itemName: 
+          information: 
+          quantity: 0
+          stackable: 0
+    - questID: 846494dc-fad5-4dee-9ecf-ddea12eac625
+      isCompleted: 0
+      isClaimed: 0
+      title: Buko Pie Ayayay!
+      description: Get the Buko Pie from Aling Marites and give it to Mang Esterlito
+      dunongPointsRewards: 10
+      region: Region 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: bdc2bf99-c4a9-4ed6-9866-b381b4b208b5
+        deliveryMessage: Can you give this Buko Pie to Mang Esterlito?
+        giverName: Aling Marites
+        receiverName: Mang Esterlito
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Buko Pie
+          information: 
+          quantity: 0
+          stackable: 0
+    - questID: 8dd57d85-fbf2-4843-a236-573bce5a66de
+      isCompleted: 0
+      isClaimed: 0
+      title: Mango Aloho!
+      description: Help Aling Julia to give Aling Marites a Mango
+      dunongPointsRewards: 10
+      region: Region 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 98e3c9ad-60da-4a3a-be3a-3c898e82f91c
+        deliveryMessage: Hey! Would you mind if you give this to Aling Marites?
+        giverName: Aling Julia
+        receiverName: Aling Marites
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Mango
+          information: 
+          quantity: 0
+          stackable: 0
+    - questID: cbef8523-142c-44b5-9d6f-5471daf99f83
+      isCompleted: 0
+      isClaimed: 0
+      title: Gumamela Pula!
+      description: Help Mang Esterlito give a gumamela to Aling Nena
+      dunongPointsRewards: 10
+      region: Region 1
+      talkGoal:
+        isFinished: 0
+        npcName: 
+      deliveryGoal:
+        isFinished: 0
+        deliverGoalId: 9799d4c1-c2db-4c1a-aa9a-c1403b6b92d1
+        deliveryMessage: Hey! Would you mind if you give this to ur mother?
+        giverName: Mang Esterlito
+        receiverName: Aling Nena
+        itemReceivedFromGiver: 0
+        item:
+          itemName: Gumamela
+          information: 
+          quantity: 0
+          stackable: 0
+    currentQuests: []
+    completedQuests: []
+    inventory: []
 --- !u!70 &1823698290030706105
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -199,8 +340,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0045190966, y: 0}
-  m_Size: {x: 0.5975161, y: 1.2600001}
+  m_Offset: {x: 0.0045190966, y: -0.29991487}
+  m_Size: {x: 0.5975161, y: 0.6601701}
   m_Direction: 0
 --- !u!50 &1264058201
 Rigidbody2D:
@@ -223,3 +364,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &7849359187470511372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823698290030706109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ec9858c3f599834fbb5137474f5efc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingType: 1
