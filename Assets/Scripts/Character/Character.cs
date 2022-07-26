@@ -41,10 +41,12 @@ public class Character : MonoBehaviour, IDataPersistence
     {
         float horizontal = joystick.Horizontal;
         float vertical = joystick.Vertical;
+        
 
         if (horizontal != 0 || vertical != 0)
         {
             animator.SetFloat("Speed", 1);
+            
         }
         else
         {
@@ -55,6 +57,9 @@ public class Character : MonoBehaviour, IDataPersistence
         animator.SetFloat("Vertical", vertical);
 
         movement = new Vector3(horizontal, vertical) * speed * Time.deltaTime;
+
+        if (movement != Vector3.zero)
+            SoundManager.instance.PlaySound("Wood Footsteps");
 
         transform.position += movement;
 

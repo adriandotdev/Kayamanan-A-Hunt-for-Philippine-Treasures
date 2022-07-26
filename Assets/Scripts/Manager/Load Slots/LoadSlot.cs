@@ -85,6 +85,7 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
          */
         btnCancel.onClick.AddListener(() =>
         {
+            SoundManager.instance.PlaySound("Button Click 2"); // Click Sound
             if (this.isCharacterPanelOpen != true)
             {
                 this.UICanvasGroup.interactable = true;
@@ -108,6 +109,8 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
     {
         btnMale.onClick.AddListener(() =>
         {
+            SoundManager.instance.PlaySound("Checkbox");
+
             // Show the check symbol under the btnMale.
             btnMale.transform.GetChild(0).gameObject.SetActive(true);
 
@@ -120,6 +123,8 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
 
         btnFemale.onClick.AddListener(() =>
         {
+            SoundManager.instance.PlaySound("Checkbox");
+
             // Show the check symbol at btnFemale.
             btnFemale.transform.GetChild(0).gameObject.SetActive(true);
 
@@ -143,6 +148,8 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
 
         btnCreateNewProfile.onClick.AddListener(() =>
         {
+            SoundManager.instance.PlaySound("Button Click 2");
+
             this.UICanvasGroup.interactable = false;
             this.isCharacterPanelOpen = true;
             LeanTween.scale(createCharacterPanel.gameObject, new Vector2(1, 1), .2f);
@@ -152,6 +159,7 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
         {
             if (this.btnCharacterName.text.Length != 0)
             {
+                SoundManager.instance.PlaySound("Button Click 2");
                 this.UICanvasGroup.interactable = false;
                 this.createCharacterPanelCanvasGroup.interactable = false;
                 LeanTween.scale(confirmationPanel.gameObject, new Vector2(1, 1), .2f);
@@ -165,6 +173,8 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
 
         btnCloseCharCreationPanel.onClick.AddListener(() =>
         {
+            SoundManager.instance.PlaySound("Button Click 2");
+
             this.UICanvasGroup.interactable = true;
             this.isCharacterPanelOpen = false;
             LeanTween.scale(createCharacterPanel.gameObject, new Vector2(0, 0), .2f);
@@ -184,6 +194,8 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
     {
         this.btnDelete.onClick.AddListener(() =>
         {
+            SoundManager.instance.PlaySound("Button Click 2");
+
             // Create and Load all the slots.
             SlotsFileHandler fileHandler = new SlotsFileHandler();
             Slots slots = fileHandler.Load();
@@ -206,6 +218,8 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
 
         this.btnCancelDelete.onClick.AddListener(() =>
         {
+            SoundManager.instance.PlaySound("Button Click 2");
+
             DataPersistenceManager.instance.playerData = new PlayerData();
             this.playerData = DataPersistenceManager.instance.playerData;
 
@@ -225,6 +239,7 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
      */
     private void ConfirmBtnEventWhileLoadingProfile()
     {
+        SoundManager.instance.PlaySound("Button Click 2");
         SceneManager.LoadScene(this.playerData.sceneToLoad);
     }
 
@@ -236,6 +251,7 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
      */
     private void ConfirmBtnEventWhileCreatingProfile()
     {
+        SoundManager.instance.PlaySound("Button Click 2");
         this.playerData.name = this.btnCharacterName.text;
         DataPersistenceManager.instance.ConfirmCharacter();
 
@@ -276,10 +292,11 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
 
             gameObject.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = playerData.name;
 
-            // UPDATE Button Event
+            // LOAD Button Event
             gameObject.transform.GetChild(1).gameObject.GetComponent<Button>().onClick.AddListener(() =>
             {
                 UICanvasGroup.interactable = false;
+                SoundManager.instance.PlaySound("Button Click 2"); // Sound Click
 
                 this.playerData = playerData;
                 DataPersistenceManager.instance.playerData = this.playerData;
@@ -295,6 +312,7 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
             gameObject.transform.GetChild(2).gameObject.GetComponent<Button>().onClick.AddListener(() =>
             {
                 this.playerData = playerData;
+                SoundManager.instance.PlaySound("Button Click 2");
                 DataPersistenceManager.instance.playerData = this.playerData;
 
                 this.UICanvasGroup.interactable = false;

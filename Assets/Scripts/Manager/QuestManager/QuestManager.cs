@@ -136,6 +136,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
         pendingBtn.onClick.AddListener(() =>
         {
+            SoundManager.instance.PlaySound("Button Click 2");
             this.RemoveAllQuest(questContentScrollView); // reset
             this.GetAllCurrentQuests(questContentScrollView);
 
@@ -144,6 +145,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
         completedBtn.onClick.AddListener(() =>
         {
+            SoundManager.instance.PlaySound("Button Click 2");
             this.RemoveAllQuest(questContentScrollView);
             this.GetAllCompletedQuest(questContentScrollView);
 
@@ -152,6 +154,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
         closeQuestPanel.onClick.AddListener(() =>
         {
+            SoundManager.instance.PlaySound("Button Click 1");
             LeanTween.scale(questPanel.gameObject, Vector2.zero, .2f)
             .setOnComplete(() => {
                 this.RemoveAllQuest(questContentScrollView);
@@ -163,6 +166,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
 
         openQuestPanel.onClick.AddListener(() =>
         {
+            SoundManager.instance.PlaySound("Button Click 1");
             this.GetAllCurrentQuests(questContentScrollView);
             LeanTween.scale(questPanel.gameObject, Vector2.one, .2f);
             canvasGroup.interactable = false;
@@ -317,6 +321,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
             if (quest.questID == deliveryQuestID)
             {
                 this.questAlertBox.SetActive(true);
+                SoundManager.instance.PlaySound("Quest Notification");
 
                 Quest questFound = this.playerData.quests.Find((questToFind) => questToFind.questID == quest.questID);
 
@@ -352,6 +357,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
             {
                 quest.isCompleted = true;
                 this.questAlertBox.SetActive(true);
+                SoundManager.instance.PlaySound("Quest Notification");
 
                 Quest questFound = this.playerData.quests.Find((questToFind) => questToFind.questID == quest.questID);
                 

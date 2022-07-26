@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+using System;
 
 public class AssessmentManager : MonoBehaviour, IDataPersistence
 {
@@ -77,8 +77,8 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
                 }
                 choices = GameObject.FindGameObjectsWithTag("Choices");
 
-                FisherYates.shuffle(this.assessments);
-                questionLabel.text = assessments[this.currentIndex].question.ToString();
+                FisherYates.Shuffle(this.shuffled);
+                questionLabel.text = this.shuffled[this.currentIndex].question.ToString();
                 this.SetChoices();
                 this.AddEvents();
             }
@@ -92,6 +92,8 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
     public void StartAssessments(Assessment[] assessments)
     {
         this.assessments = assessments;
+        this.shuffled = new Assessment[this.assessments.Length];
+        Array.Copy(this.assessments, this.shuffled, this.assessments.Length);
     }
 
     public void SetNextQuestion()
@@ -99,9 +101,9 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
         this.currentIndex += 1;
 
         // Check if there are still questions to load.
-        if (this.currentIndex < this.assessments.Length)
+        if (this.currentIndex < this.shuffled.Length)
         {
-            this.questionLabel.text = assessments[this.currentIndex].question.ToString();
+            this.questionLabel.text = this.shuffled[this.currentIndex].question.ToString();
             this.SetChoices();
         }
         // If all the questions are loaded.
@@ -120,7 +122,7 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
                 }
             }
 
-            scoreLabel.text = noOfCorrectAns + "/" + this.assessments.Length;
+            scoreLabel.text = noOfCorrectAns + "/" + this.shuffled.Length;
 
             this.SetRegionHighscore(noOfCorrectAns);
 
@@ -146,7 +148,7 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
 
                 /** I-Check if ang text ng clinicked na button (which is from the TextMeshPro under ng button) is equal
                 doon sa correct answer na naka store sa assessment instance based doon sa currentIndex natin. */ 
-                bool isCorrect = this.answer.ToUpper().Equals(assessments[this.currentIndex].correctAnswer.ToUpper());
+                bool isCorrect = this.answer.ToUpper().Equals(this.shuffled[this.currentIndex].correctAnswer.ToUpper());
 
                 // I-add sa boolean na List.
                 this.correctAnswers.Add(isCorrect);
@@ -160,9 +162,15 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
     // SET ALL THE CHOICES TO 4 BUTTONS.
     public void SetChoices()
     {
-        for (int i = 0; i < assessments[this.currentIndex].choices.Length; i++)
+        string[] shuffledAssessmentChoices = new string[this.shuffled[this.currentIndex].choices.Length];
+
+        Array.Copy(this.shuffled[this.currentIndex].choices, shuffledAssessmentChoices, shuffledAssessmentChoices.Length);
+
+        FisherYates.Shuffle(shuffledAssessmentChoices);
+
+        for (int i = 0; i < shuffledAssessmentChoices.Length; i++)
         {
-            this.choices[i].transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = assessments[this.currentIndex].choices[i];
+            this.choices[i].transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = shuffledAssessmentChoices[i];
         }
     }
 
@@ -200,7 +208,7 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
             by 2 and adding 1.
         </summary>
          */
-        int passingScore = this.assessments.Length / 2 + 1;
+        int passingScore = this.shuffled.Length / 2 + 1;
 
         // If the result of assessment is 0, then the number of stars will remain.
         if (noOfCorrectAnswers == 0)
@@ -212,7 +220,7 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
          * Evaluate the number of stars that the 
             player will get based on assessment's result.
          */
-        if (noOfCorrectAnswers == this.assessments.Length)
+        if (noOfCorrectAnswers == this.shuffled.Length)
             noOfStars = 3;
         else if (noOfCorrectAnswers >= passingScore)
             noOfStars = 2;
@@ -281,10 +289,26 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
         return true;
     }
 
+    public bool CheckIfRegionCollectiblesIsCollected()
+    {
+        foreach (Collectible collectible in playerData.notebook.collectibles)
+        {
+            if (collectible.regionName.ToUpper() == this.regionName.ToUpper())
+            {
+                if (!collectible.isCollected)
+                    return false;
+            }
+        }
+        return true;
+    }
+
     public void CollectAllRewards()
     {
         if (AllCategoriesCompleted() != true)
             return;
+
+        if (!CheckIfRegionCollectiblesIsCollected())
+            SoundManager.instance.PlaySound("Unlock Item");
 
         foreach (Collectible collectible in playerData.notebook.collectibles)
         {
@@ -304,7 +328,7 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
     {
         SceneManager.LoadScene("Assessment");
 
-        FisherYates.shuffle(this.assessments);
+        FisherYates.Shuffle(this.shuffled);
     }
 
     public void LoadPlayerData(PlayerData playerData)
@@ -334,72 +358,139 @@ public class Assessment
 [System.Serializable]
 public class FisherYates
 {
-    public static Assessment[] shuffle(Assessment[] assessments)
+    static System.Random random = new System.Random();
+
+    public static Assessment[] Shuffle(Assessment[] toShuffle)
     {
-        Assessment[] newAssessments = assessments;
+        Assessment[] newArray = toShuffle;
+        System.Random random = new System.Random();
 
-        int randomNumber = 0;
-        int endPointer = assessments.Length - 1;
-
-        for (int i = 0; i < newAssessments.Length; i++)
+        for (int i = newArray.Length - 1; i > 0; i--)
         {
-            randomNumber = Random.Range(0, endPointer);
+            int randomNum = random.Next(newArray.Length - 1);
 
-            Assessment temp = assessments[randomNumber];
-            assessments[randomNumber] = assessments[endPointer];
-            assessments[endPointer] = temp;
-
-            endPointer--;
-
-            if (endPointer == 0) return newAssessments;
+            Assessment temp = newArray[i];
+            newArray[i] = newArray[randomNum];
+            newArray[randomNum] = temp;
         }
 
-        return newAssessments;
+        return newArray;
     }
 
-    public static Word[] shuffle(Word[] assessments)
+    public static Word[] Shuffle(Word[] toShuffle)
     {
-        Word[] newAssessments = assessments;
+        Word[] newArray = toShuffle;
+        System.Random random = new System.Random();
 
-        int randomNumber = 0;
-        int endPointer = assessments.Length - 1;
-
-        for (int i = 0; i < newAssessments.Length; i++)
+        for (int i = newArray.Length - 1; i > 0; i--)
         {
-            randomNumber = Random.Range(0, endPointer);
+            int randomNum = random.Next(newArray.Length - 1);
 
-            Word temp = assessments[randomNumber];
-            assessments[randomNumber] = assessments[endPointer];
-            assessments[endPointer] = temp;
-
-            endPointer--;
-
-            if (endPointer == 0) return newAssessments;
+            Word temp = newArray[i];
+            newArray[i] = newArray[randomNum];
+            newArray[randomNum] = temp;
         }
 
-        return newAssessments;
+        return newArray;
     }
 
-    public static char[] shuffle(char[] characters)
+    public static char[] Shuffle(char[] toShuffle)
     {
-        char[] charactersTemp = characters;
+        char[] newArray = toShuffle;
+        System.Random random = new System.Random();
 
-        int randomNumber = 0;
-        int endPointer = characters.Length - 1;
-
-        for (int i = 0; i < charactersTemp.Length; i++)
+        for (int i = newArray.Length - 1; i > 0; i--)
         {
-            randomNumber = Random.Range(0, endPointer);
+            int randomNum = random.Next(newArray.Length - 1);
 
-            char temp = characters[randomNumber];
-            characters[randomNumber] = characters[endPointer];
-            characters[endPointer] = temp;
-
-            endPointer--;
-
-            if (endPointer == 0) return characters;
+            char temp = newArray[i];
+            newArray[i] = newArray[randomNum];
+            newArray[randomNum] = temp;
         }
 
-        return charactersTemp;
+        return newArray;
     }
+
+    public static string[] Shuffle(string[] toShuffle)
+    {
+        string[] newArray = toShuffle;
+        System.Random random = new System.Random();
+
+        for (int i = newArray.Length - 1; i > 0; i--)
+        {
+            int randomNum = random.Next(newArray.Length - 1);
+
+            string temp = newArray[i];
+            newArray[i] = newArray[randomNum];
+            newArray[randomNum] = temp;
+        }
+
+        return newArray;
+    }
+
+    //public static Assessment[] shuffle(Assessment[] assessments)
+    //{
+    //    Assessment[] newAssessments = new Assessment[assessments.Length];
+
+    //    Array.Copy(assessments, newAssessments, assessments.Length);
+
+    //    int randomNumber = 0;
+    //    int endPointer = assessments.Length - 1;
+
+    //    for (int i = 0; i < (endPointer - 1); i++)
+    //    {
+    //        randomNumber = i + random.Next(endPointer - 1);
+    //        //randomNumber = Random.Range(0, endPointer);
+
+    //        Assessment temp = newAssessments[randomNumber];
+    //        newAssessments[randomNumber] = newAssessments[i];
+    //        newAssessments[endPointer] = temp;
+
+    //        //endPointer--;
+
+    //        //if (endPointer == 0) return newAssessments;
+    //    }
+
+    //    return newAssessments;
+    //}
+
+    //public static Word[] shuffle(Word[] assessments)
+    //{
+    //    Word[] newAssessments = new Word[assessments.Length];
+
+    //    Array.Copy(assessments, newAssessments, assessments.Length);
+
+    //    int randomNumber = 0;
+    //    int endPointer = assessments.Length - 1;
+
+    //    for (int i = 0; i < (endPointer - 1); i++)
+    //    {
+    //        randomNumber = i + random.Next(endPointer - 1);
+    //        //randomNumber = Random.Range(0, endPointer);
+
+    //        Word temp = newAssessments[randomNumber];
+    //        newAssessments[randomNumber] = newAssessments[i];
+    //        newAssessments[endPointer] = temp;
+
+    //        //endPointer--;
+
+    //        //if (endPointer == 0) return newAssessments;
+    //    }
+
+    //    return newAssessments;
+    //}
+
+    //public static char[] shuffle(char[] characters)
+    //{
+    //    // a b c d
+    //    char[] newAssessments = characters;
+
+    //    for (int i = newAssessments.Length - 1; i >= 1; i--)
+    //    {
+    //        int j = random.Next(0, i);
+
+    //    }
+
+    //    return null;
+    //}
 }

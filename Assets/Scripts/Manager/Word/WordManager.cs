@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class WordManager : MonoBehaviour, IDataPersistence
 {
@@ -23,6 +24,7 @@ public class WordManager : MonoBehaviour, IDataPersistence
     public string categoryName;
 
     public Word[] words;
+    public Word[] shuffled;
     public int currentIndex = 0;
     public List<bool> correctAnswers;
 
@@ -59,46 +61,47 @@ public class WordManager : MonoBehaviour, IDataPersistence
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Word Games"))
         {
-            try
+     
+            this.currentIndex = 0;
+            this.correctAnswers = new List<bool>();
+
+            this.layout = GameObject.Find("Layout").GetComponent<RectTransform>();
+            this.wordContainer = GameObject.Find("Answered").GetComponent<RectTransform>();
+            this.shuffledContainer = GameObject.Find("Shuffled Letters").GetComponent<RectTransform>();
+            this.questionLabel = GameObject.Find("Question").GetComponent<TMPro.TextMeshProUGUI>();
+            this.confirmButton = GameObject.Find("Confirm Button").GetComponent<Button>();
+
+            this.letter = Resources.Load<Button>("Prefabs/Letter");
+
+            // Add Events to 
+            this.confirmButton.onClick.AddListener(SetNextWord);
+            this.confirmButton.gameObject.SetActive(false); // Hide the confirm button.
+
+            scorePanel = GameObject.Find("Score Panel").GetComponent<RectTransform>();
+            scoreLabel = GameObject.Find("Score").GetComponent<TMPro.TextMeshProUGUI>();
+            stars = GameObject.FindGameObjectsWithTag("Score Star");
+
+            scorePanel.gameObject.SetActive(false);
+
+            foreach (GameObject star in stars)
             {
-                this.currentIndex = 0;
-                this.correctAnswers = new List<bool>();
-
-                this.layout = GameObject.Find("Layout").GetComponent<RectTransform>();
-                this.wordContainer = GameObject.Find("Answered").GetComponent<RectTransform>();
-                this.shuffledContainer = GameObject.Find("Shuffled Letters").GetComponent<RectTransform>();
-                this.questionLabel = GameObject.Find("Question").GetComponent<TMPro.TextMeshProUGUI>();
-                this.confirmButton = GameObject.Find("Confirm Button").GetComponent<Button>();
-
-                this.letter = Resources.Load<Button>("Prefabs/Letter");
-
-                // Add Events to 
-                this.confirmButton.onClick.AddListener(SetNextWord);
-                this.confirmButton.gameObject.SetActive(false); // Hide the confirm button.
-
-                scorePanel = GameObject.Find("Score Panel").GetComponent<RectTransform>();
-                scoreLabel = GameObject.Find("Score").GetComponent<TMPro.TextMeshProUGUI>();
-                stars = GameObject.FindGameObjectsWithTag("Score Star");
-
-                scorePanel.gameObject.SetActive(false);
-
-                foreach (GameObject star in stars)
-                {
-                    star.GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Empty Star");
-                }
-
-                this.words = FisherYates.shuffle(this.words);
-
-                // Initialize
-                this.SetWord();
+                star.GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Empty Star");
             }
-            catch (System.Exception e) { }
+
+            //Array.Copy(FisherYates.shuffle(this.words), this.words, this.words.Length);
+
+            FisherYates.Shuffle(this.shuffled);
+
+            // Initialize
+            this.SetWord();
         }
     }
 
     public void StartWordGames(Word[] words)
     {
         this.words = words;
+        this.shuffled = new Word[this.words.Length];
+        Array.Copy(this.words, this.shuffled, this.words.Length);
     }
 
     /**
@@ -130,9 +133,9 @@ public class WordManager : MonoBehaviour, IDataPersistence
 
     private int CountNoOfStarsToShow(int noOfCorrectAnswers)
     {
-        int passingScore = this.words.Length / 2 + 1;
+        int passingScore = this.shuffled.Length / 2 + 1;
 
-        if (noOfCorrectAnswers == this.words.Length)
+        if (noOfCorrectAnswers == this.shuffled.Length)
         {
             return 3;
         }
@@ -219,10 +222,26 @@ public class WordManager : MonoBehaviour, IDataPersistence
         return true;
     }
 
+    public bool CheckIfRegionCollectiblesIsCollected()
+    {
+        foreach (Collectible collectible in playerData.notebook.collectibles)
+        {
+            if (collectible.regionName.ToUpper() == this.regionName.ToUpper())
+            {
+                if (!collectible.isCollected)
+                    return false;
+            }
+        }
+        return true;
+    }
+
     public void CollectAllRewards()
     {
         if (AllCategoriesCompleted() != true)
             return;
+
+        if (!CheckIfRegionCollectiblesIsCollected())
+            SoundManager.instance.PlaySound("Unlock Item");
 
         foreach (Collectible collectible in playerData.notebook.collectibles)
         {
@@ -235,6 +254,7 @@ public class WordManager : MonoBehaviour, IDataPersistence
             }
         }
         SceneManager.LoadSceneAsync("Collectibles", LoadSceneMode.Additive);
+        
     }
 
 
@@ -252,7 +272,7 @@ public class WordManager : MonoBehaviour, IDataPersistence
 
         /** Since some words have spaces, we need to replace all that spaces so that we can evaluate
          if it is correct or not based on the 'answer' variable from all the concatenated characters from buttons. */
-        bool isCorrect = this.words[this.currentIndex].word.Replace(" ", "").ToUpper() == answer;
+        bool isCorrect = this.shuffled[this.currentIndex].word.Replace(" ", "").ToUpper() == answer;
 
         this.correctAnswers.Add(isCorrect);
     }
@@ -268,13 +288,13 @@ public class WordManager : MonoBehaviour, IDataPersistence
         this.CheckAnswer();
         this.currentIndex++;
 
-        if (this.currentIndex >= this.words.Length)
+        if (this.currentIndex >= this.shuffled.Length)
         {
             int noOfCorrectAnswers = this.CountCorrectAnswers();
 
             this.scorePanel.gameObject.SetActive(true);
             this.layout.gameObject.SetActive(false); 
-            this.scoreLabel.text = noOfCorrectAnswers + "/" + this.words.Length;
+            this.scoreLabel.text = noOfCorrectAnswers + "/" + this.shuffled.Length;
 
             this.SetRegionCategoriesScores(noOfCorrectAnswers);
             this.ShowStars(noOfCorrectAnswers);
@@ -287,7 +307,7 @@ public class WordManager : MonoBehaviour, IDataPersistence
         }
         else
         {
-            if (this.currentIndex < this.words.Length)
+            if (this.currentIndex < this.shuffled.Length)
             {
                 this.SetWord();
             }
@@ -317,13 +337,18 @@ public class WordManager : MonoBehaviour, IDataPersistence
 
     public void SetWord()
     {
-        Word word = this.words[this.currentIndex];
+        
+        Word word = this.shuffled[this.currentIndex];
         this.questionLabel.text = word.question;
 
         /** <summary>
          *  Converts the word to array of characters and shuffles it.
          * </summary> */
-        char[] shuffledWord = FisherYates.shuffle(word.word.ToCharArray());
+        char[] shuffledWord = word.word.ToCharArray();
+
+        FisherYates.Shuffle(shuffledWord);
+
+        print("SET WORD TEST: " + shuffledWord.Length);
 
         for (int i = 0; i < shuffledWord.Length; i++)
         {

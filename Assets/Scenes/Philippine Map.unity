@@ -2243,8 +2243,8 @@ MonoBehaviour:
   correctAnswers: 
   choices: []
   playerData:
-    isNewlyCreated: 1
     id: 
+    isNewlyCreated: 1
     name: 
     gender: male
     dunongPoints: 25
@@ -4199,8 +4199,8 @@ MonoBehaviour:
   regionsCanvasGroup: {fileID: 1811160747}
   categoriesPanel: {fileID: 1983515580}
   playerData:
-    isNewlyCreated: 1
     id: 
+    isNewlyCreated: 1
     name: 
     gender: male
     dunongPoints: 25
@@ -7309,8 +7309,8 @@ MonoBehaviour:
   scoreLabel: {fileID: 0}
   stars: []
   playerData:
-    isNewlyCreated: 1
     id: 
+    isNewlyCreated: 1
     name: 
     gender: male
     dunongPoints: 25

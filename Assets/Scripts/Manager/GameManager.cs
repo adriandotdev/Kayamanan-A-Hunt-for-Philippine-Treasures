@@ -84,16 +84,34 @@ public class GameManager : MonoBehaviour, IDataPersistence
                 Button optionsButton = GameObject.Find("Options Button").GetComponent<Button>();
 
                 print(optionsButton.onClick.GetPersistentEventCount());
-                this.soundButton.onClick.AddListener(() => this.ShowVolumeUI());
-                this.quitButton.onClick.AddListener(() => this.Quit());
+                this.soundButton.onClick.AddListener(() =>
+                {
+                    this.ShowVolumeUI();
+                    SoundManager.instance.PlaySound("Button Click 2");
+                });
 
-                optionsPanelCloseBtn.onClick.AddListener(() => this.CloseOptionPanel());
+                this.quitButton.onClick.AddListener(() => { 
+                    
+                    this.Quit();
+                    SoundManager.instance.PlaySound("Button Click 2");
+                });
+
+                optionsPanelCloseBtn.onClick.AddListener(() =>
+                {
+                    this.CloseOptionPanel();
+                    SoundManager.instance.PlaySound("Button Click 1");
+                });
+
                 playButton.onClick.AddListener(() => {
 
                     this.LoadScene("CharacterAndLoad");
+                    SoundManager.instance.PlaySound("Button Click 1");
                     //TransitionLoader.instance.StartAnimation("CharacterAndLoad");
                 });
-                optionsButton.onClick.AddListener(() => this.ShowOptionsPanel());
+                optionsButton.onClick.AddListener(() => {
+                    this.ShowOptionsPanel();
+                    SoundManager.instance.PlaySound("Button Click 1");
+                });
                 // Hide the optionsPanel at first render
                 this.optionsPanel.gameObject.SetActive(false);
                 this.volumePanel.gameObject.SetActive(false);
@@ -108,7 +126,11 @@ public class GameManager : MonoBehaviour, IDataPersistence
         {
             // Get the 'Back' button and Add Event to it.
             Button backButton = GameObject.Find("Back").GetComponent<Button>();
-            backButton.onClick.AddListener(() => SceneManager.LoadScene("Menu"));
+            backButton.onClick.AddListener(() =>
+            {
+                SceneManager.LoadScene("Menu");
+                SoundManager.instance.PlaySound("Button Click 2");
+            });
             //backButton.onClick.AddListener(() => TransitionLoader.instance.StartAnimation("Menu"));
         }
     }
@@ -153,7 +175,11 @@ public class GameManager : MonoBehaviour, IDataPersistence
         {
             // Get the Go To House button and add an event to it.
             Button goToHouseButton = GameObject.Find("Go to House").GetComponent<Button>();
-            goToHouseButton.onClick.AddListener(() => this.LoadScene(this.sceneToLoadFromPhilippineMap));
+            goToHouseButton.onClick.AddListener(() => {
+
+                SoundManager.instance.PlaySound("Button Click 1");
+                this.LoadScene(this.sceneToLoadFromPhilippineMap);
+            });
 
             // Set the value of dunong points of a current player.
             GameObject.Find("DP Value").GetComponent<TMPro.TextMeshProUGUI>().text = this.playerData.dunongPoints.ToString();
@@ -219,15 +245,36 @@ public class GameManager : MonoBehaviour, IDataPersistence
         this.volumePanel = GameObject.Find("Volume Panel").GetComponent<RectTransform>();
         Button closeButton = GameObject.Find("Close Button").GetComponent<Button>();
 
-        this.soundButton.onClick.AddListener(() => this.ShowVolumeUI());
-        closeButton.onClick.AddListener(() => this.CloseOptionPanel());
+        this.soundButton.onClick.AddListener(() => 
+        {
+            SoundManager.instance.PlaySound("Button Click 2");
+            this.ShowVolumeUI(); 
+        });
+        closeButton.onClick.AddListener(() =>
+        {
+            SoundManager.instance.PlaySound("Button Click 1");
+            this.CloseOptionPanel();
+        });
 
-        this.quitButton.onClick.AddListener(() => this.LoadScene("Menu"));
+        this.quitButton.onClick.AddListener(() =>
+        {
+            SoundManager.instance.PlaySound("Button Click 2");
+            this.LoadScene("Menu");
+        });
+
         Button showMapButton = GameObject.Find("Show Map").GetComponent<Button>();
-        showMapButton.onClick.AddListener(() => this.LoadScene("Philippine Map"));
+        showMapButton.onClick.AddListener(() =>
+        {
+            SoundManager.instance.PlaySound("Button Click 1");
+            this.LoadScene("Philippine Map");
+        });
 
         Button optionsButton = GameObject.Find("Options Button").GetComponent<Button>();
-        optionsButton.onClick.AddListener(() => this.ShowOptionsPanel());
+        optionsButton.onClick.AddListener(() =>
+        {
+            SoundManager.instance.PlaySound("Button Click 1");
+            this.ShowOptionsPanel();
+        });
 
         // Hide the optionsPanel at first render
         this.optionsPanel.gameObject.SetActive(false);
