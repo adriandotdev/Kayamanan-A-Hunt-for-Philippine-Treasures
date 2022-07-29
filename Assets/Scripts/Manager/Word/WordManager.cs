@@ -61,39 +61,46 @@ public class WordManager : MonoBehaviour, IDataPersistence
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Word Games"))
         {
-     
-            this.currentIndex = 0;
-            this.correctAnswers = new List<bool>();
 
-            this.layout = GameObject.Find("Layout").GetComponent<RectTransform>();
-            this.wordContainer = GameObject.Find("Answered").GetComponent<RectTransform>();
-            this.shuffledContainer = GameObject.Find("Shuffled Letters").GetComponent<RectTransform>();
-            this.questionLabel = GameObject.Find("Question").GetComponent<TMPro.TextMeshProUGUI>();
-            this.confirmButton = GameObject.Find("Confirm Button").GetComponent<Button>();
-
-            this.letter = Resources.Load<Button>("Prefabs/Letter");
-
-            // Add Events to 
-            this.confirmButton.onClick.AddListener(SetNextWord);
-            this.confirmButton.gameObject.SetActive(false); // Hide the confirm button.
-
-            scorePanel = GameObject.Find("Score Panel").GetComponent<RectTransform>();
-            scoreLabel = GameObject.Find("Score").GetComponent<TMPro.TextMeshProUGUI>();
-            stars = GameObject.FindGameObjectsWithTag("Score Star");
-
-            scorePanel.gameObject.SetActive(false);
-
-            foreach (GameObject star in stars)
+            try
             {
-                star.GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Empty Star");
+                this.currentIndex = 0;
+                this.correctAnswers = new List<bool>();
+
+                this.layout = GameObject.Find("Layout").GetComponent<RectTransform>();
+                this.wordContainer = GameObject.Find("Answered").GetComponent<RectTransform>();
+                this.shuffledContainer = GameObject.Find("Shuffled Letters").GetComponent<RectTransform>();
+                this.questionLabel = GameObject.Find("Question").GetComponent<TMPro.TextMeshProUGUI>();
+                this.confirmButton = GameObject.Find("Confirm Button").GetComponent<Button>();
+
+                this.letter = Resources.Load<Button>("Prefabs/Letter");
+
+                // Add Events to 
+                this.confirmButton.onClick.AddListener(SetNextWord);
+                this.confirmButton.gameObject.SetActive(false); // Hide the confirm button.
+
+                scorePanel = GameObject.Find("Score Panel").GetComponent<RectTransform>();
+                scoreLabel = GameObject.Find("Score").GetComponent<TMPro.TextMeshProUGUI>();
+                stars = GameObject.FindGameObjectsWithTag("Score Star");
+
+                scorePanel.gameObject.SetActive(false);
+
+                foreach (GameObject star in stars)
+                {
+                    star.GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Empty Star");
+                }
+
+                //Array.Copy(FisherYates.shuffle(this.words), this.words, this.words.Length);
+
+                FisherYates.Shuffle(this.shuffled);
+
+                // Initialize
+                this.SetWord();
             }
+            catch (System.Exception e)
+            {
 
-            //Array.Copy(FisherYates.shuffle(this.words), this.words, this.words.Length);
-
-            FisherYates.Shuffle(this.shuffled);
-
-            // Initialize
-            this.SetWord();
+            }
         }
     }
 
@@ -347,8 +354,6 @@ public class WordManager : MonoBehaviour, IDataPersistence
         char[] shuffledWord = word.word.ToCharArray();
 
         FisherYates.Shuffle(shuffledWord);
-
-        print("SET WORD TEST: " + shuffledWord.Length);
 
         for (int i = 0; i < shuffledWord.Length; i++)
         {

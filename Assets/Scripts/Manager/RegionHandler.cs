@@ -145,10 +145,7 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
                 buttons[0].transform.GetChild(2).GetComponent<Button>().name = "National Heroes";
                 buttons[0].transform.GetChild(2).GetComponent<Button>().onClick.AddListener(() =>
                 {
-                    if (playerData.dunongPoints >= 5)
-                    {
-                        AddButtonEventForWordGames(setup);
-                    }
+                  AddButtonEventForWordGames(setup);
                 });
             }
             else if (setup.categoryName == WordSetup.CategoryType.NATIONAL_SYMBOLS)
@@ -156,10 +153,9 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
                 buttons[1].transform.GetChild(2).GetComponent<Button>().name = "National Symbols";
                 buttons[1].transform.GetChild(2).GetComponent<Button>().onClick.AddListener(() =>
                 {
-                    if (playerData.dunongPoints >= 5)
-                    {
+
                         AddButtonEventForWordGames(setup);
-                    }
+                    
                 });
             }
             else if (setup.categoryName == WordSetup.CategoryType.PHILIPPINE_MYTHS)
@@ -167,10 +163,9 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
                 buttons[2].transform.GetChild(2).GetComponent<Button>().name = "Philippine Myths";
                 buttons[2].transform.GetChild(2).GetComponent<Button>().onClick.AddListener(() =>
                 {
-                    if (playerData.dunongPoints >= 5)
-                    {
+              
                         AddButtonEventForWordGames(setup);
-                    }
+                    
                 });
             }
             else if (setup.categoryName == WordSetup.CategoryType.NATIONAL_FESTIVALS)
@@ -178,10 +173,9 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
                 buttons[3].transform.GetChild(2).GetComponent<Button>().name = "National Festivals";
                 buttons[3].transform.GetChild(2).GetComponent<Button>().onClick.AddListener(() =>
                 {
-                    if (playerData.dunongPoints >= 5)
-                    {
+ 
                         AddButtonEventForWordGames(setup);
-                    }
+                    
                 });
             }
             else if (setup.categoryName == WordSetup.CategoryType.NATIONAL_GAMES)
@@ -189,12 +183,23 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
                 buttons[4].transform.GetChild(2).GetComponent<Button>().name = "National Games";
                 buttons[4].transform.GetChild(2).GetComponent<Button>().onClick.AddListener(() =>
                 {
-                    if (playerData.dunongPoints >= 5)
-                    {
+     
                         AddButtonEventForWordGames(setup);
-                    }
+                    
                 });
             }
+        }
+    }
+
+    public void ShowInsufficientDunongPointsMessage()
+    {
+        SoundManager.instance.PlaySound("Warning Notification");
+
+        if (!this.alertBox.gameObject.activeInHierarchy)
+        {
+            this.alertBox.gameObject.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "Insufficient Dunong Points.";
+            this.alertBox.gameObject.SetActive(true);
+            StartCoroutine(CloseAlertBox());
         }
     }
 
@@ -206,22 +211,28 @@ public class RegionHandler : MonoBehaviour, IDataPersistence
             AssessmentManager.instance.categoryName = EventSystem.current.currentSelectedGameObject.name.ToString();
             AssessmentManager.instance.StartAssessments(setup.assessments);
             SceneManager.LoadScene(setup.sceneToLoad);
+
+            DataPersistenceManager.instance.SaveGame();
         }
         else
         {
-            SoundManager.instance.PlaySound("Warning Notification");
-            this.alertBox.gameObject.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = "Dunong points is not enough.";
-            this.alertBox.gameObject.SetActive(true);
-            StartCoroutine(CloseAlertBox());
+            this.ShowInsufficientDunongPointsMessage();
         }
     }
 
     public void AddButtonEventForWordGames(WordSetup setup)
     {
-        this.playerData.dunongPoints -= 5;
-        WordManager.instance.categoryName = EventSystem.current.currentSelectedGameObject.name.ToString();
-        WordManager.instance.StartWordGames(setup.words);
-        SceneManager.LoadScene(setup.sceneToLoad);
+        if (this.playerData.dunongPoints >= 5)
+        {
+            this.playerData.dunongPoints -= 5;
+            WordManager.instance.categoryName = EventSystem.current.currentSelectedGameObject.name.ToString();
+            WordManager.instance.StartWordGames(setup.words);
+            SceneManager.LoadScene(setup.sceneToLoad);
+        }
+        else
+        {
+            this.ShowInsufficientDunongPointsMessage();
+        }
     }
 
     public void HideUnavailableCategories()

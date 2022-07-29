@@ -59,6 +59,9 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House"))
         {
+            if (DataPersistenceManager.instance.playerData.isTutorialDone == false)
+                return;
+
             this.GetAllNecessaryGameObjects();
             this.GetListOfQuests();
             this.SetupScriptsForDeliveryQuestToNPCs();
@@ -293,6 +296,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         {
             dr.quest = null;
         }
+
         foreach (Quest quest in this.playerData.currentQuests)
         {
             if (quest.deliveryGoal != null)

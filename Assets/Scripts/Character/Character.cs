@@ -15,7 +15,7 @@ public class Character : MonoBehaviour, IDataPersistence
     public Animator animator;
 
     [Header("Speed")]
-    public float speed = 4;
+    public float speed = 7;
 
     [Header("Virtual Camera")]
     public Cinemachine.CinemachineVirtualCamera virtualCam;
@@ -58,8 +58,8 @@ public class Character : MonoBehaviour, IDataPersistence
 
         movement = new Vector3(horizontal, vertical) * speed * Time.deltaTime;
 
-        if (movement != Vector3.zero)
-            SoundManager.instance.PlaySound("Wood Footsteps");
+        //if (movement != Vector3.zero)
+        //    SoundManager.instance.PlaySound("Wood Footsteps");
 
         transform.position += movement;
 
@@ -87,5 +87,17 @@ public class Character : MonoBehaviour, IDataPersistence
     public void SaveSlotsData(ref Slots slots)
     {
         throw new System.NotImplementedException();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Item"))
+        {
+            Item itemCollected = collision.gameObject.GetComponent<ItemMono>().item;
+
+            DataPersistenceManager.instance.playerData.inventory.AddItem(itemCollected);
+
+            InventoryManager.instance.DisplayInventoryItems();
+        }
     }
 }

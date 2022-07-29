@@ -184,7 +184,7 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
             {
                 foreach (Category category in regionData.categories)
                 {
-                    if (category.categoryName == this.categoryName)
+                    if (category.categoryName.ToUpper() == this.categoryName.ToUpper())
                     {
                         if (noOfCorrectAnswers > category.highestScore)
                         {
@@ -270,7 +270,11 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
             }
         }
 
-        this.playerData.regionsData[regionNumber].isOpen = true;
+        if (regionNumber < this.playerData.regionsData.Count)
+        {
+            print("TEST : REGION IS OPEN: " + (regionNumber + 1));
+            this.playerData.regionsData[regionNumber].isOpen = true;
+        }
     }
 
     public bool AllCategoriesCompleted()

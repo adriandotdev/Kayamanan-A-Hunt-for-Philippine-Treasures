@@ -1089,6 +1089,7 @@ MonoBehaviour:
   playerData:
     id: 
     isNewlyCreated: 1
+    isTutorialDone: 0
     name: 
     gender: male
     dunongPoints: 25

@@ -11,6 +11,7 @@ TagManager:
   - Score Star
   - House Tile
   - PH Flag
+  - Item
   layers:
   - Default
   - TransparentFX
@@ -20,8 +21,8 @@ TagManager:
   - UI
   - NPC
   - PostProcessing
-  - 
-  - 
+  - Item Slot
+  - Item
   - 
   - 
   - 

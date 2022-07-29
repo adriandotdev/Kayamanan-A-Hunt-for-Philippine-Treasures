@@ -8,6 +8,7 @@ public class PlayerData
 {
     public string id;
     public bool isNewlyCreated;
+    public bool isTutorialDone;
     public string name;
     public string gender;
     public int dunongPoints;
@@ -24,11 +25,18 @@ public class PlayerData
     public List<Quest> quests;
     public List<Quest> currentQuests;
     public List<Quest> completedQuests;
-    public List<Item> inventory;
+    public Inventory inventory;
+
+    // LIST OF REGIONS
+    const string REGION_1 = "Ilocos Region";
+    const string REGION_2 = "Cagayan Valley";
+    const string REGION_3 = "Central Luzon";
+    const string REGION_4 = "CALABARZON";
 
     public PlayerData()
     {
         this.isNewlyCreated = true;
+        this.isTutorialDone = false;
         this.id = null;
         this.name = null;
         this.gender = "male";
@@ -42,44 +50,50 @@ public class PlayerData
         this.quests = new List<Quest>();
         this.currentQuests = new List<Quest>();
         this.completedQuests = new List<Quest>();
-        this.inventory = new List<Item>();
+        this.inventory = new Inventory();
 
         this.regionsData.Add(
             new RegionData(
                 1,
                 true, 
-                "REGION 1", 
+                REGION_1, 
                 "It is more about Region 1", 
                 new Category[2] { new Category("National Heroes"), new Category("National Symbols")} ));
 
         this.regionsData.Add(new RegionData(
-            2,
-            false, 
-            "REGION 2", 
-            "",
-            new Category[1] { new Category("National Games" )} ));
+                2,
+                false, 
+                REGION_2, 
+                "",
+                new Category[1] { new Category("National Games" )} ));
 
         this.regionsData.Add(new RegionData(
-            3,
-            false,
-            "REGION 3",
-            "",
-            new Category[1] { new Category("Philippine Myths") }));
+                3,
+                false,
+                REGION_3,
+                "",
+                new Category[1] { new Category("Philippine Myths") }));
+
+        this.regionsData.Add(new RegionData(
+                4,
+                false,
+                REGION_4,
+                "",
+                new Category[2] { new Category("National Festivals"), new Category("National Heroes") }));
 
         // These are the quests that the user can get (Main Quests for each Region)
-        this.quests.Add(new Quest("Known All Heroes", "Talk to Mang Esterlito", 15, "Region 1", new TalkGoal("Mang Esterlito")));
-        this.quests.Add(new Quest("Talk to your MILF", "Talk to Aling Nena", 10, "Region 1", new TalkGoal("Aling Nena")));
-        this.quests.Add(new Quest("Best Friends", "Talk to Aling Missy", 5, "Region 2", new TalkGoal("Aling Nena")));
+        this.quests.Add(new Quest("Known All Heroes", "Talk to Mang Esterlito", 15, REGION_1, new TalkGoal("Mang Esterlito")));
+        this.quests.Add(new Quest("Talk to your MILF", "Talk to Aling Nena", 10, REGION_1, new TalkGoal("Aling Nena")));
 
-        this.quests.Add(new Quest("Buko Pie Ayayay!", "Get the Buko Pie from Aling Marites and give it to Mang Esterlito", 10, "Region 1", 
+        this.quests.Add(new Quest("Buko Pie Ayayay!", "Get the Buko Pie from Aling Marites and give it to Mang Esterlito", 10, REGION_1, 
             new DeliveryGoal("Aling Marites", "Mang Esterlito", "Can you give this Buko Pie to Mang Esterlito?", 
             new Item("Buko Pie", "", false))));
 
-        this.quests.Add(new Quest("Mango Aloho!", "Help Aling Julia to give Aling Marites a Mango", 10, "Region 1",
+        this.quests.Add(new Quest("Mango Aloho!", "Help Aling Julia to give Aling Marites a Mango", 10, REGION_1,
             new DeliveryGoal("Aling Julia", "Aling Marites", "Hey! Would you mind if you give this to Aling Marites?",
             new Item("Mango", "", false))));
 
-        this.quests.Add(new Quest("Gumamela Pula!", "Help Mang Esterlito give a gumamela to Aling Nena", 10, "Region 1",
+        this.quests.Add(new Quest("Gumamela Pula!", "Help Mang Esterlito give a gumamela to Aling Nena", 10, REGION_1,
             new DeliveryGoal("Mang Esterlito", "Aling Nena", "Hey! Would you mind if you give this to ur mother?",
             new Item("Gumamela", "", false))));
     }
@@ -94,14 +108,20 @@ public class Notebook
     private string NATIONAL_GAMES = "National Games";
     private string NATIONAL_FESTIVALS = "National Festivals";
     private string PHILIPPINE_MYTH = "Philippine Myth";
+
+    const string REGION_1 = "Ilocos Region";
+    const string REGION_2 = "Cagayan Valley";
+    const string REGION_3 = "Central Luzon";
+    const string REGION_4 = "CALABARZON";
     public Notebook()
     {
         this.collectibles = new List<Collectible>();
 
-        this.collectibles.Add(new Collectible("Jose Rizal", "Collectibles/Rizal", this.NATIONAL_HEROES, "Region 1"));
-        this.collectibles.Add(new Collectible("Anahaw", "Collectibles/Anahaw", this.NATIONAL_SYMBOLS, "Region 1"));
-        this.collectibles.Add(new Collectible("Andres Bonifacio", "Collectibles/Bonifacio", this.NATIONAL_SYMBOLS, "Region 2"));
-        this.collectibles.Add(new Collectible("Kalabaw", "Collectibles/Kalabaw", this.NATIONAL_SYMBOLS, "Region 3"));
+        this.collectibles.Add(new Collectible("Jose Rizal", "Collectibles/Rizal", this.NATIONAL_HEROES, REGION_1));
+        this.collectibles.Add(new Collectible("Anahaw", "Collectibles/Anahaw", this.NATIONAL_SYMBOLS, REGION_1));
+        this.collectibles.Add(new Collectible("Andres Bonifacio", "Collectibles/Bonifacio", this.NATIONAL_SYMBOLS, REGION_2));
+        this.collectibles.Add(new Collectible("Kalabaw", "Collectibles/Kalabaw", this.NATIONAL_SYMBOLS, REGION_3));
+        this.collectibles.Add(new Collectible("Kalabaw", "Collectibles/Kalabaw", this.NATIONAL_SYMBOLS, REGION_4));
     }
 }
 
@@ -167,5 +187,52 @@ public class Category
         this.categoryName = categoryName;
         this.highestScore = 0;
         this.noOfStars = 0;
+    }
+}
+
+[System.Serializable]
+public class Inventory
+{
+    public List<Item> items;
+
+    public Inventory()
+    {
+        this.items = new List<Item>();
+    }
+
+    public void AddItem(Item item)
+    {
+        if (IsItemExisting(item))
+        {
+            this.UpdateItem(item);
+        }
+        else
+        {
+            this.items.Add(item);
+        }
+    }
+
+    public void UpdateItem(Item item)
+    {
+        foreach (Item itemLoop in this.items)
+        {
+            if (itemLoop.itemName.ToUpper() == item.itemName.ToUpper())
+            {
+                itemLoop.quantity += item.quantity;
+                return;
+            }
+        }
+    }
+
+    public bool IsItemExisting(Item item)
+    {
+        foreach (Item itemLoop in this.items)
+        {
+            if (itemLoop.itemName.ToUpper() == item.itemName.ToUpper())
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }

@@ -236,6 +236,11 @@ public class GameManager : MonoBehaviour, IDataPersistence
      */
     public void SetUpHouseOrOutsideSceneButtons()
     {
+        if (!this.playerData.isTutorialDone)
+        {
+            return;
+        }
+
         // GET ALL THE NECESSARY COMPONENTS.
         GameObject.Find("Character Name").GetComponent<TMPro.TextMeshProUGUI>().text = DataPersistenceManager.instance.playerData.name;
         this.homeCanvasGroup = GameObject.Find("House Canvas Group").GetComponent<CanvasGroup>();
