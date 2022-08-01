@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 
-public class WordManager : MonoBehaviour, IDataPersistence
+public class WordManager : MainGame, IDataPersistence
 {
     public static WordManager instance;
 
@@ -20,21 +20,13 @@ public class WordManager : MonoBehaviour, IDataPersistence
     public Button letter;
 
     [Header("Word Games Properties")]
-    public string regionName;
-    public string categoryName;
-
     public Word[] words;
-    public Word[] shuffled;
     public int currentIndex = 0;
-    public List<bool> correctAnswers;
 
     [Header("Score Panel")]
     public RectTransform scorePanel;
     public TMPro.TextMeshProUGUI scoreLabel;
     public GameObject[] stars;
-
-    [Header("Player Data")]
-    public PlayerData playerData;
 
     private void Awake()
     {
@@ -83,8 +75,6 @@ public class WordManager : MonoBehaviour, IDataPersistence
                 scoreLabel = GameObject.Find("Score").GetComponent<TMPro.TextMeshProUGUI>();
                 stars = GameObject.FindGameObjectsWithTag("Score Star");
 
-                scorePanel.gameObject.SetActive(false);
-
                 foreach (GameObject star in stars)
                 {
                     star.GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Empty Star");
@@ -111,159 +101,14 @@ public class WordManager : MonoBehaviour, IDataPersistence
         Array.Copy(this.words, this.shuffled, this.words.Length);
     }
 
-    /**
-     * <summary>
-     *  Ang function na ito ay i-seset niya ang score ng category
-     *  based sa current region.
-     * </summary>
-     */
-    public void SetRegionCategoriesScores(int noOfCorrectAnswers)
+
+    public void ShowScorePanel(int noOfCorrectAnswers)
     {
-        // Get all the regions.
-        foreach (RegionData regionData in playerData.regionsData)
+        TweeningManager.instance.OpenScorePanel(noOfCorrectAnswers, () =>
         {
-            if (regionData.regionName == this.regionName.ToUpper())
-            {
-                foreach (Category category in regionData.categories)
-                {
-                    if (category.categoryName == this.categoryName)
-                    {
-                        if (noOfCorrectAnswers > category.highestScore)
-                        {
-                            category.highestScore = noOfCorrectAnswers;
-                        }
-                    }
-                }
-            }
-        }
+            this.CollectAllRewards();
+        });
     }
-
-    private int CountNoOfStarsToShow(int noOfCorrectAnswers)
-    {
-        int passingScore = this.shuffled.Length / 2 + 1;
-
-        if (noOfCorrectAnswers == this.shuffled.Length)
-        {
-            return 3;
-        }
-        else if (noOfCorrectAnswers >= passingScore)
-        {
-            return 2;
-        }
-
-        return 1;
-    }
-
-
-    public void ShowStars(int noOfCorrectAnswers)
-    {
-        if (noOfCorrectAnswers == 0)
-        {
-            return;
-        }
-
-        int noOfStars = this.CountNoOfStarsToShow(noOfCorrectAnswers);
-
-        for (int i = 0; i < noOfStars; i++)
-        {
-            this.stars[i].GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Fill Star");
-        }
-
-        foreach (RegionData regionData in this.playerData.regionsData)
-        {
-            if (regionData.regionName.ToUpper() == this.regionName.ToUpper())
-            {
-                foreach (Category category in regionData.categories)
-                {
-                    if (category.categoryName.ToUpper() == this.categoryName.ToUpper())
-                    {
-                        if (category.noOfStars < noOfStars)
-                            category.noOfStars = noOfStars;
-                    }
-                }
-            }
-        }
-    }
-
-
-    public void CheckIfNextRegionIsReadyToOpen()
-    {
-        int regionNumber = 0;
-
-        foreach (RegionData regionData in this.playerData.regionsData)
-        {
-            if (regionData.regionName.ToUpper() == this.regionName.ToUpper())
-            {
-                regionNumber = regionData.regionNumber;
-
-                foreach (Category category in regionData.categories)
-                {
-                    if (category.noOfStars < 2)
-                    {
-                        return;
-                    }
-                }
-            }
-        }
-
-        if (regionNumber < this.playerData.regionsData.Count)
-        {
-            print("TEST : REGION IS OPEN: " + (regionNumber + 1));
-            this.playerData.regionsData[regionNumber].isOpen = true;
-        }
-    }
-
-    public bool AllCategoriesCompleted()
-    {
-        foreach (RegionData regionData in this.playerData.regionsData)
-        {
-            if (regionData.regionName.ToUpper() == this.regionName.ToUpper())
-            {
-                foreach (Category category in regionData.categories)
-                {
-                    if (category.noOfStars < 3)
-                        return false;
-                }
-            }
-        }
-        return true;
-    }
-
-    public bool CheckIfRegionCollectiblesIsCollected()
-    {
-        foreach (Collectible collectible in playerData.notebook.collectibles)
-        {
-            if (collectible.regionName.ToUpper() == this.regionName.ToUpper())
-            {
-                if (!collectible.isCollected)
-                    return false;
-            }
-        }
-        return true;
-    }
-
-    public void CollectAllRewards()
-    {
-        if (AllCategoriesCompleted() != true)
-            return;
-
-        if (!CheckIfRegionCollectiblesIsCollected())
-            SoundManager.instance.PlaySound("Unlock Item");
-
-        foreach (Collectible collectible in playerData.notebook.collectibles)
-        {
-            if (collectible.regionName.ToUpper() == this.regionName.ToUpper())
-            {
-                if (collectible.isCollected)
-                    return;
-
-                collectible.isCollected = true;
-            }
-        }
-        SceneManager.LoadSceneAsync("Collectibles", LoadSceneMode.Additive);
-        
-    }
-
 
     public void CheckAnswer()
     {
@@ -279,7 +124,7 @@ public class WordManager : MonoBehaviour, IDataPersistence
 
         /** Since some words have spaces, we need to replace all that spaces so that we can evaluate
          if it is correct or not based on the 'answer' variable from all the concatenated characters from buttons. */
-        bool isCorrect = this.shuffled[this.currentIndex].word.Replace(" ", "").ToUpper() == answer;
+        bool isCorrect = ((Word)this.shuffled[this.currentIndex]).word.Replace(" ", "").ToUpper() == answer;
 
         this.correctAnswers.Add(isCorrect);
     }
@@ -299,14 +144,14 @@ public class WordManager : MonoBehaviour, IDataPersistence
         {
             int noOfCorrectAnswers = this.CountCorrectAnswers();
 
-            this.scorePanel.gameObject.SetActive(true);
             this.layout.gameObject.SetActive(false); 
             this.scoreLabel.text = noOfCorrectAnswers + "/" + this.shuffled.Length;
 
             this.SetRegionCategoriesScores(noOfCorrectAnswers);
             this.ShowStars(noOfCorrectAnswers);
+            this.ShowScorePanel(noOfCorrectAnswers);
             this.CheckIfNextRegionIsReadyToOpen();
-            this.CollectAllRewards();
+            //this.CollectAllRewards();
 
             DataPersistenceManager.instance.SaveGame();
 
@@ -328,24 +173,10 @@ public class WordManager : MonoBehaviour, IDataPersistence
         }
     }
 
-    public int CountCorrectAnswers()
-    {
-        int count = 0;
-
-        foreach (bool isCorrect in this.correctAnswers)
-        {
-            if (isCorrect) count++;
-        }
-
-        return count;
-    }
-
-   
-
     public void SetWord()
     {
         
-        Word word = this.shuffled[this.currentIndex];
+        Word word = (Word) this.shuffled[this.currentIndex];
         this.questionLabel.text = word.question;
 
         /** <summary>

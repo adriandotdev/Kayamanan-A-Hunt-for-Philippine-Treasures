@@ -81,4 +81,13 @@ public class Item
         this.information = information;
         this.stackable = stackable;
     }
+
+    public Item CopyItem()
+    {
+        Item clonedItem = new Item(this.itemName, this.information, this.stackable);
+
+        clonedItem.quantity = this.quantity;
+
+        return clonedItem;
+    }
 }

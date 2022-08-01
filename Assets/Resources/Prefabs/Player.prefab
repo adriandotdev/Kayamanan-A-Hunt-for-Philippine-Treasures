@@ -109,6 +109,7 @@ MonoBehaviour:
   playerData:
     id: 
     isNewlyCreated: 1
+    isTutorialDone: 0
     name: 
     gender: male
     dunongPoints: 25
@@ -307,7 +308,8 @@ MonoBehaviour:
           stackable: 0
     currentQuests: []
     completedQuests: []
-    inventory: []
+    inventory:
+      items: []
 --- !u!95 &2618897702407668067
 Animator:
   serializedVersion: 3
@@ -374,7 +376,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.007814392, y: -0.28913283}
+  m_Offset: {x: 0.007814407, y: -0.21596278}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -385,5 +387,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.58868134, y: 0.75173426}
+  m_Size: {x: 0.58868134, y: 0.8980744}
   m_EdgeRadius: 0

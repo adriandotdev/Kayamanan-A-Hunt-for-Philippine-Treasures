@@ -37,6 +37,7 @@ public class InventoryManager : MonoBehaviour
     void OnPlaySceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House")
             && DataPersistenceManager.instance.playerData.isTutorialDone)
         {
             this.inventoryPanel = GameObject.Find("Inventory Panel").GetComponent<RectTransform>();
@@ -55,7 +56,23 @@ public class InventoryManager : MonoBehaviour
             Transform slot = this.inventoryPanel.GetChild(i);
 
             slot.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("Collectibles/Items/" + inventory[i].itemName);
+
+            // Needed to update the Inventory UI when the inventory item gets swapped.
+            slot.GetChild(0).GetComponent<SlotItem>().itemName = inventory[i].itemName;
+
             slot.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>().text = inventory[i].quantity.ToString();
         }
+    }
+
+    public int CountChild(Transform parent)
+    {
+        int i = 0;
+
+        foreach (Transform transform in parent)
+        {
+            i++;
+        }
+
+        return i;
     }
 }

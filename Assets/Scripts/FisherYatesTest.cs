@@ -9,58 +9,80 @@ public class FisherYatesTest : MonoBehaviour
 
     // Start is called before the first frame update
     private void Update()
-    { 
+    {
         if (Input.GetMouseButtonDown(0))
         {
-            characters = new char[6] { 'a', 'b', 'c', 'd', 'e', 'f' };
-            Shuffle(characters);
-            print();
+            //characters = new char[6] { 'a', 'b', 'c', 'd', 'e', 'f' };
+            //Shuffle(characters);
+            //print();
+            Test();
         }
     }
 
-    public char[] Shuffle(char[] toShuffle)
+    public void Test()
     {
-        char[] newArray = toShuffle;
-        System.Random random = new System.Random();
+        List<string> names = new List<string>();
 
-        for (int i = newArray.Length - 1; i > 0; i--)
-        {
-            int randomNum = random.Next(newArray.Length - 1);
+        names.Add("Isabela");
+        names.Add("Koron");
+        names.Add("Heloya");
 
-            char temp = newArray[i];
-            newArray[i] = newArray[randomNum];
-            newArray[randomNum] = temp;
-        }
-
-        return newArray;
+        Print(names);
+        names.Insert(0, names[1]);
+        Print(names);
     }
 
-    public char[] Shuffle2(char[] toShuffle)
+    public void Print(List<string> l)
     {
-        char[] newArray = toShuffle;
-
-        System.Random random = new System.Random();
-
-        for (int i = 0; i < newArray.Length; i++)
+        foreach(string name in l)
         {
-            int randomNum = random.Next(i, newArray.Length);
-
-            char temp = newArray[i];
-            newArray[i] = newArray[randomNum];
-            newArray[randomNum] = temp;
+            print(name);
         }
-        return newArray;
+        print("DONE");
     }
+    //public char[] Shuffle(char[] toShuffle)
+    //{
+    //    char[] newArray = toShuffle;
+    //    System.Random random = new System.Random();
 
-    public void print()
-    {
-        string charactersToPrint = "";
+    //    for (int i = newArray.Length - 1; i > 0; i--)
+    //    {
+    //        int randomNum = random.Next(newArray.Length - 1);
 
-        foreach (char c in characters)
-        {
-            charactersToPrint += c + " ";
-        }
+    //        char temp = newArray[i];
+    //        newArray[i] = newArray[randomNum];
+    //        newArray[randomNum] = temp;
+    //    }
 
-        print(charactersToPrint);
-    }
+    //    return newArray;
+    //}
+
+    //public char[] Shuffle2(char[] toShuffle)
+    //{
+    //    char[] newArray = toShuffle;
+
+    //    System.Random random = new System.Random();
+
+    //    for (int i = 0; i < newArray.Length; i++)
+    //    {
+    //        int randomNum = random.Next(i, newArray.Length);
+
+    //        char temp = newArray[i];
+    //        newArray[i] = newArray[randomNum];
+    //        newArray[randomNum] = temp;
+    //    }
+    //    return newArray;
+    //}
+
+    //public void print()
+    //{
+    //    string charactersToPrint = "";
+
+    //    foreach (char c in characters)
+    //    {
+    //        charactersToPrint += c + " ";
+    //    }
+
+    //    print(charactersToPrint);
+    //}
 }

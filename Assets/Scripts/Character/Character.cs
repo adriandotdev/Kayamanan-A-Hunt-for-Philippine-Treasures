@@ -93,7 +93,7 @@ public class Character : MonoBehaviour, IDataPersistence
     {
         if (collision.gameObject.CompareTag("Item"))
         {
-            Item itemCollected = collision.gameObject.GetComponent<ItemMono>().item;
+            Item itemCollected = collision.gameObject.GetComponent<ItemMono>().item.CopyItem();
 
             DataPersistenceManager.instance.playerData.inventory.AddItem(itemCollected);
 

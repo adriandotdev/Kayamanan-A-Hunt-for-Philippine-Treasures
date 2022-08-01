@@ -20,14 +20,15 @@ public class TutorialManager : MonoBehaviour
             GameObject.Find("Quest Panel").SetActive(false);
             GameObject.Find("Alert Box").SetActive(false);
             this.popups[this.popupIndex].SetActive(true);
-            LeanTween.scale(this.popups[this.popupIndex].transform.GetChild(0).GetChild(0).gameObject, Vector2.one, .2f);
+            LeanTween.scale(this.popups[this.popupIndex].transform.GetChild(0).GetChild(0).GetChild(0).gameObject, Vector2.one, .2f)
+                .setDelay(1f).setEaseSpring();
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (DataPersistenceManager.instance.playerData.isTutorialDone == true) 
+        if (DataPersistenceManager.instance.playerData.isTutorialDone == true)
         {
             for (int i = 0; i < popups.Length; i++)
             {
@@ -76,8 +77,14 @@ public class TutorialManager : MonoBehaviour
 
                         else if (firstPopupIndex == 2)
                         {
-                            LeanTween.scale(this.popups[this.popupIndex].transform.GetChild(0).GetChild(0).GetChild(0).gameObject, Vector2.zero, .2f)
-                                .setOnComplete(() => this.popups[this.popupIndex].SetActive(false));
+                            LeanTween.scale(this.popups[this.popupIndex].transform.GetChild(0).GetChild(0).GetChild(0).gameObject, Vector2.zero, .5f)
+                                .setEaseSpring()
+                                .setOnComplete(() => {
+
+                                    this.popups[this.popupIndex].SetActive(false);
+
+                                   
+                                });
                             this.popupIndex++;
                             print("POPUP INDEX: " + this.popupIndex);
                         }
@@ -89,7 +96,31 @@ public class TutorialManager : MonoBehaviour
 
         else if (this.popupIndex == 1)
         {
-            print("THIS IS SECOND POPUP");
+            
+            LeanTween.scale(this.popups[this.popupIndex].transform.GetChild(0)
+            .GetChild(0).GetChild(1).gameObject, Vector2.one, .5f)
+            .setEaseSpring();
+
+            if (Input.touchCount == 1)
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    GameObject selected = EventSystem.current.currentSelectedGameObject;
+
+                    if (selected != null && selected.name == "Next Step")
+                    {
+                        this.popups[this.popupIndex].SetActive(false);
+                        this.popupIndex++;
+                    }
+                }
+            }
+        }
+        else if (this.popupIndex == 2)
+        {
+            LeanTween.scale(this.popups[this.popupIndex].transform.GetChild(0)
+            .GetChild(0).GetChild(1).gameObject, Vector2.one, .5f)
+            .setEaseSpring();
+
             if (Input.touchCount == 1)
             {
                 if (Input.GetMouseButtonDown(0))
@@ -106,6 +137,7 @@ public class TutorialManager : MonoBehaviour
                     }
                 }
             }
+            
         }
     }
 }

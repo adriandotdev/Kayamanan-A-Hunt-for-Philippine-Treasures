@@ -1897,7 +1897,8 @@ MonoBehaviour:
           stackable: 0
     currentQuests: []
     completedQuests: []
-    inventory: []
+    inventory:
+      items: []
   slots:
     ids: []
   confirmButton: {fileID: 0}
@@ -2199,7 +2200,8 @@ MonoBehaviour:
           stackable: 0
     currentQuests: []
     completedQuests: []
-    inventory: []
+    inventory:
+      items: []
   sceneToLoadFromPhilippineMap: 
 --- !u!1 &871095292
 GameObject:
@@ -2367,7 +2369,7 @@ MonoBehaviour:
   sounds:
   - name: Main BG
     clip: {fileID: 8300000, guid: 0ce10b54811a11c49b4d56474771bc2a, type: 3}
-    volume: 0.5
+    volume: 0.4
     pitch: 1
     src: {fileID: 0}
     isLooping: 1

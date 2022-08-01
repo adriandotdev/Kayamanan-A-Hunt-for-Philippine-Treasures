@@ -12,6 +12,7 @@ TagManager:
   - House Tile
   - PH Flag
   - Item
+  - Tutorial Popup
   layers:
   - Default
   - TransparentFX

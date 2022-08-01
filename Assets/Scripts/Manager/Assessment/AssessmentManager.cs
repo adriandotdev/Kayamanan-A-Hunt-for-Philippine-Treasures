@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 
-public class AssessmentManager : MonoBehaviour, IDataPersistence
+public class AssessmentManager : MainGame, IDataPersistence
 {
     public static AssessmentManager instance; 
 
@@ -19,19 +19,12 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
     public GameObject[] stars;
 
     [Header("Properties for Assessment")]
-    public string regionName;
-    public string categoryName;
     public Assessment[] assessments;
-    public Assessment[] shuffled;
     private string answer;
-    public List<bool> correctAnswers = new List<bool>();
     private int currentIndex;
 
     // Buttons
     public GameObject[] choices = null;
-
-    [Header("Player Data")]
-    public PlayerData playerData;
 
     private void Awake()
     {
@@ -69,8 +62,6 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
                 scoreLabel = GameObject.Find("Score").GetComponent<TMPro.TextMeshProUGUI>();
                 stars = GameObject.FindGameObjectsWithTag("Score Star");
 
-                scorePanel.gameObject.SetActive(false);
-
                 foreach (GameObject star in stars)
                 {
                     star.GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Empty Star");
@@ -78,7 +69,7 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
                 choices = GameObject.FindGameObjectsWithTag("Choices");
 
                 FisherYates.Shuffle(this.shuffled);
-                questionLabel.text = this.shuffled[this.currentIndex].question.ToString();
+                questionLabel.text = ((Assessment)this.shuffled[this.currentIndex]).question.ToString();
                 this.SetChoices();
                 this.AddEvents();
             }
@@ -103,34 +94,27 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
         // Check if there are still questions to load.
         if (this.currentIndex < this.shuffled.Length)
         {
-            this.questionLabel.text = this.shuffled[this.currentIndex].question.ToString();
+            this.questionLabel.text = ((Assessment)this.shuffled[this.currentIndex]).question.ToString();
             this.SetChoices();
         }
         // If all the questions are loaded.
         else
         {
             questionsPanel.gameObject.SetActive(false); // Disable the question panel.
-            scorePanel.gameObject.SetActive(true); // Enable the score panel.
+            //scorePanel.gameObject.SetActive(true); // Enable the score panel.
 
-            int noOfCorrectAns = 0;
-
-            for (int i = 0; i < correctAnswers.Count; i++)
-            {
-                if (this.correctAnswers[i])
-                {
-                    noOfCorrectAns++;
-                }
-            }
+            int noOfCorrectAns = this.CountCorrectAnswers();
 
             scoreLabel.text = noOfCorrectAns + "/" + this.shuffled.Length;
 
             this.SetRegionHighscore(noOfCorrectAns);
 
-            this.SetNumberOfStars(noOfCorrectAns);
+            this.ShowStars(noOfCorrectAns);
+            this.ShowScorePanel(noOfCorrectAns);
 
             this.CheckIfNextRegionIsReadyToOpen();
 
-            this.CollectAllRewards();
+            //this.CollectAllRewards();
 
             DataPersistenceManager.instance.SaveGame();
         }
@@ -148,7 +132,7 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
 
                 /** I-Check if ang text ng clinicked na button (which is from the TextMeshPro under ng button) is equal
                 doon sa correct answer na naka store sa assessment instance based doon sa currentIndex natin. */ 
-                bool isCorrect = this.answer.ToUpper().Equals(this.shuffled[this.currentIndex].correctAnswer.ToUpper());
+                bool isCorrect = this.answer.ToUpper().Equals(((Assessment)this.shuffled[this.currentIndex]).correctAnswer.ToUpper());
 
                 // I-add sa boolean na List.
                 this.correctAnswers.Add(isCorrect);
@@ -162,9 +146,9 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
     // SET ALL THE CHOICES TO 4 BUTTONS.
     public void SetChoices()
     {
-        string[] shuffledAssessmentChoices = new string[this.shuffled[this.currentIndex].choices.Length];
+        string[] shuffledAssessmentChoices = new string[((Assessment)this.shuffled[this.currentIndex]).choices.Length];
 
-        Array.Copy(this.shuffled[this.currentIndex].choices, shuffledAssessmentChoices, shuffledAssessmentChoices.Length);
+        Array.Copy(((Assessment)this.shuffled[this.currentIndex]).choices, shuffledAssessmentChoices, shuffledAssessmentChoices.Length);
 
         FisherYates.Shuffle(shuffledAssessmentChoices);
 
@@ -196,136 +180,12 @@ public class AssessmentManager : MonoBehaviour, IDataPersistence
         }
     }
 
-    // This function will set the number of stars in a specified category of a current region.
-    public void SetNumberOfStars(int noOfCorrectAnswers)
+    public void ShowScorePanel(int noOfCorrectAnswers)
     {
-        int noOfStars = 0;
-
-        /** 
-         <summary>
-            The passing score is computed by
-            dividing the number of assessment items
-            by 2 and adding 1.
-        </summary>
-         */
-        int passingScore = this.shuffled.Length / 2 + 1;
-
-        // If the result of assessment is 0, then the number of stars will remain.
-        if (noOfCorrectAnswers == 0)
+        TweeningManager.instance.OpenScorePanel(noOfCorrectAnswers, () =>
         {
-            return;
-        }
-
-        /** 
-         * Evaluate the number of stars that the 
-            player will get based on assessment's result.
-         */
-        if (noOfCorrectAnswers == this.shuffled.Length)
-            noOfStars = 3;
-        else if (noOfCorrectAnswers >= passingScore)
-            noOfStars = 2;
-        else if (noOfCorrectAnswers < passingScore)
-            noOfStars = 1;
-        
-        // Load the fill star asset from the 'Resources' folder.
-        for (int i = 0; i < noOfStars; i++)
-        {
-            this.stars[i].GetComponent<Image>().sprite = Resources.Load<Sprite>("UI ELEMENTS/Fill Star");
-        }
-        
-        foreach(RegionData regionData in this.playerData.regionsData)
-        {
-            if (regionData.regionName.ToUpper() == this.regionName.ToUpper())
-            {
-                foreach(Category category in regionData.categories)
-                {
-                    if (category.categoryName.ToUpper() == this.categoryName.ToUpper())
-                    {
-                        if (category.noOfStars < noOfStars)
-                            category.noOfStars = noOfStars;
-                    }
-                }
-            }
-        }
-    }
-
-    // This function determines if the next region is going to be opened.
-    public void CheckIfNextRegionIsReadyToOpen()
-    {
-        int regionNumber = 0;
-
-        foreach (RegionData regionData in this.playerData.regionsData)
-        {
-            if (regionData.regionName.ToUpper() == this.regionName.ToUpper())
-            {
-                regionNumber = regionData.regionNumber;
-
-                foreach (Category category in regionData.categories)
-                {
-                    if (category.noOfStars < 2)
-                    {
-                        return;
-                    }
-                }
-            }
-        }
-
-        if (regionNumber < this.playerData.regionsData.Count)
-        {
-            print("TEST : REGION IS OPEN: " + (regionNumber + 1));
-            this.playerData.regionsData[regionNumber].isOpen = true;
-        }
-    }
-
-    public bool AllCategoriesCompleted()
-    {
-        foreach (RegionData regionData in this.playerData.regionsData)
-        {
-            if (regionData.regionName.ToUpper() == this.regionName.ToUpper())
-            {
-                foreach (Category category in regionData.categories)
-                {
-                    if (category.noOfStars < 3)
-                        return false;
-                }
-            }
-        }
-        return true;
-    }
-
-    public bool CheckIfRegionCollectiblesIsCollected()
-    {
-        foreach (Collectible collectible in playerData.notebook.collectibles)
-        {
-            if (collectible.regionName.ToUpper() == this.regionName.ToUpper())
-            {
-                if (!collectible.isCollected)
-                    return false;
-            }
-        }
-        return true;
-    }
-
-    public void CollectAllRewards()
-    {
-        if (AllCategoriesCompleted() != true)
-            return;
-
-        if (!CheckIfRegionCollectiblesIsCollected())
-            SoundManager.instance.PlaySound("Unlock Item");
-
-        foreach (Collectible collectible in playerData.notebook.collectibles)
-        {
-            if (collectible.regionName.ToUpper() == this.regionName.ToUpper())
-            {
-                if (collectible.isCollected)
-                    return;
-
-                collectible.isCollected = true;
-            }
-        }
-
-        SceneManager.LoadSceneAsync("Collectibles", LoadSceneMode.Additive);
+            this.CollectAllRewards();
+        });
     }
 
     public void LoadScene ()
@@ -432,6 +292,23 @@ public class FisherYates
         return newArray;
     }
 
+    public static System.Object[] Shuffle(System.Object[] toShuffle)
+    {
+        System.Object[] newArray = toShuffle;
+
+        System.Random random = new System.Random();
+
+        for (int i = newArray.Length - 1; i > 0; i--)
+        {
+            int randomNum = random.Next(newArray.Length - 1);
+
+            System.Object temp = newArray[i];
+            newArray[i] = newArray[randomNum];
+            newArray[randomNum] = temp;
+        }
+
+        return newArray;
+    }
     //public static Assessment[] shuffle(Assessment[] assessments)
     //{
     //    Assessment[] newAssessments = new Assessment[assessments.Length];

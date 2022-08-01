@@ -207,19 +207,11 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 .text = quest.title;
             questSlot.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>()
                 .text = quest.description;
-
-            if (quest.isCompleted)
-            {
-                questSlot.transform.GetChild(2).transform.GetChild(0)
+            questSlot.transform.GetChild(2).transform.GetChild(0)
                 .GetComponent<TMPro.TextMeshProUGUI>()
-                .text = "Receive";
-            }
-            else
-            {
-                questSlot.transform.GetChild(2).transform.GetChild(0)
-                .GetComponent<TMPro.TextMeshProUGUI>()
+                .text = "Pending";
+            questSlot.transform.GetChild(3).transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>()
                 .text = quest.dunongPointsRewards.ToString();
-            }
         }
     }
 
@@ -228,10 +220,14 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     {
         foreach (Quest quest in this.playerData.completedQuests)
         {
-            GameObject questSlot = Instantiate(questPrefab, content.transform);
+            // Instantiate the Quest Prefab
+            GameObject questSlot = Instantiate(questPrefab, content.transform); 
 
+            // Quest Title
             questSlot.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>()
                 .text = quest.title;
+
+            // Quest Description
             questSlot.transform.GetChild(1).GetComponent<TMPro.TextMeshProUGUI>()
                 .text = quest.description;
 
@@ -246,29 +242,32 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                         questSlot.transform.GetChild(2).transform.GetChild(0)
                          .GetComponent<TMPro.TextMeshProUGUI>()
                          .text = "Claimed";
+
                         this.playerData.dunongPoints += quest.dunongPointsRewards;
                         quest.isClaimed = true;
                         claimBtn.interactable = false;
                         DataPersistenceManager.instance.SaveGame();
                     });
+
+                    // If it is not yet claimed, we display 'claim'
                     questSlot.transform.GetChild(2).transform.GetChild(0)
                      .GetComponent<TMPro.TextMeshProUGUI>()
                      .text = "Claim";
                 }
                 else
                 {
+                    // If this function is called again, then if it is claimed, we display different text.
                     claimBtn.interactable = false;
                     questSlot.transform.GetChild(2).transform.GetChild(0)
                      .GetComponent<TMPro.TextMeshProUGUI>()
                      .text = "Claimed";
                 }
             }
-            else
-            {
-                questSlot.transform.GetChild(2).transform.GetChild(0)
+
+            // Dunong Points Rewards
+            questSlot.transform.GetChild(3).transform.GetChild(1)
                 .GetComponent<TMPro.TextMeshProUGUI>()
                 .text = quest.dunongPointsRewards.ToString();
-            }
         }
     }
 
@@ -327,13 +326,16 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 this.questAlertBox.SetActive(true);
                 SoundManager.instance.PlaySound("Quest Notification");
 
-                Quest questFound = this.playerData.quests.Find((questToFind) => questToFind.questID == quest.questID);
+                // Find and Copy the Delivery Quest
+                Quest questFound = this.playerData.quests.Find((questToFind) => questToFind.questID == quest.questID).CopyQuestDeliveryGoal();
 
-                questFound = this.playerData.currentQuests.Find(questToFind => questToFind.questID == quest.questID);
-                this.playerData.currentQuests.Remove(questFound);
+                this.playerData.currentQuests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
+                this.playerData.quests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
+                //questFound = this.playerData.currentQuests.Find(questToFind => questToFind.questID == quest.questID);
+                //this.playerData.currentQuests.Remove(questFound);
 
-                questFound = this.playerData.quests.Find(questToFind => questToFind.questID == quest.questID);
-                this.playerData.quests.Remove(questFound); // NEED TO TEST.
+                //questFound = this.playerData.quests.Find(questToFind => questToFind.questID == quest.questID);
+                //this.playerData.quests.Remove(questFound); // NEED TO TEST.
 
                 questFound.isCompleted = true;
 

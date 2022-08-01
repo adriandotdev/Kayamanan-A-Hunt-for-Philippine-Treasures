@@ -194,7 +194,8 @@ public class Category
 public class Inventory
 {
     public List<Item> items;
-
+    private int MAX_SLOT = 7;
+    
     public Inventory()
     {
         this.items = new List<Item>();
@@ -208,7 +209,8 @@ public class Inventory
         }
         else
         {
-            this.items.Add(item);
+            if (items.Count != MAX_SLOT)
+                this.items.Add(item);
         }
     }
 
