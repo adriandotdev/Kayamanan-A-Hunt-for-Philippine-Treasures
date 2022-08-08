@@ -82,14 +82,14 @@ public class WordManager : MainGame, IDataPersistence
 
                 //Array.Copy(FisherYates.shuffle(this.words), this.words, this.words.Length);
 
-                FisherYates.Shuffle(this.shuffled);
+                this.shuffled = FisherYates.Shuffle(this.words);
 
                 // Initialize
                 this.SetWord();
             }
             catch (System.Exception e)
             {
-
+                Debug.Log(e.StackTrace);
             }
         }
     }
@@ -161,6 +161,7 @@ public class WordManager : MainGame, IDataPersistence
         {
             if (this.currentIndex < this.shuffled.Length)
             {
+                this.RemoveAllLetterSlots(); // Destroy all letter slots.
                 this.SetWord();
             }
 
@@ -170,6 +171,14 @@ public class WordManager : MainGame, IDataPersistence
             }
 
             this.confirmButton.gameObject.SetActive(false);
+        }
+    }
+
+    public void RemoveAllLetterSlots()
+    {
+        foreach (Transform transform in this.shuffledContainer.transform)
+        {
+            Destroy(transform.gameObject);
         }
     }
 
@@ -189,11 +198,19 @@ public class WordManager : MainGame, IDataPersistence
         for (int i = 0; i < shuffledWord.Length; i++)
         {
             Button btn = null; // A Button to instantiate in the shuffled container.
+            Button parentLetter = null;
 
             // We only tolerate the character that is not null.
             if (shuffledWord[i] != ' ')
             {
-                btn = Instantiate(letter, shuffledContainer, false);
+                parentLetter = Instantiate(letter, this.shuffledContainer, false);
+                parentLetter.GetComponent<Image>().color = new Color(0, 0, 0, 0);
+                parentLetter.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().color = new Color(0, 0, 0, 0);
+                parentLetter.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = i.ToString();
+                btn = Instantiate(letter, parentLetter.transform, false);
+                btn.gameObject.AddComponent<LetterScript>();
+                btn.gameObject.GetComponent<LetterScript>().parentOfLetter = parentLetter;
+                btn.transform.localPosition = Vector3.zero;
 
                 // Set the current character to the textmeshpro of the button.
                 btn.gameObject.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().text = shuffledWord[i].ToString().ToUpper();
@@ -210,7 +227,8 @@ public class WordManager : MainGame, IDataPersistence
                      */
                     if (btn.gameObject.transform.parent == wordContainer)
                     {
-                        btn.gameObject.transform.SetParent(shuffledContainer);
+                        btn.gameObject.transform.SetParent(btn.gameObject.GetComponent<LetterScript>().parentOfLetter.transform);
+                        btn.gameObject.transform.localPosition = Vector3.zero;
                     }
                     else
                     {
@@ -224,7 +242,7 @@ public class WordManager : MainGame, IDataPersistence
                             or word.
                         </summary>
                      */
-                    if (shuffledContainer.childCount == 0)
+                    if (this.wordContainer.childCount == shuffledWord.Length)
                     {
                         this.confirmButton.gameObject.SetActive(true);
                     }

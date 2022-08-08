@@ -31,8 +31,6 @@ public class Slot : MonoBehaviour, IDropHandler
                 eventData.pointerDrag.transform.SetAsFirstSibling();
                 eventData.pointerDrag.transform.localPosition = Vector3.zero;
 
-                print(transform.GetChild(1).name);
-          
                 transform.GetChild(1).SetParent(eventData.pointerDrag.GetComponent<SlotItem>().parentOfSlot.transform);
 
                 eventData.pointerDrag.GetComponent<SlotItem>().parentOfSlot.transform.GetChild(1).GetComponent<RectTransform>().anchoredPosition

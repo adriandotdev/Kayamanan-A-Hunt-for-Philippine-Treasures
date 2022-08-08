@@ -1,0 +1,600 @@
+fileFormatVersion: 2
+guid: 5e14efb538403a548a63012db4ac2d53
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -130977343653268802
+    second: Trees Chairs and Grasses_0
+  - first:
+      213: -4517766751955950161
+    second: Trees Chairs and Grasses_1
+  - first:
+      213: -8552518335105241022
+    second: Mango Tree 1
+  - first:
+      213: -4641826509395397839
+    second: Mango Tree 2
+  - first:
+      213: 5989305563458065789
+    second: Narra Tree 1
+  - first:
+      213: 4886601454757330061
+    second: Trees Chairs and Grasses_5
+  - first:
+      213: 7723844536771072805
+    second: Narra Tree 2
+  - first:
+      213: -8238360871951019635
+    second: Trees Chairs and Grasses_7
+  - first:
+      213: 2451729022642639719
+    second: Trees Chairs and Grasses_8
+  - first:
+      213: -5947223996385361728
+    second: Trees Chairs and Grasses_9
+  - first:
+      213: 6830646324994178451
+    second: Table
+  - first:
+      213: 7840572681946542918
+    second: Lamp 1
+  - first:
+      213: 6076307015227062943
+    second: Trees Chairs and Grasses_12
+  - first:
+      213: -9064111715722102632
+    second: Trees Chairs and Grasses_13
+  - first:
+      213: -7057636412823756530
+    second: Trees Chairs and Grasses_14
+  - first:
+      213: 7090009798712838383
+    second: Trees Chairs and Grasses_15
+  - first:
+      213: -2240001555303242750
+    second: Chair
+  - first:
+      213: -5823461452618365824
+    second: Trees Chairs and Grasses_17
+  - first:
+      213: 5894994568153545720
+    second: Trees Chairs and Grasses_18
+  - first:
+      213: -957760364124088639
+    second: Trees Chairs and Grasses_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Trees Chairs and Grasses_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 292
+        width: 66
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb23ce5ccccae2ef0800000000000000
+      internalID: -130977343653268802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees Chairs and Grasses_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 290
+        width: 45
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa56893431bad41c0800000000000000
+      internalID: -4517766751955950161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mango Tree 1
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 207
+        width: 153
+        height: 150
+      alignment: 9
+      pivot: {x: 0.53, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240790d23e95f4980800000000000000
+      internalID: -8552518335105241022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mango Tree 2
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 206
+        width: 134
+        height: 137
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133fe76126be49fb0800000000000000
+      internalID: -4641826509395397839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Narra Tree 1
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 210
+        width: 132
+        height: 119
+      alignment: 9
+      pivot: {x: 0.53, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7550316da94e1350800000000000000
+      internalID: 5989305563458065789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees Chairs and Grasses_5
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 205
+        width: 46
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8cb7bdf122b0d340800000000000000
+      internalID: 4886601454757330061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Narra Tree 2
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 9
+        width: 198
+        height: 201
+      alignment: 9
+      pivot: {x: 0.53, y: 0.18}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523d49afeab903b60800000000000000
+      internalID: 7723844536771072805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees Chairs and Grasses_7
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 145
+        width: 52
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81d1e78f667bad80800000000000000
+      internalID: -8238360871951019635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees Chairs and Grasses_8
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 145
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76351286e8a460220800000000000000
+      internalID: 2451729022642639719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees Chairs and Grasses_9
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 143
+        width: 48
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c085c7f847377da0800000000000000
+      internalID: -5947223996385361728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Table
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 75
+        width: 48
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39dfa9b64a45bce50800000000000000
+      internalID: 6830646324994178451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lamp 1
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 56
+        width: 16
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.21}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6433e07205f4fcc60800000000000000
+      internalID: 7840572681946542918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees Chairs and Grasses_12
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 101
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ab2d46901635450800000000000000
+      internalID: 6076307015227062943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees Chairs and Grasses_13
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 73
+        width: 15
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8987de31b6ec53280800000000000000
+      internalID: -9064111715722102632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees Chairs and Grasses_14
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 73
+        width: 16
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0127c3531d3e0e90800000000000000
+      internalID: -7057636412823756530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees Chairs and Grasses_15
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 71
+        width: 51
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe84152f856c46260800000000000000
+      internalID: 7090009798712838383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chair
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 74
+        width: 31
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204e3d7147ae9e0e0800000000000000
+      internalID: -2240001555303242750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees Chairs and Grasses_17
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 74
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0848081b9a8ee2fa0800000000000000
+      internalID: -5823461452618365824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees Chairs and Grasses_18
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 73
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb36a3a35a3fc150800000000000000
+      internalID: 5894994568153545720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Trees Chairs and Grasses_19
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 74
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c65f64f50a55b2f0800000000000000
+      internalID: -957760364124088639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

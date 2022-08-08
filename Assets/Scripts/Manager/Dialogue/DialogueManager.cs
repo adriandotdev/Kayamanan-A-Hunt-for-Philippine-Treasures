@@ -22,6 +22,9 @@ public class DialogueManager : MonoBehaviour
 
     public GameObject[] choicesBtn;
 
+    private float typingSpeed = 0.02f;
+
+    public Coroutine coroutine;
     private void OnEnable()
     {
         SceneManager.sceneLoaded += OnHouseSceneLoaded;
@@ -65,12 +68,36 @@ public class DialogueManager : MonoBehaviour
                 return;
             }
 
-            dialogueField.text = text;
-            ShowChoices();
+            print(currentStory.currentTags.Count);
+
+            StartCoroutine(this.DisplayLine(text));
         }
         else
         {
             ExitDialogue();
+        }
+    }
+
+    IEnumerator DisplayLine(string line)
+    {
+        this.dialogueField.text = line;
+        this.dialogueField.maxVisibleCharacters = 0;
+
+        this.HideChoices();
+
+        foreach (char c in line.ToCharArray())
+        {
+            this.dialogueField.maxVisibleCharacters++;
+            yield return new WaitForSeconds(this.typingSpeed);
+        }
+        ShowChoices();
+    }
+
+    public void HideChoices()
+    {
+        foreach (GameObject choice in this.choicesBtn)
+        {
+            choice.SetActive(false);
         }
     }
 
@@ -80,6 +107,8 @@ public class DialogueManager : MonoBehaviour
         {
             string text = currentStory.Continue();
 
+            print(currentStory.currentTags.Count);
+
             if (text == "")
             {
                 panel.gameObject.SetActive(false);
@@ -88,8 +117,7 @@ public class DialogueManager : MonoBehaviour
                 return;
             }
 
-            dialogueField.text = text;
-            ShowChoices();
+            StartCoroutine(this.DisplayLine(text));
         }
         else
         {
@@ -115,6 +143,7 @@ public class DialogueManager : MonoBehaviour
             foreach (Choice choice in choices)
             {
                 choicesBtn[index].SetActive(true);
+                
                 choicesBtn[index].GetComponentInChildren<TMPro.TextMeshProUGUI>().text = choice.text;
                 index++;
             }
@@ -129,6 +158,10 @@ public class DialogueManager : MonoBehaviour
 
     public void MakeChoice(int choiceIndex)
     {
+        //print(currentStory.currentChoices[choiceIndex].pathStringOnChoice.ToString());
+
+        //currentStory.SwitchFlow(currentStory.currentChoices[choiceIndex].pathStringOnChoice.ToString());
+
         currentStory.ChooseChoiceIndex(choiceIndex);
 
         this.ContinueDialogue();

@@ -239,6 +239,12 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
      */
     private void ConfirmBtnEventWhileLoadingProfile()
     {
+        if (!this.playerData.isIntroductionDone)
+        {
+            SceneManager.LoadScene("Introduction");
+            return;
+        }
+
         SoundManager.instance.PlaySound("Button Click 2");
         SceneManager.LoadScene(this.playerData.sceneToLoad);
     }
@@ -255,7 +261,7 @@ public class LoadSlot : MonoBehaviour, IDataPersistence
         this.playerData.name = this.btnCharacterName.text;
         DataPersistenceManager.instance.ConfirmCharacter();
 
-        SceneManager.LoadScene("House");
+        SceneManager.LoadScene("Introduction");
     }
 
     public void RemoveAllSlots()

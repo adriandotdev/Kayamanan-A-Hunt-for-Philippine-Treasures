@@ -142,6 +142,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         {
             this.sceneToLoadFromPhilippineMap = "House";
             this.playerData.sceneToLoad = "House";
+            this.playerData.isIntroductionDone = true;
             this.SetUpHouseOrOutsideSceneButtons();
         }
     }

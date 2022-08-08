@@ -5,10 +5,15 @@ using UnityEngine.UI;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public TextAsset ink;
+    public TextAsset[] inks;
     public TMPro.TextMeshProUGUI actorName;
     public Button talkButton;
     public string NPC_NAME;
+
+    private void Start()
+    {
+        this.NPC_NAME = transform.name;
+    }
 
     private void Update()
     {
@@ -19,10 +24,22 @@ public class DialogueTrigger : MonoBehaviour
         }
     }
 
+    public int CurrentOpenRegion()
+    {
+        int regionsData = 0;
+
+        foreach (RegionData regionData in DataPersistenceManager.instance.playerData.regionsData)
+        {
+            if (regionData.isOpen)
+                regionsData = regionData.regionNumber - 1;
+        }
+        return regionsData;
+    }
+
     public void StartDialogue()
     {
         talkButton.gameObject.SetActive(false);
-        DialogueManager._instance.StartDialogue(ink);
+        DialogueManager._instance.StartDialogue(inks[this.CurrentOpenRegion()]);
         DialogueManager._instance.actorField.text = this.NPC_NAME;
 
         QuestManager.instance.FindTalkQuestGoal(this.NPC_NAME);

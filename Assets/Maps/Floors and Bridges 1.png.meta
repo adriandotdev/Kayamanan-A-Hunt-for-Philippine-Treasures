@@ -1,0 +1,6264 @@
+fileFormatVersion: 2
+guid: abe396ce3744996469cd132a445c185d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9187361950385036369
+    second: Floors and Bridges 1_0
+  - first:
+      213: -758012550351107300
+    second: Floors and Bridges 1_1
+  - first:
+      213: -8539149654366802241
+    second: Floors and Bridges 1_2
+  - first:
+      213: 2442145519764665782
+    second: Floors and Bridges 1_3
+  - first:
+      213: 3787801442005778607
+    second: Floors and Bridges 1_4
+  - first:
+      213: 5935392835453028024
+    second: Floors and Bridges 1_5
+  - first:
+      213: -6668040770360214552
+    second: Floors and Bridges 1_6
+  - first:
+      213: 5349890613485624543
+    second: Floors and Bridges 1_7
+  - first:
+      213: 3057023987188914820
+    second: Floors and Bridges 1_8
+  - first:
+      213: 9211613858502998069
+    second: Floors and Bridges 1_9
+  - first:
+      213: 6193516575896541075
+    second: Floors and Bridges 1_10
+  - first:
+      213: -4062243155718028812
+    second: Floors and Bridges 1_11
+  - first:
+      213: -6189809078858912644
+    second: Floors and Bridges 1_12
+  - first:
+      213: -4385931069582626412
+    second: Floors and Bridges 1_13
+  - first:
+      213: -1534680736957069603
+    second: Floors and Bridges 1_14
+  - first:
+      213: 6966418762562683040
+    second: Floors and Bridges 1_15
+  - first:
+      213: 1912750966955533330
+    second: Floors and Bridges 1_16
+  - first:
+      213: -7169485097322684086
+    second: Floors and Bridges 1_17
+  - first:
+      213: -810975580615524803
+    second: Floors and Bridges 1_18
+  - first:
+      213: -2626650617545444688
+    second: Floors and Bridges 1_19
+  - first:
+      213: 2525272041429029672
+    second: Floors and Bridges 1_20
+  - first:
+      213: 1138394624724541725
+    second: Floors and Bridges 1_21
+  - first:
+      213: -7643439962726951153
+    second: Floors and Bridges 1_22
+  - first:
+      213: 3247415821365362877
+    second: Floors and Bridges 1_23
+  - first:
+      213: -1435707428639054776
+    second: Floors and Bridges 1_24
+  - first:
+      213: 1254083703162759016
+    second: Floors and Bridges 1_25
+  - first:
+      213: -6594198239724117894
+    second: Floors and Bridges 1_26
+  - first:
+      213: 8697791023566049737
+    second: Floors and Bridges 1_27
+  - first:
+      213: -539739686579881270
+    second: Floors and Bridges 1_28
+  - first:
+      213: 1734645404135815427
+    second: Floors and Bridges 1_29
+  - first:
+      213: -5781600951675255575
+    second: Floors and Bridges 1_30
+  - first:
+      213: -1424585446089752083
+    second: Floors and Bridges 1_31
+  - first:
+      213: 312536884189111597
+    second: Floors and Bridges 1_32
+  - first:
+      213: 6954496263836050870
+    second: Floors and Bridges 1_33
+  - first:
+      213: 7679393153271374102
+    second: Floors and Bridges 1_34
+  - first:
+      213: -750839738383492589
+    second: Floors and Bridges 1_35
+  - first:
+      213: 6760318022433174263
+    second: Floors and Bridges 1_36
+  - first:
+      213: 3617760518789906763
+    second: Floors and Bridges 1_37
+  - first:
+      213: 8550596848094346882
+    second: Floors and Bridges 1_38
+  - first:
+      213: 410235231920125364
+    second: Floors and Bridges 1_39
+  - first:
+      213: -7810392370396273694
+    second: Floors and Bridges 1_40
+  - first:
+      213: -2700009772408255698
+    second: Floors and Bridges 1_41
+  - first:
+      213: -3316271458583220490
+    second: Floors and Bridges 1_42
+  - first:
+      213: 831447100269982215
+    second: Floors and Bridges 1_43
+  - first:
+      213: -479196003838410953
+    second: Floors and Bridges 1_44
+  - first:
+      213: 69264006774032758
+    second: Floors and Bridges 1_45
+  - first:
+      213: -2464352318554124462
+    second: Floors and Bridges 1_46
+  - first:
+      213: 6382042880966935017
+    second: Floors and Bridges 1_47
+  - first:
+      213: 2295516206942533439
+    second: Floors and Bridges 1_48
+  - first:
+      213: -3118200699380317126
+    second: Floors and Bridges 1_49
+  - first:
+      213: -9190386111080249553
+    second: Floors and Bridges 1_50
+  - first:
+      213: -529184890684636456
+    second: Floors and Bridges 1_51
+  - first:
+      213: -1936177215527931241
+    second: Floors and Bridges 1_52
+  - first:
+      213: -2652385104201329884
+    second: Floors and Bridges 1_53
+  - first:
+      213: -4686082390635922613
+    second: Floors and Bridges 1_54
+  - first:
+      213: -7410635348057562625
+    second: Floors and Bridges 1_55
+  - first:
+      213: 6190678759296609311
+    second: Floors and Bridges 1_56
+  - first:
+      213: -5268498818619649216
+    second: Floors and Bridges 1_57
+  - first:
+      213: -4959254703391286734
+    second: Floors and Bridges 1_58
+  - first:
+      213: 1978802647960856271
+    second: Floors and Bridges 1_59
+  - first:
+      213: 8202496929793453376
+    second: Floors and Bridges 1_60
+  - first:
+      213: 8039584429879547032
+    second: Floors and Bridges 1_61
+  - first:
+      213: -185873470665234766
+    second: Floors and Bridges 1_62
+  - first:
+      213: -4332981008540518476
+    second: Floors and Bridges 1_63
+  - first:
+      213: 835544355309325753
+    second: Floors and Bridges 1_64
+  - first:
+      213: 1962248568703622328
+    second: Floors and Bridges 1_65
+  - first:
+      213: -2492962673564437073
+    second: Floors and Bridges 1_66
+  - first:
+      213: 4086779805577818365
+    second: Floors and Bridges 1_67
+  - first:
+      213: -1030080601073265404
+    second: Floors and Bridges 1_68
+  - first:
+      213: 836346628875873792
+    second: Floors and Bridges 1_69
+  - first:
+      213: -7627002341941303388
+    second: Floors and Bridges 1_70
+  - first:
+      213: -6044136406772581131
+    second: Floors and Bridges 1_71
+  - first:
+      213: 6037655465028952115
+    second: Floors and Bridges 1_72
+  - first:
+      213: 5504325773466974715
+    second: Floors and Bridges 1_73
+  - first:
+      213: 4896125791818565988
+    second: Floors and Bridges 1_74
+  - first:
+      213: -2396846344987021413
+    second: Floors and Bridges 1_75
+  - first:
+      213: 3811250865636912942
+    second: Floors and Bridges 1_76
+  - first:
+      213: -4694712688771760611
+    second: Floors and Bridges 1_77
+  - first:
+      213: -1185286177638386290
+    second: Floors and Bridges 1_78
+  - first:
+      213: -2458419107649020299
+    second: Floors and Bridges 1_79
+  - first:
+      213: 6895884940554683580
+    second: Floors and Bridges 1_80
+  - first:
+      213: -1660656529971401402
+    second: Floors and Bridges 1_81
+  - first:
+      213: -73183958040230260
+    second: Floors and Bridges 1_82
+  - first:
+      213: -4955297418464901438
+    second: Floors and Bridges 1_83
+  - first:
+      213: -7524989524438018161
+    second: Floors and Bridges 1_84
+  - first:
+      213: 4796961930849835289
+    second: Floors and Bridges 1_85
+  - first:
+      213: -6275629610768627252
+    second: Floors and Bridges 1_86
+  - first:
+      213: 8828336659215730423
+    second: Floors and Bridges 1_87
+  - first:
+      213: -2461038895986509026
+    second: Floors and Bridges 1_88
+  - first:
+      213: -6772303406867090288
+    second: Floors and Bridges 1_89
+  - first:
+      213: 5224830910835091896
+    second: Floors and Bridges 1_90
+  - first:
+      213: 7658573615417956411
+    second: Floors and Bridges 1_91
+  - first:
+      213: 7579495506675691724
+    second: Floors and Bridges 1_92
+  - first:
+      213: -7710259147035998876
+    second: Floors and Bridges 1_93
+  - first:
+      213: -4061413184066441690
+    second: Floors and Bridges 1_94
+  - first:
+      213: 2010269539058129359
+    second: Floors and Bridges 1_95
+  - first:
+      213: 8168619882480319668
+    second: Floors and Bridges 1_96
+  - first:
+      213: -1084414731740884606
+    second: Floors and Bridges 1_97
+  - first:
+      213: -2874771191749727332
+    second: Floors and Bridges 1_98
+  - first:
+      213: 8974485558905703926
+    second: Floors and Bridges 1_99
+  - first:
+      213: 282315322205162920
+    second: Floors and Bridges 1_100
+  - first:
+      213: 8006949004834779985
+    second: Floors and Bridges 1_101
+  - first:
+      213: 4681527221925177267
+    second: Floors and Bridges 1_102
+  - first:
+      213: 3844734365525044953
+    second: Floors and Bridges 1_103
+  - first:
+      213: -1835799063296036962
+    second: Floors and Bridges 1_104
+  - first:
+      213: 8663535168173217949
+    second: Floors and Bridges 1_105
+  - first:
+      213: 2935828262912140397
+    second: Floors and Bridges 1_106
+  - first:
+      213: -659975294629364742
+    second: Floors and Bridges 1_107
+  - first:
+      213: -2220792823412408308
+    second: Floors and Bridges 1_108
+  - first:
+      213: 7730758620858023704
+    second: Floors and Bridges 1_109
+  - first:
+      213: -4303141124618256413
+    second: Floors and Bridges 1_110
+  - first:
+      213: 7357563475991951179
+    second: Floors and Bridges 1_111
+  - first:
+      213: 4638229702992770312
+    second: Floors and Bridges 1_112
+  - first:
+      213: 3010931473193536725
+    second: Floors and Bridges 1_113
+  - first:
+      213: -3305822862307867137
+    second: Floors and Bridges 1_114
+  - first:
+      213: -4402733290316389690
+    second: Floors and Bridges 1_115
+  - first:
+      213: 8908111193602698969
+    second: Floors and Bridges 1_116
+  - first:
+      213: 5282565560556602691
+    second: Floors and Bridges 1_117
+  - first:
+      213: 4445017142573405977
+    second: Floors and Bridges 1_118
+  - first:
+      213: 7358084579156093158
+    second: Floors and Bridges 1_119
+  - first:
+      213: -6100181701357134213
+    second: Floors and Bridges 1_120
+  - first:
+      213: -6709549744688623323
+    second: Floors and Bridges 1_121
+  - first:
+      213: 7366562077952151042
+    second: Floors and Bridges 1_122
+  - first:
+      213: 5910518279902064319
+    second: Floors and Bridges 1_123
+  - first:
+      213: 1257712734765999487
+    second: Floors and Bridges 1_124
+  - first:
+      213: 589678476666001575
+    second: Floors and Bridges 1_125
+  - first:
+      213: 4564805684196039594
+    second: Floors and Bridges 1_126
+  - first:
+      213: -4369991439472770894
+    second: Floors and Bridges 1_127
+  - first:
+      213: -6752977795684132852
+    second: Floors and Bridges 1_128
+  - first:
+      213: -7812472229843339149
+    second: Floors and Bridges 1_129
+  - first:
+      213: -1914128860746835097
+    second: Floors and Bridges 1_130
+  - first:
+      213: 430694895201906594
+    second: Floors and Bridges 1_131
+  - first:
+      213: 7832719912764387946
+    second: Floors and Bridges 1_132
+  - first:
+      213: 5799242036872898635
+    second: Floors and Bridges 1_133
+  - first:
+      213: 4138134738082752713
+    second: Floors and Bridges 1_134
+  - first:
+      213: -5037369028413199562
+    second: Floors and Bridges 1_135
+  - first:
+      213: 5241937101450569834
+    second: Floors and Bridges 1_136
+  - first:
+      213: 8557114592147709033
+    second: Floors and Bridges 1_137
+  - first:
+      213: 937258038534737735
+    second: Floors and Bridges 1_138
+  - first:
+      213: -7724074444811433719
+    second: Floors and Bridges 1_139
+  - first:
+      213: 152827170842709092
+    second: Floors and Bridges 1_140
+  - first:
+      213: 2072972691283134424
+    second: Floors and Bridges 1_141
+  - first:
+      213: 8588343417999097266
+    second: Floors and Bridges 1_142
+  - first:
+      213: -8638290879116001295
+    second: Floors and Bridges 1_143
+  - first:
+      213: 4658190097791114059
+    second: Floors and Bridges 1_144
+  - first:
+      213: -3327213455312646008
+    second: Floors and Bridges 1_145
+  - first:
+      213: -8601941522426888314
+    second: Floors and Bridges 1_146
+  - first:
+      213: 3291103391320545068
+    second: Floors and Bridges 1_147
+  - first:
+      213: -75447077048469692
+    second: Floors and Bridges 1_148
+  - first:
+      213: -3832542045174995352
+    second: Floors and Bridges 1_149
+  - first:
+      213: 6705052970596147875
+    second: Floors and Bridges 1_150
+  - first:
+      213: -4272480310279291306
+    second: Floors and Bridges 1_151
+  - first:
+      213: -4380801020461375390
+    second: Floors and Bridges 1_152
+  - first:
+      213: 4764652232287299132
+    second: Floors and Bridges 1_153
+  - first:
+      213: 6868942202183570209
+    second: Floors and Bridges 1_154
+  - first:
+      213: -485777504364965309
+    second: Floors and Bridges 1_155
+  - first:
+      213: -7278074941059466406
+    second: Floors and Bridges 1_156
+  - first:
+      213: 3162561374579956666
+    second: Floors and Bridges 1_157
+  - first:
+      213: 4932574943244885736
+    second: Floors and Bridges 1_158
+  - first:
+      213: 2393202715226685449
+    second: Floors and Bridges 1_159
+  - first:
+      213: 2014783031970643672
+    second: Floors and Bridges 1_160
+  - first:
+      213: -342939079266336367
+    second: Floors and Bridges 1_161
+  - first:
+      213: 694011913322932581
+    second: Floors and Bridges 1_162
+  - first:
+      213: -71815218078902612
+    second: Floors and Bridges 1_163
+  - first:
+      213: -7550703480706507097
+    second: Floors and Bridges 1_164
+  - first:
+      213: -4253110929769882337
+    second: Floors and Bridges 1_165
+  - first:
+      213: 108793881463911551
+    second: Floors and Bridges 1_166
+  - first:
+      213: 1098760165201998385
+    second: Floors and Bridges 1_167
+  - first:
+      213: -5603305317213795797
+    second: Floors and Bridges 1_168
+  - first:
+      213: -791926812975434064
+    second: Floors and Bridges 1_169
+  - first:
+      213: 4777374124270892632
+    second: Floors and Bridges 1_170
+  - first:
+      213: -2935025912817553729
+    second: Floors and Bridges 1_171
+  - first:
+      213: -8863481692135681138
+    second: Floors and Bridges 1_172
+  - first:
+      213: 5237301277591820417
+    second: Floors and Bridges 1_173
+  - first:
+      213: -3717020777100591520
+    second: Floors and Bridges 1_174
+  - first:
+      213: -6822823260703104430
+    second: Floors and Bridges 1_175
+  - first:
+      213: -4267528689509124741
+    second: Floors and Bridges 1_176
+  - first:
+      213: 4714018115785151204
+    second: Floors and Bridges 1_177
+  - first:
+      213: -3901971870251215203
+    second: Floors and Bridges 1_178
+  - first:
+      213: 6088376482800263042
+    second: Floors and Bridges 1_179
+  - first:
+      213: -9195721961822157881
+    second: Floors and Bridges 1_180
+  - first:
+      213: 3131787443755870009
+    second: Floors and Bridges 1_181
+  - first:
+      213: 4009697914390366117
+    second: Floors and Bridges 1_182
+  - first:
+      213: 1184596953411137307
+    second: Floors and Bridges 1_183
+  - first:
+      213: 3456477161328797407
+    second: Floors and Bridges 1_184
+  - first:
+      213: -2384040957594215816
+    second: Floors and Bridges 1_185
+  - first:
+      213: 1168818935888652773
+    second: Floors and Bridges 1_186
+  - first:
+      213: 3767063124077354585
+    second: Floors and Bridges 1_187
+  - first:
+      213: -6533084952783681220
+    second: Floors and Bridges 1_188
+  - first:
+      213: -4976170458999354137
+    second: Floors and Bridges 1_189
+  - first:
+      213: -6319307312683689391
+    second: Floors and Bridges 1_190
+  - first:
+      213: -5521956029260602603
+    second: Floors and Bridges 1_191
+  - first:
+      213: -6407892673084062563
+    second: Floors and Bridges 1_192
+  - first:
+      213: 2096981670245196791
+    second: Floors and Bridges 1_193
+  - first:
+      213: -944127990149760390
+    second: Floors and Bridges 1_194
+  - first:
+      213: -6780883787356559944
+    second: Floors and Bridges 1_195
+  - first:
+      213: 7688349874264489734
+    second: Floors and Bridges 1_196
+  - first:
+      213: 3725765174170988746
+    second: Floors and Bridges 1_197
+  - first:
+      213: -1635915760105015154
+    second: Floors and Bridges 1_198
+  - first:
+      213: 6328546447185547487
+    second: Floors and Bridges 1_199
+  - first:
+      213: 5297890971506332198
+    second: Floors and Bridges 1_200
+  - first:
+      213: 425677380556316337
+    second: Floors and Bridges 1_201
+  - first:
+      213: 1871427274072829415
+    second: Floors and Bridges 1_202
+  - first:
+      213: -3724089409753631784
+    second: Floors and Bridges 1_203
+  - first:
+      213: 5334386693389949320
+    second: Floors and Bridges 1_204
+  - first:
+      213: -1083760634760992826
+    second: Floors and Bridges 1_205
+  - first:
+      213: 1967282939017007373
+    second: Floors and Bridges 1_206
+  - first:
+      213: -6784837734730866369
+    second: Floors and Bridges 1_207
+  - first:
+      213: -1499624590946062446
+    second: Floors and Bridges 1_208
+  - first:
+      213: -6700206897645487719
+    second: Floors and Bridges 1_209
+  - first:
+      213: 2421516691893555712
+    second: Floors and Bridges 1_210
+  - first:
+      213: 8966300218367040791
+    second: Floors and Bridges 1_211
+  - first:
+      213: 3380878318658036479
+    second: Floors and Bridges 1_212
+  - first:
+      213: 8091527339375709757
+    second: Floors and Bridges 1_213
+  - first:
+      213: 6921153040362825588
+    second: Floors and Bridges 1_214
+  - first:
+      213: -5486809648915843823
+    second: Floors and Bridges 1_215
+  - first:
+      213: 2337757942923493815
+    second: Floors and Bridges 1_216
+  - first:
+      213: -4610523412692100573
+    second: Floors and Bridges 1_217
+  - first:
+      213: 5795812541605182900
+    second: Floors and Bridges 1_218
+  - first:
+      213: 7605379612766930313
+    second: Floors and Bridges 1_219
+  - first:
+      213: -7224727483091748532
+    second: Floors and Bridges 1_220
+  - first:
+      213: 10370883894627755
+    second: Floors and Bridges 1_221
+  - first:
+      213: 1169190299306626991
+    second: Floors and Bridges 1_222
+  - first:
+      213: -3187413599975085315
+    second: Floors and Bridges 1_223
+  - first:
+      213: 2744789639323117509
+    second: Floors and Bridges 1_224
+  - first:
+      213: 1459658365270187349
+    second: Floors and Bridges 1_225
+  - first:
+      213: -739031285038393295
+    second: Floors and Bridges 1_226
+  - first:
+      213: 2041287118960168334
+    second: Floors and Bridges 1_227
+  - first:
+      213: 3730690692287802721
+    second: Floors and Bridges 1_228
+  - first:
+      213: -9050513107435779477
+    second: Floors and Bridges 1_229
+  - first:
+      213: 8515316978261718579
+    second: Floors and Bridges 1_230
+  - first:
+      213: -5775875187198236984
+    second: Floors and Bridges 1_231
+  - first:
+      213: 3372053516055427614
+    second: Floors and Bridges 1_232
+  - first:
+      213: 6758053255200220674
+    second: Floors and Bridges 1_233
+  - first:
+      213: 3773742955941960881
+    second: Floors and Bridges 1_234
+  - first:
+      213: -571519649328871798
+    second: Floors and Bridges 1_235
+  - first:
+      213: 4432121015137610517
+    second: Floors and Bridges 1_236
+  - first:
+      213: -1498300537600702167
+    second: Floors and Bridges 1_237
+  - first:
+      213: -7258833058442272360
+    second: Floors and Bridges 1_238
+  - first:
+      213: 6836803678860161669
+    second: Floors and Bridges 1_239
+  - first:
+      213: 6848595690367526575
+    second: Floors and Bridges 1_240
+  - first:
+      213: -6598922354292565448
+    second: Floors and Bridges 1_241
+  - first:
+      213: -1845562612995437288
+    second: Floors and Bridges 1_242
+  - first:
+      213: -4259059361949236989
+    second: Floors and Bridges 1_243
+  - first:
+      213: 4888502652001238429
+    second: Floors and Bridges 1_244
+  - first:
+      213: 7031109606949913771
+    second: Floors and Bridges 1_245
+  - first:
+      213: -140207360806197214
+    second: Floors and Bridges 1_246
+  - first:
+      213: 5477904570456368050
+    second: Floors and Bridges 1_247
+  - first:
+      213: -1480773390672534611
+    second: Floors and Bridges 1_248
+  - first:
+      213: -1618296811456724463
+    second: Floors and Bridges 1_249
+  - first:
+      213: -9177253829168291835
+    second: Floors and Bridges 1_250
+  - first:
+      213: -6912945242702828659
+    second: Floors and Bridges 1_251
+  - first:
+      213: -7063018376646575921
+    second: Floors and Bridges 1_252
+  - first:
+      213: -5898552860856967374
+    second: Floors and Bridges 1_253
+  - first:
+      213: -895954482058146305
+    second: Floors and Bridges 1_254
+  - first:
+      213: -7947300959020592908
+    second: Floors and Bridges 1_255
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Floors and Bridges 1_0
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa32c5c9bfeef7080800000000000000
+      internalID: -9187361950385036369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_1
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1bc8010a9ffa75f0800000000000000
+      internalID: -758012550351107300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_2
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe2197b1a8de7980800000000000000
+      internalID: -8539149654366802241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b57263496e34e120800000000000000
+      internalID: 2442145519764665782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_4
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa08776c759f09430800000000000000
+      internalID: 3787801442005778607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_5
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b683973650ce5250800000000000000
+      internalID: 5935392835453028024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_6
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 261
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb7bd68f3c5673a0800000000000000
+      internalID: -6668040770360214552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdcd1040b21ae3a40800000000000000
+      internalID: 5349890613485624543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a5e3a9e1bbc6a20800000000000000
+      internalID: 3057023987188914820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_9
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538f224cff936df70800000000000000
+      internalID: 9211613858502998069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3979ec8d28ac3f550800000000000000
+      internalID: 6193516575896541075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_11
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f14a206f5300a7c0800000000000000
+      internalID: -4062243155718028812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_12
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c60231071691aa0800000000000000
+      internalID: -6189809078858912644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_13
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491bd2c0eea0223c0800000000000000
+      internalID: -4385931069582626412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_14
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd60a063008b3bae0800000000000000
+      internalID: -1534680736957069603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_15
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a04a2374f0bda060800000000000000
+      internalID: 6966418762562683040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_16
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2146b29ced47b8a10800000000000000
+      internalID: 1912750966955533330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_17
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a41ef9f1a4fd08c90800000000000000
+      internalID: -7169485097322684086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_18
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e35e39106deb4f0800000000000000
+      internalID: -810975580615524803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_19
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2b4201e234c8bd0800000000000000
+      internalID: -2626650617545444688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_20
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8235a9eca819b0320800000000000000
+      internalID: 2525272041429029672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_21
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11abe431e36ccf00800000000000000
+      internalID: 1138394624724541725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_22
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0792afb9db0de590800000000000000
+      internalID: -7643439962726951153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_23
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db04776eb73211d20800000000000000
+      internalID: 3247415821365362877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_24
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844649a43b7531ce0800000000000000
+      internalID: -1435707428639054776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_25
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8676f9dcb76676110800000000000000
+      internalID: 1254083703162759016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70ecb673a3bc74a0800000000000000
+      internalID: -6594198239724117894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_27
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c15c326ad2c4b870800000000000000
+      internalID: 8697791023566049737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_28
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acab93e5d957288f0800000000000000
+      internalID: -539739686579881270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_29
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30977c4fdc2b21810800000000000000
+      internalID: 1734645404135815427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_30
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e406521190a3cfa0800000000000000
+      internalID: -5781600951675255575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_31
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de101a5a51bda3ce0800000000000000
+      internalID: -1424585446089752083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_32
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25ac49e3aa565400800000000000000
+      internalID: 312536884189111597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_33
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 245
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5aab56185538060800000000000000
+      internalID: 6954496263836050870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_34
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611ae4fb26fa29a60800000000000000
+      internalID: 7679393153271374102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_35
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31a976e6c3b7495f0800000000000000
+      internalID: -750839738383492589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_36
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2fcc77c6971dd50800000000000000
+      internalID: 6760318022433174263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41c7ec260ed43230800000000000000
+      internalID: 3617760518789906763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_38
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28efc34c782d9a670800000000000000
+      internalID: 8550596848094346882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_39
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b5f2f815c271b500800000000000000
+      internalID: 410235231920125364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3eb163589eb9390800000000000000
+      internalID: -7810392370396273694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_41
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2bc581da63a78ad0800000000000000
+      internalID: -2700009772408255698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_42
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe6164cdac3af1d0800000000000000
+      internalID: -3316271458583220490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_43
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702fe158bb4e98b00800000000000000
+      internalID: 831447100269982215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_44
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73fbc6df5cd8959f0800000000000000
+      internalID: -479196003838410953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_45
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6798c774f3316f000800000000000000
+      internalID: 69264006774032758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_46
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25fcb2b7f9cdccdd0800000000000000
+      internalID: -2464352318554124462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_47
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1485dcf22919850800000000000000
+      internalID: 6382042880966935017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_48
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3736faf3df4bdf10800000000000000
+      internalID: 2295516206942533439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_49
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a34cf0f1cfce9b4d0800000000000000
+      internalID: -3118200699380317126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_50
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27c0645680357080800000000000000
+      internalID: -9190386111080249553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_51
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d20d3a4525f7a8f0800000000000000
+      internalID: -529184890684636456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_52
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792b04ea4115125e0800000000000000
+      internalID: -1936177215527931241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_53
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423da88fcc5d03bd0800000000000000
+      internalID: -2652385104201329884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_54
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4bbee5c4e0b7feb0800000000000000
+      internalID: -4686082390635922613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_55
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff163170a62282990800000000000000
+      internalID: -7410635348057562625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_56
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c2e6e2885b9e550800000000000000
+      internalID: 6190678759296609311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_57
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0435c98fc3882e6b0800000000000000
+      internalID: -5268498818619649216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_58
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a5dad5f103d2bb0800000000000000
+      internalID: -4959254703391286734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_59
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc62f40368e167b10800000000000000
+      internalID: 1978802647960856271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_60
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04d229bbf7f15d170800000000000000
+      internalID: 8202496929793453376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_61
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8945bb48177529f60800000000000000
+      internalID: 8039584429879547032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_62
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b664df2015ab6df0800000000000000
+      internalID: -185873470665234766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_63
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 229
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7bd67dab82ed3c0800000000000000
+      internalID: -4332981008540518476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_64
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd8b4c0a23789b00800000000000000
+      internalID: 835544355309325753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_65
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc19924dae4b3b10800000000000000
+      internalID: 1962248568703622328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_66
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa532eb18a7376dd0800000000000000
+      internalID: -2492962673564437073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_67
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0b4ba949827b830800000000000000
+      internalID: 4086779805577818365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_68
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405d103a62b64b1f0800000000000000
+      internalID: -1030080601073265404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_69
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00eed3be3dc4b9b00800000000000000
+      internalID: 836346628875873792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_70
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7248397c1772690800000000000000
+      internalID: -7627002341941303388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_71
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fc705416f9ee1ca0800000000000000
+      internalID: -6044136406772581131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_72
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3302f3518af0ac350800000000000000
+      internalID: 6037655465028952115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_73
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf9b687b02b436c40800000000000000
+      internalID: 5504325773466974715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_74
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46949f4877882f340800000000000000
+      internalID: 4896125791818565988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_75
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fead1c2f0bcbed0800000000000000
+      internalID: -2396846344987021413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_76
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f203c287844e430800000000000000
+      internalID: 3811250865636912942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_77
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e7d37eea709deb0800000000000000
+      internalID: -4694712688771760611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_78
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e85fea850840d8fe0800000000000000
+      internalID: -1185286177638386290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_79
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e1c8bc8d0f1edd0800000000000000
+      internalID: -2458419107649020299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_80
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb44ab541da13bf50800000000000000
+      internalID: 6895884940554683580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_81
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d2f1d3fa924f8e0800000000000000
+      internalID: -1660656529971401402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_82
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8641c1f39ffbfef0800000000000000
+      internalID: -73183958040230260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_83
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c64dff804f3b3bb0800000000000000
+      internalID: -4955297418464901438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_84
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f87165985edd19790800000000000000
+      internalID: -7524989524438018161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_85
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9195061f57b329240800000000000000
+      internalID: 4796961930849835289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_86
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc986346e1c78e8a0800000000000000
+      internalID: -6275629610768627252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_87
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6cc12ca6d848a70800000000000000
+      internalID: 8828336659215730423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_88
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1bfd4ac922a8ddd0800000000000000
+      internalID: -2461038895986509026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_89
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094f482cee1f302a0800000000000000
+      internalID: -6772303406867090288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_90
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b96ec3f704528840800000000000000
+      internalID: 5224830910835091896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_91
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b389a295028b84a60800000000000000
+      internalID: 7658573615417956411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_92
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc0f2146107cf2960800000000000000
+      internalID: 7579495506675691724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_93
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46586be0828aff490800000000000000
+      internalID: -7710259147035998876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_94
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 213
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ea1a53a36f2a7c0800000000000000
+      internalID: -4061413184066441690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_95
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc91952be79e5eb10800000000000000
+      internalID: 2010269539058129359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_96
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bcbe600184cc5170800000000000000
+      internalID: 8168619882480319668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_97
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28152650c8263f0f0800000000000000
+      internalID: -1084414731740884606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_98
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b2b3115d2ca18d0800000000000000
+      internalID: -2874771191749727332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_99
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd82742117cb8c70800000000000000
+      internalID: 8974485558905703926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_100
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad40be2a4cfae300800000000000000
+      internalID: 282315322205162920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_101
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15338df72b56e1f60800000000000000
+      internalID: 8006949004834779985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_102
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7eb2d543028f040800000000000000
+      internalID: 4681527221925177267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_103
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de6bd0098d3b5530800000000000000
+      internalID: 3844734365525044953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_104
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9fae397a7ee586e0800000000000000
+      internalID: -1835799063296036962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_105
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d989116855f0b3870800000000000000
+      internalID: 8663535168173217949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_106
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d642e6c10482eb820800000000000000
+      internalID: 2935828262912140397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_107
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb351b57fb47d6f0800000000000000
+      internalID: -659975294629364742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_108
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0044c081b82e21e0800000000000000
+      internalID: -2220792823412408308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_109
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ff780a10c294b60800000000000000
+      internalID: 7730758620858023704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_110
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eff0c832fb2844c0800000000000000
+      internalID: -4303141124618256413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_111
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4773e6dff05b1660800000000000000
+      internalID: 7357563475991951179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_112
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805bc89275d4e5040800000000000000
+      internalID: 4638229702992770312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_113
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc8eb6e83af8c920800000000000000
+      internalID: 3010931473193536725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_114
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff546c92f9b5f12d0800000000000000
+      internalID: -3305822862307867137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_115
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 197
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2a7ed266956e2c0800000000000000
+      internalID: -4402733290316389690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_116
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9deae52fee7ff9b70800000000000000
+      internalID: 8908111193602698969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_117
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34540bb93617f4940800000000000000
+      internalID: 5282565560556602691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_118
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9171c9b5a8fdfad30800000000000000
+      internalID: 4445017142573405977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_119
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8e0ef90fa2d1660800000000000000
+      internalID: 7358084579156093158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_120
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e1541101dc75ba0800000000000000
+      internalID: -6100181701357134213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_121
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52195015e04e2e2a0800000000000000
+      internalID: -6709549744688623323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_122
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e83302e294b3660800000000000000
+      internalID: 7366562077952151042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_123
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbee3007f01660250800000000000000
+      internalID: 5910518279902064319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_124
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f756631911b447110800000000000000
+      internalID: 1257712734765999487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_125
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 181
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8de554375fe2800800000000000000
+      internalID: 589678476666001575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_126
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 165
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aab503b9592795f30800000000000000
+      internalID: 4564805684196039594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_127
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 165
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b04ab260fbaa53c0800000000000000
+      internalID: -4369991439472770894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_128
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 165
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c089520497a9842a0800000000000000
+      internalID: -6752977795684132852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_129
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 165
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 378759236e5849390800000000000000
+      internalID: -7812472229843339149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_130
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 165
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b9cd051f5af65e0800000000000000
+      internalID: -1914128860746835097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_131
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 165
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2af651ba9b22af500800000000000000
+      internalID: 430694895201906594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_132
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 165
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a623379d24963bc60800000000000000
+      internalID: 7832719912764387946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_133
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 165
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b48625628eb0b7050800000000000000
+      internalID: 5799242036872898635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_134
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 165
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c860289e9b9d6930800000000000000
+      internalID: 4138134738082752713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_135
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 165
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b60eace8ba71ab0800000000000000
+      internalID: -5037369028413199562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_136
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 165
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a68e6e2550a1fb840800000000000000
+      internalID: 5241937101450569834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_137
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c964f426af0c670800000000000000
+      internalID: 8557114592147709033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_138
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f0eb1683fc10d00800000000000000
+      internalID: 937258038534737735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_139
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909875267339ec490800000000000000
+      internalID: -7724074444811433719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_140
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c8b1e8083fe1200800000000000000
+      internalID: 152827170842709092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_141
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d7440dfdada4cc10800000000000000
+      internalID: 2072972691283134424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_142
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd76eee5dcef2770800000000000000
+      internalID: 8588343417999097266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_143
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff3bcb8630ae1880800000000000000
+      internalID: -8638290879116001295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_144
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4bd41bb63735a040800000000000000
+      internalID: 4658190097791114059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_145
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8809030adfc53d1d0800000000000000
+      internalID: -3327213455312646008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_146
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68fff09a2c3cf9880800000000000000
+      internalID: -8601941522426888314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_147
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c279ebee8195cad20800000000000000
+      internalID: 3291103391320545068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_148
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4473f2d7845f3fef0800000000000000
+      internalID: -75447077048469692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_149
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866689ac05310dac0800000000000000
+      internalID: -3832542045174995352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_150
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 149
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2af80e6222d0d50800000000000000
+      internalID: 6705052970596147875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_151
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65eb3fb5bc915b4c0800000000000000
+      internalID: -4272480310279291306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_152
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2602bbfaea44433c0800000000000000
+      internalID: -4380801020461375390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_153
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36a1c706f17f1240800000000000000
+      internalID: 4764652232287299132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_154
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12357d72a82635f50800000000000000
+      internalID: 6868942202183570209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_155
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342537cfeeb2249f0800000000000000
+      internalID: -485777504364965309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_156
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b7a79e6651ffa90800000000000000
+      internalID: -7278074941059466406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_157
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb953070dca3eb20800000000000000
+      internalID: 3162561374579956666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_158
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee9a18e6c6047440800000000000000
+      internalID: 4932574943244885736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_159
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9004694903d563120800000000000000
+      internalID: 2393202715226685449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_160
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de38182e72f5fb10800000000000000
+      internalID: 2014783031970643672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_161
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1910bb079b2ad3bf0800000000000000
+      internalID: -342939079266336367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_162
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569a08b7820a1a900800000000000000
+      internalID: 694011913322932581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_163
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca690fc807cd00ff0800000000000000
+      internalID: -71815218078902612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_164
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aede2c8033863790800000000000000
+      internalID: -7550703480706507097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_165
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d1cb0b42ae9f4c0800000000000000
+      internalID: -4253110929769882337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_166
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7474627573828100800000000000000
+      internalID: 108793881463911551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_167
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132f63c7c849f3f00800000000000000
+      internalID: 1098760165201998385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_168
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a0a67608f0d32b0800000000000000
+      internalID: -5603305317213795797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_169
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 133
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6fd7862c28205f0800000000000000
+      internalID: -791926812975434064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_170
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8563f445474ac4240800000000000000
+      internalID: 4777374124270892632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_171
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe61f39b71b447d0800000000000000
+      internalID: -2935025912817553729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_172
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83131b9c569ef480800000000000000
+      internalID: -8863481692135681138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_173
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1885f8873c1aea840800000000000000
+      internalID: 5237301277591820417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_174
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e3c2efb4d7a6cc0800000000000000
+      internalID: -3717020777100591520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_175
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252e48ca4667051a0800000000000000
+      internalID: -6822823260703104430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_176
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7535096441b6c4c0800000000000000
+      internalID: -4267528689509124741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_177
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e25128108e8b6140800000000000000
+      internalID: 4714018115785151204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_178
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d961c1ee14969d9c0800000000000000
+      internalID: -3901971870251215203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_179
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28fd62c47224e7450800000000000000
+      internalID: 6088376482800263042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_180
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c30554c89b326080800000000000000
+      internalID: -9195721961822157881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_181
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937e8115618567b20800000000000000
+      internalID: 3131787443755870009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_182
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7ccd3420f45a730800000000000000
+      internalID: 4009697914390366117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_183
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1fa41227a8807010800000000000000
+      internalID: 1184596953411137307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_184
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6e04f3aafd7ff20800000000000000
+      internalID: 3456477161328797407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_185
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a5d98516f2aeed0800000000000000
+      internalID: -2384040957594215816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_186
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9a46821aa783010800000000000000
+      internalID: 1168818935888652773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_187
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e9a1dd3fb474430800000000000000
+      internalID: 3767063124077354585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_188
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3901e569d1d555a0800000000000000
+      internalID: -6533084952783681220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_189
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec0d89155711fab0800000000000000
+      internalID: -4976170458999354137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_190
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ad5f0fa7f4d48a0800000000000000
+      internalID: -6319307312683689391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_191
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 117
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 513689a7f321e53b0800000000000000
+      internalID: -5521956029260602603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_192
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d940ff570979217a0800000000000000
+      internalID: -6407892673084062563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_193
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3687308b9f91d10800000000000000
+      internalID: 2096981670245196791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_194
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7abe9c5898c5e2f0800000000000000
+      internalID: -944127990149760390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_195
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5286f3f1675e1a0800000000000000
+      internalID: -6780883787356559944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_196
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f347cd97182ba60800000000000000
+      internalID: 7688349874264489734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_197
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac0bbfa9fa394b330800000000000000
+      internalID: 3725765174170988746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_198
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e883a7c984f0c49e0800000000000000
+      internalID: -1635915760105015154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_199
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd01e01b67383d750800000000000000
+      internalID: 6328546447185547487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_200
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6225267e4c3e58940800000000000000
+      internalID: 5297890971506332198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_201
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be5af0825f48e500800000000000000
+      internalID: 425677380556316337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_202
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eda616c035a8f910800000000000000
+      internalID: 1871427274072829415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_203
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d337d3b960615cc0800000000000000
+      internalID: -3724089409753631784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_204
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88914125f6c870a40800000000000000
+      internalID: 5334386693389949320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_205
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7e487d175b5f0f0800000000000000
+      internalID: -1083760634760992826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_206
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d019bc0f8613d4b10800000000000000
+      internalID: 1967282939017007373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_207
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3163b2270a67d1a0800000000000000
+      internalID: -6784837734730866369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_208
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f28304163403be0800000000000000
+      internalID: -1499624590946062446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_209
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 999f73863551403a0800000000000000
+      internalID: -6700206897645487719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_210
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0029efdf994fa9120800000000000000
+      internalID: 2421516691893555712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_211
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d56490b82be6c70800000000000000
+      internalID: 8966300218367040791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_212
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2ae6c0bea4bee20800000000000000
+      internalID: 3380878318658036479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_213
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 101
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ec9d19e31ea4070800000000000000
+      internalID: 8091527339375709757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_214
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 85
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477e0f63500ec0060800000000000000
+      internalID: 6921153040362825588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_215
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 85
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1157f26d1bfead3b0800000000000000
+      internalID: -5486809648915843823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_216
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 85
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b18dce8672617020800000000000000
+      internalID: 2337757942923493815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_217
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 85
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a9ddd32612400c0800000000000000
+      internalID: -4610523412692100573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_218
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 85
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd712f8cccde6050800000000000000
+      internalID: 5795812541605182900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_219
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 85
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98588f8767cbb8960800000000000000
+      internalID: 7605379612766930313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_220
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 85
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c497053e1ac9cbb90800000000000000
+      internalID: -7224727483091748532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_221
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 85
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: badcb829348d42000800000000000000
+      internalID: 10370883894627755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_222
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 85
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf0101f16cc93010800000000000000
+      internalID: 1169190299306626991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_223
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 85
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa6c3de73804c3d0800000000000000
+      internalID: -3187413599975085315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_224
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 85
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7e60b62a3771620800000000000000
+      internalID: 2744789639323117509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_225
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 85
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d5b53bc8fb14410800000000000000
+      internalID: 1459658365270187349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_226
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 85
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 138d26936fe6eb5f0800000000000000
+      internalID: -739031285038393295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_227
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 69
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d833ac1db145c10800000000000000
+      internalID: 2041287118960168334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_228
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 69
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16daba82b6316c330800000000000000
+      internalID: 3730690692287802721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_229
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 69
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a064cc74e166280800000000000000
+      internalID: -9050513107435779477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_230
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 69
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3367427fcab7c2670800000000000000
+      internalID: 8515316978261718579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_231
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 69
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c66e008e18f7dfa0800000000000000
+      internalID: -5775875187198236984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_232
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 69
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1a37149ec0fbce20800000000000000
+      internalID: 3372053516055427614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_233
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 69
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 206a16141ad69cd50800000000000000
+      internalID: 6758053255200220674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_234
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 69
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc9d8a69370f5430800000000000000
+      internalID: 3773742955941960881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_235
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 69
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86c89f28ed8118f0800000000000000
+      internalID: -571519649328871798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_236
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 37
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b22d4b49e028d30800000000000000
+      internalID: 4432121015137610517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_237
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 37
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92988817997f43be0800000000000000
+      internalID: -1498300537600702167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_238
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 37
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891afa3dac1734b90800000000000000
+      internalID: -7258833058442272360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_239
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 37
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5823b8519b431ee50800000000000000
+      internalID: 6836803678860161669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_240
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 37
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa6a0a6be791b0f50800000000000000
+      internalID: 6848595690367526575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_241
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 37
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ad104d41beb64a0800000000000000
+      internalID: -6598922354292565448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_242
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 37
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d4aa9e49e3366e0800000000000000
+      internalID: -1845562612995437288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_243
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 21
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301c6b56318c4e4c0800000000000000
+      internalID: -4259059361949236989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_244
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 21
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9db618f24377d340800000000000000
+      internalID: 4888502652001238429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_245
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 21
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba406136fe4839160800000000000000
+      internalID: 7031109606949913771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_246
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 21
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2286040f522ed0ef0800000000000000
+      internalID: -140207360806197214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_247
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 21
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b36a830f2d650c40800000000000000
+      internalID: 5477904570456368050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_248
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 21
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da3ec18527c337be0800000000000000
+      internalID: -1480773390672534611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_249
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 21
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11289f3cf97aa89e0800000000000000
+      internalID: -1618296811456724463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_250
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 5
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500a4daf348d3a080800000000000000
+      internalID: -9177253829168291835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_251
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 5
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ba8f89de84010a0800000000000000
+      internalID: -6912945242702828659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_252
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 5
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc8bce9353e1bfd90800000000000000
+      internalID: -7063018376646575921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_253
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 5
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f91c7cc61242ea0800000000000000
+      internalID: -5898552860856967374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_254
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 5
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd4102452ee093f0800000000000000
+      internalID: -895954482058146305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floors and Bridges 1_255
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 5
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0d47662e385b190800000000000000
+      internalID: -7947300959020592908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

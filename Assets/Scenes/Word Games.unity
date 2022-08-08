@@ -1690,15 +1690,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1ad1c9e1d0987740b39bd76523dbe1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scorePanelGroup: {fileID: 0}
-  scorePanel: {fileID: 0}
-  panelTitle: {fileID: 0}
-  starsContainer: {fileID: 0}
-  starEmpty: []
-  scoreText: {fileID: 0}
-  score: {fileID: 0}
-  restartBtn: {fileID: 0}
-  exitBtn: {fileID: 0}
 --- !u!4 &1353396112
 Transform:
   m_ObjectHideFlags: 0
@@ -2917,23 +2908,22 @@ MonoBehaviour:
   regionName: 
   categoryName: 
   correctAnswers: 
-  layout: {fileID: 0}
-  wordContainer: {fileID: 0}
+  layout: {fileID: 1472629686}
+  wordContainer: {fileID: 1961309618}
   shuffledContainer: {fileID: 1220766264}
   questionLabel: {fileID: 1049294502}
-  confirmButton: {fileID: 0}
+  confirmButton: {fileID: 1568877598}
   letter: {fileID: 4827882262850510168, guid: 2b5a9fba3e8b50143a3e4757fda99a8b, type: 3}
   words:
-  - question: Sino ang ating pambansang bayani?
-    word: Jose Rizal
-  - question: Saan nakatira si Jose Rizal?
-    word: Calamba
-  - question: Sino ka?
-    word: Nads
+  - question: Hello
+    word: Hello
   currentIndex: 0
-  scorePanel: {fileID: 0}
-  scoreLabel: {fileID: 0}
-  stars: []
+  scorePanel: {fileID: 1300126634}
+  scoreLabel: {fileID: 656433637}
+  stars:
+  - {fileID: 595275693}
+  - {fileID: 726452230}
+  - {fileID: 1435145859}
 --- !u!4 &1996581987
 Transform:
   m_ObjectHideFlags: 0

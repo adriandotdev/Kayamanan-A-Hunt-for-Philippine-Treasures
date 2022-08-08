@@ -761,10 +761,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: RC Khaye
+  m_text: Nads
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 00a94aaa5aff49c42b99a919f5915b68, type: 2}
-  m_sharedMaterial: {fileID: 6661176882776006618, guid: 00a94aaa5aff49c42b99a919f5915b68, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
+  m_sharedMaterial: {fileID: -5432314662704744868, guid: a500048492898d34eb9dd2e468965f2e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -794,11 +794,11 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 0
+  m_characterSpacing: 32.1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0

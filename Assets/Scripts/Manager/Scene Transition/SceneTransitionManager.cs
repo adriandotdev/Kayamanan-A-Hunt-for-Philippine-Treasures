@@ -168,4 +168,9 @@ public class SceneTransitionManager : MonoBehaviour
 
         player.transform.position = new Vector2(position.x, position.y);
     }
+
+    public void LoadHouseScene()
+    {
+        SceneManager.LoadScene("House");
+    }
 }

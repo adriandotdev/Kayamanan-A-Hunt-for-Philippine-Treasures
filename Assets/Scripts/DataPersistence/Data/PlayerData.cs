@@ -9,6 +9,7 @@ public class PlayerData
     public string id;
     public bool isNewlyCreated;
     public bool isTutorialDone;
+    public bool isIntroductionDone;
     public string name;
     public string gender;
     public int dunongPoints;
@@ -37,6 +38,7 @@ public class PlayerData
     {
         this.isNewlyCreated = true;
         this.isTutorialDone = false;
+        this.isIntroductionDone = false;
         this.id = null;
         this.name = null;
         this.gender = "male";
@@ -83,7 +85,7 @@ public class PlayerData
 
         // These are the quests that the user can get (Main Quests for each Region)
         this.quests.Add(new Quest("Known All Heroes", "Talk to Mang Esterlito", 15, REGION_1, new TalkGoal("Mang Esterlito")));
-        this.quests.Add(new Quest("Talk to your MILF", "Talk to Aling Nena", 10, REGION_1, new TalkGoal("Aling Nena")));
+        this.quests.Add(new Quest("Talk to your Mother", "Talk to Aling Nena", 10, REGION_1, new TalkGoal("Aling Nena")));
 
         this.quests.Add(new Quest("Buko Pie Ayayay!", "Get the Buko Pie from Aling Marites and give it to Mang Esterlito", 10, REGION_1, 
             new DeliveryGoal("Aling Marites", "Mang Esterlito", "Can you give this Buko Pie to Mang Esterlito?", 
@@ -96,6 +98,8 @@ public class PlayerData
         this.quests.Add(new Quest("Gumamela Pula!", "Help Mang Esterlito give a gumamela to Aling Nena", 10, REGION_1,
             new DeliveryGoal("Mang Esterlito", "Aling Nena", "Hey! Would you mind if you give this to ur mother?",
             new Item("Gumamela", "", false))));
+
+        this.quests.Add(new Quest("Talk to Melchora", "Talk to Aling Melchora", 10, REGION_2, new TalkGoal("Aling Melchora")));
     }
 }
 

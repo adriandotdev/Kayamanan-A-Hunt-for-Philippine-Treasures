@@ -1,12 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
 
 public class NPC : MonoBehaviour
 {
-
     // Array of waypoints to walk from one to the next one
     [SerializeField]
     private Transform[] waypoints;
@@ -19,18 +17,19 @@ public class NPC : MonoBehaviour
     // to the next one
     private int waypointIndex = 0;
 
+    private Animator animator;
     // Use this for initialization
     private void Start()
     {
 
         // Set position of Enemy as position of the first waypoint
-        transform.position = waypoints[waypointIndex].transform.position;
+        //transform.position = waypoints[waypointIndex].transform.position;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
-    private void Update()
+    private void FixedUpdate()
     {
-
         // Move Enemy
         this.Move();
     }
@@ -44,9 +43,61 @@ public class NPC : MonoBehaviour
         {
             // Move Enemy from current waypoint to the next one
             // using MoveTowards method
-            transform.position = Vector2.MoveTowards(transform.position,
+            Vector3 movement = Vector2.MoveTowards(transform.position,
                this.waypoints[this.waypointIndex].transform.position,
                this.moveSpeed * Time.deltaTime);
+            transform.position = movement;
+
+            Vector2 moveDirection = (this.waypoints[this.waypointIndex].transform.position - transform.position).normalized;
+            float dotValueH = Vector2.Dot(Vector2.right, moveDirection);
+            float dotValueV = Vector2.Dot(Vector2.up, moveDirection);
+
+            animator.SetFloat("Speed", 1);
+            animator.SetFloat("Horizontal", dotValueH);
+            animator.SetFloat("Vertical", dotValueV);
+
+            //float horizontal = Vector2.Dot(Vector2.right, this.waypoints[this.waypointIndex].transform.position - transform.position);
+            //float vertical = Vector2.Dot(Vector2.up, this.waypoints[this.waypointIndex].transform.position - transform.position);
+
+            //float h = 0.5f, v = 0.5f;
+
+            //if (horizontal < 0f)
+            //{
+            //    h = -0.5f;
+            //}
+            //else if (horizontal > 0f)
+            //{
+            //    h = 0.5f;
+            //}
+
+            //if (vertical < 0f)
+            //{
+            //    v = -0.5f;
+            //}
+            //else if (vertical > 0f)
+            //{
+            //    v = 0.5f;
+            //}
+
+
+
+            //if (this.waypoints[this.waypointIndex].transform.position.x >= transform.position.x)
+            //{
+            //    animator.SetBool("RIGHT", true);
+            //}
+            //else if (this.waypoints[this.waypointIndex].transform.position.x <= transform.position.x)
+            //{
+            //    animator.SetBool("LEFT", true);
+            //}
+
+            //else if (this.waypoints[this.waypointIndex].transform.position.y >= transform.position.y)
+            //{
+            //    animator.SetBool("UP", true);
+            //}
+            //else
+            //{
+            //    animator.SetBool("DOWN", true);
+            //}
 
             // If Enemy reaches position of waypoint he walked towards
             // then waypointIndex is increased by 1

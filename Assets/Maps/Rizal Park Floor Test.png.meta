@@ -1,0 +1,4176 @@
+fileFormatVersion: 2
+guid: 457dd24c6e41b2541ba9b25953c9d07e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -535399818662938091
+    second: Rizal Park Floor Test_0
+  - first:
+      213: -3487815462651463609
+    second: Rizal Park Floor Test_1
+  - first:
+      213: -4695152320477153011
+    second: Rizal Park Floor Test_2
+  - first:
+      213: -6466456044269633769
+    second: Rizal Park Floor Test_3
+  - first:
+      213: 7708248732586705941
+    second: Rizal Park Floor Test_4
+  - first:
+      213: -3704315846125673740
+    second: Rizal Park Floor Test_5
+  - first:
+      213: 7543308174090324322
+    second: Rizal Park Floor Test_6
+  - first:
+      213: 3640148034064024593
+    second: Rizal Park Floor Test_7
+  - first:
+      213: 5098847715002637358
+    second: Rizal Park Floor Test_8
+  - first:
+      213: 588037232836931256
+    second: Rizal Park Floor Test_9
+  - first:
+      213: -3735920281791276523
+    second: Rizal Park Floor Test_10
+  - first:
+      213: 2958990219926807567
+    second: Rizal Park Floor Test_11
+  - first:
+      213: -342220440551758044
+    second: Rizal Park Floor Test_12
+  - first:
+      213: 6835998965507430347
+    second: Rizal Park Floor Test_13
+  - first:
+      213: -8368812944614462476
+    second: Rizal Park Floor Test_14
+  - first:
+      213: 2322152167408881719
+    second: Rizal Park Floor Test_15
+  - first:
+      213: -7088005016134465800
+    second: Rizal Park Floor Test_16
+  - first:
+      213: -4873739321706846949
+    second: Rizal Park Floor Test_17
+  - first:
+      213: 240268740970195950
+    second: Rizal Park Floor Test_18
+  - first:
+      213: 5866102338266826326
+    second: Rizal Park Floor Test_19
+  - first:
+      213: -7465269921300662585
+    second: Rizal Park Floor Test_20
+  - first:
+      213: 101556703760396686
+    second: Rizal Park Floor Test_21
+  - first:
+      213: 1408974046719118345
+    second: Rizal Park Floor Test_22
+  - first:
+      213: -4061402305924131798
+    second: Rizal Park Floor Test_23
+  - first:
+      213: 6986059519224804300
+    second: Rizal Park Floor Test_24
+  - first:
+      213: 4885236297875259524
+    second: Rizal Park Floor Test_25
+  - first:
+      213: -7560368834885857525
+    second: Rizal Park Floor Test_26
+  - first:
+      213: -6080478805761277569
+    second: Rizal Park Floor Test_27
+  - first:
+      213: -1430848854010896967
+    second: Rizal Park Floor Test_28
+  - first:
+      213: -7851664364383350680
+    second: Rizal Park Floor Test_29
+  - first:
+      213: 3571361756653027194
+    second: Rizal Park Floor Test_30
+  - first:
+      213: -8980888866317283715
+    second: Rizal Park Floor Test_31
+  - first:
+      213: 5603046460363616773
+    second: Rizal Park Floor Test_32
+  - first:
+      213: -1658340256677841270
+    second: Rizal Park Floor Test_33
+  - first:
+      213: 2803502569364906102
+    second: Rizal Park Floor Test_34
+  - first:
+      213: -8028574629162208633
+    second: Rizal Park Floor Test_35
+  - first:
+      213: -3562425358204139256
+    second: Rizal Park Floor Test_36
+  - first:
+      213: 1933324306389911480
+    second: Rizal Park Floor Test_37
+  - first:
+      213: -5359391372167885732
+    second: Rizal Park Floor Test_38
+  - first:
+      213: 8186602946103580823
+    second: Rizal Park Floor Test_39
+  - first:
+      213: 4541329578647753587
+    second: Rizal Park Floor Test_40
+  - first:
+      213: 896222355400300798
+    second: Rizal Park Floor Test_41
+  - first:
+      213: -2690883125423087589
+    second: Rizal Park Floor Test_42
+  - first:
+      213: -9052591319509652201
+    second: Rizal Park Floor Test_43
+  - first:
+      213: -1658087278331453729
+    second: Rizal Park Floor Test_44
+  - first:
+      213: 8243464097741301191
+    second: Rizal Park Floor Test_45
+  - first:
+      213: -6090632261766518379
+    second: Rizal Park Floor Test_46
+  - first:
+      213: 6116837930828912002
+    second: Rizal Park Floor Test_47
+  - first:
+      213: 9056062540972095706
+    second: Rizal Park Floor Test_48
+  - first:
+      213: -1041798164775028874
+    second: Rizal Park Floor Test_49
+  - first:
+      213: -5647085815615039217
+    second: Rizal Park Floor Test_50
+  - first:
+      213: 4010116935815345155
+    second: Rizal Park Floor Test_51
+  - first:
+      213: 6186222472724497212
+    second: Rizal Park Floor Test_52
+  - first:
+      213: -5202253368986961491
+    second: Rizal Park Floor Test_53
+  - first:
+      213: -2014537207533736810
+    second: Rizal Park Floor Test_54
+  - first:
+      213: -7874475014081615172
+    second: Rizal Park Floor Test_55
+  - first:
+      213: 8551289353959954488
+    second: Rizal Park Floor Test_56
+  - first:
+      213: -6518617141415379459
+    second: Rizal Park Floor Test_57
+  - first:
+      213: -2190160300515608700
+    second: Rizal Park Floor Test_58
+  - first:
+      213: -3444556477747659138
+    second: Rizal Park Floor Test_59
+  - first:
+      213: 611508937733922634
+    second: Rizal Park Floor Test_60
+  - first:
+      213: 7791117759780723009
+    second: Rizal Park Floor Test_61
+  - first:
+      213: 3866757418010619540
+    second: Rizal Park Floor Test_62
+  - first:
+      213: -6587825087006059898
+    second: Rizal Park Floor Test_63
+  - first:
+      213: 3453586379694886315
+    second: Rizal Park Floor Test_64
+  - first:
+      213: 6431310051286938484
+    second: Rizal Park Floor Test_65
+  - first:
+      213: 1464886239224383652
+    second: Rizal Park Floor Test_66
+  - first:
+      213: 7912601483613739137
+    second: Rizal Park Floor Test_67
+  - first:
+      213: -7797492282479660292
+    second: Rizal Park Floor Test_68
+  - first:
+      213: -8724616126892245826
+    second: Rizal Park Floor Test_69
+  - first:
+      213: -8165897394341269903
+    second: Rizal Park Floor Test_70
+  - first:
+      213: 2601805714136518736
+    second: Rizal Park Floor Test_71
+  - first:
+      213: 6131742033132786491
+    second: Rizal Park Floor Test_72
+  - first:
+      213: -3653460199656252035
+    second: Rizal Park Floor Test_73
+  - first:
+      213: 4730294351674352794
+    second: Rizal Park Floor Test_74
+  - first:
+      213: -5961979838640259087
+    second: Rizal Park Floor Test_75
+  - first:
+      213: 4660965551664663265
+    second: Rizal Park Floor Test_76
+  - first:
+      213: 630088595412581364
+    second: Rizal Park Floor Test_77
+  - first:
+      213: -5758289171445605973
+    second: Rizal Park Floor Test_78
+  - first:
+      213: 6519946109346168618
+    second: Rizal Park Floor Test_79
+  - first:
+      213: 8606304371065549746
+    second: Rizal Park Floor Test_80
+  - first:
+      213: 3065376900065371664
+    second: Rizal Park Floor Test_81
+  - first:
+      213: -6240608126767476386
+    second: Rizal Park Floor Test_82
+  - first:
+      213: 6596344417065629918
+    second: Rizal Park Floor Test_83
+  - first:
+      213: 7791120682084330142
+    second: Rizal Park Floor Test_84
+  - first:
+      213: 1607561039069397326
+    second: Rizal Park Floor Test_85
+  - first:
+      213: -3925839446019745365
+    second: Rizal Park Floor Test_86
+  - first:
+      213: -4509284910162254991
+    second: Rizal Park Floor Test_87
+  - first:
+      213: -2581138614116916199
+    second: Rizal Park Floor Test_88
+  - first:
+      213: -2650297490258114005
+    second: Rizal Park Floor Test_89
+  - first:
+      213: 6011805220202006629
+    second: Rizal Park Floor Test_90
+  - first:
+      213: 9011975415213846423
+    second: Rizal Park Floor Test_91
+  - first:
+      213: 8572214075696373207
+    second: Rizal Park Floor Test_92
+  - first:
+      213: 3266663508554815535
+    second: Rizal Park Floor Test_93
+  - first:
+      213: -1144871862027049305
+    second: Rizal Park Floor Test_94
+  - first:
+      213: 7737341144999404925
+    second: Rizal Park Floor Test_95
+  - first:
+      213: 3624718771903129707
+    second: Rizal Park Floor Test_96
+  - first:
+      213: -4350615530879796234
+    second: Rizal Park Floor Test_97
+  - first:
+      213: 4229182892228080343
+    second: Rizal Park Floor Test_98
+  - first:
+      213: 1756562999895569399
+    second: Rizal Park Floor Test_99
+  - first:
+      213: -5130420842220039537
+    second: Rizal Park Floor Test_100
+  - first:
+      213: 1712735645820311447
+    second: Rizal Park Floor Test_101
+  - first:
+      213: 4021219428817784648
+    second: Rizal Park Floor Test_102
+  - first:
+      213: -8515584251266132602
+    second: Rizal Park Floor Test_103
+  - first:
+      213: 7595519125797027709
+    second: Rizal Park Floor Test_104
+  - first:
+      213: 3962436936672663140
+    second: Rizal Park Floor Test_105
+  - first:
+      213: 2497655980796784869
+    second: Rizal Park Floor Test_106
+  - first:
+      213: -9014719019742772896
+    second: Rizal Park Floor Test_107
+  - first:
+      213: 9035461713827804344
+    second: Rizal Park Floor Test_108
+  - first:
+      213: 3319679243319979126
+    second: Rizal Park Floor Test_109
+  - first:
+      213: 5091049832537911186
+    second: Rizal Park Floor Test_110
+  - first:
+      213: 8482352135575231339
+    second: Rizal Park Floor Test_111
+  - first:
+      213: 942906044324478207
+    second: Rizal Park Floor Test_112
+  - first:
+      213: 1711765983296319890
+    second: Rizal Park Floor Test_113
+  - first:
+      213: 6892215566966982233
+    second: Rizal Park Floor Test_114
+  - first:
+      213: 7725752341190904567
+    second: Rizal Park Floor Test_115
+  - first:
+      213: 6292361778561841900
+    second: Rizal Park Floor Test_116
+  - first:
+      213: 1860734582540765911
+    second: Rizal Park Floor Test_117
+  - first:
+      213: -1040023715783648084
+    second: Rizal Park Floor Test_118
+  - first:
+      213: 4370235640882141300
+    second: Rizal Park Floor Test_119
+  - first:
+      213: -4687169421837441724
+    second: Rizal Park Floor Test_120
+  - first:
+      213: -5204709474988475236
+    second: Rizal Park Floor Test_121
+  - first:
+      213: -2926524302863791237
+    second: Rizal Park Floor Test_122
+  - first:
+      213: -8718711069683916315
+    second: Rizal Park Floor Test_123
+  - first:
+      213: -7062869160509655723
+    second: Rizal Park Floor Test_124
+  - first:
+      213: -8200842231927909394
+    second: Rizal Park Floor Test_125
+  - first:
+      213: -8021008813936327476
+    second: Rizal Park Floor Test_126
+  - first:
+      213: 6540727314229496973
+    second: Rizal Park Floor Test_127
+  - first:
+      213: 8881659689921148931
+    second: Rizal Park Floor Test_128
+  - first:
+      213: 1088416000051956249
+    second: Rizal Park Floor Test_129
+  - first:
+      213: -6032168611301870915
+    second: Rizal Park Floor Test_130
+  - first:
+      213: 6632907963047479706
+    second: Rizal Park Floor Test_131
+  - first:
+      213: 829367474202742216
+    second: Rizal Park Floor Test_132
+  - first:
+      213: -7969676279537243201
+    second: Rizal Park Floor Test_133
+  - first:
+      213: -3090826760540904995
+    second: Rizal Park Floor Test_134
+  - first:
+      213: 2772664593423965952
+    second: Rizal Park Floor Test_135
+  - first:
+      213: -5128493694959450795
+    second: Rizal Park Floor Test_136
+  - first:
+      213: -1447005580783994729
+    second: Rizal Park Floor Test_137
+  - first:
+      213: 7965787960545814831
+    second: Rizal Park Floor Test_138
+  - first:
+      213: -1990403888426576321
+    second: Rizal Park Floor Test_139
+  - first:
+      213: -6114300300956320311
+    second: Rizal Park Floor Test_140
+  - first:
+      213: 7546795991934283776
+    second: Rizal Park Floor Test_141
+  - first:
+      213: 2682567565542363614
+    second: Rizal Park Floor Test_142
+  - first:
+      213: 4330751449335486196
+    second: Rizal Park Floor Test_143
+  - first:
+      213: -4814138551009131610
+    second: Rizal Park Floor Test_144
+  - first:
+      213: -5929908976658119171
+    second: Rizal Park Floor Test_145
+  - first:
+      213: -7465592528400409979
+    second: Rizal Park Floor Test_146
+  - first:
+      213: -5179663883999799829
+    second: Rizal Park Floor Test_147
+  - first:
+      213: -3401027634517857974
+    second: Rizal Park Floor Test_148
+  - first:
+      213: -6382772691445934832
+    second: Rizal Park Floor Test_149
+  - first:
+      213: 7175489717303751644
+    second: Rizal Park Floor Test_150
+  - first:
+      213: -259577507462460581
+    second: Rizal Park Floor Test_151
+  - first:
+      213: -1996818564723881313
+    second: Rizal Park Floor Test_152
+  - first:
+      213: -4250799946240243664
+    second: Rizal Park Floor Test_153
+  - first:
+      213: -2044491748796891855
+    second: Rizal Park Floor Test_154
+  - first:
+      213: -1264737149346026466
+    second: Rizal Park Floor Test_155
+  - first:
+      213: -7604842065562256309
+    second: Rizal Park Floor Test_156
+  - first:
+      213: -2036687410089763746
+    second: Rizal Park Floor Test_157
+  - first:
+      213: 8766451457279528760
+    second: Rizal Park Floor Test_158
+  - first:
+      213: -4347278282933688771
+    second: Rizal Park Floor Test_159
+  - first:
+      213: 5724496700627158441
+    second: Rizal Park Floor Test_160
+  - first:
+      213: 8567661798585418656
+    second: Rizal Park Floor Test_161
+  - first:
+      213: 7985169962806998621
+    second: Rizal Park Floor Test_162
+  - first:
+      213: -8284910268772515948
+    second: Rizal Park Floor Test_163
+  - first:
+      213: -2756877725520550146
+    second: Rizal Park Floor Test_164
+  - first:
+      213: 4990967037515676309
+    second: Rizal Park Floor Test_165
+  - first:
+      213: 1676480772780747912
+    second: Rizal Park Floor Test_166
+  - first:
+      213: -6346629178853996011
+    second: Rizal Park Floor Test_167
+  - first:
+      213: 7186665614528846779
+    second: Rizal Park Floor Test_168
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 369
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a79cb93b0e198f0800000000000000
+      internalID: -535399818662938091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 369
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7487b82e05ac89fc0800000000000000
+      internalID: -3487815462651463609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 369
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09bb9b27d777deb0800000000000000
+      internalID: -4695152320477153011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 369
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f71ad0d788246a0800000000000000
+      internalID: -6466456044269633769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_4
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 369
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5148f2ad16339fa60800000000000000
+      internalID: 7708248732586705941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 337
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f224df3d50a79cc0800000000000000
+      internalID: -3704315846125673740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 337
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26944f371d63fa860800000000000000
+      internalID: 7543308174090324322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 337
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1140934c957648230800000000000000
+      internalID: 3640148034064024593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_8
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 337
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2c5b806bfeb2c640800000000000000
+      internalID: 5098847715002637358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_9
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 337
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bee2f96fb0292800800000000000000
+      internalID: 588037232836931256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 337
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a57a62c48572cc0800000000000000
+      internalID: -3735920281791276523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 337
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04a7987de1701920800000000000000
+      internalID: 2958990219926807567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_12
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 337
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427e80e8250304bf0800000000000000
+      internalID: -342220440551758044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 337
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7120827d85ede50800000000000000
+      internalID: 6835998965507430347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 337
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb609c77f00cdb80800000000000000
+      internalID: -8368812944614462476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_15
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 337
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7305fccc711f93020800000000000000
+      internalID: 2322152167408881719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_16
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 337
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f64e1fddf852ad90800000000000000
+      internalID: -7088005016134465800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_17
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 337
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b156fc9b8effc5cb0800000000000000
+      internalID: -4873739321706846949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_18
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 337
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeba82c952b955300800000000000000
+      internalID: 240268740970195950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_19
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 321
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6568b782ff4986150800000000000000
+      internalID: 5866102338266826326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 321
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6377c2f88066890800000000000000
+      internalID: -7465269921300662585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 321
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81b234b84dc86100800000000000000
+      internalID: 101556703760396686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_22
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 321
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c00703e6ead8310800000000000000
+      internalID: 1408974046719118345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_23
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 321
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a249079fe1003a7c0800000000000000
+      internalID: -4061402305924131798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 321
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc371277e1873f060800000000000000
+      internalID: 6986059519224804300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 321
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48003b2a788dbc340800000000000000
+      internalID: 4885236297875259524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_26
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 321
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0fc1b9e99c241790800000000000000
+      internalID: -7560368834885857525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_27
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 321
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71ce4eedbccd9ba0800000000000000
+      internalID: -6080478805761277569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_28
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 321
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bdd7695c8a942ce0800000000000000
+      internalID: -1430848854010896967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_29
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 321
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86056594cd8490390800000000000000
+      internalID: -7851664364383350680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_30
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 321
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ff7b58896009130800000000000000
+      internalID: 3571361756653027194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_31
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 321
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ec5eba8297d5380800000000000000
+      internalID: -8980888866317283715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_32
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 321
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502bbf9c11502cd40800000000000000
+      internalID: 5603046460363616773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_33
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 289
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86bcf3a2546cf8e0800000000000000
+      internalID: -1658340256677841270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 289
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 670e3e5bbba08e620800000000000000
+      internalID: 2803502569364906102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_35
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 289
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782b21879e5c49090800000000000000
+      internalID: -8028574629162208633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_36
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 289
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8090661e209bf8ec0800000000000000
+      internalID: -3562425358204139256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_37
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 289
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7cff5a63c84da10800000000000000
+      internalID: 1933324306389911480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_38
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 289
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5cc3a931fd9f95b0800000000000000
+      internalID: -5359391372167885732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_39
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 289
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7989ba74108ac9170800000000000000
+      internalID: 8186602946103580823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_40
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 289
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3731647d03b060f30800000000000000
+      internalID: 4541329578647753587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_41
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 273
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8166ddb75007c00800000000000000
+      internalID: 896222355400300798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_42
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 273
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b106019ed0018aad0800000000000000
+      internalID: -2690883125423087589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_43
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 273
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71da7d7582cbe5280800000000000000
+      internalID: -9052591319509652201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 273
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde9570c76a4df8e0800000000000000
+      internalID: -1658087278331453729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_45
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 273
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c56e80dbeaa66270800000000000000
+      internalID: 8243464097741301191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_46
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 273
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5996fdb3a3ab97ba0800000000000000
+      internalID: -6090632261766518379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_47
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 273
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28551bf80bf53e450800000000000000
+      internalID: 6116837930828912002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_48
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 273
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8fc5266e89dad70800000000000000
+      internalID: 9056062540972095706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_49
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 257
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6773eecb61aca81f0800000000000000
+      internalID: -1041798164775028874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_50
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 257
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f095e18ce5581a1b0800000000000000
+      internalID: -5647085815615039217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_51
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 257
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3043d0b4b1cc6a730800000000000000
+      internalID: 4010116935815345155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_52
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 257
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33484c1090e9d550800000000000000
+      internalID: 6186222472724497212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_53
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 257
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da9f3f5af12edc7b0800000000000000
+      internalID: -5202253368986961491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_54
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 257
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ce42e451dea04e0800000000000000
+      internalID: -2014537207533736810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_55
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 257
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbae9f802be38b290800000000000000
+      internalID: -7874475014081615172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_56
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 257
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838dc5a5c584ca670800000000000000
+      internalID: 8551289353959954488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_57
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfdf92b3f383985a0800000000000000
+      internalID: -6518617141415379459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_58
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487ba968fccfa91e0800000000000000
+      internalID: -2190160300515608700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_59
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e741f222a7230d0800000000000000
+      internalID: -3444556477747659138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_60
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f5b9293248c7800800000000000000
+      internalID: 611508937733922634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_61
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14997fac25c9f1c60800000000000000
+      internalID: 7791117759780723009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_62
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e212d726b79a530800000000000000
+      internalID: 3866757418010619540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_63
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682d896bcf75394a0800000000000000
+      internalID: -6587825087006059898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_64
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 241
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad47d2b38a9def20800000000000000
+      internalID: 3453586379694886315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_65
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4737b57ca6a904950800000000000000
+      internalID: 6431310051286938484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_66
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8c355f542545410800000000000000
+      internalID: 1464886239224383652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_67
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188960860253fcd60800000000000000
+      internalID: 7912601483613739137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_68
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf233fbf41eb9c390800000000000000
+      internalID: -7797492282479660292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_69
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc71fa8bdfebe680800000000000000
+      internalID: -8724616126892245826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_70
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e200aa597ecae80800000000000000
+      internalID: -8165897394341269903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_71
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05050b513887b1420800000000000000
+      internalID: 2601805714136518736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_72
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33163b44e2581550800000000000000
+      internalID: 6131742033132786491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_73
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d16762e4d4c4dc0800000000000000
+      internalID: -3653460199656252035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_74
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 209
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a94269296a165a140800000000000000
+      internalID: 4730294351674352794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_75
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff7ec7bceac24da0800000000000000
+      internalID: -5961979838640259087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_76
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea0e4179731fa040800000000000000
+      internalID: 4660965551664663265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_77
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb779a3d368eb800800000000000000
+      internalID: 630088595412581364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_78
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9910ed1827610b0800000000000000
+      internalID: -5758289171445605973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_79
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2fb44a31708b7a50800000000000000
+      internalID: 6519946109346168618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_80
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3f0423a3cbf6770800000000000000
+      internalID: 8606304371065549746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_81
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016a51fac086a8a20800000000000000
+      internalID: 3065376900065371664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_82
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51db9d09f7e469a0800000000000000
+      internalID: -6240608126767476386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_83
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8f3536c4cea8b50800000000000000
+      internalID: 6596344417065629918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_84
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 193
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ae5d13bfe9f1c60800000000000000
+      internalID: 7791120682084330142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_85
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e414d707f343f4610800000000000000
+      internalID: 1607561039069397326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_86
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9d6c6e2dd9489c0800000000000000
+      internalID: -3925839446019745365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_87
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173efb2f34dcb61c0800000000000000
+      internalID: -4509284910162254991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_88
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914648d1b14fd2cd0800000000000000
+      internalID: -2581138614116916199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_89
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a4e087970483bd0800000000000000
+      internalID: -2650297490258114005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_90
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 568caf0fef83e6350800000000000000
+      internalID: 6011805220202006629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_91
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79fef5484e7f01d70800000000000000
+      internalID: 9011975415213846423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_92
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd5c78c84f96f670800000000000000
+      internalID: 8572214075696373207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_93
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28142c4725855d20800000000000000
+      internalID: 3266663508554815535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_94
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6a9867b199c10f0800000000000000
+      internalID: -1144871862027049305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_95
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7524b5f6ce806b60800000000000000
+      internalID: 7737341144999404925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_96
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68e9f9b4869d4230800000000000000
+      internalID: 3624718771903129707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_97
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fbbc97a9328f93c0800000000000000
+      internalID: -4350615530879796234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_98
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2f96dee6311ba30800000000000000
+      internalID: 4229182892228080343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_99
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3be52edb0906810800000000000000
+      internalID: 1756562999895569399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_100
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82d6371d651dc8b0800000000000000
+      internalID: -5130420842220039537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_101
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797d443defbd4c710800000000000000
+      internalID: 1712735645820311447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_102
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f4592e3cd3ec730800000000000000
+      internalID: 4021219428817784648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_103
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6851f50bd3192d980800000000000000
+      internalID: -8515584251266132602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_104
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f31d1f664b86960800000000000000
+      internalID: 7595519125797027709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_105
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466d24766676df630800000000000000
+      internalID: 3962436936672663140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_106
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0b582a1e479a220800000000000000
+      internalID: 2497655980796784869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_107
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061464640d845e280800000000000000
+      internalID: -9014719019742772896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_108
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4395a8e88646d70800000000000000
+      internalID: 9035461713827804344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_109
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c2352feaed11e20800000000000000
+      internalID: 3319679243319979126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_110
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29feb3269da07a640800000000000000
+      internalID: 5091049832537911186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_111
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6bdcbc635e57b570800000000000000
+      internalID: 8482352135575231339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_112
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 161
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc77843d00e51d00800000000000000
+      internalID: 942906044324478207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_113
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29179fca71a61c710800000000000000
+      internalID: 1711765983296319890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_114
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 145
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9560c78aa8116af50800000000000000
+      internalID: 6892215566966982233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_115
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa835f42d2673b60800000000000000
+      internalID: 7725752341190904567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_116
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 129
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea7c6103b5f25750800000000000000
+      internalID: 6292361778561841900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_117
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da80a58e38a2d910800000000000000
+      internalID: 1860734582540765911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_118
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cacdbb6d0f71191f0800000000000000
+      internalID: -1040023715783648084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_119
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478188f292236ac30800000000000000
+      internalID: 4370235640882141300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_120
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4456e499e34d3feb0800000000000000
+      internalID: -4687169421837441724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_121
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9cb338ee4825c7b0800000000000000
+      internalID: -5204709474988475236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_122
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b8145e6a5e267d0800000000000000
+      internalID: -2926524302863791237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_123
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e16930d97ae00780800000000000000
+      internalID: -8718711069683916315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_124
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555b2c05be5abfd90800000000000000
+      internalID: -7062869160509655723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_125
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee35ae2a071c03e80800000000000000
+      internalID: -8200842231927909394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_126
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 97
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc44c091bf6afa090800000000000000
+      internalID: -8021008813936327476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_127
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c085986d455ca50800000000000000
+      internalID: 6540727314229496973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_128
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308f7a15e6ef14b70800000000000000
+      internalID: 8881659689921148931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_129
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ac2fad594da1f00800000000000000
+      internalID: 1088416000051956249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_130
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db2371a9b9e694ca0800000000000000
+      internalID: -6032168611301870915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_131
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a990e4556a2dc0c50800000000000000
+      internalID: 6632907963047479706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_132
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd0e18d251828b00800000000000000
+      internalID: 829367474202742216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_133
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb635f16a5066190800000000000000
+      internalID: -7969676279537243201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_134
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd120bbef6d2b15d0800000000000000
+      internalID: -3090826760540904995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_135
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f965ce1cb7a7620800000000000000
+      internalID: 2772664593423965952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_136
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 81
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5558c17082ee3d8b0800000000000000
+      internalID: -5128493694959450795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_137
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798bc5147143bebe0800000000000000
+      internalID: -1447005580783994729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_138
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f29aa6012f92c8e60800000000000000
+      internalID: 7965787960545814831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_139
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3617c6853aa064e0800000000000000
+      internalID: -1990403888426576321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_140
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd3f6f6544a52ba0800000000000000
+      internalID: -6114300300956320311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_141
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000b59358fa9bb860800000000000000
+      internalID: 7546795991934283776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_142
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1132eecf46a3520800000000000000
+      internalID: 2682567565542363614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_143
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f656247f7be91c30800000000000000
+      internalID: 4330751449335486196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_144
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a346978e7eb03db0800000000000000
+      internalID: -4814138551009131610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_145
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df584e7243bb4bda0800000000000000
+      internalID: -5929908976658119171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_146
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a12ea5623e46890800000000000000
+      internalID: -7465592528400409979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_147
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5954af3232e18b0800000000000000
+      internalID: -5179663883999799829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_148
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49a645c26f1dc0d0800000000000000
+      internalID: -3401027634517857974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_149
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0151d44fd06db67a0800000000000000
+      internalID: -6382772691445934832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_150
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3bb5961e5749360800000000000000
+      internalID: 7175489717303751644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_151
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5bc40cd1abc56cf0800000000000000
+      internalID: -259577507462460581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_152
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a4ab05810e944e0800000000000000
+      internalID: -1996818564723881313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_153
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 038c91978ff1205c0800000000000000
+      internalID: -4250799946240243664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_154
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d7ebe269180a3e0800000000000000
+      internalID: -2044491748796891855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_155
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c6df67340c27ee0800000000000000
+      internalID: -1264737149346026466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_156
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4cb63dfe6c267690800000000000000
+      internalID: -7604842065562256309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_157
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5cd613679b3cb3e0800000000000000
+      internalID: -2036687410089763746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_158
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f0adb5721b8a970800000000000000
+      internalID: 8766451457279528760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_159
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36a7fd3f6d5ba3c0800000000000000
+      internalID: -4347278282933688771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_160
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a507c66b6f717f40800000000000000
+      internalID: 5724496700627158441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_161
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a34e5c230376e670800000000000000
+      internalID: 8567661798585418656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_162
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56fa3026c501de60800000000000000
+      internalID: 7985169962806998621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_163
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49ff3d18106160d80800000000000000
+      internalID: -8284910268772515948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_164
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 49
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef62921b05a9db9d0800000000000000
+      internalID: -2756877725520550146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_165
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 33
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a3eccc31a734540800000000000000
+      internalID: 4990967037515676309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_166
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 33
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c6e56616e044710800000000000000
+      internalID: 1676480772780747912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_167
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 17
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a4741436e3ce7a0800000000000000
+      internalID: -6346629178853996011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rizal Park Floor Test_168
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 17
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb9181cc4a2cb360800000000000000
+      internalID: 7186665614528846779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

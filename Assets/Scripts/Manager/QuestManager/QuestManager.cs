@@ -159,11 +159,12 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         {
             SoundManager.instance.PlaySound("Button Click 1");
             LeanTween.scale(questPanel.gameObject, Vector2.zero, .2f)
-            .setOnComplete(() => {
+            .setEaseSpring()
+            .setOnComplete(() =>
+            {
                 this.RemoveAllQuest(questContentScrollView);
                 canvasGroup.interactable = true;
             });
-
             this.ChangeButtonColor(pendingBtn, completedBtn);
         });
 
@@ -171,14 +172,15 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         {
             SoundManager.instance.PlaySound("Button Click 1");
             this.GetAllCurrentQuests(questContentScrollView);
-            LeanTween.scale(questPanel.gameObject, Vector2.one, .2f);
+            LeanTween.scale(questPanel.gameObject, new Vector2(296.8722f, 296.8722f), .2f)
+                .setEaseSpring();
             canvasGroup.interactable = false;
         });
 
         this.ChangeButtonColor(pendingBtn, completedBtn);
-
-        questPanel.transform.localScale = Vector2.zero;
         this.questAlertBox.SetActive(false);
+        questPanel.transform.localScale = Vector2.zero;
+
     }
 
     /** This function is responsible for changing the color
