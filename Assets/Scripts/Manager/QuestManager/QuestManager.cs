@@ -43,18 +43,6 @@ public class QuestManager : MonoBehaviour, IDataPersistence
         //SceneManager.sceneLoaded -= OnSceneWithQuestManagerSceneLoaded;
     }
 
-    //void OnSceneWithQuestManagerSceneLoaded(Scene scene, LoadSceneMode mode)
-    //{
-    //    if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House")
-    //        || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside")
-    //        || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School"))
-    //    {
-    //        this.GetAllNecessaryGameObjects();
-    //        this.GetListOfQuests();
-    //        this.SetupScriptsForDeliveryQuestToNPCs();
-    //    }
-    //}
-
     void OnHouseSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House"))
@@ -91,12 +79,15 @@ public class QuestManager : MonoBehaviour, IDataPersistence
      current open region. */
     public void GetListOfQuests()
     {
+        // Get the current open region.
         string currentRegion = this.GetCurrentOpenRegion();
 
+        // Loop to the list of quest.
         foreach (Quest quest in this.playerData.quests)
         {
             if (quest.region.ToUpper() == currentRegion.ToUpper())
             {
+                // Check if the current 'quest' is not yet in the 'currentQuest' list.
                 Quest foundQuest = this.playerData.currentQuests.Find(questToFind => questToFind.questID == quest.questID);
 
                 if (foundQuest == null)
@@ -110,7 +101,7 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     /** Get the last open region */
     public string GetCurrentOpenRegion()
     {
-        string regionNameOpened = "Region 1";
+        string regionNameOpened = "Ilocos Region";
 
         foreach (RegionData regionData in this.playerData.regionsData)
         {
@@ -329,15 +320,11 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 SoundManager.instance.PlaySound("Quest Notification");
 
                 // Find and Copy the Delivery Quest
+                // Copy the instance so that we don't directly modify the object.
                 Quest questFound = this.playerData.quests.Find((questToFind) => questToFind.questID == quest.questID).CopyQuestDeliveryGoal();
 
                 this.playerData.currentQuests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
                 this.playerData.quests.RemoveAll(questToRemove => questToRemove.questID == quest.questID);
-                //questFound = this.playerData.currentQuests.Find(questToFind => questToFind.questID == quest.questID);
-                //this.playerData.currentQuests.Remove(questFound);
-
-                //questFound = this.playerData.quests.Find(questToFind => questToFind.questID == quest.questID);
-                //this.playerData.quests.Remove(questFound); // NEED TO TEST.
 
                 questFound.isCompleted = true;
 
@@ -359,25 +346,22 @@ public class QuestManager : MonoBehaviour, IDataPersistence
     {
         foreach(Quest quest in this.playerData.currentQuests)
         {
-            if (!quest.isCompleted 
-                && quest.talkGoal != null 
+            if (quest.talkGoal != null 
+                && !quest.isCompleted 
                 && quest.talkGoal.GetNPCName().ToUpper() == npcName.ToUpper())
             {
                 quest.isCompleted = true;
                 this.questAlertBox.SetActive(true);
                 SoundManager.instance.PlaySound("Quest Notification");
 
-                Quest questFound = this.playerData.quests.Find((questToFind) => questToFind.questID == quest.questID);
-                
-                questFound = this.playerData.currentQuests.Find(questToFind => questToFind.questID == quest.questID);
-                this.playerData.currentQuests.Remove(questFound);
+                Quest questFoundInCurrentQuest = this.playerData.currentQuests.Find(questToFind => questToFind.questID == quest.questID).CopyTalkQuestGoal();
 
-                questFound = this.playerData.quests.Find(questToFind => questToFind.questID == quest.questID);
-                this.playerData.quests.Remove(questFound); // NEED TO TEST.
+                this.playerData.currentQuests.RemoveAll(questToRemove => questToRemove.questID.ToLower() == questFoundInCurrentQuest.questID.ToLower());
+                this.playerData.quests.RemoveAll(questToRemove => questToRemove.questID.ToLower() == questFoundInCurrentQuest.questID.ToLower());
 
-                questFound.isCompleted = true;
+                questFoundInCurrentQuest.isCompleted = true;
 
-                this.playerData.completedQuests.Add(questFound);
+                this.playerData.completedQuests.Add(questFoundInCurrentQuest);
 
                 this.GetListOfQuests();
 
@@ -388,6 +372,27 @@ public class QuestManager : MonoBehaviour, IDataPersistence
                 return;
             }
         }
+    }
+
+    public void ResetAllCompletedQuests(string regionName)
+    {
+        // Add all the completed quests to the current quest based on region
+        foreach (Quest quest in DataPersistenceManager.instance.playerData.completedQuests)
+        {
+            if (quest.region.ToUpper() == regionName.ToUpper())
+            {
+                quest.isCompleted = false;
+
+                if (quest.deliveryGoal != null)
+                {
+                    quest.deliveryGoal.isFinished = false;
+                    quest.deliveryGoal.itemReceivedFromGiver = false;
+                }
+                DataPersistenceManager.instance.playerData.quests.Add(quest);
+            }
+        }
+
+        DataPersistenceManager.instance.playerData.completedQuests.RemoveAll(questToRemove => questToRemove.region.ToUpper() == regionName.ToUpper());
     }
 
     IEnumerator HideQuestAlertBox()

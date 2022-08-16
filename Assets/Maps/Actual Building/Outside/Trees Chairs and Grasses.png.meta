@@ -84,6 +84,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -592,6 +593,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Trees Chairs and Grasses_13: -9064111715722102632
+      Trees Chairs and Grasses_12: 6076307015227062943
+      Trees Chairs and Grasses_18: 5894994568153545720
+      Chair: -2240001555303242750
+      Trees Chairs and Grasses_9: -5947223996385361728
+      Trees Chairs and Grasses_14: -7057636412823756530
+      Narra Tree 1: 5989305563458065789
+      Mango Tree 1: -8552518335105241022
+      Trees Chairs and Grasses_7: -8238360871951019635
+      Lamp 1: 7840572681946542918
+      Trees Chairs and Grasses_1: -4517766751955950161
+      Trees Chairs and Grasses_19: -957760364124088639
+      Trees Chairs and Grasses_5: 4886601454757330061
+      Trees Chairs and Grasses_17: -5823461452618365824
+      Trees Chairs and Grasses_15: 7090009798712838383
+      Mango Tree 2: -4641826509395397839
+      Table: 6830646324994178451
+      Trees Chairs and Grasses_8: 2451729022642639719
+      Trees Chairs and Grasses_0: -130977343653268802
+      Narra Tree 2: 7723844536771072805
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

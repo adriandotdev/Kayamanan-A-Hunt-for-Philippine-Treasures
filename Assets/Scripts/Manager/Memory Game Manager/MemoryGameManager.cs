@@ -61,7 +61,7 @@ public class MemoryGameManager : MonoBehaviour
 
     public void CheckImage(Transform transform)
     {
-        transform.GetComponent<Button>().interactable = false;
+        transform.GetComponent<Button>().enabled = false;
 
         if (!firstGuess)
         {
@@ -109,8 +109,8 @@ public class MemoryGameManager : MonoBehaviour
         transform1.GetComponent<Image>().sprite = this.notFlippedImage;
         transform2.GetComponent<Image>().sprite = this.notFlippedImage;
 
-        transform1.GetComponent<Button>().interactable = true;
-        transform2.GetComponent<Button>().interactable = true;
+        transform1.GetComponent<Button>().enabled = true;
+        transform2.GetComponent<Button>().enabled = true;
 
         transform1 = null;
         transform2 = null;

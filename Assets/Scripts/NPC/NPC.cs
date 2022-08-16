@@ -49,55 +49,12 @@ public class NPC : MonoBehaviour
             transform.position = movement;
 
             Vector2 moveDirection = (this.waypoints[this.waypointIndex].transform.position - transform.position).normalized;
-            float dotValueH = Vector2.Dot(Vector2.right, moveDirection);
-            float dotValueV = Vector2.Dot(Vector2.up, moveDirection);
+            float dotValueH = Mathf.Clamp(Vector2.Dot(Vector2.right, moveDirection), -1, 1);
+            float dotValueV = Mathf.Clamp(Vector2.Dot(Vector2.up, moveDirection), -1, 1);
 
             animator.SetFloat("Speed", 1);
             animator.SetFloat("Horizontal", dotValueH);
             animator.SetFloat("Vertical", dotValueV);
-
-            //float horizontal = Vector2.Dot(Vector2.right, this.waypoints[this.waypointIndex].transform.position - transform.position);
-            //float vertical = Vector2.Dot(Vector2.up, this.waypoints[this.waypointIndex].transform.position - transform.position);
-
-            //float h = 0.5f, v = 0.5f;
-
-            //if (horizontal < 0f)
-            //{
-            //    h = -0.5f;
-            //}
-            //else if (horizontal > 0f)
-            //{
-            //    h = 0.5f;
-            //}
-
-            //if (vertical < 0f)
-            //{
-            //    v = -0.5f;
-            //}
-            //else if (vertical > 0f)
-            //{
-            //    v = 0.5f;
-            //}
-
-
-
-            //if (this.waypoints[this.waypointIndex].transform.position.x >= transform.position.x)
-            //{
-            //    animator.SetBool("RIGHT", true);
-            //}
-            //else if (this.waypoints[this.waypointIndex].transform.position.x <= transform.position.x)
-            //{
-            //    animator.SetBool("LEFT", true);
-            //}
-
-            //else if (this.waypoints[this.waypointIndex].transform.position.y >= transform.position.y)
-            //{
-            //    animator.SetBool("UP", true);
-            //}
-            //else
-            //{
-            //    animator.SetBool("DOWN", true);
-            //}
 
             // If Enemy reaches position of waypoint he walked towards
             // then waypointIndex is increased by 1

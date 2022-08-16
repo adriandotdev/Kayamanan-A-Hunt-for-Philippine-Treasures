@@ -312,6 +312,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -2416,6 +2417,103 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Generic Children NPCs A_16: 8131909694000442862
+      Generic Children NPCs A_31: -4082929069276523949
+      Generic Children NPCs A_28: 6469614455982028103
+      Generic Children NPCs A_92: -1954436416542327239
+      Generic Children NPCs A_38: -2780850088728797605
+      Generic Children NPCs A_20: -4549021412144198756
+      Generic Children NPCs A_77: 6517926947966501522
+      Generic Children NPCs A_93: 3087598477349555541
+      Generic Children NPCs A_10: -2926527814453605091
+      Generic Children NPCs A_3: -6597126549005431899
+      Generic Children NPCs A_13: 6136332956338881238
+      Generic Children NPCs A_6: 4268161671718302114
+      Generic Children NPCs A_60: -210093524267300264
+      Generic Children NPCs A_85: 5664996016833982147
+      Generic Children NPCs A_8: 4132565510413897439
+      Generic Children NPCs A_73: 666040657509606479
+      Generic Children NPCs A_36: 1686615923919332436
+      Generic Children NPCs A_54: 6738333667223959187
+      Generic Children NPCs A_49: 2107961252429071441
+      Generic Children NPCs A_75: 1054601994859541347
+      Generic Children NPCs A_89: -8000463968159594484
+      Generic Children NPCs A_88: -4619361102361885508
+      Generic Children NPCs A_18: 163864837751481025
+      Generic Children NPCs A_26: 8783212134296558483
+      Generic Children NPCs A_35: 5326180237954894315
+      Generic Children NPCs A_0: 4479505687380860519
+      Generic Children NPCs A_87: -330424232203418747
+      Generic Children NPCs A_71: 6902594297722894255
+      Generic Children NPCs A_37: -6070372023317451696
+      Generic Children NPCs A_59: -2662983363361577928
+      Generic Children NPCs A_56: -5672991912926057804
+      Generic Children NPCs A_83: 2021924381633483074
+      Generic Children NPCs A_82: -763040342453903920
+      Generic Children NPCs A_22: -8006283099526881491
+      Generic Children NPCs A_61: -5524179231191938216
+      Generic Children NPCs A_11: -2737271377875779432
+      Generic Children NPCs A_41: 2359359162887973545
+      Generic Children NPCs A_2: 245964345617290409
+      Generic Children NPCs A_7: -1422076537273630127
+      Generic Children NPCs A_43: -1150584076707281641
+      Generic Children NPCs A_50: -788259018507621834
+      Generic Children NPCs A_86: 3916432078883013719
+      Generic Children NPCs A_76: -8636255168709462954
+      Generic Children NPCs A_72: -1356460448589200143
+      Generic Children NPCs A_40: 1537074665204649919
+      Generic Children NPCs A_80: 2632815599759861016
+      Generic Children NPCs A_62: -5346966175153671624
+      Generic Children NPCs A_4: 5092506726929243846
+      Generic Children NPCs A_65: -3349874569838577833
+      Generic Children NPCs A_27: -9185357178108520065
+      Generic Children NPCs A_29: -1145731484644965409
+      Generic Children NPCs A_47: -2473212528426981353
+      Generic Children NPCs A_1: 8638697195714254487
+      Generic Children NPCs A_63: -6681110272386963081
+      Generic Children NPCs A_95: -4930136617285665596
+      Generic Children NPCs A_33: -9129173211381999830
+      Generic Children NPCs A_94: 2613669733092584089
+      Generic Children NPCs A_34: 6114333116206992313
+      Generic Children NPCs A_12: -1598706651538200478
+      Generic Children NPCs A_91: 5620962494542020397
+      Generic Children NPCs A_45: 8192550615802471630
+      Generic Children NPCs A_23: 5845915749926607563
+      Generic Children NPCs A_44: -3657698417681340649
+      Generic Children NPCs A_30: -2202188637262467945
+      Generic Children NPCs A_79: 7570020233727628964
+      Generic Children NPCs A_74: -4070053380708128466
+      Generic Children NPCs A_68: 1794999092213389701
+      Generic Children NPCs A_52: 3381267867118541476
+      Generic Children NPCs A_67: 6749748552307846336
+      Generic Children NPCs A_42: 3327987173984118109
+      Generic Children NPCs A_64: 9083144896461464308
+      Generic Children NPCs A_24: -7188580316929060089
+      Generic Children NPCs A_81: -1629043961356285448
+      Generic Children NPCs A_53: 7076248368115377075
+      Generic Children NPCs A_78: 2715359993402035011
+      Generic Children NPCs A_55: 8353418220740223532
+      Generic Children NPCs A_51: -8343087611363681043
+      Generic Children NPCs A_58: 6920672055958698928
+      Generic Children NPCs A_32: -6452681124085745970
+      Generic Children NPCs A_19: -3408588597504607152
+      Generic Children NPCs A_39: -6636657914293412864
+      Generic Children NPCs A_48: 7769434531600565262
+      Generic Children NPCs A_15: 2975621486666908629
+      Generic Children NPCs A_46: -3681613009360004690
+      Generic Children NPCs A_69: -6550198612015532973
+      Generic Children NPCs A_57: -7642141311699690914
+      Generic Children NPCs A_9: -1056312510062174738
+      Generic Children NPCs A_84: 1186739735795844295
+      Generic Children NPCs A_66: 232858350036962809
+      Generic Children NPCs A_14: -2497469919703363834
+      Generic Children NPCs A_25: 5139279578949796987
+      Generic Children NPCs A_5: 3813429936157623515
+      Generic Children NPCs A_70: -323898846865712556
+      Generic Children NPCs A_90: 9016854674362058503
+      Generic Children NPCs A_17: -2331468707683852448
+      Generic Children NPCs A_21: 5888692711423730769
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

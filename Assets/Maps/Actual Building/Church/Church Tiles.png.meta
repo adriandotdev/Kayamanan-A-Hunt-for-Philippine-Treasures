@@ -63,6 +63,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -424,6 +425,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Church Tiles_8: 4090269475691491441
+      Church Tiles_7: 5383044677087851579
+      Church Tiles_10: -3942124433443865267
+      Church Tiles_11: 8102969519843002124
+      Church Tiles_2: 4663532163152659052
+      Church Tiles_5: 2796315534045015075
+      Church Tiles_0: -8787438323690207181
+      Church Tiles_4: 3647965588073204478
+      Church Tiles_3: 2415867579919262579
+      Church Tiles_12: -6326296986750971120
+      Church Tiles_6: 7588431631817230501
+      Church Tiles_9: 1353233113919035460
+      Church Tiles_1: -5682700453144983718
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

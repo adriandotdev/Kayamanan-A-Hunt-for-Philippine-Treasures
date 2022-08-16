@@ -54,6 +54,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         SceneManager.sceneLoaded += OnSchoolSceneLoaded;
         SceneManager.sceneLoaded += OnPhilippineMapSceneLoaded;
         SceneManager.sceneLoaded += OnAssessmentAndWordGamesSceneLoaded;
+        SceneManager.sceneLoaded += OnMajorIslandsSceneLoaded;
     }
 
     private void OnDisable()
@@ -65,6 +66,7 @@ public class GameManager : MonoBehaviour, IDataPersistence
         SceneManager.sceneLoaded -= OnSchoolSceneLoaded;
         SceneManager.sceneLoaded -= OnPhilippineMapSceneLoaded;
         SceneManager.sceneLoaded -= OnAssessmentAndWordGamesSceneLoaded;
+        SceneManager.sceneLoaded -= OnMajorIslandsSceneLoaded;
     }
 
     // For Menu Scene
@@ -176,14 +178,32 @@ public class GameManager : MonoBehaviour, IDataPersistence
         {
             // Get the Go To House button and add an event to it.
             Button goToHouseButton = GameObject.Find("Go to House").GetComponent<Button>();
+
+            // Three Major Islands Button
+            Button luzonBTN = GameObject.Find("Luzon").GetComponent<Button>();
+            Button visayasBTN = GameObject.Find("Visayas").GetComponent<Button>();
+            Button mindanaoBTN = GameObject.Find("Mindanao").GetComponent<Button>();
+
             goToHouseButton.onClick.AddListener(() => {
 
                 SoundManager.instance.PlaySound("Button Click 1");
                 this.LoadScene(this.sceneToLoadFromPhilippineMap);
             });
 
+            luzonBTN.onClick.AddListener(() => SceneManager.LoadScene("Luzon"));
+
             // Set the value of dunong points of a current player.
             GameObject.Find("DP Value").GetComponent<TMPro.TextMeshProUGUI>().text = this.playerData.dunongPoints.ToString();
+        }
+    }
+
+    public void OnMajorIslandsSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Luzon"))
+        {
+            Button backButton = GameObject.Find("Back").GetComponent<Button>();
+
+            backButton.onClick.AddListener(() => SceneManager.LoadScene("Philippine Map"));
         }
     }
 
@@ -222,8 +242,8 @@ public class GameManager : MonoBehaviour, IDataPersistence
                 }
             });
 
-            exit.onClick.AddListener(() => this.LoadScene("Philippine Map"));
-            close .onClick.AddListener(() => this.LoadScene("Philippine Map"));
+            exit.onClick.AddListener(() => this.LoadScene(AssessmentManager.instance.previousSceneToLoad));
+            close .onClick.AddListener(() => this.LoadScene(AssessmentManager.instance.previousSceneToLoad));
         }
     }
 

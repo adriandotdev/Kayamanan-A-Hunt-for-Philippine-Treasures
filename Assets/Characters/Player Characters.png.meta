@@ -120,6 +120,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -880,6 +881,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Player Characters_0: -2321706177036514680
+      Player Characters_26: 1387552498138724953
+      Player Characters_9: 5198965063688892451
+      Player Characters_11: 5494102829601525689
+      Player Characters_31: 2175923557695535034
+      Player Characters_29: -7735381541516465985
+      Player Characters_14: -9160167407874641025
+      Player Characters_10: -7962829843034847318
+      Player Characters_21: 5500345875725353191
+      Player Characters_24: 8074388981043565820
+      Player Characters_15: -4206328948748197366
+      Player Characters_18: -2799708993527173201
+      Player Characters_23: 1351086253537217236
+      Player Characters_28: 1753443279963705116
+      Player Characters_19: -8012251401782793812
+      Player Characters_1: 5669343705040533145
+      Player Characters_13: 7908560220867914308
+      Player Characters_20: -4551726681805601307
+      Player Characters_12: 8620174222606744099
+      Player Characters_2: 2117996107275875613
+      Player Characters_22: -2639601192359587869
+      Player Characters_25: 8357542322749875557
+      Player Characters_17: -6063421083254446466
+      Player Characters_3: 5763891893303792784
+      Player Characters_5: 5027335069663003450
+      Player Characters_6: -854066217056122289
+      Player Characters_16: 420540887661974067
+      Player Characters_27: 9203314118965068938
+      Player Characters_30: -3290543853232179600
+      Player Characters_4: -4025726472542044644
+      Player Characters_8: -3725239854045420702
+      Player Characters_7: -2854575989549173987
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

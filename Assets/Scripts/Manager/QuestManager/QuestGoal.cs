@@ -33,6 +33,11 @@ public class TalkGoal : QuestGoal
     {
         base.Finish();
     }
+
+    public TalkGoal CopyTalkGoal()
+    {
+        return new TalkGoal(this.npcName);
+    }
 }
 
 

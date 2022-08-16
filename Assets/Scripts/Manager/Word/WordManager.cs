@@ -124,7 +124,7 @@ public class WordManager : MainGame, IDataPersistence
 
         /** Since some words have spaces, we need to replace all that spaces so that we can evaluate
          if it is correct or not based on the 'answer' variable from all the concatenated characters from buttons. */
-        bool isCorrect = ((Word)this.shuffled[this.currentIndex]).word.Replace(" ", "").ToUpper() == answer;
+        bool isCorrect = ((Word)this.shuffled[this.currentIndex]).word.ToUpper() == answer.ToUpper();
 
         this.correctAnswers.Add(isCorrect);
     }
@@ -142,14 +142,14 @@ public class WordManager : MainGame, IDataPersistence
 
         if (this.currentIndex >= this.shuffled.Length)
         {
-            int noOfCorrectAnswers = this.CountCorrectAnswers();
+            int noOfCorrectAns = this.CountCorrectAnswers();
 
             this.layout.gameObject.SetActive(false); 
-            this.scoreLabel.text = noOfCorrectAnswers + "/" + this.shuffled.Length;
+            this.scoreLabel.text = noOfCorrectAns + "/" + this.shuffled.Length;
 
-            this.SetRegionCategoriesScores(noOfCorrectAnswers);
-            this.ShowStars(noOfCorrectAnswers);
-            this.ShowScorePanel(noOfCorrectAnswers);
+            this.SetRegionHighestScore(noOfCorrectAns);
+            this.ShowStars(noOfCorrectAns);
+            this.ShowScorePanel(this.CountNoOfStarsToShow(noOfCorrectAns));
             this.CheckIfNextRegionIsReadyToOpen();
             //this.CollectAllRewards();
 
@@ -201,8 +201,8 @@ public class WordManager : MainGame, IDataPersistence
             Button parentLetter = null;
 
             // We only tolerate the character that is not null.
-            if (shuffledWord[i] != ' ')
-            {
+            //if (shuffledWord[i] != ' ')
+            //{
                 parentLetter = Instantiate(letter, this.shuffledContainer, false);
                 parentLetter.GetComponent<Image>().color = new Color(0, 0, 0, 0);
                 parentLetter.transform.GetChild(0).GetComponent<TMPro.TextMeshProUGUI>().color = new Color(0, 0, 0, 0);
@@ -251,7 +251,7 @@ public class WordManager : MainGame, IDataPersistence
                         this.confirmButton.gameObject.SetActive(false);
                     }
                 });
-            }
+            //}
         }
     }
 

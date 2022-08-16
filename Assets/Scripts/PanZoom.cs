@@ -8,12 +8,13 @@ public class PanZoom : MonoBehaviour
     Vector3 touchStart;
     public SpriteRenderer settingsPanel;
     private float zoomOutMin = 3;
-    private float zoomOutMax = 5;
+    private float zoomOutMax = 8;
 
     // Start is called before the first frame update
     void Awake()
     {
-        Camera.main.orthographicSize = settingsPanel.bounds.size.y / 2;
+        //Camera.main.orthographicSize = settingsPanel.bounds.size.y / 2;
+        //Camera.main.orthographicSize = 7f;
     }
 
     // Update is called once per frame

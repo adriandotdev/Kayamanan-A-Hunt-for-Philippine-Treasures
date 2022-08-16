@@ -345,6 +345,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -2680,6 +2681,114 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Floors variety 2_61: -2885822989066363985
+      Floors variety 2_87: -363137380595647969
+      Floors variety 2_29: -5573502210861234923
+      Floors variety 2_86: 3930303870194862040
+      Floors variety 2_59: 8030772606282471128
+      Floors variety 2_85: -3958638313595314996
+      Floors variety 2_19: -3404106163557802919
+      Floors variety 2_13: -5230290081563441056
+      Floors variety 2_27: -3212209685566862881
+      Floors variety 2_52: -4873893590502759033
+      Floors variety 2_60: 4790308441643296225
+      Floors variety 2_70: -2963086686503546095
+      Floors variety 2_106: 3796373687234958980
+      Floors variety 2_58: 5615196448217917254
+      Floors variety 2_26: 8821809173673615416
+      Floors variety 2_83: -7587471792413552842
+      Floors variety 2_12: 5975446333469712816
+      Floors variety 2_92: 3913291334656493064
+      Floors variety 2_23: -790357236721389218
+      Floors variety 2_15: 3607704569249533961
+      Floors variety 2_98: -5967425102529807086
+      Floors variety 2_42: 8674107285705698934
+      Floors variety 2_7: -71504851844619647
+      Floors variety 2_65: -3278980088672047677
+      Floors variety 2_17: 2577305590854297740
+      Floors variety 2_4: -2284707599031080106
+      Floors variety 2_71: -2677545231378599810
+      Floors variety 2_54: 1110493892429361744
+      Floors variety 2_36: 3118560726063260627
+      Floors variety 2_0: -4542807723287913568
+      Floors variety 2_45: 6683563670095490824
+      Floors variety 2_41: -5546493676607175762
+      Floors variety 2_35: -2597823160384858263
+      Floors variety 2_30: -7770010525347676001
+      Floors variety 2_105: 2862880320603710943
+      Floors variety 2_67: -1409903677449453475
+      Floors variety 2_77: -2774969462681903765
+      Floors variety 2_8: -1647688154330198395
+      Floors variety 2_81: -6683243054972185766
+      Floors variety 2_16: 1191164686639244762
+      Floors variety 2_73: -7354368484263471908
+      Floors variety 2_5: 844553537228551875
+      Floors variety 2_72: -3786004752245865097
+      Floors variety 2_56: 372111292394279632
+      Floors variety 2_93: 2950419817459674030
+      Floors variety 2_21: -3283877714265891592
+      Floors variety 2_6: 7607324591851269128
+      Floors variety 2_80: -880565712481013557
+      Floors variety 2_75: 2933074330594802199
+      Floors variety 2_76: -6707823100957133151
+      Floors variety 2_51: -2491076089466206716
+      Floors variety 2_66: -3601465953755692373
+      Floors variety 2_90: 3727623799033084699
+      Floors variety 2_47: -7000281385232269551
+      Floors variety 2_43: 7937584853435843943
+      Floors variety 2_95: -5215610227787255572
+      Floors variety 2_88: 2086838486203621324
+      Floors variety 2_3: 2749111019653707103
+      Floors variety 2_97: -8590338338622291061
+      Floors variety 2_37: 3383940524956482838
+      Floors variety 2_18: 184119727560402269
+      Floors variety 2_100: 7466783438368120449
+      Floors variety 2_68: -5504751010863876155
+      Floors variety 2_102: 4270913102583303789
+      Floors variety 2_38: 6108652639082281988
+      Floors variety 2_10: 9136023767506644893
+      Floors variety 2_49: 817173151469796850
+      Floors variety 2_50: 8199002139277842182
+      Floors variety 2_84: -7045772704903647110
+      Floors variety 2_78: -1668542731134539644
+      Floors variety 2_34: -7345988128183595550
+      Floors variety 2_24: -6441962980142323695
+      Floors variety 2_46: -3080516107055839087
+      Floors variety 2_9: 887729356715106317
+      Floors variety 2_94: -4168189018688221429
+      Floors variety 2_91: -4832061317916894236
+      Floors variety 2_53: 4991770554300548293
+      Floors variety 2_99: 6106618865388055928
+      Floors variety 2_31: -3081560686799704567
+      Floors variety 2_103: 8253516267728419201
+      Floors variety 2_40: 4705755817042792228
+      Floors variety 2_39: 1491237337267294140
+      Floors variety 2_44: 4289008903573003493
+      Floors variety 2_25: 4366165987334460992
+      Floors variety 2_32: -5119762494846546878
+      Floors variety 2_64: -8309369954212704320
+      Floors variety 2_14: -4648618454654013183
+      Floors variety 2_48: 2247309598372857143
+      Floors variety 2_82: 6865538765658845824
+      Floors variety 2_104: 5720827664872423601
+      Floors variety 2_20: 5821935563773037500
+      Floors variety 2_33: -2865912619540914122
+      Floors variety 2_1: -6611985326013497157
+      Floors variety 2_62: 902251871305100607
+      Floors variety 2_28: -7534293967454034433
+      Floors variety 2_69: 7364048612784922109
+      Floors variety 2_74: -3110967621053910148
+      Floors variety 2_22: 5075902956579773469
+      Floors variety 2_63: -753558187955293672
+      Floors variety 2_89: 2773374331543443632
+      Floors variety 2_79: 6220030630879763990
+      Floors variety 2_2: -7516565373242101830
+      Floors variety 2_55: -1671909781652924024
+      Floors variety 2_96: 777525506430768534
+      Floors variety 2_101: -2605295223366663940
+      Floors variety 2_11: 6666142743811701392
+      Floors variety 2_57: 4106553327782164827
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

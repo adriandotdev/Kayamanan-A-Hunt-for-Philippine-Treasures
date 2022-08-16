@@ -107,10 +107,10 @@ public class AssessmentManager : MainGame, IDataPersistence
 
             scoreLabel.text = noOfCorrectAns + "/" + this.shuffled.Length;
 
-            this.SetRegionHighscore(noOfCorrectAns);
+            this.SetRegionHighestScore(noOfCorrectAns);
 
             this.ShowStars(noOfCorrectAns);
-            this.ShowScorePanel(noOfCorrectAns);
+            this.ShowScorePanel(this.CountNoOfStarsToShow(noOfCorrectAns));
 
             this.CheckIfNextRegionIsReadyToOpen();
 
@@ -159,26 +159,26 @@ public class AssessmentManager : MainGame, IDataPersistence
     }
 
     // This function updates the highest score of the specified region.
-    public void SetRegionHighscore(int noOfCorrectAnswers)
-    {
-        // Get all the regions from 'playerData.regionsData'.
-        foreach(RegionData regionData in playerData.regionsData)
-        {
-            if (regionData.regionName == this.regionName.ToUpper())
-            {
-                foreach (Category category in regionData.categories)
-                {
-                    if (category.categoryName.ToUpper() == this.categoryName.ToUpper())
-                    {
-                        if (noOfCorrectAnswers > category.highestScore)
-                        {
-                            category.highestScore = noOfCorrectAnswers;
-                        }
-                    }
-                }
-            }
-        }
-    }
+    //public void SetRegionHighscore(int noOfCorrectAnswers)
+    //{
+    //    // Get all the regions from 'playerData.regionsData'.
+    //    foreach(RegionData regionData in playerData.regionsData)
+    //    {
+    //        if (regionData.regionName == this.regionName.ToUpper())
+    //        {
+    //            foreach (Category category in regionData.categories)
+    //            {
+    //                if (category.categoryName.ToUpper() == this.categoryName.ToUpper())
+    //                {
+    //                    if (noOfCorrectAnswers > category.highestScore)
+    //                    {
+    //                        category.highestScore = noOfCorrectAnswers;
+    //                    }
+    //                }
+    //            }
+    //        }
+    //    }
+    //}
 
     public void ShowScorePanel(int noOfCorrectAnswers)
     {

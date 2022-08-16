@@ -86,7 +86,8 @@ public class DataPersistenceManager : MonoBehaviour
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("House")
             || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Outside")
             || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("School")
-            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Philippine Map"))
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Philippine Map")
+            || SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Luzon"))
         {
             this.LoadGame();
         }

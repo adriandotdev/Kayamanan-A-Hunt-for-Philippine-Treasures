@@ -43,6 +43,15 @@ public class Quest
         this.questID = questID;
     }
 
+    public Quest CopyTalkQuestGoal()
+    {
+        Quest questCopy = new Quest(this.title, this.description, this.dunongPointsRewards, this.region, this.talkGoal.CopyTalkGoal());
+
+        questCopy.SetQuestID(this.questID);
+
+        return questCopy;
+    }
+
     public Quest CopyQuestDeliveryGoal()
     {
         Quest questCopy = new Quest(this.title, this.description, this.dunongPointsRewards, this.region,

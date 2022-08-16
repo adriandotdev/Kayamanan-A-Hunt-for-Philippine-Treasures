@@ -75,6 +75,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -520,6 +521,24 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Rizal Monument Wall Test_4: -8304857636527513121
+      Rizal Monument Wall Test_16: 3052321413806704377
+      Rizal Monument Wall Test_9: 942677762449295240
+      Rizal Monument Wall Test_12: -2569810869997113953
+      Rizal Monument Wall Test_5: 384805743455662482
+      Rizal Monument Wall Test_6: 1848364473253177013
+      Rizal Monument Wall Test_8: 6626919806949361382
+      Rizal Monument Wall Test_13: 3111337209337210300
+      Rizal Monument Wall Test_0: -8095344200790998076
+      Rizal Monument Wall Test_7: -1641079197899057697
+      Rizal Monument Wall Test_1: 443105607107572967
+      Rizal Monument Wall Test_14: -3592822361476686800
+      Rizal Monument Wall Test_15: -4051749820862530383
+      Rizal Monument Wall Test_2: -3895696091522073563
+      Rizal Monument Wall Test_10: -888525637640392889
+      Rizal Monument Wall Test_11: 6439929257252408253
+      Rizal Monument Wall Test_3: -1513901566313249148
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

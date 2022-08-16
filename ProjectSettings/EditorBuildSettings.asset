@@ -38,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/School.unity
     guid: 6046b98c2b95fda489acddf0063d9d79
+  - enabled: 1
+    path: Assets/Scenes/Luzon.unity
+    guid: cf1b3a6c1b9819649bbdf5ecb8d997e7
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: f0628571f14175944b23ff9df709e903, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 410bec17ad676394fb4cc867ee09055b, type: 2}
